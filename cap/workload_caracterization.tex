@@ -3,11 +3,11 @@
 \section{Filtraggio}
 
 \subsection{Oulier}
-Nelle osservazioni della memoria virtuale dei processi (Vm) si è notato un oulier isolato in comune a suddetti paramenti del workload. Analizzando le altre osservazioni (MemFree, Dirty, WriteBack, Buffer, ...) si è notato che le prime righe rappresentano una fase di avvio del sistema, e l'outlier in considerazione fa parte proprio di questa fase. A tal proposito inoltre esso è pur sempre un outlier ma non isolato per gli altri paramentri. Dato che l'analisi del workload non si focalizza sulla condizione di funzionamento sopra citata, si è preferito togliere quel singolo outlier.
+Nelle osservazioni della memoria virtuale dei processi (Vm) si è notato un outlier isolato in comune a suddetti paramenti del workload. Analizzando le altre osservazioni (\textit{MemFree}, \textit{Dirty}, \textit{WriteBack}, \textit{Buffer}, ...) si è notato che le prime righe rappresentano una fase di avvio del sistema, e l'outlier in considerazione fa parte proprio di questa fase. A tal proposito inoltre esso è pur sempre un outlier ma non isolato per gli altri paramentri. Dato che l'analisi del workload non si focalizza sulla condizione di funzionamento sopra citata, si è preferito togliere quel singolo outlier.
 
 Un secondo outlier che può essere rimosso è la riga in cui il parametro \textit{Slab} assume valore 4. Esso infatti è un outlier solo per il parametro \textit{Slab}, mentre per gli altri parametri è un valore compreso tra i propri quartili. Una sua rimozione quindi non influenza gli indici di caratterizzazione sintetica dei parametri del workload complessivo.
 
-Un terzo outlier è il valore 1760 del parametro \textit{Slab}. Come nel caso precedente tale punto si trova in media con tutti gli altri parametri tranne che per \textit{Mapped}
+Un terzo outlier è il valore 1760 del parametro \textit{Slab}. Come nel caso precedente tale punto si trova in media con tutti gli altri parametri tranne che per \textit{Mapped}. In questo 
 
 \subsection{Colonne Identiche}
 \begin{itemize}
@@ -15,7 +15,9 @@ Un terzo outlier è il valore 1760 del parametro \textit{Slab}. Come nel caso pr
 	\item AnonPages
 	\item AvgLatency
 	\item Error
+	\item WriteBack (uguale a MemFree)
 \end{itemize}
+
 
 
 \section{Principal Component Analysis - PCA}
