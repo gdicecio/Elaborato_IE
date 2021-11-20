@@ -1,5 +1,28 @@
 \chapter{Workload Caracterization}
 
-\section{Analisi degli Outlier}
+\section{Filtraggio}
+
+\subsection{Oulier}
+Nelle osservazioni della memoria virtuale dei processi (Vm) si è notato un oulier isolato in comune a suddetti paramenti del workload. Analizzando le altre osservazioni (MemFree, Dirty, WriteBack, Buffer, ...) si è notato che le prime righe rappresentano una fase di avvio del sistema, e l'outlier in considerazione fa parte proprio di questa fase. A tal proposito inoltre esso è pur sempre un outlier ma non isolato per gli altri paramentri. Dato che l'analisi del workload non si focalizza sulla condizione di funzionamento sopra citata, si è preferito togliere quel singolo outlier.
+
+Un secondo outlier che può essere rimosso è la riga in cui il parametro \textit{Slab} assume valore 4. Esso infatti è un outlier solo per il parametro \textit{Slab}, mentre per gli altri parametri è un valore compreso tra i propri quartili. Una sua rimozione quindi non influenza gli indici di caratterizzazione sintetica dei parametri del workload complessivo.
+
+Un terzo outlier è il valore 1760 del parametro \textit{Slab}. Come nel caso precedente tale punto si trova in media con tutti gli altri parametri tranne che per \textit{Mapped}
+
+\subsection{Colonne Identiche}
+\begin{itemize}
+	\item Active
+	\item AnonPages
+	\item AvgLatency
+	\item Error
+\end{itemize}
+
+
 \section{Principal Component Analysis - PCA}
+Considerazioni sulla PCA, una sola PCA
+
 \section{Clustering}
+Vari tentativi con grafico della devianza persa
+Cluster 15; Cluster 12; Cluster 10; Cluster 8; Cluster 5;
+
+\section{Workload Sintetico}
