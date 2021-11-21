@@ -86,7 +86,7 @@ A seguito del filtraggio il dataset risulta ridotto grazie alla rimozione di alc
 	\caption{\textit{PCA applicata al dataset filtrato}}
 \end{figure}
 La scelta del numero di componenti principali ricade in particolar modo sulla devianza che quelle componenti mantengono rispetto al dataset reale. Inoltre essa dipende anche dal tipo di osservazioni ed esperimento che è stato effettuato.
-\\Per mantenersi in una regione di tolleranza si è scelto di utilizzare \textbf{6 Componenti Principali}, in modo da mantenere il $\sim95\%$ della devianza totale. Andare oltre alle 6 componenti risulta svantaggioso, poiché la percentuale cumulativa aumenta di poco e per ogni componente in più vengono aggiunte circa 3000 righe (per questo particolare esperimento). Sulla base di ciò la devianza persa e mantenuta vale:
+\\Per mantenersi in una regione di tolleranza si è scelto di utilizzare \textbf{6 Componenti Principali}, in modo da mantenere il $\sim95\%$ della devianza totale. Andare oltre alle 6 componenti risulta svantaggioso, poiché la percentuale cumulativa aumenta di poco e per ogni componente in più vengono aggiunti 2998 elementi (per questo particolare esperimento). Sulla base di ciò la devianza persa e mantenuta vale:
 \begin{equation*}
 	DEV_{PCA-PERSA} = 100-95 \% \approx 5\% \qquad 	DEV_{PCA-MANTENUTA} \approx 95 \%
 \end{equation*}
