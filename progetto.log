@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.11.2)  17 NOV 2021 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.11.2)  21 NOV 2021 16:55
 entering extended mode
 **./progetto.tex
 (progetto.tex
@@ -237,9 +237,6 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count103
 \AM@templatesizebox=\box28
 )
-\c@example=\count104
-\c@theorem=\count105
-
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssym
 b.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -280,13 +277,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count106
+\inf@bad=\count104
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count107
-\leftroot@=\count108
+\uproot@=\count105
+\leftroot@=\count106
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count109
-\DOTSCASE@=\count110
+\classnum@=\count107
+\DOTSCASE@=\count108
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -295,15 +292,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen121
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count111
-\c@MaxMatrixCols=\count112
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
 \dotsspace@=\muskip10
-\c@parentequation=\count113
-\dspbrk@lvl=\count114
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
 \tag@help=\toks25
-\row@=\count115
-\column@=\count116
-\maxfields@=\count117
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
 \andhelp@=\toks26
 \eqnshift@=\dimen122
 \alignsep@=\dimen123
@@ -345,11 +342,11 @@ Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyv
 rb.sty"
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count118
+\FV@CodeLineNo=\count116
 \FV@InFile=\read1
 \FV@TabBox=\box31
-\c@FancyVerbLine=\count119
-\FV@StepNumber=\count120
+\c@FancyVerbLine=\count117
+\FV@StepNumber=\count118
 \FV@OutFile=\write3
 )
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote
@@ -444,41 +441,41 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lineno\lineno.s
 ty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count121
+\linenopenalty=\count119
 \output=\toks29
-\linenoprevgraf=\count122
+\linenoprevgraf=\count120
 \linenumbersep=\dimen128
 \linenumberwidth=\dimen129
-\c@linenumber=\count123
-\c@pagewiselinenumber=\count124
-\c@LN@truepage=\count125
-\c@internallinenumber=\count126
-\c@internallinenumbers=\count127
+\c@linenumber=\count121
+\c@pagewiselinenumber=\count122
+\c@LN@truepage=\count123
+\c@internallinenumber=\count124
+\c@internallinenumbers=\count125
 \quotelinenumbersep=\dimen130
 \bframerule=\dimen131
 \bframesep=\dimen132
 \bframebox=\box32
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count128
-\c@FV@TrueTabCounter=\count129
+\c@FV@TrueTabGroupLevel=\count126
+\c@FV@TrueTabCounter=\count127
 \FV@TabBox@Group=\box33
 \FV@TmpLength=\skip49
-\c@FV@HighlightLinesStart=\count130
-\c@FV@HighlightLinesStop=\count131
-\FV@LoopCount=\count132
+\c@FV@HighlightLinesStart=\count128
+\c@FV@HighlightLinesStop=\count129
+\FV@LoopCount=\count130
 \FV@NCharsBox=\box34
 \FV@BreakIndent=\dimen133
-\FV@BreakIndentNChars=\count133
+\FV@BreakIndentNChars=\count131
 \FV@BreakSymbolSepLeft=\dimen134
-\FV@BreakSymbolSepLeftNChars=\count134
+\FV@BreakSymbolSepLeftNChars=\count132
 \FV@BreakSymbolSepRight=\dimen135
-\FV@BreakSymbolSepRightNChars=\count135
+\FV@BreakSymbolSepRightNChars=\count133
 \FV@BreakSymbolIndentLeft=\dimen136
-\FV@BreakSymbolIndentLeftNChars=\count136
+\FV@BreakSymbolIndentLeftNChars=\count134
 \FV@BreakSymbolIndentRight=\dimen137
-\FV@BreakSymbolIndentRightNChars=\count137
-\c@FancyVerbLineBreakLast=\count138
+\FV@BreakSymbolIndentRightNChars=\count135
+\c@FancyVerbLineBreakLast=\count136
 \FV@LineBox=\box35
 \FV@LineIndentBox=\box36
 \FV@LineWidth=\dimen138
@@ -508,8 +505,8 @@ Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 .sty"
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xstring\xstri
 ng.tex"
-\integerpart=\count139
-\decimalpart=\count140
+\integerpart=\count137
+\decimalpart=\count138
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -525,7 +522,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty
 "
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count141
+\c@float@type=\count139
 \float@exts=\toks30
 \float@box=\box37
 \@float@everytoks=\toks31
@@ -534,10 +531,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \minted@appexistsfile=\read2
 \minted@bgbox=\box39
 \minted@code=\write4
-\c@minted@FancyVerbLineTemp=\count142
-\c@minted@pygmentizecounter=\count143
+\c@minted@FancyVerbLineTemp=\count140
+\c@minted@pygmentizecounter=\count141
 \@float@every@listing=\toks32
-\c@listing=\count144
+\c@listing=\count142
 )
 runsystem(if not exist _minted-progetto mkdir _minted-progetto)...executed.
 
@@ -601,14 +598,14 @@ Package: pgfsys 2020/10/01 v3.1.6a (3.1.6a)
 \pgf@yd=\dimen154
 \w@pgf@writea=\write5
 \r@pgf@reada=\read3
-\c@pgf@counta=\count145
-\c@pgf@countb=\count146
-\c@pgf@countc=\count147
-\c@pgf@countd=\count148
+\c@pgf@counta=\count143
+\c@pgf@countb=\count144
+\c@pgf@countc=\count145
+\c@pgf@countd=\count146
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count149
+\pgf@sys@id@count=\count147
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlay
 er\pgf.cfg"
@@ -627,8 +624,8 @@ File: pgfsys-common-pdf.def 2020/10/01 v3.1.6a (3.1.6a)
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlay
 er\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfsyssoftpath@smallbuffer@items=\count150
-\pgfsyssoftpath@bigbuffer@items=\count151
+\pgfsyssoftpath@smallbuffer@items=\count148
+\pgfsyssoftpath@bigbuffer@items=\count149
 )
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlay
 er\pgfsysprotocol.code.tex"
@@ -647,7 +644,7 @@ athutil.code.tex")
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfm
 athparser.code.tex"
 \pgfmath@dimen=\dimen155
-\pgfmath@count=\count152
+\pgfmath@count=\count150
 \pgfmath@box=\box41
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
@@ -673,7 +670,7 @@ athfunctions.misc.code.tex")
 athfunctions.integerarithmetics.code.tex")))
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfm
 athfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count153
+\c@pgfmathroundto@lastzeros=\count151
 ))
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfi
 nt.code.tex")
@@ -713,7 +710,7 @@ File: pgfcorescopes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \pgfpic=\box42
 \pgf@hbox=\box43
 \pgf@layerbox@main=\box44
-\pgf@picture@serial@count=\count154
+\pgf@picture@serial@count=\count152
 )
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclaye
 r\pgfcoregraphicstate.code.tex"
@@ -748,8 +745,8 @@ File: pgfcorearrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 r\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \pgf@max=\dimen179
-\pgf@sys@shading@range@num=\count155
-\pgf@shadingcount=\count156
+\pgf@sys@shading@range@num=\count153
+\pgf@shadingcount=\count154
 )
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclaye
 r\pgfcoreimage.code.tex"
@@ -823,7 +820,7 @@ Package: tikz 2020/10/01 v3.1.6a (3.1.6a)
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries
 \pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@plot@mark@count=\count157
+\pgf@plot@mark@count=\count155
 \pgfplotmarksize=\dimen184
 )
 \tikz@lastx=\dimen185
@@ -838,19 +835,19 @@ File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \tikz@figbox@bg=\box48
 \tikz@tempbox=\box49
 \tikz@tempbox@bg=\box50
-\tikztreelevel=\count158
-\tikznumberofchildren=\count159
-\tikznumberofcurrentchild=\count160
-\tikz@fig@count=\count161
+\tikztreelevel=\count156
+\tikznumberofchildren=\count157
+\tikznumberofcurrentchild=\count158
+\tikz@fig@count=\count159
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\p
 gfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfmatrixcurrentrow=\count162
-\pgfmatrixcurrentcolumn=\count163
-\pgf@matrix@numberofcolumns=\count164
+\pgfmatrixcurrentrow=\count160
+\pgfmatrixcurrentcolumn=\count161
+\pgf@matrix@numberofcolumns=\count162
 )
-\tikz@expandcount=\count165
+\tikz@expandcount=\count163
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibrarytopaths.code.tex"
@@ -889,8 +886,8 @@ k.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen193
-\Hy@linkcounter=\count166
-\Hy@pagecounter=\count167
+\Hy@linkcounter=\count164
+\Hy@pagecounter=\count165
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc
 .def"
@@ -900,7 +897,7 @@ File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
 alc.sty"
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count168
+\Hy@SavedSpaceFactor=\count166
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperr
 ef.cfg"
@@ -914,7 +911,7 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count169
+\c@Hy@tempcnt=\count167
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip11
@@ -932,7 +929,7 @@ ntcalc.sty"
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count170
+\Fld@menulength=\count168
 \Field@Width=\dimen195
 \Fld@charsize=\dimen196
 Package hyperref Info: Hyper figures OFF on input line 6418.
@@ -944,9 +941,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6443.
 Package hyperref Info: PDF/A mode OFF on input line 6448.
 LaTeX Info: Redefining \ref on input line 6488.
 LaTeX Info: Redefining \pageref on input line 6492.
-\Hy@abspage=\count171
-\c@Item=\count172
-\c@Hfootnote=\count173
+\Hy@abspage=\count169
+\c@Item=\count170
+\c@Hfootnote=\count171
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -958,8 +955,8 @@ File: hpdftex.def 2019/11/10 v7.00c Hyperref driver for pdfTeX
 end.sty"
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count174
-\c@bookmark@seq@number=\count175
+\Fld@listcount=\count172
+\c@bookmark@seq@number=\count173
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunf
 ilecheck.sty"
@@ -1040,24 +1037,24 @@ ils.tex"
 \XKV@toks=\toks45
 \XKV@tempa@toks=\toks46
 )
-\XKV@depth=\count176
+\XKV@depth=\count174
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pstricks\pstr
 icks.tex"
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pstricks\pst-
 fp.tex" `pst-fp' v0.05, 2010/01/17 (hv)
-\pstFP@xs=\count177
-\pstFP@xia=\count178
-\pstFP@xib=\count179
-\pstFP@xfa=\count180
-\pstFP@xfb=\count181
-\pstFP@rega=\count182
-\pstFP@regb=\count183
-\pstFP@regs=\count184
-\pstFP@times=\count185
+\pstFP@xs=\count175
+\pstFP@xia=\count176
+\pstFP@xib=\count177
+\pstFP@xfa=\count178
+\pstFP@xfb=\count179
+\pstFP@rega=\count180
+\pstFP@regb=\count181
+\pstFP@regs=\count182
+\pstFP@times=\count183
 )
-\psLoopIndex=\count186
+\psLoopIndex=\count184
 
 `PSTricks' v3.01  <2020/09/18> (tvz,hv)
 \pst@dima=\dimen197
@@ -1073,17 +1070,17 @@ fp.tex" `pst-fp' v0.05, 2010/01/17 (hv)
 \pst@hbox=\box51
 \pst@ibox=\box52
 \pst@boxg=\box53
-\pst@cnta=\count187
-\pst@cntb=\count188
-\pst@cntc=\count189
-\pst@cntd=\count190
-\pst@cntg=\count191
-\pst@cnth=\count192
-\pst@cntm=\count193
-\pst@cntn=\count194
-\pst@cnto=\count195
-\pst@cntp=\count196
-\@zero=\count197
+\pst@cnta=\count185
+\pst@cntb=\count186
+\pst@cntc=\count187
+\pst@cntd=\count188
+\pst@cntg=\count189
+\pst@cnth=\count190
+\pst@cntm=\count191
+\pst@cntn=\count192
+\pst@cnto=\count193
+\pst@cntp=\count194
+\@zero=\count195
 \pst@toks=\toks47
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pstricks\pstr
@@ -1091,7 +1088,7 @@ icks.con")
 \psunit=\dimen263
 \psxunit=\dimen264
 \psyunit=\dimen265
-\pst@C@@rType=\count198
+\pst@C@@rType=\count196
 \pslinewidth=\dimen266
 \psk@startLW=\dimen267
 \psk@endLW=\dimen268
@@ -1122,10 +1119,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip63
 \subfigcapmargin=\dimen279
 \subfiglabelskip=\skip64
-\c@subfigure=\count199
-\c@lofdepth=\count266
-\c@subtable=\count267
-\c@lotdepth=\count268
+\c@subfigure=\count197
+\c@lofdepth=\count198
+\c@subtable=\count199
+\c@lotdepth=\count266
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -1141,7 +1138,7 @@ rithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks50
-\c@algorithm=\count269
+\c@algorithm=\count267
 )
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\al
 gpseudocode.sty"
@@ -1152,15 +1149,15 @@ gorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count270
-\c@ALG@rem=\count271
-\c@ALG@nested=\count272
+\c@ALG@line=\count268
+\c@ALG@rem=\count269
+\c@ALG@nested=\count270
 \ALG@tlm=\skip67
 \ALG@thistlm=\skip68
-\c@ALG@Lnr=\count273
-\c@ALG@blocknr=\count274
-\c@ALG@storecount=\count275
-\c@ALG@tmpcounter=\count276
+\c@ALG@Lnr=\count271
+\c@ALG@blocknr=\count272
+\c@ALG@storecount=\count273
+\c@ALG@tmpcounter=\count274
 \ALG@tmplength=\skip69
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -1182,20 +1179,20 @@ Package: expl3 2019-11-07 L3 programming layer (loader)
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3-
 code.tex"
 Package: expl3 2019-11-07 L3 programming layer (code)
-\c_max_int=\count277
-\l_tmpa_int=\count278
-\l_tmpb_int=\count279
-\g_tmpa_int=\count280
-\g_tmpb_int=\count281
-\l__seq_internal_a_int=\count282
-\l__seq_internal_b_int=\count283
-\g__kernel_prg_map_int=\count284
-\c__ior_term_noprompt_ior=\count285
-\c_log_iow=\count286
-\l_iow_line_count_int=\count287
-\l__iow_line_target_int=\count288
-\l__iow_one_indent_int=\count289
-\l__iow_indent_int=\count290
+\c_max_int=\count275
+\l_tmpa_int=\count276
+\l_tmpb_int=\count277
+\g_tmpa_int=\count278
+\g_tmpb_int=\count279
+\l__seq_internal_a_int=\count280
+\l__seq_internal_b_int=\count281
+\g__kernel_prg_map_int=\count282
+\c__ior_term_noprompt_ior=\count283
+\c_log_iow=\count284
+\l_iow_line_count_int=\count285
+\l__iow_line_target_int=\count286
+\l__iow_one_indent_int=\count287
+\l__iow_indent_int=\count288
 \c_zero_dim=\dimen280
 \c_max_dim=\dimen281
 \l_tmpa_dim=\dimen282
@@ -1214,80 +1211,80 @@ Package: expl3 2019-11-07 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count291
-\l__intarray_loop_int=\count292
+\l_keys_choice_int=\count289
+\l__intarray_loop_int=\count290
 \c__intarray_sp_dim=\dimen286
-\g__intarray_font_int=\count293
-\c__fp_leading_shift_int=\count294
-\c__fp_middle_shift_int=\count295
-\c__fp_trailing_shift_int=\count296
-\c__fp_big_leading_shift_int=\count297
-\c__fp_big_middle_shift_int=\count298
-\c__fp_big_trailing_shift_int=\count299
-\c__fp_Bigg_leading_shift_int=\count300
-\c__fp_Bigg_middle_shift_int=\count301
-\c__fp_Bigg_trailing_shift_int=\count302
-\c__kernel_randint_max_int=\count303
-\g__fp_array_int=\count304
-\l__fp_array_loop_int=\count305
-\l__sort_length_int=\count306
-\l__sort_min_int=\count307
-\l__sort_top_int=\count308
-\l__sort_max_int=\count309
-\l__sort_true_max_int=\count310
-\l__sort_block_int=\count311
-\l__sort_begin_int=\count312
-\l__sort_end_int=\count313
-\l__sort_A_int=\count314
-\l__sort_B_int=\count315
-\l__sort_C_int=\count316
-\l__str_internal_int=\count317
-\c__str_replacement_char_int=\count318
-\l__tl_analysis_normal_int=\count319
-\l__tl_analysis_index_int=\count320
-\l__tl_analysis_nesting_int=\count321
-\l__tl_analysis_type_int=\count322
-\l__regex_internal_a_int=\count323
-\l__regex_internal_b_int=\count324
-\l__regex_internal_c_int=\count325
-\l__regex_balance_int=\count326
-\l__regex_group_level_int=\count327
-\l__regex_mode_int=\count328
-\c__regex_cs_in_class_mode_int=\count329
-\c__regex_cs_mode_int=\count330
-\l__regex_catcodes_int=\count331
-\l__regex_default_catcodes_int=\count332
-\c__regex_catcode_D_int=\count333
-\c__regex_catcode_S_int=\count334
-\c__regex_catcode_L_int=\count335
-\c__regex_catcode_O_int=\count336
-\c__regex_catcode_A_int=\count337
-\c__regex_all_catcodes_int=\count338
-\l__regex_show_lines_int=\count339
-\l__regex_min_state_int=\count340
-\l__regex_max_state_int=\count341
-\l__regex_left_state_int=\count342
-\l__regex_right_state_int=\count343
-\l__regex_capturing_group_int=\count344
-\l__regex_min_pos_int=\count345
-\l__regex_max_pos_int=\count346
-\l__regex_curr_pos_int=\count347
-\l__regex_start_pos_int=\count348
-\l__regex_success_pos_int=\count349
-\l__regex_curr_char_int=\count350
-\l__regex_curr_catcode_int=\count351
-\l__regex_last_char_int=\count352
-\l__regex_case_changed_char_int=\count353
-\l__regex_curr_state_int=\count354
-\l__regex_step_int=\count355
-\l__regex_min_active_int=\count356
-\l__regex_max_active_int=\count357
-\l__regex_replacement_csnames_int=\count358
-\l__regex_match_count_int=\count359
-\l__regex_min_submatch_int=\count360
-\l__regex_submatch_int=\count361
-\l__regex_zeroth_submatch_int=\count362
-\g__regex_trace_regex_int=\count363
+\g__intarray_font_int=\count291
+\c__fp_leading_shift_int=\count292
+\c__fp_middle_shift_int=\count293
+\c__fp_trailing_shift_int=\count294
+\c__fp_big_leading_shift_int=\count295
+\c__fp_big_middle_shift_int=\count296
+\c__fp_big_trailing_shift_int=\count297
+\c__fp_Bigg_leading_shift_int=\count298
+\c__fp_Bigg_middle_shift_int=\count299
+\c__fp_Bigg_trailing_shift_int=\count300
+\c__kernel_randint_max_int=\count301
+\g__fp_array_int=\count302
+\l__fp_array_loop_int=\count303
+\l__sort_length_int=\count304
+\l__sort_min_int=\count305
+\l__sort_top_int=\count306
+\l__sort_max_int=\count307
+\l__sort_true_max_int=\count308
+\l__sort_block_int=\count309
+\l__sort_begin_int=\count310
+\l__sort_end_int=\count311
+\l__sort_A_int=\count312
+\l__sort_B_int=\count313
+\l__sort_C_int=\count314
+\l__str_internal_int=\count315
+\c__str_replacement_char_int=\count316
+\l__tl_analysis_normal_int=\count317
+\l__tl_analysis_index_int=\count318
+\l__tl_analysis_nesting_int=\count319
+\l__tl_analysis_type_int=\count320
+\l__regex_internal_a_int=\count321
+\l__regex_internal_b_int=\count322
+\l__regex_internal_c_int=\count323
+\l__regex_balance_int=\count324
+\l__regex_group_level_int=\count325
+\l__regex_mode_int=\count326
+\c__regex_cs_in_class_mode_int=\count327
+\c__regex_cs_mode_int=\count328
+\l__regex_catcodes_int=\count329
+\l__regex_default_catcodes_int=\count330
+\c__regex_catcode_D_int=\count331
+\c__regex_catcode_S_int=\count332
+\c__regex_catcode_L_int=\count333
+\c__regex_catcode_O_int=\count334
+\c__regex_catcode_A_int=\count335
+\c__regex_all_catcodes_int=\count336
+\l__regex_show_lines_int=\count337
+\l__regex_min_state_int=\count338
+\l__regex_max_state_int=\count339
+\l__regex_left_state_int=\count340
+\l__regex_right_state_int=\count341
+\l__regex_capturing_group_int=\count342
+\l__regex_min_pos_int=\count343
+\l__regex_max_pos_int=\count344
+\l__regex_curr_pos_int=\count345
+\l__regex_start_pos_int=\count346
+\l__regex_success_pos_int=\count347
+\l__regex_curr_char_int=\count348
+\l__regex_curr_catcode_int=\count349
+\l__regex_last_char_int=\count350
+\l__regex_case_changed_char_int=\count351
+\l__regex_curr_state_int=\count352
+\l__regex_step_int=\count353
+\l__regex_min_active_int=\count354
+\l__regex_max_active_int=\count355
+\l__regex_replacement_csnames_int=\count356
+\l__regex_match_count_int=\count357
+\l__regex_min_submatch_int=\count358
+\l__regex_submatch_int=\count359
+\l__regex_zeroth_submatch_int=\count360
+\g__regex_trace_regex_int=\count361
 \c_empty_box=\box54
 \l_tmpa_box=\box55
 \l_tmpb_box=\box56
@@ -1340,16 +1337,16 @@ File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3bac
 kend-pdfmode.def"
 File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count364
+\l__kernel_color_stack_int=\count362
 \l__pdf_internal_box=\box72
 ))
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xpar
 se\xparse.sty"
 Package: xparse 2019-10-11 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count365
-\g__xparse_grabber_int=\count366
-\l__xparse_m_args_int=\count367
-\l__xparse_v_nesting_int=\count368
+\l__xparse_current_arg_int=\count363
+\g__xparse_grabber_int=\count364
+\l__xparse_m_args_int=\count365
+\l__xparse_v_nesting_int=\count366
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -1365,35 +1362,35 @@ runsystem(del progetto.aex)...executed.
  (progetto.aux (cap/workload_caracterization.aux))
 \openout1 = `progetto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
-7.
+4.
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def
 "
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \it@ocap on input line 67.
-LaTeX Info: Redefining \it@ccap on input line 67.
+LaTeX Info: Redefining \it@ocap on input line 64.
+LaTeX Info: Redefining \it@ccap on input line 64.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1434,16 +1431,16 @@ LaTeX Info: Redefining \it@ccap on input line 67.
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\sup
 p-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count369
+\scratchcounter=\count367
 \scratchdimen=\dimen312
 \scratchbox=\box74
-\nofMPsegments=\count370
-\nofMParguments=\count371
+\nofMPsegments=\count368
+\nofMParguments=\count369
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count372
+\MPscratchCnt=\count370
 \MPscratchDim=\dimen313
-\MPnumerator=\count373
-\makeMPintoPDFobject=\count374
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
 \everyMPtoPDFconversion=\toks52
 )
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\ep
@@ -1475,7 +1472,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 84.
 .sty"
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 64.
 
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namere
 f.sty"
@@ -1489,11 +1486,11 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count375
+\c@section@level=\count373
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
  (progetto.out) (progetto.out)
 \@outlinefile=\write7
 \openout7 = `progetto.out'.
@@ -1502,7 +1499,7 @@ LaTeX Info: Redefining \nameref on input line 67.
 ("C:\Users\Giuseppe\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<img/logo.png, id=22, 225.84375pt x 219.82124pt>
+<img/logo.png, id=42, 225.84375pt x 219.82124pt>
 File: img/logo.png Graphic file (type png)
 <use img/logo.png>
 Package pdftex.def Info: img/logo.png  used on input line 30.
@@ -1550,53 +1547,154 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (cap/workload_caracterization.tex
 Capitolo 1.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+<img/hw1/correlazione_mem_writeback.png, id=72, 146.04562pt x 36.135pt>
+File: img/hw1/correlazione_mem_writeback.png Graphic file (type png)
+<use img/hw1/correlazione_mem_writeback.png>
+Package pdftex.def Info: img/hw1/correlazione_mem_writeback.png  used on input 
+line 19.
+(pdftex.def)             Requested size: 146.04524pt x 36.13489pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 	\include{cap/workload_caracterization}
-                                             [1
+l.26 \end{equation}
+                    [1
 
 
 
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+ <./img/hw1/correlazione_mem_writeback.png>]
+<img/hw1/outlier_vm.png, id=84, 784.43062pt x 240.9pt>
+File: img/hw1/outlier_vm.png Graphic file (type png)
+<use img/hw1/outlier_vm.png>
+Package pdftex.def Info: img/hw1/outlier_vm.png  used on input line 39.
+(pdftex.def)             Requested size: 416.83289pt x 128.01088pt.
+<img/hw1/outlier_slab1.png, id=85, 193.47281pt x 243.15843pt>
+File: img/hw1/outlier_slab1.png Graphic file (type png)
+<use img/hw1/outlier_slab1.png>
+Package pdftex.def Info: img/hw1/outlier_slab1.png  used on input line 50.
+(pdftex.def)             Requested size: 166.7306pt x 209.54999pt.
+ [2 <./img/hw1/outlier_vm.png>]
+<img/hw1/outlier_slab2.png, id=98, 192.72pt x 238.64156pt>
+File: img/hw1/outlier_slab2.png Graphic file (type png)
+<use img/hw1/outlier_slab2.png>
+Package pdftex.def Info: img/hw1/outlier_slab2.png  used on input line 60.
+(pdftex.def)             Requested size: 166.7306pt x 206.45851pt.
+<img/hw1/mapped.png, id=99, 981.6675pt x 520.19344pt>
+File: img/hw1/mapped.png Graphic file (type png)
+<use img/hw1/mapped.png>
+Package pdftex.def Info: img/hw1/mapped.png  used on input line 66.
+(pdftex.def)             Requested size: 416.83289pt x 220.88481pt.
+
+Overfull \hbox (3.63054pt too wide) in paragraph at lines 66--67
+ [][] 
+ []
+
+<img/hw1/pagetables.png, id=100, 981.6675pt x 520.19344pt>
+File: img/hw1/pagetables.png Graphic file (type png)
+<use img/hw1/pagetables.png>
+Package pdftex.def Info: img/hw1/pagetables.png  used on input line 68.
+(pdftex.def)             Requested size: 416.83289pt x 220.88481pt.
+
+Overfull \hbox (3.63054pt too wide) in paragraph at lines 68--69
+ [][] 
+ []
+
+[3 <./img/hw1/outlier_slab1.png> <./img/hw1/outlier_slab2.png>] [4 <./img/hw1/m
+apped.png (PNG copy)> <./img/hw1/pagetables.png (PNG copy)>]
+<img/hw1/pca.png, id=117, 299.61937pt x 271.76532pt>
+File: img/hw1/pca.png Graphic file (type png)
+<use img/hw1/pca.png>
+Package pdftex.def Info: img/hw1/pca.png  used on input line 85.
+(pdftex.def)             Requested size: 299.61864pt x 271.76465pt.
+ [5 <./img/hw1/pca.png>]
+<img/hw1/cluster5.png, id=126, 96.36pt x 81.30376pt>
+File: img/hw1/cluster5.png Graphic file (type png)
+<use img/hw1/cluster5.png>
+Package pdftex.def Info: img/hw1/cluster5.png  used on input line 113.
+(pdftex.def)             Requested size: 96.35974pt x 81.30354pt.
+<img/hw1/cluster8.png, id=127, 99.37125pt x 118.19156pt>
+File: img/hw1/cluster8.png Graphic file (type png)
+<use img/hw1/cluster8.png>
+Package pdftex.def Info: img/hw1/cluster8.png  used on input line 119.
+(pdftex.def)             Requested size: 62.52238pt x 74.36548pt.
+<img/hw1/cluster10.png, id=128, 100.12407pt x 144.54pt>
+File: img/hw1/cluster10.png Graphic file (type png)
+<use img/hw1/cluster10.png>
+Package pdftex.def Info: img/hw1/cluster10.png  used on input line 120.
+(pdftex.def)             Requested size: 62.52238pt x 90.26007pt.
+<img/hw1/cluster12.png, id=129, 100.12407pt x 170.88844pt>
+File: img/hw1/cluster12.png Graphic file (type png)
+<use img/hw1/cluster12.png>
+Package pdftex.def Info: img/hw1/cluster12.png  used on input line 121.
+(pdftex.def)             Requested size: 62.52238pt x 106.71375pt.
+<img/hw1/cluster14.png, id=130, 102.3825pt x 196.48407pt>
+File: img/hw1/cluster14.png Graphic file (type png)
+<use img/hw1/cluster14.png>
+Package pdftex.def Info: img/hw1/cluster14.png  used on input line 122.
+(pdftex.def)             Requested size: 62.52238pt x 119.99pt.
+<img/hw1/cluster16.png, id=131, 97.11281pt x 219.06844pt>
+File: img/hw1/cluster16.png Graphic file (type png)
+<use img/hw1/cluster16.png>
+Package pdftex.def Info: img/hw1/cluster16.png  used on input line 123.
+(pdftex.def)             Requested size: 62.52238pt x 141.04233pt.
+<img/hw1/cluster18.png, id=132, 98.61844pt x 247.67531pt>
+File: img/hw1/cluster18.png Graphic file (type png)
+<use img/hw1/cluster18.png>
+Package pdftex.def Info: img/hw1/cluster18.png  used on input line 124.
+(pdftex.def)             Requested size: 62.52238pt x 157.02264pt.
+ [6 <./img/hw1/cluster5.png>]) [7 <./img/hw1/cluster8.png> <./img/hw1/cluster10
+.png> <./img/hw1/cluster12.png> <./img/hw1/cluster14.png> <./img/hw1/cluster16.
+png> <./img/hw1/cluster18.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (progetto.aux
 (cap/workload_caracterization.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `progetto.out' has not changed.
-(rerunfilecheck)             Checksum: 69265D49CEFC67C1A5BC9613CEFF617C;262.
+(rerunfilecheck)             Checksum: 36A828DAEECA76C78F03C2431E2FB5AE;547.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 39 (\begingroup)
+### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35496 strings out of 492484
- 671726 string characters out of 3120242
- 947560 words of memory out of 3000000
- 39256 multiletter control sequences out of 15000+200000
- 546109 words of font info for 54 fonts, out of 3000000 for 9000
+ 35622 strings out of 492484
+ 674310 string characters out of 3120242
+ 951400 words of memory out of 3000000
+ 39332 multiletter control sequences out of 15000+200000
+ 550270 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,796b,4866s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,67p,796b,4866s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecbx1440.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts
-/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Giuseppe\AppData\Local\MiK
-TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Giuseppe\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\
-Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.p
+nappen/ec/dpi600\ecrm0900.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\Giuseppe\AppData\Local\MiK
+TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Giuseppe\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\
+Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.p
 k> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi6
-00\ecrm1440.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecbi1728.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/
-pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Giuseppe\AppData\Local\MiKT
-eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Giuseppe\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on progetto.pdf (3 pages, 116688 bytes).
+00\ecbx1440.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ecbx2074.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Giuseppe\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Giuseppe\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\G
+iuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk
+> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbi1728.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecbx1728.pk> <C:\Users\Giuseppe\AppData\Local\MiKTeX\2.9\fonts/p
+k/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Giuseppe\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Giuseppe/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/
+Giuseppe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb><C:/Users/Giuseppe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/Giuseppe/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Giuseppe/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Giuseppe/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on progetto.pdf (9 pages, 344507 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

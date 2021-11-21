@@ -1,51 +1,147 @@
 \chapter{Workload Caracterization}
-
-\section{Descrizione Dataset}
-Il dataset di partenza è composto da \textbf{3000 righe} e \textbf{24 colonne}, ciascuna delle quali rappresenta uno dei parametri del sistema oggetto di studio. Molto probabilmente si tratta di parametri caratterizzanti l'esecuzione di un processo (formato da + threads) su un sistema operativo (?) vedi se lasciare questa ipotesi.
+Il dataset di partenza è composto da \textbf{3000 righe} e \textbf{24 colonne}, ciascuna delle quali rappresenta uno dei parametri del sistema oggetto di studio. Si tratta di parametri caratterizzanti l'esecuzione di vari Threads su un sistema operativo.
+\\In particolar modo le colonne con prefisso $Vm$ rappresentano informazioni sulla memoria virtuale occupata e utilizzata dai Threads, mentre le altre colonne rappresentano informazioni di carattere generale, come memoria libera, numero di threads, pagine inattive ecc.
 
 \section{Filtraggio}
 
 \subsection{Colonne Identiche}
-Innanzitutto osservando il workload e plottandone le distribuzioni ci siamo resi conto della presenza di ben 4 colonne costanti:
-
+Innanzitutto osservando il workload e effettuando un grafico delle distribuzioni ci rende conto della presenza di ben 4 colonne costanti:
 \begin{itemize}
 	\item \textbf{Active}
 	\item \textbf{AnonPages}
 	\item \textbf{AvbLatency}
 	\item \textbf{Error}
 \end{itemize}
-Essendo tali non spiegano varianza, dunque possono essere tranquillamente trascurate.
-Inoltre, osservando le distribuzioni dei parametri \textbf{WriteBack} e \textbf{MemFree} siamo giunti alla conclusione che le due colonne sono identiche e forniscono quindi la stessa informazione. Per questo motivo abbiamo deciso di trascurare una delle due, in particolare quella di WriteBack.
-\\
-A questo punto, dalle iniziali 24 colonne siamo riusciti ad ottenerne 19.
+Essendo tali non spiegano varianza, dunque possono essere tranquillamente trascurate ai fini dell'analisi.
+\\Osservando le distribuzioni dei parametri \textbf{WriteBack} e \textbf{MemFree} si sono notate alcune caratteristiche comuni. Per avere una maggiore chiarezza si è preferito calcolare la matrice delle correlazioni su questi due parametri.
+\begin{figure}[H]
+	\centering
+	\includegraphics{img/hw1/correlazione_mem_writeback.png}
+	\caption{\textit{Matrice di correlazione tra MemFree e WriteBack}}
+\end{figure}
+Osservando la matrice appare evidente che le due colonne sono esattamente identiche, fornendo quindi la stessa informazione. Per questo motivosi è deciso di trascurare una delle due, in particolare quella di WriteBack.
+\\Le 24 colonne iniziali sono state ridotte a 19 colonne, riducendo il dataset di un numero di osservazioni pari a:
+\begin{equation}
+	n_{dati} = 3.000 \times (24 - 19) = 15.000
+\end{equation}
 
 \subsection{Outlier}
-Osservando l'andamento dei parametri:
+Gli outliers sono valori che si discostano notevolmente dalle altre osservazioni. Non possono essere subito eliminati poiché influiscono sulle analisi statistiche in modo considerevole. Si possono però analizzare per capire se è possibile rimuoverli o meno.
+Osservando l'andamento dei seguenti parametri, attraverso box plot e grafici di distribuzione:
 \begin{itemize}
 	\item \textbf{VmSize}, quanta memoria virtuale utilizza l'intero processo.
 	\item \textbf{VmHWM}, di quanta RAM il processo necessita al massimo.
 	\item \textbf{VmRSS}, quanta RAM il processo sta correntemente usando.
 	\item \textbf{VmPTE}, quanta memoria Kernel è occupata dalle entries della tabella delle pagine.
 \end{itemize}
-si è notato che essi presentano un outlier isolato in comune associato alla prima riga del dataset. Analizzando gli altri parametri (\textit{MemFree}, \textit{Dirty}, \textit{PageTables}, \textit{Buffer}, ...) è stato possibile evidenziare che anche per la maggior parte di essi lo è, ma non è un punto isolato. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/hw1/outlier_vm.png}
+	\caption{\textit{Grafici di distrubuzione di VmSize, VmHWM, VmRSS, VmPTE}}
+\end{figure}
+Si è notato che essi presentano un outlier isolato (in basso ad ogni grafico) in comune associato alla prima riga del dataset. Analizzando gli altri parametri (\textit{MemFree}, \textit{Dirty}, \textit{PageTables}, \textit{Buffer}, ...) è stato possibile evidenziare che anche per la maggior parte di essi lo è, ma non è un punto isolato. 
+\\L'ipotesi fatta è che con molta probabilità le prime righe del dataset (da 0 a 100 circa), rappresentano la fase di avvio del processo e l'outlier oggetto di studio è la prima istanza di questa fase. Dato che l'obiettivo della caratterizzazione del workload è quello di analizzare le prestazioni a regime del sistema oggetto di studio (in questo caso), si è deciso di trascurare quel singolo outlier. E' bene notare che in ogni caso le informazioni riguardo questa fase di avvio non saranno del tutto perse dato che è stato rimosso un singolo punto e non tutti i punti che la rappresentano.
 \\
+\vspace{0.5cm}
 \\
-L'ipotesi fatta è che con molta probabilità le prime righe del dataset (da 0 a 100 circa), rappresentano la fase di avvio del processo e l'outlier oggetto di studio è la prima istanza di questa fase. Dato che l'obiettivo della caratterizzazione del workload è quello di analizzare le prestazioni a regime del sistema oggetto di studio (in questo caso), si è deciso di trascurare quel singolo outlier. E' bene notare che in ogni caso le informazioni riguardo questa fase di avvio non saranno del tutto perse visto che non abbiamo eliminato tutti gli outlier (di tutti i parametri) associati a tale fase (vedi meglio sto fatto, ma secondo me è cosi).
+Un secondo outlier che può essere agevolmente rimosso è la riga 512 in cui il parametro \textbf{Slab} assume valore 4. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/hw1/outlier_slab1.png}
+	\caption{\textit{Grafico di distrubuzione di Slab}}
+\end{figure}
+Oltre ad avvicinarsi molto al valore medio assunto da Slab (zero), esso risulta essere un outlier solo per il parametro stesso dato che per gli altri è un valore compreso tra i quartili. Una sua rimozione quindi non influenza gli indici di caratterizzazione sintetica dei parametri del workload complessivo.
 \\
+\vspace{0.5cm}
 \\
-Un secondo outlier che può essere agevolmente rimosso è la riga 512 in cui il parametro \textbf{Slab} assume valore 4. Oltre ad avvicinarsi molto al valore medio assunto da Slab (zero), esso risulta essere un outlier solo per il parametro stesso dato che per gli altri è un valore compreso tra i quartili. Una sua rimozione quindi non influenza gli indici di caratterizzazione sintetica dei parametri del workload complessivo.
+Un terzo outlier è il valore 1760 del parametro \textit{Slab}, associato alla riga 90 del workload.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/hw1/outlier_slab2.png}
+	\caption{\textit{Grafico di distrubuzione di Slab}}
+\end{figure}
+Rispetto al precedente, tale outlier richiede un' analisi più approfondita visto che influenza significativamente l'andamento di parametri quali \textit{Mapped} e \textit{PageTables}. Per descrivere meglio la dipendenza tra questi parametri si può effettuare un grafico tra il numero dell'osservazione e il valore assunto da \textit{Mapped}, analogo discorso con \textit{PageTables}.	
+\begin{figure}[H]
+	\centering   
+	\subfigure{	\includegraphics[width=\textwidth]{img/hw1/mapped.png}}
+	\caption{\textit{Grafico tra numero di osservazione e valore assunto dal parametro Mapped}}
+	\subfigure{	\includegraphics[width=\textwidth]{img/hw1/pagetables.png}}	
+	\caption{\textit{Grafico tra numero di osservazione e valore assunto dal parametro PageTables}}
+\end{figure}
+Si nota che in corrispondenza (in realtà nell'osservazione appena precedente) dell'outlier del parametro \textit{Slab} i due paramentri sopra indicati hanno un picco, durante la fase di avvio del sistema.
+\\Lo Slab si riferisce ad un particolare meccanismo di allocazione/deallocazione della memoria nel Kernel. Dato che influenza in particolar modo altri paramentri si è preferito di non trascurarlo.
 \\
+\vspace{0.5cm}
 \\
-Un terzo outlier è il valore 1760 del parametro \textit{Slab}, associato alla riga 90 del workload. Rispetto al precedente, tale outlier richiede un' analisi più approfondita visto che influenza significativamente l'andamento di parametri quali \textit{Mapped} e \textit{PageTables}. 
-Lo Slab molto probabilmente si riferisce ad un particolare meccanismo di allocazione/deallocazione della memoria nel Kernel.
-Dato che non sappiamo se questo è un evento che si verifica di norma a quel punto dell'esecuzione del processo (non so sincer) o è stato un caso isolato associato a questa misurazione, si è deciso di non eliminarlo. 
+In conclusione sono stati eliminati dal dataset solo 2 outlier che corrispondo a 38 righe. Quindi il dataset è stato ridotto in totole di 15.038 elementi, provocando una diminuzione dei dati iniziali di poco più del $20\%$.
 \newpage
 
 \section{PCA}
-Considerazioni sulla PCA, una sola PCA
+A seguito del filtraggio il dataset risulta ridotto grazie alla rimozione di alcune colonne e righe che rappresentano outlier.
+\\Sul questo dataset si possono quindi iniziare a fare le prime considerazioni.
+\\Utilizzando la tecnica della \textit{Principal Component Analysis} il dataset può essere estremamente ridotto, sfruttando solo le \textit{Componenti Principali} che mantengono più varianza. Il risultato della PCA è quindi:
+\begin{figure}[H]
+	\centering
+	\includegraphics{img/hw1/pca.png}
+	\caption{\textit{PCA applicata al dataset filtrato}}
+\end{figure}
+La scelta del numero di componenti principali ricade in particolar modo sulla devianza che quelle componenti mantengono rispetto al dataset reale. Inoltre essa dipende anche dal tipo di osservazioni ed esperimento che è stato effettuato.
+\\Per mantenersi in una regione di tolleranza si è scelto di utilizzare \textbf{6 Componenti Principali}, in modo da mantenere il $\sim95\%$ della devianza totale. Andare oltre alle 6 componenti risulta svantaggioso, poiché la percentuale cumulativa aumenta di poco e per ogni componente in più vengono aggiunte circa 3000 righe (per questo particolare esperimento). Sulla base di ciò la devianza persa e mantenuta vale:
+\begin{equation*}
+	DEV_{PCA-PERSA} = 100-95 \% \approx 5\% \qquad 	DEV_{PCA-MANTENUTA} \approx 95 \%
+\end{equation*}
+Sulle queste componenti principali può essere eseguita la procedura di clustering.
 
 \section{Clustering}
-Vari tentativi con grafico della devianza persa
-Cluster 15; Cluster 12; Cluster 10; Cluster 8; Cluster 5;
+Il clustering è una tecnica che consiste nel raggruppare osservazioni "simili" tra loro. La similitudine tra un elemento e un cluster, o tra un cluster e un altro cluster, può essere calcolata secondo varie tecniche. In questa analisi si è preferito utilizzare il \textbf{metodo di Ward}, il quale pesa la distanza tra due cluster in relazione al numero di elementi che li compongono.
+\\Dati due cluster P e Q (un elemento non appartenente ad un cluster, può essere visto come un cluster di dimensione 1), sia $|P|$ la cardinalità di $P$, analogo con $|Q|$, e sia $\bar{x}_p$ il centroide di $P$, analogo con $\bar{x}_q$, la distanza tra $P$ e $Q$ viene calcolata come:
+\begin{equation*}
+	d(P,Q) = 2 \dfrac{|P| \; |Q|}{|P| + |Q|} ||\bar{x}_p - \bar{x}_q ||^2
+\end{equation*}
+Per ogni raggruppamento viene poi scelto una singola osservazione che la rappresenta, riducendo quindi il dataset pari al numero di cluster scelti durante l'analisi.
+\\A tal proposito il numero di cluster da scegliere può dipendere da vari fattori:
+\begin{itemize}
+	\item Omogeneità dei cluster: i cluster devono raggruppare un numero di osservazioni quanto il più possibile omogeneo rispetto agli altri cluster. Avere un cluster con un numero di elementi di vari ordini di grandezza rispetto ad un altro cluster non sempre può portare a buoni risultati (in termini di devianza).
+	\item Devianza mantenuta: a seguito della PCA parte della devianza nei dati viene persa. Dato che il clustering viene effettuato sulle \textit{Componenti Principali} allora esso produce un'ulteriore perdita di devianza nel risultato finale.
+\end{itemize}
+ 
+\subsection{Omogeneità}
+In una prima analisi, si possono scegliere dei cluster da valutare in modo che non ci siano troppe differenze (in termini di conteggio degli elementi) tra un cluster e un altro.
+\\Analizzando quindi le PC con 5 cluster si ottiene:
+\begin{figure}[H]
+	\centering
+\includegraphics{img/hw1/cluster5.png}
+\caption{\textit{Numero di cluster e il relativo numero di elementi con 6 PC}}
+\end{figure}
+Come si nota dalla figura la differenza del numero di elementi tra un cluster e un altro è molto elevata, è preferibile quindi aumentare il numero di cluster in modo da diminuire tale fenomeno.
+\begin{figure}[H]
+	\centering   
+	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster8.png}}
+	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster10.png}}	
+	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster12.png}}
+	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster14.png}}
+	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster16.png}}
+	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster18.png}}
+	\caption{\textit{Numero di cluster e dimensione per diversi valori}}
+\end{figure}
+Eccetto qualche cluster (il cui motivo verrà spiegato in seguito), essi sono più o meno omogenei rispetto al primo caso.
+
+\subsection{Devianza Persa}
+Per questo homework si è scelto di analizzare un numero di cluster che va da 8 a 18, e valutare per ognuno di essi quanta devianza viene mantenuta con un numero di \textit{Componenti Principali} scelto precedentemente. 
+\\Per effettuare il calcolo della devianza totale persa persa bisogna prima calcolare la devianza intra-cluster (la somma delle devianze per ogni cluster) e sulla base di questa si può calcolare la quantità richiesta.
+\\Matematicamente, definita $DEV_{PCA-PERSA}$ la devianza persa (in termini percentuali) a causa della PCA, viceversa $DEV_{PCA-MANTENUTA}$ la devianza mantenuta dalla PCA, e $DEV_{INTRA}$ la devianza intra-cluster, la devianza totale persa percentuale vale:
+\begin{equation*}
+	DEV_{PCA-LOST} + DEV_{INTRA}\times DEV_{PCA-MANTENUTA}
+\end{equation*}
+In seguto, calcolando le grandezze per ogni scenario definito, si possono racchiudere poi tutte le informazioni in una singola tabella:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{8 Cluster} & \textbf{10 Cluster} & \textbf{12 Cluster} &\textbf{14 Cluster}& \textbf{16 Cluster} & \textbf{18 Cluster} \\
+		\hline
+		15\%& 13\% & 12\% & 11\% & 9\% & 8\% \\
+		\hline
+	\end{tabular}
+\end{center}
 
 \section{Workload Sintetico}
