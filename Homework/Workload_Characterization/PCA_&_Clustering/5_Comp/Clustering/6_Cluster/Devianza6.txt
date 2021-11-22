@@ -1,0 +1,3 @@
+DEV_LOST_per	:	0.2555
+DEV_PCA_CL_per	:	0.7445
+DEV_PCA_per	:	0.9195
