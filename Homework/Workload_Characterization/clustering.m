@@ -2,18 +2,16 @@ clc;
 clear;
 
 %% Read the data
-cluster_coulumn = 7;
-data = xlsread('Filtering_&_PCA/Dati_Filtrati');
-pca_data = xlsread('Filtering_&_PCA/PCA');
-cluster_data = xlsread('Clustering/12_Cluster/12_Cluster');
-cluster_data = cluster_data(:,cluster_coulumn);
+data = xlsread('Filtering/Dati_Filtrati');
+pca_data = xlsread('PCA_&_Clustering/6_Comp/PCA_6_Comp');
+cluster_data = xlsread('PCA_&_Clustering/6_Comp/Clustering/8_Cluster/Cluster_Vector');
 N_cluster = max (cluster_data); 
 
 %% Plot 
-plot(1:length(data(1:500,14)),data(1:500,14), 'LineWidth' ,2); 
-grid;
-xlabel("Numero osservazione");
-ylabel("PageTables");
+% plot(1:length(data(1:500,14)),data(1:500,14), 'LineWidth' ,2); 
+% grid;
+% xlabel("Numero osservazione");
+% ylabel("PageTables");
 
 %% Total Deviance
 data_norm = zscore(data);

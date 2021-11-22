@@ -86,11 +86,23 @@ A seguito del filtraggio il dataset risulta ridotto grazie alla rimozione di alc
 	\caption{\textit{PCA applicata al dataset filtrato}}
 \end{figure}
 La scelta del numero di componenti principali ricade in particolar modo sulla devianza che quelle componenti mantengono rispetto al dataset reale. Inoltre essa dipende anche dal tipo di osservazioni ed esperimento che è stato effettuato.
-\\Per mantenersi in una regione di tolleranza si è scelto di utilizzare \textbf{6 Componenti Principali}, in modo da mantenere il $\sim95\%$ della devianza totale. Andare oltre alle 6 componenti risulta svantaggioso, poiché la percentuale cumulativa aumenta di poco e per ogni componente in più vengono aggiunti 2998 elementi (per questo particolare esperimento). Sulla base di ciò la devianza persa e mantenuta vale:
-\begin{equation*}
-	DEV_{PCA-PERSA} = 100-95 \% \approx 5\% \qquad 	DEV_{PCA-MANTENUTA} \approx 95 \%
-\end{equation*}
-Sulle queste componenti principali può essere eseguita la procedura di clustering.
+\\La scelta migliore ricade nel prendere 5 componenti principali poiché rappresentano il 92\% della devianza totale. Esso rappresenta un valore anche abbastanza elevato, ma è stato scelto per mantenersi in una regione di tolleranza durante la clusterizzazione. 
+\\Per completezza si possono riportare le analisi considerando tre set di componenti principali nel seguente modo:
+\begin{itemize}
+	\item Prendere 4 PC
+	\begin{equation*}
+		DEV_{PCA-MANTENUTA} \approx 88 \%
+	\end{equation*}
+	\item Prendere 5 PC
+	\begin{equation*}
+			DEV_{PCA-MANTENUTA} \approx 92 \%
+	\end{equation*}
+	\item Prendere 6 PC
+	\begin{equation*}
+			DEV_{PCA-MANTENUTA} \approx 95 \%
+	\end{equation*}
+\end{itemize}
+Sulla base di queste tre alternative, viene effettuata la procedura di clustering per ognuna di esse.
 
 \section{Clustering}
 Il clustering è una tecnica che consiste nel raggruppare osservazioni "simili" tra loro. La similitudine tra un elemento e un cluster, o tra un cluster e un altro cluster, può essere calcolata secondo varie tecniche. In questa analisi si è preferito utilizzare il \textbf{metodo di Ward}, il quale pesa la distanza tra due cluster in relazione al numero di elementi che li compongono.
@@ -104,44 +116,103 @@ Per ogni raggruppamento viene poi scelto una singola osservazione che la rappres
 	\item Omogeneità dei cluster: i cluster devono raggruppare un numero di osservazioni quanto il più possibile omogeneo rispetto agli altri cluster. Avere un cluster con un numero di elementi di vari ordini di grandezza rispetto ad un altro cluster non sempre può portare a buoni risultati (in termini di devianza).
 	\item Devianza mantenuta: a seguito della PCA parte della devianza nei dati viene persa. Dato che il clustering viene effettuato sulle \textit{Componenti Principali} allora esso produce un'ulteriore perdita di devianza nel risultato finale.
 \end{itemize}
- 
-\subsection{Omogeneità}
-In una prima analisi, si possono scegliere dei cluster da valutare in modo che non ci siano troppe differenze (in termini di conteggio degli elementi) tra un cluster e un altro.
-\\Analizzando quindi le PC con 5 cluster si ottiene:
-\begin{figure}[H]
-	\centering
-\includegraphics{img/hw1/cluster5.png}
-\caption{\textit{Numero di cluster e il relativo numero di elementi con 6 PC}}
-\end{figure}
-Come si nota dalla figura la differenza del numero di elementi tra un cluster e un altro è molto elevata, è preferibile quindi aumentare il numero di cluster in modo da diminuire tale fenomeno.
-\begin{figure}[H]
-	\centering   
-	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster8.png}}
-	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster10.png}}	
-	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster12.png}}
-	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster14.png}}
-	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster16.png}}
-	\subfigure{	\includegraphics[width=0.15\textwidth]{img/hw1/cluster18.png}}
-	\caption{\textit{Numero di cluster e dimensione per diversi valori}}
-\end{figure}
-Eccetto qualche cluster (il cui motivo verrà spiegato in seguito), essi sono più o meno omogenei rispetto al primo caso.
-
-\subsection{Devianza Persa}
-Per questo homework si è scelto di analizzare un numero di cluster che va da 8 a 18, e valutare per ognuno di essi quanta devianza viene mantenuta con un numero di \textit{Componenti Principali} scelto precedentemente. 
-\\Per effettuare il calcolo della devianza totale persa persa bisogna prima calcolare la devianza intra-cluster (la somma delle devianze per ogni cluster) e sulla base di questa si può calcolare la quantità richiesta.
+\subsubsection{Devianza Persa}
+Per effettuare il calcolo della devianza totale persa persa bisogna prima calcolare la devianza intra-cluster (la somma delle devianze per ogni cluster) e sulla base di questa si può calcolare la quantità richiesta.
 \\Matematicamente, definita $DEV_{PCA-PERSA}$ la devianza persa (in termini percentuali) a causa della PCA, viceversa $DEV_{PCA-MANTENUTA}$ la devianza mantenuta dalla PCA, e $DEV_{INTRA}$ la devianza intra-cluster, la devianza totale persa percentuale vale:
 \begin{equation*}
 	DEV_{PCA-LOST} + DEV_{INTRA}\times DEV_{PCA-MANTENUTA}
 \end{equation*}
-In seguto, calcolando le grandezze per ogni scenario definito, si possono racchiudere poi tutte le informazioni in una singola tabella:
+Essa può essere calcolata in MATLAB passando ad uno script i cluster, le componenti principali e il dataset iniziale.
+\\ Per dare valore ai fattori sopra citati il clustering viene effettuato scegliendo un numero di cluster che varia da 6 a 16 (per ogni gruppo di componenti principali) su cui poi viene calcolata la devianza persa.
+ \subsection{4 Componenti Principali}
+ Utilizzando le prime quattro PC si ha:
+ \begin{figure}[H]
+ 	\centering   
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/6_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/8_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/10_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/12_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/16_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\caption{\textit{Numero di cluster e dimensione per diversi valori}}
+ \end{figure}
+La devianza persa durante la clusterizzazione varia in relazione al numero di cluster scelti. Si possono racchiudere le informazioni in un'unica tabella:
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline
-		\textbf{8 Cluster} & \textbf{10 Cluster} & \textbf{12 Cluster} &\textbf{14 Cluster}& \textbf{16 Cluster} & \textbf{18 Cluster} \\
+		\textbf{6 Cluster} & \textbf{8 Cluster} & \textbf{10 Cluster} &\textbf{12 Cluster}& \textbf{14 Cluster} & \textbf{16 Cluster} \\
 		\hline
-		15\%& 13\% & 12\% & 11\% & 9\% & 8\% \\
+		26\%& 17\% & 16\% & 15\% & 14.5\% & 14\% \\
+		\hline
+	\end{tabular}
+\end{center}
+ \subsection{5 Componenti Principali}
+ Utilizzando le prime quattro PC si ha:
+ \begin{figure}[H]
+ 	\centering   
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/6_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/8_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/10_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/12_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/16_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\caption{\textit{Numero di cluster e dimensione per diversi valori}}
+ \end{figure}
+La devianza persa durante la clusterizzazione varia in relazione al numero di cluster scelti. Si possono racchiudere le informazioni in un'unica tabella:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{6 Cluster} & \textbf{8 Cluster} & \textbf{10 Cluster} &\textbf{12 Cluster}& \textbf{14 Cluster} & \textbf{16 Cluster} \\
+		\hline
+		25.5\%& 16\% & 15\% & 12\% & 11\% & 10\% \\
+		\hline
+	\end{tabular}
+\end{center}
+ \subsection{6 Componenti Principali}
+ Utilizzando le prime quattro PC si ha:
+ \begin{figure}[H]
+ 	\centering   
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/6_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/8_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/10_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/12_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\subfigure{	\includegraphics[width=0.30\textwidth]{Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/16_Cluster/Screen_Dati/Riepilogo.png}}
+ 	\caption{\textit{Numero di cluster e dimensione per diversi valori}}
+ \end{figure}
+ 
+ 
+ \begin{center}
+ 	\begin{tabular}{|c|c|c|c|c|c|}
+ 		\hline
+ 		\textbf{6 Cluster} & \textbf{8 Cluster} & \textbf{10 Cluster} &\textbf{12 Cluster}& \textbf{14 Cluster} & \textbf{16 Cluster} \\
+ 		\hline
+ 		22\% & 15\%& 13\% & 12\% & 11\% & 9\% \\
+ 		\hline
+ 	\end{tabular}
+ \end{center}
+
+\subsection{Interpretazione}
+All'inizio dell'analisi sono state effettuate delle ipotesi che hanno trovato riscontro nella procedura di clustering:
+\begin{enumerate}
+	\item La fase iniziale del sistema (descritto dalle prime righe) trova riscontro con il cluster numero uno qualunque siano le componenti principali e qualunque sia il numero di cluster scelto. Questo quindi prova l'ipotesi definita inizialmente
+	\item L'ultimo cluster contiene sempre un elemento singolo. Questo accade a causa del fatto che è stato identificato un picco nella fase iniziale delle misure. Esso inoltre è stato definito grazie all'outlier nel parametro Slab che non è stato eliminato, di conseguenza il picco viene racchiuso in un unico cluster in tutte le situazioni.
+\end{enumerate}
+\vspace{0.5cm}
+In conclusione si può costruire una tabella che racchiude le informazioni riguardanti le PCA e la clusterizzazione in termini di percentuale di devianza persa.
+ \begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		& \textbf{6 Cluster} & \textbf{8 Cluster} & \textbf{10 Cluster} &\textbf{12 Cluster}& \textbf{14 Cluster} & \textbf{16 Cluster} \\
+		\hline
+		\textbf{4 PC} & 26\%& 17\% & 16\% & 15\% & 14.5\% & 14\% \\
+
+	\textbf{5 PC} & 25.5\%& 16\% & 15\% & 12\% & 11\% & 10\% \\
+
+		\textbf{6 PC} & 22\% & 15\%& 13\% & 12\% & 11\% & 9\% \\
 		\hline
 	\end{tabular}
 \end{center}
 
 \section{Workload Sintetico}
+Come già deciso nel paragrafo precedente, sono state scelte 5 PC. A tal proposito per non perdere troppa varianza, e non sfociare in un numero di cluster molto elevato, si è scelto di considerare 10 cluster. In tal caso la perdita di devianza con PCA e Cluster è di circa del 15\%.
