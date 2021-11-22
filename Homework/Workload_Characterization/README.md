@@ -1,3 +1,3 @@
-Primo homework : **Caratterizzazione di un workload reale**
+**Primo homework** : *Caratterizzazione di un workload reale*
 
-**Goal** : ottenere un workload sintentico dal workload reale assegnato
+**Goal** : *Ottenere un workload sintentico dal workload reale assegnato*
