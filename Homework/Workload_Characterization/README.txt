@@ -1,1 +1,2 @@
-Materiale inerente il primo homework : caratterizzazione di un workload assegnato
+Materiale inerente il primo homework : **Caratterizzazione di un workload reale**
+**Goal** : ottenere un workload sintentico dal workload reale assegnato
