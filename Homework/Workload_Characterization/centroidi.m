@@ -3,11 +3,9 @@ clear;
 
 
 %% Read the data
-cluster_coulumn = 7;
-data = xlsread('Filtering_&_PCA/Dati_Filtrati');
-pca_data = xlsread('Filtering_&_PCA/PCA');
-cluster_data = xlsread('Clustering/12_Cluster/12_Cluster');
-cluster_data = cluster_data(:,cluster_coulumn);
+data = xlsread('Filtering/Dati_Filtrati');
+pca_data = xlsread('PCA_&_Clustering/5_Comp/PCA_5_Comp');
+cluster_data = xlsread('PCA_&_Clustering/5_Comp/Clustering/10_Cluster/Cluster_Vector10');
 N_cluster = max (cluster_data); 
 
 %% Calcolo centroidi
@@ -16,23 +14,37 @@ for i = 1: N_cluster
     index = find(cluster_data==i); %Indici delle righe di uno stesso cluster
     n_size = length(index);
     cluster_elements = pca_data(index,:);
-    if (size(index) == 1) 
-        centroid = index;       %Riga del centroide
-        centroid_index(i) = index;
+    temp = centroid(cluster_elements);
+    centroid_index(i) = find(pca_data == cluster_elements(temp,:),1);    %L'indice mappato nel dataset
+    
+end
+
+%% Function
+
+function [D,n] = distance_matrix(C)
+    % C è una matrice che per per ogni riga un punto e per ogni colonna
+    % una coordinata su un asse
+    % Il numero di colonne identifica la dimensionalità dello spazio
+    % Il numero di righe identifica il numero di punti
+    dim = size(C);
+    n = dim(1);
+    D = zeros(n,n);
+    for i = 1:n
+        for j = 1:n
+            D(i,j) = sqrt(sum((C(i,:)-C(j,:)).^2));
+        end
+    end
+end
+
+function index = centroid(C)
+    if size(C) == 1
+        index = 1;
     else
-        dist = zeros(n_size, n_size);
-       %Matrice delle distanze
-       for k = 1: n_size
-            for j = 1:n_size
-                dist(k,j) = sqrt(sum(cluster_elements(k) - cluster_elements(j)).^2);
-            end
-       end
-       max_list = zeros(n_size, 1);
-       for k=1:n_size
-            max_list(k) = max(dist(:,k));   %Massimo per ogni colonna
-       end
-       temp = find(max_list == min(max_list),1);  %L'indice a cui corrisponde il minimo tra le massime distanze
-       
-       centroid_index(i) = find(pca_data == cluster_elements(temp,:),1);    %L'indice mappato nel dataset
+        [D,n_size] = distance_matrix(C);
+        distance_sum = zeros(1,n_size);
+        for k=1:n_size
+            distance_sum(k) = sum(D(k,:));  %Fisso la riga e sommo le colonne
+        end
+        index = find(distance_sum == min(distance_sum));
     end
 end
