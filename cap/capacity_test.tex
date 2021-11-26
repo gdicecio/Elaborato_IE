@@ -1,0 +1,44 @@
+\chapter{Capacity Test}
+L'obiettivo del Capacity Test è quello di valutare le performance di un qualsiasi sistema quando è sottoposto a carichi di lavoro di diversa intensità, in modo da caratterizzare le sue prestazioni al limite (sotto condizioni di lavoro severe).
+\\
+Per realizzare queste valutazioni, sono stati collezionati, lato client, gli \textbf{high-level parameters}. Essi possono riferirsi alla richiesta (quando è stata fatta, chi l'ha fatta ecc..) o alla risposta (tempi di risposta, errori).
+\\
+Performance metrics : response time e throughput
+\\
+Knee capacity e usable capacity + immagine
+
+\section{Experimental Setup}
+Il sistema oggetto di studio è un \textit{Web Server Apache} installato sulla macchina virtuale guest, che funge da server.
+\\
+Tramite la modalità \textit{Host-only Network Adapter}, configurabile nelle impostazioni della macchina virtuale, è stato possibile far comunicare la macchina guest con quella host, che lo ospita. Su quest'ultima è stata installata l'applicazione Java \textit{JMeter}, che ha permesso l'analisi delle prestazioni complessive del Server, sottoponendolo a diversi tipi di carico.
+\\
+\\
+In questa analisi è stato scelto di valutare le prestazioni in media del server, considerando solo richieste di tipo random (tipo = dimensione pagina, nel nostro esempio). 
+\subsection{Server Setup}
+Descrizione configurazione VM - non la so.
+\\
+Per creare un scenario reale, sul Server sono state caricate 5 pagine in formato testuale, di diversa dimensione:
+\begin{itemize}
+	\item \textbf{Small}, 50K
+	\item \textbf{Small-Medium}, 100K
+	\item \textbf{Medium}, 300K
+	\item \textbf{Medium-Large}, 500K
+	\item \textbf{Large}, 1M
+\end{itemize}
+Questi sono i file oggetto delle richieste realizzate da ipotetici client.
+\subsection{Clients - JMeter Setup}
+Innanzitutto è stato settato, nel \textit{ThreadGroup}, il numero di thread che JMeter usa per realizzare i test. Questa quantità rappresenta il numero di utenti "virtuali" che visitano il nostro server. Nel nostro esperimento sono stati previsti \textbf{50 threads}, un valore in linea con i suoi scopi (visto che il sito fa un po'schifo non è che può avere tantissimi utenti). In più, prevedendo dei test di durata pari a \textit{5 min}, sono stati impostati:
+\begin{itemize}
+	\item il \textbf{ramp-up period} - numero di secondi entro il quale deve essere attivato l'ultimo thread - a \textit{300 s}.
+	\item il \textbf{thread lifetime} - durata massima di ogni thread - a \textit{300 s}.
+	\item il \textbf{loop count} - numero di volte in cui un singolo thread viene attivato - a \textit{carico/50}.
+\end{itemize}     
+Al ThreadGroup sono stati aggiunti 5 \textit{HTTP Request Sampler}, uno per tipologia di richiesta da realizzare e nei quali sono stati specificati i path delle rispettive risorse sul server. Ad essi è stato integrato un \textit{Random Controller}, grazie al quale, quando un thread viene attivato, effettua solo una tra le cinque tipologie di richieste, selezionata in maniera randomica. Ancora una volta, aggiungendo variabilità alle nostre richieste, è stato possibile simulare una situazione realistica e, soprattutto, non predicibile.
+\\
+Attraverso il \textit{Constant Throughput Timer} è stato possibile impostare il carico da sottoporre al sistema, in termini di numero di richieste al minuto. Infine, il listener \textit{Simple Data Writer}, ci ha permesso di collezionare in un file, quei parametri di alto livello che sono d'interesse ai fini dell'esperimento.
+
+\section{Esecuzione Capacity Test}
+- specificare carico
+- specificare come calcolare throughput
+- differenza tra elapsed e latency e quale scegliamo come response time
+- grafici e dati
