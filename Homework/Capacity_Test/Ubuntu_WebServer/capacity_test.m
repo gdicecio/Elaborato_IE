@@ -37,9 +37,27 @@ for i = workloads
 end
 
 %% Plot dei risultati
-plot(workloads, througputs);
 figure;
-plot(workloads, resp_times);
+scatter(workloads, througputs);
 grid;
+xlabel("Load [richieste/min]");
+ylabel("Througputs [richieste\_soddisfatte/s]");
+
+
 figure;
-plot(workloads, througputs./resp_times);
+scatter(workloads, resp_times);
+grid;
+xlabel("Load [richieste/min]");
+ylabel("Response Time [ms]");
+
+
+figure;
+power = througputs./(resp_times/1000);
+scatter(workloads, power);
+xlabel("Load [richieste/min]");
+ylabel("Power [richieste\_soddisfatte/s^2]");
+grid;
+
+
+power_max = max(power);
+KNEE_CAPACITY = througputs(find(power == power_max));
