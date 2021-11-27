@@ -33,25 +33,45 @@ for i = workloads
     
     througputs(k) = mean(thr);
     resp_times(k) = mean(mean_resp_t);
+    
+%     check deviazione_std    
+%     dev_std_1(k) = std(thr);
+%     dev_std_2(k) = std(mean_resp_t);
+%     
+%     if dev_std_1(k) > 0.5     
+%         througputs(k) = median(thr);
+%     end
+%     
+%     if dev_std_2(k) > 0.5
+%         resp_times(k) = median(mean_resp_t);
+%     end
     k = k+1; 
 end
 
 %% Plot dei risultati
+figure;
 scatter(workloads, througputs);
 grid;
 xlabel("Load [richieste/min]");
-ylabel("Througputs [richieste_soddisfatte/s]");
+ylabel("Througputs [richieste\_soddisfatte/s]");
+
+
 figure;
 scatter(workloads, resp_times);
 grid;
 xlabel("Load [richieste/min]");
 ylabel("Response Time [ms]");
+
+
 figure;
-power = througputs./(resp_times;
+power = througputs./(resp_times/1000);
 scatter(workloads, power);
 xlabel("Load [richieste/min]");
-ylabel("Power [ms]");
+ylabel("Power [richieste\_soddisfatte/s^2]");
 grid;
-xlabel("Load [richieste/min]");
+
+
 power_max = max(power);
 KNEE_CAPACITY = througputs(find(power == power_max));
+throughput1(1:9) = througputs(1:9);
+USABLE_CAPACITY = max(throughputs);

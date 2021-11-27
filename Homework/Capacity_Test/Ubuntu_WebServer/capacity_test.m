@@ -33,6 +33,18 @@ for i = workloads
     
     througputs(k) = mean(thr);
     resp_times(k) = mean(mean_resp_t);
+    
+%     check deviazione_std    
+%     dev_std_1(k) = std(thr);
+%     dev_std_2(k) = std(mean_resp_t);
+%     
+%     if dev_std_1(k) > 0.5     
+%         througputs(k) = median(thr);
+%     end
+%     
+%     if dev_std_2(k) > 0.5
+%         resp_times(k) = median(mean_resp_t);
+%     end
     k = k+1; 
 end
 
@@ -61,3 +73,5 @@ grid;
 
 power_max = max(power);
 KNEE_CAPACITY = througputs(find(power == power_max));
+throughput1(1:9) = througputs(1:9);
+USABLE_CAPACITY = max(throughput1);
