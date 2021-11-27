@@ -28,7 +28,6 @@ for i = workloads
         %Average response time
         elap_times = simple_data(:,2);
         mean_resp_t(j) = mean(elap_times);
-       % median_resp_t = median(elap_times);
     end
     
     througputs(k) = mean(thr);
@@ -47,6 +46,9 @@ for i = workloads
 %     end
     k = k+1; 
 end
+power = througputs./(resp_times/1000);
+power_max = max(power);
+KNEE_CAPACITY = througputs(find(power == power_max));
 
 %% Plot dei risultati
 figure;

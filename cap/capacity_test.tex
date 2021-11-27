@@ -38,42 +38,59 @@ Il sistema oggetto di studio è un \textit{Web Server Apache} installato sulla m
 Tramite la modalità \textit{Host-only Network Adapter}, configurabile nelle impostazioni della macchina virtuale, è stato possibile far comunicare la macchina guest con quella host, che lo ospita. Su quest'ultima è stata installata l'applicazione Java \textit{JMeter}, che ha permesso l'analisi delle prestazioni complessive del Server, sottoponendolo a diversi tipi di carico.
 \\
 \\
-In questa analisi è stato scelto di valutare le prestazioni in media del server, considerando solo richieste di tipo random (tipo = dimensione pagina, nel nostro esempio). 
+In questa analisi è stato scelto di valutare le prestazioni in media del server, considerando solo richieste (HTTP di tipo GET) casuali. Esse sono differenziate dalla dimensione della risorsa che chiedono al server. 
+
 \subsection{Server Setup}
-Descrizione configurazione VM - non la so.
-\\
-Per creare un scenario reale, sul Server sono state caricate 5 pagine in formato testuale, di diversa dimensione:
+Il server è stato installato su una macchina virtuale \textit{Ubuntu 2021} in esecuzione su una macchina host di uso comune. Essa è stata dotata di circa 4GB di RAM e di 2 processori (intel I5-5200u con frequenza massima di 2.70 GHz).
+\\Per creare un scenario reale, sul Server sono state caricate 5 pagine in formato testuale, di diversa dimensione:
 \begin{itemize}
-	\item \textbf{Small}, 50K
-	\item \textbf{Small-Medium}, 100K
-	\item \textbf{Medium}, 300K
-	\item \textbf{Medium-Large}, 500K
-	\item \textbf{Large}, 1M
+	\item \textbf{Small}: 50 KB
+	\item \textbf{Small-Medium}: 100 KB
+	\item \textbf{Medium}: 300 KB
+	\item \textbf{Medium-Large}: 500 KB
+	\item \textbf{Large}: 1 MB
 \end{itemize}
 Questi sono i file oggetto delle richieste realizzate da ipotetici client.
-\subsection{Clients - JMeter Setup}
-Innanzitutto è stato settato, nel \textit{ThreadGroup}, il numero di thread che JMeter usa per realizzare i test. Questa quantità rappresenta il numero di utenti "virtuali" che visitano il nostro server. Nel nostro esperimento sono stati previsti \textbf{50 threads}, un valore in linea con i suoi scopi (visto che il sito fa un po'schifo non è che può avere tantissimi utenti). In più, prevedendo dei test di durata pari a \textit{5 min}, sono stati impostati:
+
+\subsection{Clients Setup - JMeter}
+Innanzitutto è stato settato, nel \textit{ThreadGroup}, il numero di thread che JMeter usa per realizzare i test. Questa quantità rappresenta il numero di utenti "virtuali" che visitano il nostro server. Nel nostro esperimento sono stati previsti \textbf{50 threads}, un valore in linea con i suoi scopi (dato che si tratta di un banale webserver virtualizzato su una macchina host di uso comune). In più, prevedendo dei test di durata pari a \textit{5 min}, sono stati impostati:
 \begin{itemize}
-	\item il \textbf{ramp-up period} - numero di secondi entro il quale deve essere attivato l'ultimo thread - a \textit{300 s}. Ciò ci ha permesso di dilazionare l'attivazione degli utenti nei 5 minuti.
-	\item il \textbf{thread lifetime} - durata massima di ogni thread - a \textit{300 s}.
-	\item il \textbf{loop count} - numero di volte in cui un singolo thread viene attivato - a \textit{carico/50}.
-\end{itemize}     
+	\item il \textbf{Ramp-up period} - numero di secondi entro il quale deve essere attivato l'ultimo thread - a \textit{300 s}. Ciò ci ha permesso di dilazionare l'attivazione degli utenti nei 5 minuti.
+	\item il \textbf{Thread lifetime} - durata massima di ogni thread - a \textit{300 s}.
+	\item il \textbf{Loop count} - numero di volte in cui un singolo thread effettua una richiesta. Esso corrisponde al numero di richieste nell'intervallo di tempo di simulazione (in questo caso 300s) diviso il numero di threads.
+\end{itemize}
 Al ThreadGroup sono stati aggiunti 5 \textit{HTTP Request Sampler}, uno per tipologia di richiesta da realizzare e nei quali sono stati specificati i path delle rispettive risorse sul server. Ad essi è stato integrato un \textit{Random Controller}, grazie al quale, quando un thread viene attivato, effettua solo una tra le cinque tipologie di richieste, selezionata in maniera randomica. Ancora una volta, aggiungendo variabilità alle nostre richieste, è stato possibile simulare una situazione realistica e, soprattutto, non predicibile.
 \\
 Attraverso il \textit{Constant Throughput Timer} è stato possibile impostare il carico da sottoporre al sistema, in termini di numero di richieste al minuto. Infine, il listener \textit{Simple Data Writer}, ci ha permesso di collezionare in un file, quei parametri di alto livello che sono d'interesse ai fini dell'esperimento.
-
+\\L'idea è quella di simulare quindi 50 utenti, di cui ognuno effettua un numero di richieste in relazione al carico, per 5 min. \\Ciò equivale a:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/hw2/jmeter.png}
+	\caption{\textit{Configurazione delle richieste e del carico in JMeter}}
+\end{figure}
+I risultati, grazie al Simple Data Wirter, vengono salvati in formato .csv, i cui paramentri vengono raggruppati in forma tabellare.
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+	\hline
+	TimeStamp & Elapsed & Latency & ... \\
+	\hline
+	\vdots &  \vdots & \vdots & \vdots \\
+	\hline
+\end{tabular}
+\end{center}
 \section{Esecuzione Capacity Test}
 Inizialmente sono stati effettuati dei test il cui scopo era quello di far operare il Web Server "al limite". Ci si è resi conto che il massimo valore di carico entro il quale il sistema risponde adeguatamente (in quelle condizioni), è di circa \textit{6000 richieste al minuto}. 
 \\
 A partire da questo limite e ragionando sull'andamento di throughput e response time, si sono scelti i seguenti valori di carico da sottoporre al sistema:
-\begin{equation}
+\begin{equation*}
 	workloads = {100, 500, 800, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000}
-\end{equation}
+\end{equation*}
 Gli ultimi tre carichi (7000, 8000 e 9000 richieste al minuto) hanno permesso di evidenziare nei grafici il degradamento delle prestazioni del sistema.
 \\
 Per ogni valore di carico è stato calcolato il \textbf{Throughput}:
+
 \begin{equation}
-	Throughput = \frac{NumeroRichieste}{Timestamp(N) - Timestamp(1)} \frac{N}{s}
+	Throughput = \frac{NumeroRichieste}{Timestamp(N) - Timestamp(1)} \quad  \left[ \frac{N}{s} \right] 
 \end{equation}
 Il \textit{timestamp} fa parte degli high-level parameters collezionati dal Simple Data Writer, e corrisponde all'istante di tempo (in millisecondi poi convertito in secondi) in cui il client ha inoltrato una data richiesta.
 \\
@@ -84,7 +101,49 @@ Ogni misurazione (per ogni carico) è stata ripetuta \textbf{3 volte} in modo da
 \\
 \subsection{Risultati}
 I file .csv sono stati caricati in uno script Matlab tramite cui sono stati automatizzati i procedimenti descritti sopra, i parametri sono stati plottati in funzione del carico considerato.
-\\
+differenziale).
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+%% Data
+workloads = [100 500 800 1000 2000 3000 4000 5000 6000 7000 8000 9000];
+througputs = zeros(1, length(workloads));
+resp_times = zeros(1, length(workloads));
+k = 1; %Indice di riferimento per i due vettori
+
+%% Elaborazione
+for i = workloads
+	mean_resp_t = zeros(1,3);
+	thr = zeros(1,3);
+	for j = 1:3
+		path = strcat(num2str(i, '%d'),'\dati',num2str(j,'%d'),'.csv');
+		
+		%Data from Jmeter output file (csv format)
+		simple_data = readmatrix(path);
+		
+		%Calculating the number of requests
+		[N, M] = size(simple_data);
+		num_req = N; %Number of requests
+		
+		%Throughput = number_of_requests_completed / time_window_of_the_experiment
+		t_wind_mills = simple_data(num_req,1) - simple_data(1,1); %Time window (milliseconds)
+		t_wind_sec = t_wind_mills/1000; %Time window (seconds)
+		thr(j) = num_req/t_wind_sec; %Throughput
+		
+		%Average response time
+		elap_times = simple_data(:,2);
+		mean_resp_t(j) = mean(elap_times);
+	end
+
+	througputs(k) = mean(thr);
+	resp_times(k) = mean(mean_resp_t);
+end
+power = througputs./(resp_times/1000);
+power_max = max(power);
+KNEE_CAPACITY = througputs(find(power == power_max));
+\end{minted}
+Effettuando un grafico dei risultati:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{img/hw2/Throughput.png}
@@ -113,6 +172,6 @@ Per quanto riguarda il calcolo della \textit{Usable Capacity}, possiamo relazion
 \\
 Ovviamente il valore di carico a cui conviene far lavorare il nostro Web Server non è quello massimo che riesce a soddisfare (Usable Capacity). Difatti non sarebbe efficiente per due motivi:
 \begin{enumerate}
-	\item i tempi di risposta associato a tale carico sono elevati.
-	\item essendo il carico limite, basta poco per ricadere nella zona di minima efficienza. (scrivere meglio)
+	\item I tempi di risposta associato a tale carico sono elevati.
+	\item Essendo il carico limite, bastano poche richieste in più per ricadere nella zona in cui i tempi di risposta diventano estremamente elevati, rendendo inutilizzabile il server stesso. 
 \end{enumerate}
