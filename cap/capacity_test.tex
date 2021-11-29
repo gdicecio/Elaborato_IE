@@ -136,9 +136,20 @@ for i = workloads
 		mean_resp_t(j) = mean(elap_times);
 	end
 
-	througputs(k) = mean(thr);
-	resp_times(k) = mean(mean_resp_t);
+	check deviazione_std    
+	COV_thr(k) = std(thr)/mean(thr);
+	COV_resp(k) = std(mean_resp_t)/mean(mean_resp_t);
+	     
+	if COV_thr(k) > 0.5     
+		througputs(k) = median(thr);
+	end
+
+	if COV_resp(k) > 0.5
+		resp_times(k) = median(mean_resp_t);
+	end
+
 end
+
 power = througputs./(resp_times/1000);
 power_max = max(power);
 KNEE_CAPACITY = througputs(find(power == power_max));
