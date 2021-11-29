@@ -1,0 +1,2423 @@
+timeStamp,elapsed,label,threadName,dataType,success,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1638206652581,16,Small ,Text_Requires 1-1,text,true,66010,140,1,1,13,0,8
+1638206652725,26,Medium,Text_Requires 1-1,text,true,581702,141,1,1,4,0,0
+1638206652875,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206653025,23,Medium,Text_Requires 1-1,text,true,581702,141,1,1,5,0,0
+1638206653175,21,Medium,Text_Requires 1-1,text,true,581702,141,1,1,3,0,0
+1638206653325,78,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206653475,90,Large,Text_Requires 1-1,text,true,1253904,140,1,1,7,0,0
+1638206653625,70,Large,Text_Requires 1-1,text,true,1253904,140,1,1,5,0,0
+1638206653775,57,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206653925,5,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206654075,3,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206654225,21,Medium,Text_Requires 1-1,text,true,581702,141,1,1,5,0,0
+1638206654375,38,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206654525,38,Large,Text_Requires 1-1,text,true,1253904,140,1,1,7,0,0
+1638206654675,65,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206654825,40,Medium,Text_Requires 1-1,text,true,581702,141,1,1,7,0,0
+1638206654975,11,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206655125,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206655276,32,Large,Text_Requires 1-1,text,true,1253904,140,1,1,1,0,0
+1638206655426,48,Medium,Text_Requires 1-1,text,true,581702,141,1,1,1,0,0
+1638206655575,15,Medium,Text_Requires 1-1,text,true,581702,141,1,1,4,0,0
+1638206655725,45,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206655875,6,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206656025,42,Large,Text_Requires 1-1,text,true,1253904,140,1,1,6,0,0
+1638206656175,2,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206656326,2,Small ,Text_Requires 1-1,text,true,66009,140,1,1,1,0,0
+1638206656475,31,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206656625,3,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206656776,37,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206656925,60,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206657076,19,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206657226,52,Large,Text_Requires 1-1,text,true,1253904,140,1,1,1,0,0
+1638206657376,30,Medium,Text_Requires 1-1,text,true,581702,141,1,1,7,0,0
+1638206657525,61,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206657675,3,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206657826,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206657975,23,Medium,Text_Requires 1-1,text,true,581702,141,1,1,6,0,0
+1638206658135,39,Large,Text_Requires 1-1,text,true,1253904,140,1,1,6,0,0
+1638206658277,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206658426,20,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206658581,44,Medium,Text_Requires 1-1,text,true,581702,141,1,1,3,0,0
+1638206658726,44,Large,Text_Requires 1-1,text,true,1253904,140,1,1,1,0,0
+1638206658880,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206659026,37,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206659186,75,Large,Text_Requires 1-1,text,true,1253904,140,1,1,4,0,0
+1638206659327,95,Large,Text_Requires 1-1,text,true,1253904,140,1,1,1,0,0
+1638206659477,69,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206659627,46,Small ,Text_Requires 1-1,text,true,66009,140,1,1,44,0,0
+1638206659777,203,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206659981,42,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206660132,2,Small ,Text_Requires 1-1,text,true,66009,140,1,1,1,0,0
+1638206660283,340,Large,Text_Requires 1-1,text,true,1253904,140,1,1,222,0,0
+1638206660624,31,Medium,Text_Requires 1-1,text,true,581702,141,1,1,6,0,0
+1638206660774,77,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206660924,98,Large,Text_Requires 1-1,text,true,1253904,140,1,1,10,0,0
+1638206661074,53,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206661224,85,Large,Text_Requires 1-1,text,true,1253904,140,1,1,8,0,0
+1638206661374,18,Medium,Text_Requires 1-1,text,true,581702,141,1,1,2,0,0
+1638206661524,105,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206661675,59,Medium,Text_Requires 1-1,text,true,581702,141,1,1,10,0,0
+1638206661825,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206661974,5,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206662123,3,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206662274,40,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206662425,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206662574,3,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206662724,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206662872,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,2,0,0
+1638206663023,5,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206663172,36,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206663322,10,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206663473,20,Medium,Text_Requires 1-1,text,true,581702,141,1,1,1,0,0
+1638206663623,65,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206663773,62,Large,Text_Requires 1-1,text,true,1253904,140,1,1,2,0,0
+1638206663923,90,Large,Text_Requires 1-1,text,true,1253904,140,1,1,3,0,0
+1638206664073,62,Large,Text_Requires 1-1,text,true,1253904,140,1,1,5,0,0
+1638206664224,21,Medium,Text_Requires 1-1,text,true,581702,141,1,1,4,0,0
+1638206664374,19,Medium,Text_Requires 1-1,text,true,581702,141,1,1,1,0,0
+1638206664524,4,Small ,Text_Requires 1-1,text,true,66009,140,1,1,3,0,0
+1638206664571,6,Small ,Text_Requires 1-2,text,true,66010,140,2,2,5,0,2
+1638206664673,5,Small ,Text_Requires 1-1,text,true,66009,140,2,2,2,0,0
+1638206664870,4,Small ,Text_Requires 1-2,text,true,66009,140,2,2,3,0,0
+1638206664973,4,Small ,Text_Requires 1-1,text,true,66009,140,2,2,3,0,0
+1638206665170,22,Medium,Text_Requires 1-2,text,true,581702,141,2,2,2,0,0
+1638206665274,4,Small ,Text_Requires 1-1,text,true,66009,140,2,2,2,0,0
+1638206665470,38,Large,Text_Requires 1-2,text,true,1253904,140,2,2,1,0,0
+1638206665573,19,Small ,Text_Requires 1-1,text,true,66009,140,2,2,6,0,0
+1638206665771,5,Small ,Text_Requires 1-2,text,true,66009,140,2,2,2,0,0
+1638206665873,39,Large,Text_Requires 1-1,text,true,1253904,140,2,2,2,0,0
+1638206666070,34,Medium,Text_Requires 1-2,text,true,581702,141,2,2,4,0,0
+1638206666173,123,Large,Text_Requires 1-1,text,true,1253904,140,2,2,2,0,0
+1638206666370,168,Large,Text_Requires 1-2,text,true,1253904,140,2,2,3,0,0
+1638206666472,296,Large,Text_Requires 1-1,text,true,1253904,140,2,2,4,0,0
+1638206666774,424,Large,Text_Requires 1-1,text,true,1253904,140,2,2,8,0,0
+1638206667198,5,Small ,Text_Requires 1-1,text,true,66009,140,2,2,4,0,0
+1638206666670,571,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206667242,26,Medium,Text_Requires 1-2,text,true,581702,141,2,2,3,0,0
+1638206667499,19,Medium,Text_Requires 1-1,text,true,581702,141,2,2,1,0,0
+1638206667542,2,Small ,Text_Requires 1-2,text,true,66009,140,2,2,2,0,0
+1638206667798,16,Medium,Text_Requires 1-1,text,true,581702,141,2,2,2,0,0
+1638206667842,17,Medium,Text_Requires 1-2,text,true,581702,141,2,2,1,0,0
+1638206668098,28,Medium,Text_Requires 1-1,text,true,581702,141,2,2,2,0,0
+1638206668142,149,Large,Text_Requires 1-2,text,true,1253904,140,2,2,1,0,0
+1638206668398,20,Medium,Text_Requires 1-1,text,true,581701,141,2,2,2,0,0
+1638206668443,28,Medium,Text_Requires 1-2,text,true,581702,141,2,2,2,0,0
+1638206668698,30,Medium,Text_Requires 1-1,text,true,581701,141,2,2,2,0,0
+1638206668742,43,Medium,Text_Requires 1-2,text,true,581702,141,2,2,11,0,0
+1638206668998,36,Large,Text_Requires 1-1,text,true,1253903,140,2,2,2,0,0
+1638206669041,21,Medium,Text_Requires 1-2,text,true,581702,141,2,2,1,0,0
+1638206669298,15,Medium,Text_Requires 1-1,text,true,581701,141,2,2,1,0,0
+1638206669342,32,Medium,Text_Requires 1-2,text,true,581702,141,2,2,2,0,0
+1638206669598,4,Small ,Text_Requires 1-1,text,true,66008,140,2,2,2,0,0
+1638206669642,37,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206669899,39,Large,Text_Requires 1-1,text,true,1253903,140,2,2,2,0,0
+1638206669944,6,Small ,Text_Requires 1-2,text,true,66009,140,2,2,2,0,0
+1638206670198,34,Large,Text_Requires 1-1,text,true,1253903,140,2,2,2,0,0
+1638206670242,17,Medium,Text_Requires 1-2,text,true,581702,141,2,2,2,0,0
+1638206670498,4,Small ,Text_Requires 1-1,text,true,66008,140,2,2,1,0,0
+1638206670542,20,Medium,Text_Requires 1-2,text,true,581702,141,2,2,2,0,0
+1638206670798,36,Large,Text_Requires 1-1,text,true,1253903,140,2,2,2,0,0
+1638206670842,20,Medium,Text_Requires 1-2,text,true,581702,141,2,2,4,0,0
+1638206671097,3,Small ,Text_Requires 1-1,text,true,65973,140,2,2,2,0,0
+1638206671142,47,Medium,Text_Requires 1-2,text,true,581702,141,2,2,1,0,0
+1638206671398,4,Small ,Text_Requires 1-1,text,true,66010,140,2,2,3,0,1
+1638206671442,36,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206671699,39,Large,Text_Requires 1-1,text,true,1253904,140,2,2,6,0,0
+1638206671743,84,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206671998,26,Medium,Text_Requires 1-1,text,true,581702,141,2,2,2,0,0
+1638206672042,56,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206672299,50,Large,Text_Requires 1-1,text,true,1253904,140,2,2,2,0,0
+1638206672342,63,Large,Text_Requires 1-2,text,true,1253904,140,2,2,7,0,0
+1638206672643,32,Medium,Text_Requires 1-2,text,true,581702,141,2,2,11,0,0
+1638206672598,95,Medium,Text_Requires 1-1,text,true,581702,141,2,2,2,0,0
+1638206672897,3,Small ,Text_Requires 1-1,text,true,66009,140,2,2,2,0,0
+1638206672942,5,Small ,Text_Requires 1-2,text,true,66009,140,2,2,2,0,0
+1638206673198,17,Medium,Text_Requires 1-1,text,true,581702,141,2,2,3,0,0
+1638206673242,43,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206673498,17,Medium,Text_Requires 1-1,text,true,581702,141,2,2,1,0,0
+1638206673543,4,Small ,Text_Requires 1-2,text,true,66009,140,2,2,1,0,0
+1638206673798,15,Medium,Text_Requires 1-1,text,true,581702,141,2,2,1,0,0
+1638206673842,51,Large,Text_Requires 1-2,text,true,1253904,140,2,2,1,0,0
+1638206674098,2,Small ,Text_Requires 1-1,text,true,66009,140,2,2,1,0,0
+1638206674143,27,Medium,Text_Requires 1-2,text,true,581702,141,2,2,4,0,0
+1638206674398,49,Large,Text_Requires 1-1,text,true,1253904,140,2,2,2,0,0
+1638206674442,25,Medium,Text_Requires 1-2,text,true,581702,141,2,2,8,0,0
+1638206674698,5,Small ,Text_Requires 1-1,text,true,66009,140,2,2,2,0,0
+1638206674743,4,Small ,Text_Requires 1-2,text,true,66009,140,2,2,1,0,0
+1638206674999,26,Medium,Text_Requires 1-1,text,true,581702,141,2,2,1,0,0
+1638206675043,18,Medium,Text_Requires 1-2,text,true,581702,141,2,2,1,0,0
+1638206675298,5,Small ,Text_Requires 1-1,text,true,66009,140,2,2,2,0,0
+1638206675341,34,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206675598,26,Medium,Text_Requires 1-1,text,true,581702,141,2,2,1,0,0
+1638206675642,53,Large,Text_Requires 1-2,text,true,1253904,140,2,2,2,0,0
+1638206675899,38,Large,Text_Requires 1-1,text,true,1253904,140,2,2,1,0,0
+1638206675942,36,Small ,Text_Requires 1-2,text,true,66009,140,2,2,2,0,0
+1638206676197,5,Small ,Text_Requires 1-1,text,true,66009,140,2,2,2,0,0
+1638206676242,18,Medium,Text_Requires 1-2,text,true,581702,141,2,2,3,0,0
+1638206676498,2,Small ,Text_Requires 1-1,text,true,66009,140,2,2,1,0,0
+1638206676542,7,Small ,Text_Requires 1-2,text,true,66009,140,2,2,1,0,0
+1638206676569,42,Large,Text_Requires 1-3,text,true,1253905,140,3,3,4,0,2
+1638206676800,3,Small ,Text_Requires 1-1,text,true,66009,140,3,3,2,0,0
+1638206676842,36,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206677017,16,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206677248,44,Large,Text_Requires 1-1,text,true,1253904,140,3,3,2,0,0
+1638206677293,7,Small ,Text_Requires 1-2,text,true,66009,140,3,3,2,0,0
+1638206677467,18,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206677698,48,Large,Text_Requires 1-1,text,true,1253904,140,3,3,4,0,0
+1638206677743,31,Medium,Text_Requires 1-2,text,true,581702,141,3,3,4,0,0
+1638206677917,8,Small ,Text_Requires 1-3,text,true,66009,140,3,3,2,0,0
+1638206678148,36,Large,Text_Requires 1-1,text,true,1253904,140,3,3,2,0,0
+1638206678192,7,Small ,Text_Requires 1-2,text,true,66009,140,3,3,1,0,0
+1638206678367,21,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206678598,4,Small ,Text_Requires 1-1,text,true,66009,140,3,3,3,0,0
+1638206678642,40,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206678817,149,Large,Text_Requires 1-3,text,true,1253904,140,3,3,2,0,0
+1638206679048,5,Small ,Text_Requires 1-1,text,true,66009,140,3,3,3,0,0
+1638206679092,4,Small ,Text_Requires 1-2,text,true,66009,140,3,3,1,0,0
+1638206679267,39,Large,Text_Requires 1-3,text,true,1253904,140,3,3,1,0,0
+1638206679498,23,Medium,Text_Requires 1-1,text,true,581702,141,3,3,2,0,0
+1638206679544,48,Large,Text_Requires 1-2,text,true,1253904,140,3,3,1,0,0
+1638206679721,10,Small ,Text_Requires 1-3,text,true,66009,140,3,3,5,0,0
+1638206679948,5,Small ,Text_Requires 1-1,text,true,66009,140,3,3,1,0,0
+1638206679992,3,Small ,Text_Requires 1-2,text,true,66009,140,3,3,1,0,0
+1638206680167,36,Large,Text_Requires 1-3,text,true,1253904,140,3,3,2,0,0
+1638206680398,5,Small ,Text_Requires 1-1,text,true,66009,140,3,3,2,0,0
+1638206680442,19,Medium,Text_Requires 1-2,text,true,581702,141,3,3,1,0,0
+1638206680617,20,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206680848,4,Small ,Text_Requires 1-1,text,true,66009,140,3,3,2,0,0
+1638206680892,5,Small ,Text_Requires 1-2,text,true,66009,140,3,3,1,0,0
+1638206681068,5,Small ,Text_Requires 1-3,text,true,66009,140,3,3,1,0,0
+1638206681297,36,Large,Text_Requires 1-1,text,true,1253904,140,3,3,2,0,0
+1638206681342,41,Large,Text_Requires 1-2,text,true,1253904,140,3,3,1,0,0
+1638206681517,24,Small ,Text_Requires 1-3,text,true,66009,140,3,3,8,0,0
+1638206681792,14,Medium,Text_Requires 1-2,text,true,581702,141,3,3,1,0,0
+1638206681748,74,Large,Text_Requires 1-1,text,true,1253904,140,3,3,1,0,0
+1638206681967,42,Large,Text_Requires 1-3,text,true,1253904,140,3,3,2,0,0
+1638206682198,17,Medium,Text_Requires 1-1,text,true,581702,141,3,3,2,0,0
+1638206682242,55,Large,Text_Requires 1-2,text,true,1253904,140,3,3,3,0,0
+1638206682417,28,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206682648,20,Medium,Text_Requires 1-1,text,true,581702,141,3,3,2,0,0
+1638206682692,20,Medium,Text_Requires 1-2,text,true,581702,141,3,3,2,0,0
+1638206682868,56,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206683100,3,Small ,Text_Requires 1-1,text,true,66009,140,3,3,1,0,0
+1638206683143,3,Small ,Text_Requires 1-2,text,true,66009,140,3,3,1,0,0
+1638206683318,37,Large,Text_Requires 1-3,text,true,1253904,140,3,3,1,0,0
+1638206683549,6,Small ,Text_Requires 1-1,text,true,66009,140,3,3,4,0,0
+1638206683593,2,Small ,Text_Requires 1-2,text,true,66009,140,3,3,2,0,0
+1638206683768,20,Medium,Text_Requires 1-3,text,true,581702,141,3,3,3,0,0
+1638206683999,32,Large,Text_Requires 1-1,text,true,1253904,140,3,3,2,0,0
+1638206684042,16,Medium,Text_Requires 1-2,text,true,581702,141,3,3,2,0,0
+1638206684218,7,Small ,Text_Requires 1-3,text,true,66009,140,3,3,3,0,0
+1638206684449,48,Large,Text_Requires 1-1,text,true,1253904,140,3,3,2,0,0
+1638206684492,70,Large,Text_Requires 1-2,text,true,1253904,140,3,3,7,0,0
+1638206684668,4,Small ,Text_Requires 1-3,text,true,66009,140,3,3,2,0,0
+1638206684899,25,Medium,Text_Requires 1-1,text,true,581702,141,3,3,1,0,0
+1638206684943,26,Medium,Text_Requires 1-2,text,true,581702,141,3,3,1,0,0
+1638206685118,23,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206685349,47,Large,Text_Requires 1-1,text,true,1253904,140,3,3,1,0,0
+1638206685393,35,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206685568,92,Large,Text_Requires 1-3,text,true,1253904,140,3,3,8,0,0
+1638206685799,18,Medium,Text_Requires 1-1,text,true,581702,141,3,3,2,0,0
+1638206685842,46,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206686018,62,Medium,Text_Requires 1-3,text,true,581702,141,3,3,1,0,0
+1638206686248,21,Medium,Text_Requires 1-1,text,true,581702,141,3,3,1,0,0
+1638206686293,52,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206686468,8,Small ,Text_Requires 1-3,text,true,66009,140,3,3,6,0,0
+1638206686699,59,Large,Text_Requires 1-1,text,true,1253904,140,3,3,4,0,0
+1638206686743,54,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206686917,22,Medium,Text_Requires 1-3,text,true,581702,141,3,3,2,0,0
+1638206687149,3,Small ,Text_Requires 1-1,text,true,66009,140,3,3,2,0,0
+1638206687193,35,Large,Text_Requires 1-2,text,true,1253904,140,3,3,2,0,0
+1638206687368,5,Small ,Text_Requires 1-3,text,true,66009,140,3,3,4,0,0
+1638206687599,72,Large,Text_Requires 1-1,text,true,1253904,140,3,3,4,0,0
+1638206687644,66,Medium,Text_Requires 1-2,text,true,581702,141,3,3,3,0,0
+1638206687818,3,Small ,Text_Requires 1-3,text,true,66009,140,3,3,2,0,0
+1638206688049,7,Small ,Text_Requires 1-1,text,true,66009,140,3,3,1,0,0
+1638206688093,19,Medium,Text_Requires 1-2,text,true,581702,141,3,3,1,0,0
+1638206688267,42,Large,Text_Requires 1-3,text,true,1253904,140,3,3,6,0,0
+1638206688499,7,Small ,Text_Requires 1-1,text,true,66009,140,3,3,2,0,0
+1638206688542,5,Small ,Text_Requires 1-2,text,true,66009,140,3,3,2,0,0
+1638206688574,30,Medium,Text_Requires 1-4,text,true,581703,141,4,4,5,0,1
+1638206688718,47,Medium,Text_Requires 1-3,text,true,581702,141,4,4,5,0,0
+1638206688949,31,Medium,Text_Requires 1-1,text,true,581702,141,4,4,1,0,0
+1638206688992,23,Medium,Text_Requires 1-2,text,true,581702,141,4,4,2,0,0
+1638206689173,40,Large,Text_Requires 1-4,text,true,1253904,140,4,4,3,0,0
+1638206689318,37,Medium,Text_Requires 1-3,text,true,581702,141,4,4,3,0,0
+1638206689550,43,Large,Text_Requires 1-1,text,true,1253904,140,4,4,1,0,0
+1638206689593,11,Small ,Text_Requires 1-2,text,true,66009,140,4,4,2,0,0
+1638206689772,21,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206689918,33,Large,Text_Requires 1-3,text,true,1253904,140,4,4,2,0,0
+1638206690149,17,Medium,Text_Requires 1-1,text,true,581702,141,4,4,1,0,0
+1638206690194,28,Medium,Text_Requires 1-2,text,true,581702,141,4,4,1,0,0
+1638206690373,41,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206690519,34,Medium,Text_Requires 1-3,text,true,581702,141,4,4,2,0,0
+1638206690749,4,Small ,Text_Requires 1-1,text,true,66009,140,4,4,1,0,0
+1638206690793,3,Small ,Text_Requires 1-2,text,true,66009,140,4,4,1,0,0
+1638206690972,21,Medium,Text_Requires 1-4,text,true,581702,141,4,4,1,0,0
+1638206691120,7,Small ,Text_Requires 1-3,text,true,66009,140,4,4,3,0,0
+1638206691350,38,Large,Text_Requires 1-1,text,true,1253904,140,4,4,2,0,0
+1638206691394,31,Large,Text_Requires 1-2,text,true,1253904,140,4,4,1,0,0
+1638206691572,45,Large,Text_Requires 1-4,text,true,1253904,140,4,4,3,0,0
+1638206691718,40,Large,Text_Requires 1-3,text,true,1253904,140,4,4,2,0,0
+1638206691949,29,Medium,Text_Requires 1-1,text,true,581702,141,4,4,2,0,0
+1638206691993,4,Small ,Text_Requires 1-2,text,true,66009,140,4,4,2,0,0
+1638206692172,5,Small ,Text_Requires 1-4,text,true,66009,140,4,4,2,0,0
+1638206692318,50,Large,Text_Requires 1-3,text,true,1253904,140,4,4,3,0,0
+1638206692549,23,Medium,Text_Requires 1-1,text,true,581702,141,4,4,3,0,0
+1638206692593,37,Large,Text_Requires 1-2,text,true,1253904,140,4,4,1,0,0
+1638206692772,24,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206692917,4,Small ,Text_Requires 1-3,text,true,66009,140,4,4,2,0,0
+1638206693147,39,Large,Text_Requires 1-1,text,true,1253904,140,4,4,2,0,0
+1638206693192,11,Small ,Text_Requires 1-2,text,true,66009,140,4,4,3,0,0
+1638206693372,42,Large,Text_Requires 1-4,text,true,1253904,140,4,4,2,0,0
+1638206693518,26,Medium,Text_Requires 1-3,text,true,581702,141,4,4,2,0,0
+1638206693748,5,Small ,Text_Requires 1-1,text,true,66009,140,4,4,1,0,0
+1638206693792,64,Large,Text_Requires 1-2,text,true,1253904,140,4,4,2,0,0
+1638206693971,4,Small ,Text_Requires 1-4,text,true,66009,140,4,4,2,0,0
+1638206694117,44,Medium,Text_Requires 1-3,text,true,581702,141,4,4,2,0,0
+1638206694348,5,Small ,Text_Requires 1-1,text,true,66009,140,4,4,1,0,0
+1638206694392,2,Small ,Text_Requires 1-2,text,true,66009,140,4,4,1,0,0
+1638206694571,42,Large,Text_Requires 1-4,text,true,1253904,140,4,4,2,0,0
+1638206694717,47,Large,Text_Requires 1-3,text,true,1253904,140,4,4,2,0,0
+1638206694949,38,Medium,Text_Requires 1-1,text,true,581702,141,4,4,6,0,0
+1638206694992,4,Small ,Text_Requires 1-2,text,true,66009,140,4,4,3,0,0
+1638206695171,4,Small ,Text_Requires 1-4,text,true,66009,140,4,4,2,0,0
+1638206695318,5,Small ,Text_Requires 1-3,text,true,66009,140,4,4,2,0,0
+1638206695548,24,Medium,Text_Requires 1-1,text,true,581702,141,4,4,2,0,0
+1638206695591,19,Medium,Text_Requires 1-2,text,true,581702,141,4,4,2,0,0
+1638206695771,4,Small ,Text_Requires 1-4,text,true,66009,140,4,4,2,0,0
+1638206695917,31,Large,Text_Requires 1-3,text,true,1253904,140,4,4,1,0,0
+1638206696149,28,Medium,Text_Requires 1-1,text,true,581702,141,4,4,2,0,0
+1638206696191,4,Small ,Text_Requires 1-2,text,true,66009,140,4,4,3,0,0
+1638206696370,24,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206696518,5,Small ,Text_Requires 1-3,text,true,66009,140,4,4,3,0,0
+1638206696748,36,Large,Text_Requires 1-1,text,true,1253904,140,4,4,3,0,0
+1638206696792,3,Small ,Text_Requires 1-2,text,true,66009,140,4,4,1,0,0
+1638206696971,4,Small ,Text_Requires 1-4,text,true,66009,140,4,4,2,0,0
+1638206697117,5,Small ,Text_Requires 1-3,text,true,66009,140,4,4,2,0,0
+1638206697349,8,Small ,Text_Requires 1-1,text,true,66009,140,4,4,2,0,0
+1638206697391,4,Small ,Text_Requires 1-2,text,true,66009,140,4,4,2,0,0
+1638206697570,5,Small ,Text_Requires 1-4,text,true,66009,140,4,4,2,0,0
+1638206697717,29,Large,Text_Requires 1-3,text,true,1253904,140,4,4,2,0,0
+1638206697949,46,Large,Text_Requires 1-1,text,true,1253904,140,4,4,2,0,0
+1638206697993,45,Large,Text_Requires 1-2,text,true,1253904,140,4,4,3,0,0
+1638206698173,21,Medium,Text_Requires 1-4,text,true,581702,141,4,4,3,0,0
+1638206698320,6,Small ,Text_Requires 1-3,text,true,66009,140,4,4,1,0,0
+1638206698549,4,Small ,Text_Requires 1-1,text,true,66009,140,4,4,2,0,0
+1638206698593,17,Medium,Text_Requires 1-2,text,true,581702,141,4,4,1,0,0
+1638206698772,20,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206698918,56,Large,Text_Requires 1-3,text,true,1253904,140,4,4,15,0,0
+1638206699149,5,Small ,Text_Requires 1-1,text,true,66009,140,4,4,2,0,0
+1638206699194,15,Medium,Text_Requires 1-2,text,true,581702,141,4,4,1,0,0
+1638206699371,18,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206699517,108,Large,Text_Requires 1-3,text,true,1253904,140,4,4,4,0,0
+1638206699749,43,Large,Text_Requires 1-1,text,true,1253904,140,4,4,2,0,0
+1638206699793,81,Large,Text_Requires 1-2,text,true,1253904,140,4,4,4,0,0
+1638206699973,111,Medium,Text_Requires 1-4,text,true,581702,141,4,4,2,0,0
+1638206700119,43,Medium,Text_Requires 1-3,text,true,581702,141,4,4,5,0,0
+1638206700349,6,Small ,Text_Requires 1-1,text,true,66009,140,4,4,2,0,0
+1638206700394,32,Large,Text_Requires 1-2,text,true,1253904,140,4,4,1,0,0
+1638206700572,42,Medium,Text_Requires 1-4,text,true,581702,141,5,5,5,0,0
+1638206700573,59,Medium,Text_Requires 1-5,text,true,581703,141,5,5,6,0,3
+1638206700719,27,Medium,Text_Requires 1-3,text,true,581702,141,5,5,2,0,0
+1638206700949,44,Large,Text_Requires 1-1,text,true,1253904,140,5,5,2,0,0
+1638206700993,3,Small ,Text_Requires 1-2,text,true,66009,140,5,5,2,0,0
+1638206701321,5,Small ,Text_Requires 1-5,text,true,66009,140,5,5,2,0,0
+1638206701322,35,Large,Text_Requires 1-4,text,true,1253904,140,5,5,2,0,0
+1638206701468,17,Medium,Text_Requires 1-3,text,true,581702,141,5,5,2,0,0
+1638206701699,21,Medium,Text_Requires 1-1,text,true,581702,141,5,5,1,0,0
+1638206701743,41,Large,Text_Requires 1-2,text,true,1253904,140,5,5,2,0,0
+1638206702072,59,Large,Text_Requires 1-4,text,true,1253904,140,5,5,2,0,0
+1638206702071,64,Large,Text_Requires 1-5,text,true,1253904,140,5,5,2,0,0
+1638206702218,24,Medium,Text_Requires 1-3,text,true,581702,141,5,5,2,0,0
+1638206702449,48,Large,Text_Requires 1-1,text,true,1253904,140,5,5,1,0,0
+1638206702493,22,Medium,Text_Requires 1-2,text,true,581702,141,5,5,3,0,0
+1638206702820,4,Small ,Text_Requires 1-5,text,true,66009,140,5,5,2,0,0
+1638206702822,4,Small ,Text_Requires 1-4,text,true,66009,140,5,5,2,0,0
+1638206702967,20,Medium,Text_Requires 1-3,text,true,581702,141,5,5,1,0,0
+1638206703198,37,Large,Text_Requires 1-1,text,true,1253904,140,5,5,2,0,0
+1638206703241,79,Large,Text_Requires 1-2,text,true,1253904,140,5,5,2,0,0
+1638206703571,6,Small ,Text_Requires 1-4,text,true,66009,140,5,5,3,0,0
+1638206703570,18,Medium,Text_Requires 1-5,text,true,581702,141,5,5,2,0,0
+1638206703717,46,Large,Text_Requires 1-3,text,true,1253904,140,5,5,2,0,0
+1638206703949,22,Medium,Text_Requires 1-1,text,true,581702,141,5,5,1,0,0
+1638206703992,35,Large,Text_Requires 1-2,text,true,1253903,140,5,5,1,0,0
+1638206704322,6,Small ,Text_Requires 1-4,text,true,66009,140,5,5,2,0,0
+1638206704320,19,Medium,Text_Requires 1-5,text,true,581702,141,5,5,1,0,0
+1638206704467,9,Small ,Text_Requires 1-3,text,true,66009,140,5,5,5,0,0
+1638206704698,4,Small ,Text_Requires 1-1,text,true,66009,140,5,5,2,0,0
+1638206704742,45,Large,Text_Requires 1-2,text,true,1253903,140,5,5,2,0,0
+1638206705070,31,Medium,Text_Requires 1-5,text,true,581702,141,5,5,2,0,0
+1638206705071,64,Large,Text_Requires 1-4,text,true,1253904,140,5,5,2,0,0
+1638206705222,18,Medium,Text_Requires 1-3,text,true,581702,141,5,5,2,0,0
+1638206705448,39,Large,Text_Requires 1-1,text,true,1253904,140,5,5,2,0,0
+1638206705492,68,Large,Text_Requires 1-2,text,true,1253903,140,5,5,2,0,0
+1638206705821,34,Medium,Text_Requires 1-4,text,true,581702,141,5,5,2,0,0
+1638206705820,35,Medium,Text_Requires 1-5,text,true,581702,141,5,5,2,0,0
+1638206705966,107,Medium,Text_Requires 1-3,text,true,581702,141,5,5,2,0,0
+1638206706197,24,Medium,Text_Requires 1-1,text,true,581702,141,5,5,4,0,0
+1638206706242,4,Small ,Text_Requires 1-2,text,true,66008,140,5,5,2,0,0
+1638206706569,71,Large,Text_Requires 1-5,text,true,1253904,140,5,5,2,0,0
+1638206706571,72,Large,Text_Requires 1-4,text,true,1253904,140,5,5,2,0,0
+1638206706718,26,Medium,Text_Requires 1-3,text,true,581702,141,5,5,6,0,0
+1638206706949,4,Small ,Text_Requires 1-1,text,true,66009,140,5,5,2,0,0
+1638206706992,23,Medium,Text_Requires 1-2,text,true,581701,141,5,5,1,0,0
+1638206707320,5,Small ,Text_Requires 1-5,text,true,66009,140,5,5,2,0,0
+1638206707321,17,Medium,Text_Requires 1-4,text,true,581702,141,5,5,2,0,0
+1638206707467,15,Medium,Text_Requires 1-3,text,true,581702,141,5,5,1,0,0
+1638206707698,25,Medium,Text_Requires 1-1,text,true,581702,141,5,5,3,0,0
+1638206707742,3,Small ,Text_Requires 1-2,text,true,66008,140,5,5,1,0,0
+1638206708070,3,Small ,Text_Requires 1-5,text,true,66009,140,5,5,1,0,0
+1638206708071,4,Small ,Text_Requires 1-4,text,true,66009,140,5,5,3,0,0
+1638206708217,5,Small ,Text_Requires 1-3,text,true,66009,140,5,5,4,0,0
+1638206708448,17,Medium,Text_Requires 1-1,text,true,581702,141,5,5,1,0,0
+1638206708492,3,Small ,Text_Requires 1-2,text,true,66008,140,5,5,2,0,0
+1638206708820,7,Small ,Text_Requires 1-5,text,true,66009,140,5,5,4,0,0
+1638206708821,43,Large,Text_Requires 1-4,text,true,1253904,140,5,5,2,0,0
+1638206708966,36,Medium,Text_Requires 1-3,text,true,581702,141,5,5,5,0,0
+1638206709198,52,Large,Text_Requires 1-1,text,true,1253904,140,5,5,2,0,0
+1638206709242,22,Medium,Text_Requires 1-2,text,true,581701,141,5,5,2,0,0
+1638206709570,8,Small ,Text_Requires 1-4,text,true,66009,140,5,5,2,0,0
+1638206709569,38,Large,Text_Requires 1-5,text,true,1253904,140,5,5,3,0,0
+1638206709718,49,Large,Text_Requires 1-3,text,true,1253904,140,5,5,2,0,0
+1638206709948,11,Small ,Text_Requires 1-1,text,true,66009,140,5,5,2,0,0
+1638206709992,5,Small ,Text_Requires 1-2,text,true,66008,140,5,5,2,0,0
+1638206710320,29,Medium,Text_Requires 1-5,text,true,581702,141,5,5,2,0,0
+1638206710320,36,Medium,Text_Requires 1-4,text,true,581702,141,5,5,6,0,0
+1638206710467,28,Medium,Text_Requires 1-3,text,true,581702,141,5,5,1,0,0
+1638206710699,3,Small ,Text_Requires 1-1,text,true,66009,140,5,5,2,0,0
+1638206710742,35,Large,Text_Requires 1-2,text,true,1253868,140,5,5,2,0,0
+1638206711070,5,Small ,Text_Requires 1-5,text,true,66009,140,5,5,1,0,0
+1638206711071,5,Small ,Text_Requires 1-4,text,true,66009,140,5,5,1,0,0
+1638206711217,28,Medium,Text_Requires 1-3,text,true,581702,141,5,5,2,0,0
+1638206711448,37,Large,Text_Requires 1-1,text,true,1253904,140,5,5,2,0,0
+1638206711492,67,Large,Text_Requires 1-2,text,true,1253905,140,5,5,5,0,2
+1638206711821,4,Small ,Text_Requires 1-4,text,true,66009,140,5,5,1,0,0
+1638206711820,40,Large,Text_Requires 1-5,text,true,1253904,140,5,5,2,0,0
+1638206711967,48,Large,Text_Requires 1-3,text,true,1253904,140,5,5,8,0,0
+1638206712198,5,Small ,Text_Requires 1-1,text,true,66009,140,5,5,3,0,0
+1638206712242,4,Small ,Text_Requires 1-2,text,true,66009,140,5,5,1,0,0
+1638206712571,4,Small ,Text_Requires 1-4,text,true,66009,140,6,6,1,0,0
+1638206712570,50,Medium,Text_Requires 1-5,text,true,581702,141,6,6,3,0,0
+1638206712568,71,Large,Text_Requires 1-6,text,true,1253905,140,6,6,4,0,2
+1638206712722,60,Small ,Text_Requires 1-3,text,true,66009,140,6,6,16,0,0
+1638206712950,38,Large,Text_Requires 1-1,text,true,1253904,140,6,6,1,0,0
+1638206712994,43,Large,Text_Requires 1-2,text,true,1253904,140,6,6,1,0,0
+1638206713469,2,Small ,Text_Requires 1-6,text,true,66009,140,6,6,1,0,0
+1638206713472,3,Small ,Text_Requires 1-5,text,true,66009,140,6,6,1,0,0
+1638206713472,31,Medium,Text_Requires 1-4,text,true,581702,141,6,6,5,0,0
+1638206713622,27,Medium,Text_Requires 1-3,text,true,581702,141,6,6,5,0,0
+1638206713849,35,Large,Text_Requires 1-1,text,true,1253904,140,6,6,4,0,0
+1638206713893,3,Small ,Text_Requires 1-2,text,true,66009,140,6,6,1,0,0
+1638206714369,3,Small ,Text_Requires 1-6,text,true,66009,140,6,6,1,0,0
+1638206714371,5,Small ,Text_Requires 1-5,text,true,66009,140,6,6,3,0,0
+1638206714372,7,Small ,Text_Requires 1-4,text,true,66009,140,6,6,3,0,0
+1638206714518,34,Large,Text_Requires 1-3,text,true,1253904,140,6,6,2,0,0
+1638206714748,23,Medium,Text_Requires 1-1,text,true,581702,141,6,6,1,0,0
+1638206714793,17,Medium,Text_Requires 1-2,text,true,581702,141,6,6,2,0,0
+1638206715272,42,Medium,Text_Requires 1-5,text,true,581702,141,6,6,2,0,0
+1638206715270,46,Medium,Text_Requires 1-6,text,true,581702,141,6,6,1,0,0
+1638206715273,43,Medium,Text_Requires 1-4,text,true,581702,141,6,6,4,0,0
+1638206715420,58,Medium,Text_Requires 1-3,text,true,581702,141,6,6,5,0,0
+1638206715649,5,Small ,Text_Requires 1-1,text,true,66009,140,6,6,2,0,0
+1638206715693,17,Medium,Text_Requires 1-2,text,true,581702,141,6,6,1,0,0
+1638206716169,6,Small ,Text_Requires 1-6,text,true,66009,140,6,6,1,0,0
+1638206716171,6,Small ,Text_Requires 1-5,text,true,66009,140,6,6,2,0,0
+1638206716172,11,Small ,Text_Requires 1-4,text,true,66009,140,6,6,6,0,0
+1638206716318,6,Small ,Text_Requires 1-3,text,true,66009,140,6,6,2,0,0
+1638206716550,4,Small ,Text_Requires 1-1,text,true,66009,140,6,6,2,0,0
+1638206716592,20,Medium,Text_Requires 1-2,text,true,581702,141,6,6,2,0,0
+1638206717069,4,Small ,Text_Requires 1-6,text,true,66009,140,6,6,2,0,0
+1638206717071,34,Medium,Text_Requires 1-4,text,true,581702,141,6,6,3,0,0
+1638206717072,52,Large,Text_Requires 1-5,text,true,1253904,140,6,6,1,0,0
+1638206717225,7,Small ,Text_Requires 1-3,text,true,66009,140,6,6,1,0,0
+1638206717449,3,Small ,Text_Requires 1-1,text,true,66009,140,6,6,1,0,0
+1638206717493,34,Large,Text_Requires 1-2,text,true,1253904,140,6,6,1,0,0
+1638206717968,4,Small ,Text_Requires 1-6,text,true,66009,140,6,6,2,0,0
+1638206717971,8,Small ,Text_Requires 1-4,text,true,66009,140,6,6,5,0,0
+1638206717970,24,Medium,Text_Requires 1-5,text,true,581702,141,6,6,3,0,0
+1638206718116,38,Large,Text_Requires 1-3,text,true,1253904,140,6,6,2,0,0
+1638206718348,38,Large,Text_Requires 1-1,text,true,1253904,140,6,6,3,0,0
+1638206718392,43,Medium,Text_Requires 1-2,text,true,581702,141,6,6,2,0,0
+1638206718868,57,Medium,Text_Requires 1-6,text,true,581702,141,6,6,2,0,0
+1638206718871,140,Medium,Text_Requires 1-4,text,true,581702,141,6,6,4,0,0
+1638206718871,176,Large,Text_Requires 1-5,text,true,1253904,140,6,6,2,0,0
+1638206719017,57,Large,Text_Requires 1-3,text,true,1253904,140,6,6,5,0,0
+1638206719248,4,Small ,Text_Requires 1-1,text,true,66009,140,6,6,3,0,0
+1638206719292,25,Medium,Text_Requires 1-2,text,true,581702,141,6,6,7,0,0
+1638206719770,3,Small ,Text_Requires 1-5,text,true,66009,140,6,6,1,0,0
+1638206719769,5,Small ,Text_Requires 1-6,text,true,66009,140,6,6,2,0,0
+1638206719772,5,Small ,Text_Requires 1-4,text,true,66009,140,6,6,2,0,0
+1638206719917,60,Large,Text_Requires 1-3,text,true,1253904,140,6,6,2,0,0
+1638206720147,4,Small ,Text_Requires 1-1,text,true,66009,140,6,6,2,0,0
+1638206720192,18,Medium,Text_Requires 1-2,text,true,581702,141,6,6,2,0,0
+1638206720670,12,Small ,Text_Requires 1-5,text,true,66009,140,6,6,3,0,0
+1638206720671,11,Small ,Text_Requires 1-4,text,true,66009,140,6,6,4,0,0
+1638206720668,23,Medium,Text_Requires 1-6,text,true,581702,141,6,6,2,0,0
+1638206720818,19,Medium,Text_Requires 1-3,text,true,581702,141,6,6,2,0,0
+1638206721047,19,Medium,Text_Requires 1-1,text,true,581702,141,6,6,3,0,0
+1638206721092,49,Large,Text_Requires 1-2,text,true,1253904,140,6,6,1,0,0
+1638206721567,5,Small ,Text_Requires 1-6,text,true,66009,140,6,6,2,0,0
+1638206721570,38,Medium,Text_Requires 1-5,text,true,581702,141,6,6,1,0,0
+1638206721571,39,Medium,Text_Requires 1-4,text,true,581702,141,6,6,4,0,0
+1638206721718,26,Medium,Text_Requires 1-3,text,true,581702,141,6,6,2,0,0
+1638206721949,16,Medium,Text_Requires 1-1,text,true,581701,141,6,6,2,0,0
+1638206721992,42,Medium,Text_Requires 1-2,text,true,581702,141,6,6,2,0,0
+1638206722468,4,Small ,Text_Requires 1-6,text,true,66009,140,6,6,2,0,0
+1638206722471,3,Small ,Text_Requires 1-4,text,true,66009,140,6,6,2,0,0
+1638206722470,8,Small ,Text_Requires 1-5,text,true,66009,140,6,6,3,0,0
+1638206722616,18,Medium,Text_Requires 1-3,text,true,581702,141,6,6,5,0,0
+1638206722849,36,Large,Text_Requires 1-1,text,true,1253903,140,6,6,2,0,0
+1638206722893,59,Large,Text_Requires 1-2,text,true,1253904,140,6,6,2,0,0
+1638206723369,65,Medium,Text_Requires 1-6,text,true,581702,141,6,6,2,0,0
+1638206723372,73,Medium,Text_Requires 1-4,text,true,581702,141,6,6,3,0,0
+1638206723371,88,Large,Text_Requires 1-5,text,true,1253904,140,6,6,3,0,0
+1638206723522,26,Medium,Text_Requires 1-3,text,true,581702,141,6,6,2,0,0
+1638206723749,27,Medium,Text_Requires 1-1,text,true,581701,141,6,6,3,0,0
+1638206723793,63,Large,Text_Requires 1-2,text,true,1253904,140,6,6,2,0,0
+1638206724271,5,Small ,Text_Requires 1-5,text,true,66009,140,6,6,2,0,0
+1638206724269,105,Large,Text_Requires 1-6,text,true,1253904,140,6,6,2,0,0
+1638206724272,111,Large,Text_Requires 1-4,text,true,1253904,140,6,6,2,0,0
+1638206724424,10,Small ,Text_Requires 1-3,text,true,66009,140,6,6,2,0,0
+1638206724572,51,Large,Text_Requires 1-7,text,true,1253905,140,7,7,4,0,2
+1638206724649,35,Large,Text_Requires 1-1,text,true,1253903,140,7,7,1,0,0
+1638206724693,82,Large,Text_Requires 1-2,text,true,1253904,140,7,7,6,0,0
+1638206725172,69,Medium,Text_Requires 1-5,text,true,581702,141,7,7,2,0,0
+1638206725170,101,Large,Text_Requires 1-6,text,true,1253904,140,7,7,1,0,0
+1638206725172,104,Large,Text_Requires 1-4,text,true,1253904,140,7,7,5,0,0
+1638206725318,31,Medium,Text_Requires 1-3,text,true,581702,141,7,7,1,0,0
+1638206725622,44,Large,Text_Requires 1-7,text,true,1253904,140,7,7,2,0,0
+1638206725699,19,Medium,Text_Requires 1-1,text,true,581701,141,7,7,2,0,0
+1638206725743,70,Large,Text_Requires 1-2,text,true,1253904,140,7,7,2,0,0
+1638206726219,5,Small ,Text_Requires 1-6,text,true,66009,140,7,7,2,0,0
+1638206726221,5,Small ,Text_Requires 1-5,text,true,66009,140,7,7,2,0,0
+1638206726222,4,Small ,Text_Requires 1-4,text,true,66009,140,7,7,2,0,0
+1638206726368,22,Medium,Text_Requires 1-3,text,true,581702,141,7,7,2,0,0
+1638206726672,20,Medium,Text_Requires 1-7,text,true,581702,141,7,7,2,0,0
+1638206726750,20,Medium,Text_Requires 1-1,text,true,581701,141,7,7,1,0,0
+1638206726793,71,Large,Text_Requires 1-2,text,true,1253904,140,7,7,1,0,0
+1638206727270,3,Small ,Text_Requires 1-6,text,true,66009,140,7,7,1,0,0
+1638206727273,105,Large,Text_Requires 1-4,text,true,1253904,140,7,7,1,0,0
+1638206727272,108,Large,Text_Requires 1-5,text,true,1253904,140,7,7,1,0,0
+1638206727426,36,Large,Text_Requires 1-3,text,true,1253904,140,7,7,2,0,0
+1638206727722,18,Medium,Text_Requires 1-7,text,true,581702,141,7,7,1,0,0
+1638206727799,17,Medium,Text_Requires 1-1,text,true,581701,141,7,7,2,0,0
+1638206727842,17,Small ,Text_Requires 1-2,text,true,66009,140,7,7,13,0,0
+1638206728318,4,Small ,Text_Requires 1-6,text,true,66009,140,7,7,2,0,0
+1638206728320,50,Medium,Text_Requires 1-4,text,true,581702,141,7,7,7,0,0
+1638206728320,72,Large,Text_Requires 1-5,text,true,1253904,140,7,7,8,0,0
+1638206728467,59,Large,Text_Requires 1-3,text,true,1253904,140,7,7,12,0,0
+1638206728771,3,Small ,Text_Requires 1-7,text,true,66009,140,7,7,2,0,0
+1638206728848,4,Small ,Text_Requires 1-1,text,true,66008,140,7,7,2,0,0
+1638206728893,60,Large,Text_Requires 1-2,text,true,1253904,140,7,7,2,0,0
+1638206729369,8,Small ,Text_Requires 1-5,text,true,66009,140,7,7,2,0,0
+1638206729367,19,Medium,Text_Requires 1-6,text,true,581702,141,7,7,2,0,0
+1638206729371,16,Small ,Text_Requires 1-4,text,true,66009,140,7,7,11,0,0
+1638206729517,4,Small ,Text_Requires 1-3,text,true,66009,140,7,7,2,0,0
+1638206729821,4,Small ,Text_Requires 1-7,text,true,66009,140,7,7,2,0,0
+1638206729898,19,Medium,Text_Requires 1-1,text,true,581701,141,7,7,2,0,0
+1638206729943,28,Medium,Text_Requires 1-2,text,true,581702,141,7,7,2,0,0
+1638206730421,22,Small ,Text_Requires 1-4,text,true,66009,140,7,7,16,0,0
+1638206730418,158,Large,Text_Requires 1-6,text,true,1253904,140,7,7,2,0,0
+1638206730419,243,Large,Text_Requires 1-5,text,true,1253904,140,7,7,26,0,0
+1638206730566,220,Large,Text_Requires 1-3,text,true,1253904,140,7,7,11,0,0
+1638206730871,17,Medium,Text_Requires 1-7,text,true,581702,141,7,7,2,0,0
+1638206730948,4,Small ,Text_Requires 1-1,text,true,65973,140,7,7,1,0,0
+1638206730991,7,Small ,Text_Requires 1-2,text,true,66009,140,7,7,2,0,0
+1638206731471,7,Small ,Text_Requires 1-4,text,true,66009,140,7,7,3,0,0
+1638206731471,20,Small ,Text_Requires 1-5,text,true,66009,140,7,7,4,0,0
+1638206731467,25,Medium,Text_Requires 1-6,text,true,581702,141,7,7,2,0,0
+1638206731618,41,Large,Text_Requires 1-3,text,true,1253904,140,7,7,2,0,0
+1638206731921,6,Small ,Text_Requires 1-7,text,true,66009,140,7,7,1,0,0
+1638206731999,42,Large,Text_Requires 1-1,text,true,1253905,140,7,7,3,0,1
+1638206732042,40,Large,Text_Requires 1-2,text,true,1253904,140,7,7,1,0,0
+1638206732519,3,Small ,Text_Requires 1-6,text,true,66009,140,7,7,1,0,0
+1638206732520,4,Small ,Text_Requires 1-5,text,true,66009,140,7,7,2,0,0
+1638206732521,17,Medium,Text_Requires 1-4,text,true,581702,141,7,7,2,0,0
+1638206732668,5,Small ,Text_Requires 1-3,text,true,66009,140,7,7,3,0,0
+1638206732972,3,Small ,Text_Requires 1-7,text,true,66009,140,7,7,1,0,0
+1638206733049,4,Small ,Text_Requires 1-1,text,true,66009,140,7,7,1,0,0
+1638206733093,37,Large,Text_Requires 1-2,text,true,1253904,140,7,7,1,0,0
+1638206733571,11,Small ,Text_Requires 1-5,text,true,66009,140,7,7,7,0,0
+1638206733571,23,Small ,Text_Requires 1-4,text,true,66009,140,7,7,7,0,0
+1638206733570,29,Medium,Text_Requires 1-6,text,true,581702,141,7,7,4,0,0
+1638206733718,19,Medium,Text_Requires 1-3,text,true,581702,141,7,7,1,0,0
+1638206734022,16,Medium,Text_Requires 1-7,text,true,581702,141,7,7,1,0,0
+1638206734100,3,Small ,Text_Requires 1-1,text,true,66009,140,7,7,1,0,0
+1638206734143,37,Large,Text_Requires 1-2,text,true,1253904,140,7,7,2,0,0
+1638206734622,110,Large,Text_Requires 1-4,text,true,1253904,140,7,7,3,0,0
+1638206734619,118,Large,Text_Requires 1-6,text,true,1253904,140,7,7,1,0,0
+1638206734621,123,Large,Text_Requires 1-5,text,true,1253904,140,7,7,1,0,0
+1638206734767,6,Small ,Text_Requires 1-3,text,true,66009,140,7,7,2,0,0
+1638206735072,23,Medium,Text_Requires 1-7,text,true,581702,141,7,7,2,0,0
+1638206735149,70,Large,Text_Requires 1-1,text,true,1253904,140,7,7,2,0,0
+1638206735193,44,Medium,Text_Requires 1-2,text,true,581702,141,7,7,12,0,0
+1638206735668,6,Small ,Text_Requires 1-6,text,true,66009,140,7,7,3,0,0
+1638206735672,31,Medium,Text_Requires 1-4,text,true,581702,141,7,7,1,0,0
+1638206735671,51,Large,Text_Requires 1-5,text,true,1253904,140,7,7,2,0,0
+1638206735817,4,Small ,Text_Requires 1-3,text,true,66009,140,7,7,2,0,0
+1638206736121,7,Small ,Text_Requires 1-7,text,true,66009,140,7,7,2,0,0
+1638206736199,4,Small ,Text_Requires 1-1,text,true,66009,140,7,7,2,0,0
+1638206736243,47,Large,Text_Requires 1-2,text,true,1253904,140,7,7,1,0,0
+1638206736570,24,Medium,Text_Requires 1-8,text,true,581703,141,8,8,4,0,2
+1638206736719,4,Small ,Text_Requires 1-6,text,true,66009,140,8,8,2,0,0
+1638206736721,5,Small ,Text_Requires 1-5,text,true,66009,140,8,8,3,0,0
+1638206736722,42,Large,Text_Requires 1-4,text,true,1253904,140,8,8,2,0,0
+1638206736867,21,Small ,Text_Requires 1-3,text,true,66010,140,8,8,16,0,14
+1638206737172,36,Large,Text_Requires 1-7,text,true,1253904,140,8,8,1,0,0
+1638206737250,18,Medium,Text_Requires 1-1,text,true,581702,141,8,8,2,0,0
+1638206737293,17,Medium,Text_Requires 1-2,text,true,581702,141,8,8,2,0,0
+1638206737769,4,Small ,Text_Requires 1-8,text,true,66009,140,8,8,2,0,0
+1638206737920,6,Small ,Text_Requires 1-6,text,true,66009,140,8,8,2,0,0
+1638206737922,93,Medium,Text_Requires 1-4,text,true,581702,141,8,8,10,0,0
+1638206737922,118,Large,Text_Requires 1-5,text,true,1253904,140,8,8,2,0,0
+1638206738069,11,Small ,Text_Requires 1-3,text,true,66009,140,8,8,5,0,0
+1638206738372,18,Medium,Text_Requires 1-7,text,true,581702,141,8,8,2,0,0
+1638206738449,7,Small ,Text_Requires 1-1,text,true,66009,140,8,8,3,0,0
+1638206738493,16,Medium,Text_Requires 1-2,text,true,581702,141,8,8,2,0,0
+1638206738969,18,Medium,Text_Requires 1-8,text,true,581702,141,8,8,2,0,0
+1638206739121,98,Large,Text_Requires 1-5,text,true,1253904,140,8,8,13,0,0
+1638206739119,118,Large,Text_Requires 1-6,text,true,1253904,140,8,8,15,0,0
+1638206739122,116,Large,Text_Requires 1-4,text,true,1253904,140,8,8,25,0,0
+1638206739268,80,Large,Text_Requires 1-3,text,true,1253904,140,8,8,2,0,0
+1638206739572,46,Large,Text_Requires 1-7,text,true,1253904,140,8,8,1,0,0
+1638206739649,20,Medium,Text_Requires 1-1,text,true,581702,141,8,8,2,0,0
+1638206739693,82,Large,Text_Requires 1-2,text,true,1253904,140,8,8,11,0,0
+1638206740169,4,Small ,Text_Requires 1-8,text,true,66009,140,8,8,1,0,0
+1638206740320,6,Small ,Text_Requires 1-6,text,true,66009,140,8,8,2,0,0
+1638206740323,10,Small ,Text_Requires 1-4,text,true,66009,140,8,8,4,0,0
+1638206740321,46,Large,Text_Requires 1-5,text,true,1253904,140,8,8,2,0,0
+1638206740472,20,Medium,Text_Requires 1-3,text,true,581702,141,8,8,2,0,0
+1638206740772,26,Medium,Text_Requires 1-7,text,true,581702,141,8,8,1,0,0
+1638206740849,52,Large,Text_Requires 1-1,text,true,1253904,140,8,8,1,0,0
+1638206740893,10,Small ,Text_Requires 1-2,text,true,66009,140,8,8,5,0,0
+1638206741370,3,Small ,Text_Requires 1-8,text,true,66009,140,8,8,2,0,0
+1638206741519,3,Small ,Text_Requires 1-6,text,true,66009,140,8,8,1,0,0
+1638206741521,4,Small ,Text_Requires 1-5,text,true,66009,140,8,8,2,0,0
+1638206741522,4,Small ,Text_Requires 1-4,text,true,66009,140,8,8,3,0,0
+1638206741668,32,Medium,Text_Requires 1-3,text,true,581702,141,8,8,3,0,0
+1638206741972,17,Medium,Text_Requires 1-7,text,true,581702,141,8,8,1,0,0
+1638206742049,37,Large,Text_Requires 1-1,text,true,1253904,140,8,8,2,0,0
+1638206742093,4,Small ,Text_Requires 1-2,text,true,66009,140,8,8,1,0,0
+1638206742569,4,Small ,Text_Requires 1-8,text,true,66009,140,8,8,1,0,0
+1638206742722,9,Small ,Text_Requires 1-4,text,true,66009,140,8,8,3,0,0
+1638206742719,47,Medium,Text_Requires 1-6,text,true,581702,141,8,8,2,0,0
+1638206742721,72,Large,Text_Requires 1-5,text,true,1253904,140,8,8,3,0,0
+1638206742868,51,Large,Text_Requires 1-3,text,true,1253904,140,8,8,1,0,0
+1638206743172,32,Large,Text_Requires 1-7,text,true,1253904,140,8,8,1,0,0
+1638206743248,23,Medium,Text_Requires 1-1,text,true,581702,141,8,8,1,0,0
+1638206743293,23,Medium,Text_Requires 1-2,text,true,581702,141,8,8,2,0,0
+1638206743769,47,Large,Text_Requires 1-8,text,true,1253904,140,8,8,3,0,0
+1638206743920,44,Medium,Text_Requires 1-5,text,true,581702,141,8,8,5,0,0
+1638206743919,57,Medium,Text_Requires 1-6,text,true,581702,141,8,8,5,0,0
+1638206743922,72,Large,Text_Requires 1-4,text,true,1253904,140,8,8,4,0,0
+1638206744068,29,Medium,Text_Requires 1-3,text,true,581702,141,8,8,2,0,0
+1638206744372,46,Large,Text_Requires 1-7,text,true,1253904,140,8,8,1,0,0
+1638206744449,6,Small ,Text_Requires 1-1,text,true,66009,140,8,8,2,0,0
+1638206744493,15,Small ,Text_Requires 1-2,text,true,66009,140,8,8,3,0,0
+1638206744969,19,Medium,Text_Requires 1-8,text,true,581702,141,8,8,2,0,0
+1638206745118,83,Small ,Text_Requires 1-6,text,true,66009,140,8,8,5,0,0
+1638206745122,104,Medium,Text_Requires 1-4,text,true,581702,141,8,8,41,0,0
+1638206745121,178,Large,Text_Requires 1-5,text,true,1253904,140,8,8,4,0,0
+1638206745268,55,Medium,Text_Requires 1-3,text,true,581702,141,8,8,4,0,0
+1638206745571,23,Medium,Text_Requires 1-7,text,true,581702,141,8,8,2,0,0
+1638206745648,4,Small ,Text_Requires 1-1,text,true,66009,140,8,8,2,0,0
+1638206745693,68,Large,Text_Requires 1-2,text,true,1253904,140,8,8,2,0,0
+1638206746169,4,Small ,Text_Requires 1-8,text,true,66009,140,8,8,2,0,0
+1638206746321,12,Small ,Text_Requires 1-5,text,true,66009,140,8,8,3,0,0
+1638206746318,58,Large,Text_Requires 1-6,text,true,1253904,140,8,8,2,0,0
+1638206746322,125,Medium,Text_Requires 1-4,text,true,581702,141,8,8,6,0,0
+1638206746473,6,Small ,Text_Requires 1-3,text,true,66009,140,8,8,2,0,0
+1638206746772,3,Small ,Text_Requires 1-7,text,true,66009,140,8,8,2,0,0
+1638206746849,50,Large,Text_Requires 1-1,text,true,1253904,140,8,8,2,0,0
+1638206746893,24,Medium,Text_Requires 1-2,text,true,581702,141,8,8,3,0,0
+1638206747370,41,Large,Text_Requires 1-8,text,true,1253904,140,8,8,2,0,0
+1638206747523,89,Medium,Text_Requires 1-4,text,true,581702,141,8,8,16,0,0
+1638206747531,120,Large,Text_Requires 1-6,text,true,1253904,140,8,8,13,0,0
+1638206747523,149,Large,Text_Requires 1-5,text,true,1253904,140,8,8,17,0,0
+1638206747667,45,Large,Text_Requires 1-3,text,true,1253904,140,8,8,4,0,0
+1638206747971,43,Large,Text_Requires 1-7,text,true,1253904,140,8,8,1,0,0
+1638206748048,5,Small ,Text_Requires 1-1,text,true,66009,140,8,8,3,0,0
+1638206748092,62,Large,Text_Requires 1-2,text,true,1253904,140,8,8,2,0,0
+1638206748568,8,Small ,Text_Requires 1-9,text,true,66010,140,9,9,4,0,1
+1638206748568,10,Small ,Text_Requires 1-8,text,true,66009,140,9,9,3,0,0
+1638206748720,6,Small ,Text_Requires 1-5,text,true,66009,140,9,9,2,0,0
+1638206748722,47,Medium,Text_Requires 1-4,text,true,581703,141,9,9,7,0,3
+1638206748719,75,Large,Text_Requires 1-6,text,true,1253904,140,9,9,1,0,0
+1638206748867,5,Small ,Text_Requires 1-3,text,true,66009,140,9,9,2,0,0
+1638206749171,42,Large,Text_Requires 1-7,text,true,1253904,140,9,9,3,0,0
+1638206749247,7,Small ,Text_Requires 1-1,text,true,66009,140,9,9,5,0,0
+1638206749291,74,Large,Text_Requires 1-2,text,true,1253904,140,9,9,2,0,0
+1638206749916,7,Small ,Text_Requires 1-9,text,true,66009,140,9,9,5,0,0
+1638206749918,6,Small ,Text_Requires 1-8,text,true,66009,140,9,9,4,0,0
+1638206750068,38,Medium,Text_Requires 1-6,text,true,581702,141,9,9,2,0,0
+1638206750070,37,Medium,Text_Requires 1-4,text,true,581702,141,9,9,2,0,0
+1638206750070,73,Large,Text_Requires 1-5,text,true,1253904,140,9,9,3,0,0
+1638206750220,47,Large,Text_Requires 1-3,text,true,1253904,140,9,9,2,0,0
+1638206750521,23,Medium,Text_Requires 1-7,text,true,581702,141,9,9,1,0,0
+1638206750598,34,Large,Text_Requires 1-1,text,true,1253904,140,9,9,2,0,0
+1638206750642,5,Small ,Text_Requires 1-2,text,true,66009,140,9,9,2,0,0
+1638206751268,7,Small ,Text_Requires 1-8,text,true,66009,140,9,9,4,0,0
+1638206751266,47,Large,Text_Requires 1-9,text,true,1253904,140,9,9,2,0,0
+1638206751420,4,Small ,Text_Requires 1-5,text,true,66009,140,9,9,2,0,0
+1638206751421,46,Large,Text_Requires 1-4,text,true,1253904,140,9,9,2,0,0
+1638206751418,74,Large,Text_Requires 1-6,text,true,1253904,140,9,9,3,0,0
+1638206751567,31,Medium,Text_Requires 1-3,text,true,581702,141,9,9,2,0,0
+1638206751871,32,Large,Text_Requires 1-7,text,true,1253904,140,9,9,1,0,0
+1638206751948,44,Large,Text_Requires 1-1,text,true,1253904,140,9,9,2,0,0
+1638206751993,4,Small ,Text_Requires 1-2,text,true,66009,140,9,9,1,0,0
+1638206752618,4,Small ,Text_Requires 1-8,text,true,66009,140,9,9,1,0,0
+1638206752616,81,Large,Text_Requires 1-9,text,true,1253904,140,9,9,2,0,0
+1638206752772,7,Small ,Text_Requires 1-4,text,true,66009,140,9,9,1,0,0
+1638206752768,35,Medium,Text_Requires 1-6,text,true,581702,141,9,9,2,0,0
+1638206752771,50,Large,Text_Requires 1-5,text,true,1253904,140,9,9,2,0,0
+1638206752918,4,Small ,Text_Requires 1-3,text,true,66009,140,9,9,2,0,0
+1638206753222,19,Medium,Text_Requires 1-7,text,true,581702,141,9,9,2,0,0
+1638206753343,16,Small ,Text_Requires 1-2,text,true,66009,140,9,9,13,0,0
+1638206753299,110,Large,Text_Requires 1-1,text,true,1253904,140,9,9,2,0,0
+1638206753968,9,Small ,Text_Requires 1-9,text,true,66009,140,9,9,1,0,0
+1638206753969,25,Medium,Text_Requires 1-8,text,true,581702,141,9,9,1,0,0
+1638206754121,15,Small ,Text_Requires 1-5,text,true,66009,140,9,9,7,0,0
+1638206754119,76,Medium,Text_Requires 1-6,text,true,581702,141,9,9,2,0,0
+1638206754122,85,Large,Text_Requires 1-4,text,true,1253904,140,9,9,7,0,0
+1638206754268,88,Large,Text_Requires 1-3,text,true,1253904,140,9,9,1,0,0
+1638206754572,29,Medium,Text_Requires 1-7,text,true,581702,141,9,9,1,0,0
+1638206754693,21,Small ,Text_Requires 1-2,text,true,66009,140,9,9,3,0,0
+1638206754649,70,Large,Text_Requires 1-1,text,true,1253904,140,9,9,9,0,0
+1638206755318,5,Small ,Text_Requires 1-9,text,true,66009,140,9,9,2,0,0
+1638206755318,13,Small ,Text_Requires 1-8,text,true,66009,140,9,9,3,0,0
+1638206755469,5,Small ,Text_Requires 1-6,text,true,66009,140,9,9,2,0,0
+1638206755471,36,Medium,Text_Requires 1-5,text,true,581702,141,9,9,2,0,0
+1638206755472,57,Large,Text_Requires 1-4,text,true,1253904,140,9,9,6,0,0
+1638206755618,55,Medium,Text_Requires 1-3,text,true,581702,141,9,9,2,0,0
+1638206755922,4,Small ,Text_Requires 1-7,text,true,66009,140,9,9,1,0,0
+1638206755999,20,Medium,Text_Requires 1-1,text,true,581702,141,9,9,1,0,0
+1638206756043,50,Large,Text_Requires 1-2,text,true,1253904,140,9,9,3,0,0
+1638206756670,5,Small ,Text_Requires 1-8,text,true,66009,140,9,9,2,0,0
+1638206756667,46,Large,Text_Requires 1-9,text,true,1253904,140,9,9,1,0,0
+1638206756821,51,Small ,Text_Requires 1-5,text,true,66009,140,9,9,4,0,0
+1638206756822,65,Medium,Text_Requires 1-4,text,true,581702,141,9,9,5,0,0
+1638206756819,72,Medium,Text_Requires 1-6,text,true,581702,141,9,9,2,0,0
+1638206756967,17,Small ,Text_Requires 1-3,text,true,66009,140,9,9,10,0,0
+1638206757272,40,Large,Text_Requires 1-7,text,true,1253904,140,9,9,3,0,0
+1638206757349,6,Small ,Text_Requires 1-1,text,true,66009,140,9,9,2,0,0
+1638206757392,7,Small ,Text_Requires 1-2,text,true,66009,140,9,9,2,0,0
+1638206758017,25,Medium,Text_Requires 1-9,text,true,581702,141,9,9,1,0,0
+1638206758019,68,Large,Text_Requires 1-8,text,true,1253904,140,9,9,14,0,0
+1638206758182,117,Large,Text_Requires 1-4,text,true,1253904,140,9,9,11,0,0
+1638206758171,148,Large,Text_Requires 1-5,text,true,1253904,140,9,9,24,0,0
+1638206758317,6,Small ,Text_Requires 1-3,text,true,66009,140,9,9,3,0,0
+1638206758169,155,Large,Text_Requires 1-6,text,true,1253904,140,9,9,2,0,0
+1638206758622,63,Large,Text_Requires 1-7,text,true,1253904,140,9,9,2,0,0
+1638206758698,41,Large,Text_Requires 1-1,text,true,1253904,140,9,9,2,0,0
+1638206758742,33,Medium,Text_Requires 1-2,text,true,581702,141,9,9,2,0,0
+1638206759367,6,Small ,Text_Requires 1-9,text,true,66009,140,9,9,1,0,0
+1638206759369,29,Medium,Text_Requires 1-8,text,true,581702,141,9,9,2,0,0
+1638206759531,64,Medium,Text_Requires 1-5,text,true,581702,141,9,9,8,0,0
+1638206759519,85,Medium,Text_Requires 1-6,text,true,581702,141,9,9,14,0,0
+1638206759531,85,Large,Text_Requires 1-4,text,true,1253904,140,9,9,7,0,0
+1638206759667,43,Large,Text_Requires 1-3,text,true,1253904,140,9,9,3,0,0
+1638206759972,44,Large,Text_Requires 1-7,text,true,1253904,140,9,9,2,0,0
+1638206760049,24,Medium,Text_Requires 1-1,text,true,581702,141,9,9,5,0,0
+1638206760093,32,Medium,Text_Requires 1-2,text,true,581702,141,9,9,2,0,0
+1638206760568,117,Large,Text_Requires 1-10,text,true,1253905,140,10,10,5,0,1
+1638206760721,3,Small ,Text_Requires 1-9,text,true,66009,140,10,10,1,0,0
+1638206760721,47,Large,Text_Requires 1-8,text,true,1253904,140,10,10,2,0,0
+1638206760873,16,Small ,Text_Requires 1-4,text,true,66009,140,10,10,4,0,0
+1638206760870,78,Large,Text_Requires 1-6,text,true,1253904,140,10,10,1,0,0
+1638206760870,79,Medium,Text_Requires 1-5,text,true,581703,141,10,10,6,0,2
+1638206761017,27,Medium,Text_Requires 1-3,text,true,581702,141,10,10,3,0,0
+1638206761322,21,Medium,Text_Requires 1-7,text,true,581702,141,10,10,1,0,0
+1638206761399,38,Large,Text_Requires 1-1,text,true,1253904,140,10,10,1,0,0
+1638206761442,65,Large,Text_Requires 1-2,text,true,1253904,140,10,10,2,0,0
+1638206762067,49,Large,Text_Requires 1-10,text,true,1253904,140,10,10,2,0,0
+1638206762223,46,Medium,Text_Requires 1-9,text,true,581702,141,10,10,1,0,0
+1638206762223,53,Medium,Text_Requires 1-8,text,true,581702,141,10,10,2,0,0
+1638206762369,30,Medium,Text_Requires 1-6,text,true,581702,141,10,10,1,0,0
+1638206762371,76,Medium,Text_Requires 1-5,text,true,581702,141,10,10,3,0,0
+1638206762372,102,Large,Text_Requires 1-4,text,true,1253904,140,10,10,2,0,0
+1638206762530,76,Large,Text_Requires 1-3,text,true,1253904,140,10,10,3,0,0
+1638206762822,37,Large,Text_Requires 1-7,text,true,1253904,140,10,10,1,0,0
+1638206762898,18,Medium,Text_Requires 1-1,text,true,581702,141,10,10,2,0,0
+1638206762952,29,Medium,Text_Requires 1-2,text,true,581702,141,10,10,1,0,0
+1638206763567,5,Small ,Text_Requires 1-10,text,true,66009,140,10,10,1,0,0
+1638206763715,4,Small ,Text_Requires 1-9,text,true,66009,140,10,10,2,0,0
+1638206763718,43,Large,Text_Requires 1-8,text,true,1253904,140,10,10,2,0,0
+1638206763880,6,Small ,Text_Requires 1-4,text,true,66009,140,10,10,3,0,0
+1638206763881,30,Medium,Text_Requires 1-6,text,true,581702,141,10,10,3,0,0
+1638206763880,36,Medium,Text_Requires 1-5,text,true,581702,141,10,10,2,0,0
+1638206764017,43,Large,Text_Requires 1-3,text,true,1253904,140,10,10,2,0,0
+1638206764322,49,Large,Text_Requires 1-7,text,true,1253904,140,10,10,1,0,0
+1638206764398,5,Small ,Text_Requires 1-1,text,true,66009,140,10,10,2,0,0
+1638206764442,31,Small ,Text_Requires 1-2,text,true,66009,140,10,10,2,0,0
+1638206765066,48,Large,Text_Requires 1-10,text,true,1253904,140,10,10,2,0,0
+1638206765215,17,Small ,Text_Requires 1-9,text,true,66009,140,10,10,15,0,0
+1638206765228,57,Large,Text_Requires 1-8,text,true,1253904,140,10,10,8,0,0
+1638206765370,21,Small ,Text_Requires 1-5,text,true,66009,140,10,10,5,0,0
+1638206765371,75,Large,Text_Requires 1-4,text,true,1253904,140,10,10,3,0,0
+1638206765367,87,Large,Text_Requires 1-6,text,true,1253904,140,10,10,2,0,0
+1638206765521,3,Small ,Text_Requires 1-3,text,true,66009,140,10,10,1,0,0
+1638206765821,4,Small ,Text_Requires 1-7,text,true,66009,140,10,10,2,0,0
+1638206765898,36,Large,Text_Requires 1-1,text,true,1253904,140,10,10,2,0,0
+1638206765942,72,Large,Text_Requires 1-2,text,true,1253904,140,10,10,17,0,0
+1638206766566,46,Large,Text_Requires 1-10,text,true,1253904,140,10,10,2,0,0
+1638206766725,5,Small ,Text_Requires 1-9,text,true,66009,140,10,10,2,0,0
+1638206766725,22,Medium,Text_Requires 1-8,text,true,581702,141,10,10,2,0,0
+1638206766868,8,Small ,Text_Requires 1-6,text,true,66009,140,10,10,2,0,0
+1638206766871,6,Small ,Text_Requires 1-5,text,true,66009,140,10,10,4,0,0
+1638206766871,28,Medium,Text_Requires 1-4,text,true,581702,141,10,10,8,0,0
+1638206767017,5,Small ,Text_Requires 1-3,text,true,66009,140,10,10,2,0,0
+1638206767321,47,Large,Text_Requires 1-7,text,true,1253904,140,10,10,8,0,0
+1638206767398,6,Small ,Text_Requires 1-1,text,true,66009,140,10,10,3,0,0
+1638206767441,3,Small ,Text_Requires 1-2,text,true,66009,140,10,10,2,0,0
+1638206768067,47,Large,Text_Requires 1-10,text,true,1253904,140,10,10,2,0,0
+1638206768220,41,Medium,Text_Requires 1-8,text,true,581702,141,10,10,2,0,0
+1638206768216,87,Large,Text_Requires 1-9,text,true,1253904,140,10,10,2,0,0
+1638206768371,9,Small ,Text_Requires 1-5,text,true,66009,140,10,10,4,0,0
+1638206768369,30,Medium,Text_Requires 1-6,text,true,581702,141,10,10,3,0,0
+1638206768371,31,Medium,Text_Requires 1-4,text,true,581702,141,10,10,2,0,0
+1638206768518,22,Medium,Text_Requires 1-3,text,true,581702,141,10,10,2,0,0
+1638206768822,6,Small ,Text_Requires 1-7,text,true,66009,140,10,10,3,0,0
+1638206768899,3,Small ,Text_Requires 1-1,text,true,66009,140,10,10,2,0,0
+1638206768943,8,Small ,Text_Requires 1-2,text,true,66009,140,10,10,6,0,0
+1638206769567,21,Medium,Text_Requires 1-10,text,true,581702,141,10,10,3,0,0
+1638206769717,13,Small ,Text_Requires 1-9,text,true,66009,140,10,10,2,0,0
+1638206769719,65,Large,Text_Requires 1-8,text,true,1253904,140,10,10,3,0,0
+1638206769872,14,Small ,Text_Requires 1-4,text,true,66009,140,10,10,4,0,0
+1638206769870,17,Small ,Text_Requires 1-6,text,true,66009,140,10,10,5,0,0
+1638206769871,38,Medium,Text_Requires 1-5,text,true,581702,141,10,10,6,0,0
+1638206770018,24,Medium,Text_Requires 1-3,text,true,581702,141,10,10,3,0,0
+1638206770322,35,Large,Text_Requires 1-7,text,true,1253904,140,10,10,1,0,0
+1638206770399,46,Large,Text_Requires 1-1,text,true,1253904,140,10,10,1,0,0
+1638206770443,38,Large,Text_Requires 1-2,text,true,1253904,140,10,10,2,0,0
+1638206771067,3,Small ,Text_Requires 1-10,text,true,66009,140,10,10,1,0,0
+1638206771217,42,Medium,Text_Requires 1-9,text,true,581702,141,9,9,2,0,0
+1638206771219,76,Large,Text_Requires 1-8,text,true,1253904,140,8,8,3,0,0
+1638206771372,18,Small ,Text_Requires 1-4,text,true,66009,140,8,8,13,0,0
+1638206771371,128,Large,Text_Requires 1-6,text,true,1253904,140,7,7,3,0,0
+1638206771372,133,Large,Text_Requires 1-5,text,true,1253904,140,7,7,1,0,0
+1638206771518,34,Large,Text_Requires 1-3,text,true,1253904,140,7,7,1,0,0
+1638206771822,64,Large,Text_Requires 1-7,text,true,1253904,140,6,6,10,0,0
+1638206771899,33,Medium,Text_Requires 1-1,text,true,581702,141,5,5,1,0,0
+1638206771943,64,Large,Text_Requires 1-2,text,true,1253905,140,4,4,3,0,2
+1638206772419,55,Medium,Text_Requires 1-6,text,true,581702,141,3,3,2,0,0
+1638206772420,81,Medium,Text_Requires 1-5,text,true,581702,141,2,2,3,0,0
+1638206772418,86,Large,Text_Requires 1-8,text,true,1253904,140,1,1,2,0,0
+1638206772585,24,Medium1,Img_Requires 2-1,bin,true,334428,142,1,1,9,0,2
+1638206772734,3,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206772884,9,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206773033,15,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206773183,12,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206773333,23,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206773485,4,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206773634,6,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,3,0,0
+1638206773784,11,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206773934,20,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206774084,3,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,1,0,0
+1638206774234,5,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206774384,6,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,4,0,0
+1638206774533,7,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206774683,28,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206774834,52,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206774984,33,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206775134,12,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206775284,12,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,5,0,0
+1638206775434,20,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206775584,23,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206775734,5,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206775883,5,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206776035,12,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,3,0,0
+1638206776184,42,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206776339,19,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,7,0,0
+1638206776485,28,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,3,0,0
+1638206776634,7,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,4,0,0
+1638206776784,28,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206776934,31,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206777084,15,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,3,0,0
+1638206777241,12,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,3,0,0
+1638206777383,31,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206777533,9,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206777684,25,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,3,0,0
+1638206777834,26,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206777984,30,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206778134,62,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206778284,18,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206778433,5,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206778584,5,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,3,0,0
+1638206778734,15,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,3,0,0
+1638206778885,22,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206779034,8,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206779184,18,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,3,0,0
+1638206779335,42,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206779484,22,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206779635,12,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206779784,19,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206779935,10,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206780084,4,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206780235,22,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206780384,35,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206780534,43,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206780684,22,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206780835,4,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206780984,16,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206781134,24,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206781284,10,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,1,0,0
+1638206781434,20,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206781584,4,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206781734,6,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206781884,4,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,1,0,0
+1638206782034,24,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206782184,9,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206782334,10,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,2,0,0
+1638206782484,3,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,1,0,0
+1638206782635,30,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206782783,6,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206782934,23,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206783085,27,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206783234,42,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,1,0,0
+1638206783384,26,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206783533,6,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,1,0,0
+1638206783684,28,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206783833,6,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206783984,4,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,1,0,0
+1638206784134,9,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206784285,9,Medium1,Img_Requires 2-1,bin,true,334427,142,1,1,1,0,0
+1638206784433,23,Large1,Img_Requires 2-1,bin,true,768842,141,1,1,2,0,0
+1638206784584,3,Small1,Img_Requires 2-1,bin,true,89020,141,1,1,2,0,0
+1638206784590,19,Medium1,Img_Requires 2-2,bin,true,334428,142,2,2,4,0,2
+1638206784734,16,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,4,0,0
+1638206784891,6,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206785034,10,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,1,0,0
+1638206785190,4,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206785333,11,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,2,0,0
+1638206785490,6,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,2,0,0
+1638206785634,5,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,2,0,0
+1638206785790,4,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206785934,9,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,1,0,0
+1638206786090,5,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,2,0,0
+1638206786234,4,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,1,0,0
+1638206786390,16,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,1,0,0
+1638206786534,3,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,1,0,0
+1638206786690,4,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,2,0,0
+1638206786834,5,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,3,0,0
+1638206786990,5,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,2,0,0
+1638206787134,11,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,2,0,0
+1638206787290,20,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206787435,13,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,2,0,0
+1638206787590,25,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206787735,30,Large1,Img_Requires 2-1,bin,true,768841,141,2,2,2,0,0
+1638206787889,38,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,3,0,0
+1638206788033,6,Small1,Img_Requires 2-1,bin,true,89019,141,2,2,3,0,0
+1638206788188,27,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206788333,81,Large1,Img_Requires 2-1,bin,true,768841,141,2,2,1,0,0
+1638206788490,3,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206788632,5,Small1,Img_Requires 2-1,bin,true,89019,141,2,2,2,0,0
+1638206788789,5,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206788933,6,Small1,Img_Requires 2-1,bin,true,89019,141,2,2,4,0,0
+1638206789089,35,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206789233,4,Small1,Img_Requires 2-1,bin,true,89019,141,2,2,2,0,0
+1638206789388,25,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206789533,5,Small1,Img_Requires 2-1,bin,true,89019,141,2,2,2,0,0
+1638206789689,27,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206789833,26,Large1,Img_Requires 2-1,bin,true,768841,141,2,2,1,0,0
+1638206789989,3,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206790133,24,Large1,Img_Requires 2-1,bin,true,768841,141,2,2,1,0,0
+1638206790291,9,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,1,0,0
+1638206790433,39,Large1,Img_Requires 2-1,bin,true,768806,141,2,2,2,0,0
+1638206790589,36,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,3,0,0
+1638206790733,14,Medium1,Img_Requires 2-1,bin,true,334428,142,2,2,3,0,1
+1638206790888,10,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,3,0,0
+1638206791033,30,Large1,Img_Requires 2-1,bin,true,768842,141,2,2,1,0,0
+1638206791196,24,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206791333,4,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,1,0,0
+1638206791488,40,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206791634,18,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,1,0,0
+1638206791789,24,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206791933,43,Large1,Img_Requires 2-1,bin,true,768842,141,2,2,1,0,0
+1638206792089,16,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,1,0,0
+1638206792233,14,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,5,0,0
+1638206792389,4,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,2,0,0
+1638206792533,21,Large1,Img_Requires 2-1,bin,true,768842,141,2,2,2,0,0
+1638206792688,25,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,3,0,0
+1638206792834,3,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,1,0,0
+1638206792991,3,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206793135,10,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,2,0,0
+1638206793290,20,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206793434,3,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,1,0,0
+1638206793590,19,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206793735,28,Large1,Img_Requires 2-1,bin,true,768842,141,2,2,1,0,0
+1638206793890,13,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,2,0,0
+1638206794034,4,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,1,0,0
+1638206794190,3,Small1,Img_Requires 2-2,bin,true,89020,141,2,2,1,0,0
+1638206794334,26,Large1,Img_Requires 2-1,bin,true,768842,141,2,2,1,0,0
+1638206794491,30,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206794634,11,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,2,0,0
+1638206794790,12,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,1,0,0
+1638206794934,9,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,0,0,0
+1638206795090,32,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,2,0,0
+1638206795243,11,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,1,0,0
+1638206795390,31,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,3,0,0
+1638206795534,10,Medium1,Img_Requires 2-1,bin,true,334427,142,2,2,2,0,0
+1638206795690,14,Medium1,Img_Requires 2-2,bin,true,334427,142,2,2,2,0,0
+1638206795834,24,Large1,Img_Requires 2-1,bin,true,768842,141,2,2,1,0,0
+1638206795990,24,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206796133,8,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,2,0,0
+1638206796291,21,Large1,Img_Requires 2-2,bin,true,768842,141,2,2,1,0,0
+1638206796434,9,Small1,Img_Requires 2-1,bin,true,89020,141,2,2,5,0,0
+1638206796589,22,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,3,0,0
+1638206796587,64,Large1,Img_Requires 2-3,bin,true,768843,141,3,3,3,0,2
+1638206796735,10,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,1,0,0
+1638206797036,19,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,1,0,0
+1638206797039,40,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,3,0,0
+1638206797196,14,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,2,0,0
+1638206797490,23,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,3,0,0
+1638206797487,26,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206797634,13,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,5,0,0
+1638206797936,16,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206797940,18,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,2,0,0
+1638206798084,11,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,2,0,0
+1638206798390,7,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,4,0,0
+1638206798386,25,Large1,Img_Requires 2-3,bin,true,768842,141,3,3,2,0,0
+1638206798533,22,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,2,0,0
+1638206798836,5,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,2,0,0
+1638206798840,27,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,1,0,0
+1638206798984,5,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,2,0,0
+1638206799286,11,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,1,0,0
+1638206799290,29,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,3,0,0
+1638206799434,4,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,1,0,0
+1638206799737,4,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,2,0,0
+1638206799740,5,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,2,0,0
+1638206799884,11,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,1,0,0
+1638206800186,10,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,1,0,0
+1638206800190,11,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,5,0,0
+1638206800334,11,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,2,0,0
+1638206800636,22,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,7,0,0
+1638206800640,27,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,1,0,0
+1638206800784,19,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,1,0,0
+1638206801090,19,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,2,0,0
+1638206801086,28,Large1,Img_Requires 2-3,bin,true,768842,141,3,3,1,0,0
+1638206801234,8,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,1,0,0
+1638206801537,26,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206801540,29,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,5,0,0
+1638206801694,19,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,2,0,0
+1638206801985,12,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206801990,8,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,2,0,0
+1638206802134,16,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,3,0,0
+1638206802436,12,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,1,0,0
+1638206802439,28,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,3,0,0
+1638206802584,4,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,1,0,0
+1638206802887,4,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,1,0,0
+1638206802891,4,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,1,0,0
+1638206803034,4,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,1,0,0
+1638206803336,13,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206803340,16,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,3,0,0
+1638206803483,22,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,1,0,0
+1638206803786,12,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206803790,25,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,2,0,0
+1638206803937,25,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,2,0,0
+1638206804236,9,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,1,0,0
+1638206804240,14,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,2,0,0
+1638206804384,11,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,1,0,0
+1638206804687,4,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,2,0,0
+1638206804690,10,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,3,0,0
+1638206804834,25,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,2,0,0
+1638206805140,32,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,1,0,0
+1638206805135,43,Large1,Img_Requires 2-3,bin,true,768842,141,3,3,2,0,0
+1638206805285,10,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,1,0,0
+1638206805586,7,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,1,0,0
+1638206805590,6,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,2,0,0
+1638206805734,3,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,1,0,0
+1638206806036,52,Large1,Img_Requires 2-3,bin,true,768842,141,3,3,1,0,0
+1638206806041,114,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,2,0,0
+1638206806184,20,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,2,0,0
+1638206806486,6,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,2,0,0
+1638206806490,5,Small1,Img_Requires 2-2,bin,true,89020,141,3,3,2,0,0
+1638206806634,28,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,4,0,0
+1638206806936,20,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206806941,43,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,3,0,0
+1638206807084,28,Medium1,Img_Requires 2-1,bin,true,334427,142,3,3,1,0,0
+1638206807389,19,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,4,0,0
+1638206807386,26,Large1,Img_Requires 2-3,bin,true,768842,141,3,3,2,0,0
+1638206807535,29,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,2,0,0
+1638206807835,5,Small1,Img_Requires 2-3,bin,true,89020,141,3,3,2,0,0
+1638206807840,25,Large1,Img_Requires 2-2,bin,true,768842,141,3,3,1,0,0
+1638206807989,36,Large1,Img_Requires 2-1,bin,true,768842,141,3,3,8,0,0
+1638206808285,12,Medium1,Img_Requires 2-3,bin,true,334427,142,3,3,2,0,0
+1638206808289,16,Medium1,Img_Requires 2-2,bin,true,334427,142,3,3,4,0,0
+1638206808433,3,Small1,Img_Requires 2-1,bin,true,89020,141,3,3,1,0,0
+1638206808583,18,Medium1,Img_Requires 2-4,bin,true,334428,142,4,4,3,0,2
+1638206808739,11,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,6,0,0
+1638206808736,28,Large1,Img_Requires 2-3,bin,true,768842,141,4,4,1,0,0
+1638206808893,29,Large1,Img_Requires 2-1,bin,true,768842,141,4,4,2,0,0
+1638206809182,9,Medium1,Img_Requires 2-4,bin,true,334427,142,4,4,2,0,0
+1638206809335,4,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,2,0,0
+1638206809339,11,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,7,0,0
+1638206809483,18,Large1,Img_Requires 2-1,bin,true,768842,141,4,4,1,0,0
+1638206809782,4,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,2,0,0
+1638206809935,9,Medium1,Img_Requires 2-3,bin,true,334427,142,4,4,1,0,0
+1638206809939,18,Medium1,Img_Requires 2-2,bin,true,334427,142,4,4,5,0,0
+1638206810083,11,Medium1,Img_Requires 2-1,bin,true,334427,142,4,4,1,0,0
+1638206810382,27,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,2,0,0
+1638206810538,10,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,4,0,0
+1638206810539,12,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,5,0,0
+1638206810684,21,Large1,Img_Requires 2-1,bin,true,768842,141,4,4,1,0,0
+1638206810982,23,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206811135,25,Medium1,Img_Requires 2-3,bin,true,334427,142,4,4,1,0,0
+1638206811139,25,Medium1,Img_Requires 2-2,bin,true,334427,142,4,4,10,0,0
+1638206811282,9,Medium1,Img_Requires 2-1,bin,true,334427,142,4,4,1,0,0
+1638206811582,10,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,5,0,0
+1638206811734,26,Medium1,Img_Requires 2-3,bin,true,334427,142,4,4,2,0,0
+1638206811738,43,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,4,0,0
+1638206811882,5,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,2,0,0
+1638206812182,4,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,1,0,0
+1638206812334,4,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,2,0,0
+1638206812339,30,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,2,0,0
+1638206812483,5,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,2,0,0
+1638206812782,21,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206812940,24,Medium1,Img_Requires 2-2,bin,true,334427,142,4,4,3,0,0
+1638206812934,35,Large1,Img_Requires 2-3,bin,true,768842,141,4,4,2,0,0
+1638206813083,31,Medium1,Img_Requires 2-1,bin,true,334427,142,4,4,3,0,0
+1638206813381,18,Medium1,Img_Requires 2-4,bin,true,334427,142,4,4,1,0,0
+1638206813536,9,Medium1,Img_Requires 2-3,bin,true,334427,142,4,4,1,0,0
+1638206813539,13,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,9,0,0
+1638206813683,9,Medium1,Img_Requires 2-1,bin,true,334427,142,4,4,1,0,0
+1638206813983,25,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206814135,8,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,2,0,0
+1638206814139,6,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,4,0,0
+1638206814283,3,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,1,0,0
+1638206814582,24,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,2,0,0
+1638206814745,11,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,8,0,0
+1638206814745,39,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,9,0,0
+1638206814883,12,Medium1,Img_Requires 2-1,bin,true,334427,142,4,4,1,0,0
+1638206815181,20,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206815339,23,Medium1,Img_Requires 2-2,bin,true,334427,142,4,4,2,0,0
+1638206815336,35,Large1,Img_Requires 2-3,bin,true,768842,141,4,4,1,0,0
+1638206815483,22,Medium1,Img_Requires 2-1,bin,true,334427,142,4,4,2,0,0
+1638206815782,20,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206815935,3,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,2,0,0
+1638206815939,30,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,1,0,0
+1638206816083,58,Large1,Img_Requires 2-1,bin,true,768842,141,4,4,2,0,0
+1638206816382,3,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,1,0,0
+1638206816535,22,Medium1,Img_Requires 2-3,bin,true,334427,142,4,4,2,0,0
+1638206816539,51,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,5,0,0
+1638206816684,6,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,2,0,0
+1638206816982,3,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,1,0,0
+1638206817139,9,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,2,0,0
+1638206817135,28,Large1,Img_Requires 2-3,bin,true,768842,141,4,4,1,0,0
+1638206817291,24,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,3,0,0
+1638206817582,4,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,1,0,0
+1638206817735,4,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,1,0,0
+1638206817740,12,Medium1,Img_Requires 2-2,bin,true,334427,142,4,4,1,0,0
+1638206817884,3,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,1,0,0
+1638206818183,22,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206818336,36,Large1,Img_Requires 2-3,bin,true,768842,141,4,4,1,0,0
+1638206818340,40,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,2,0,0
+1638206818485,26,Large1,Img_Requires 2-1,bin,true,768842,141,4,4,2,0,0
+1638206818782,22,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,1,0,0
+1638206818940,9,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,3,0,0
+1638206818936,32,Large1,Img_Requires 2-3,bin,true,768842,141,4,4,3,0,0
+1638206819084,19,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,13,0,0
+1638206819383,26,Large1,Img_Requires 2-4,bin,true,768842,141,4,4,8,0,0
+1638206819536,11,Medium1,Img_Requires 2-3,bin,true,334427,142,4,4,2,0,0
+1638206819540,8,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,3,0,0
+1638206819684,22,Large1,Img_Requires 2-1,bin,true,768842,141,4,4,1,0,0
+1638206819983,4,Small1,Img_Requires 2-4,bin,true,89020,141,4,4,2,0,0
+1638206820135,7,Small1,Img_Requires 2-3,bin,true,89020,141,4,4,1,0,0
+1638206820139,27,Large1,Img_Requires 2-2,bin,true,768842,141,4,4,5,0,0
+1638206820284,9,Small1,Img_Requires 2-1,bin,true,89020,141,4,4,6,0,0
+1638206820583,19,Medium1,Img_Requires 2-4,bin,true,334427,142,5,5,4,0,0
+1638206820577,26,Medium1,Img_Requires 2-5,bin,true,334428,142,5,5,9,0,3
+1638206820736,45,Large1,Img_Requires 2-3,bin,true,768842,141,5,5,1,0,0
+1638206820740,47,Large1,Img_Requires 2-2,bin,true,768842,141,5,5,3,0,0
+1638206820885,22,Large1,Img_Requires 2-1,bin,true,768842,141,5,5,0,0,0
+1638206821326,6,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,2,0,0
+1638206821333,8,Medium1,Img_Requires 2-4,bin,true,334427,142,5,5,1,0,0
+1638206821486,11,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,1,0,0
+1638206821490,28,Large1,Img_Requires 2-2,bin,true,768842,141,5,5,2,0,0
+1638206821633,5,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,2,0,0
+1638206822082,21,Medium1,Img_Requires 2-4,bin,true,334427,142,5,5,3,0,0
+1638206822076,38,Large1,Img_Requires 2-5,bin,true,768842,141,5,5,2,0,0
+1638206822236,14,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,2,0,0
+1638206822239,25,Large1,Img_Requires 2-2,bin,true,768842,141,5,5,3,0,0
+1638206822384,13,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,3,0,0
+1638206822826,4,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,2,0,0
+1638206822833,3,Small1,Img_Requires 2-4,bin,true,89020,141,5,5,1,0,0
+1638206822990,24,Medium1,Img_Requires 2-2,bin,true,334427,142,5,5,4,0,0
+1638206822985,34,Large1,Img_Requires 2-3,bin,true,768842,141,5,5,1,0,0
+1638206823134,11,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,1,0,0
+1638206823576,6,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,1,0,0
+1638206823582,24,Large1,Img_Requires 2-4,bin,true,768842,141,5,5,1,0,0
+1638206823736,13,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,1,0,0
+1638206823740,10,Small1,Img_Requires 2-2,bin,true,89019,141,5,5,5,0,0
+1638206823884,9,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,1,0,0
+1638206824326,13,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,7,0,0
+1638206824334,10,Medium1,Img_Requires 2-4,bin,true,334427,142,5,5,1,0,0
+1638206824486,4,Small1,Img_Requires 2-3,bin,true,89020,141,5,5,2,0,0
+1638206824490,10,Medium1,Img_Requires 2-2,bin,true,334426,142,5,5,2,0,0
+1638206824634,6,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,2,0,0
+1638206825084,5,Small1,Img_Requires 2-4,bin,true,89020,141,5,5,1,0,0
+1638206825076,24,Large1,Img_Requires 2-5,bin,true,768842,141,5,5,2,0,0
+1638206825240,8,Small1,Img_Requires 2-2,bin,true,89019,141,5,5,2,0,0
+1638206825237,30,Large1,Img_Requires 2-3,bin,true,768842,141,5,5,2,0,0
+1638206825388,7,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,2,0,0
+1638206825826,7,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,1,0,0
+1638206825832,11,Medium1,Img_Requires 2-4,bin,true,334427,142,5,5,2,0,0
+1638206825985,12,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,1,0,0
+1638206825990,9,Small1,Img_Requires 2-2,bin,true,89019,141,5,5,2,0,0
+1638206826134,3,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,1,0,0
+1638206826576,20,Medium1,Img_Requires 2-5,bin,true,334427,142,5,5,3,0,0
+1638206826583,46,Large1,Img_Requires 2-4,bin,true,768842,141,5,5,3,0,0
+1638206826737,11,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,2,0,0
+1638206826741,27,Large1,Img_Requires 2-2,bin,true,768841,141,5,5,4,0,0
+1638206826884,3,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,1,0,0
+1638206827326,4,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,1,0,0
+1638206827333,25,Large1,Img_Requires 2-4,bin,true,768842,141,5,5,1,0,0
+1638206827491,21,Medium1,Img_Requires 2-2,bin,true,334426,142,5,5,2,0,0
+1638206827486,34,Large1,Img_Requires 2-3,bin,true,768842,141,5,5,1,0,0
+1638206827634,5,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,3,0,0
+1638206828076,7,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,3,0,0
+1638206828083,32,Large1,Img_Requires 2-4,bin,true,768842,141,5,5,2,0,0
+1638206828236,4,Small1,Img_Requires 2-3,bin,true,89020,141,5,5,1,0,0
+1638206828241,23,Medium1,Img_Requires 2-2,bin,true,334426,142,5,5,2,0,0
+1638206828384,15,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,3,0,0
+1638206828825,15,Medium1,Img_Requires 2-5,bin,true,334427,142,5,5,3,0,0
+1638206828833,14,Medium1,Img_Requires 2-4,bin,true,334427,142,5,5,2,0,0
+1638206828986,4,Small1,Img_Requires 2-3,bin,true,89020,141,5,5,1,0,0
+1638206828990,4,Small1,Img_Requires 2-2,bin,true,89019,141,5,5,1,0,0
+1638206829134,9,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,1,0,0
+1638206829575,7,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,5,0,0
+1638206829583,24,Large1,Img_Requires 2-4,bin,true,768842,141,5,5,1,0,0
+1638206829740,36,Large1,Img_Requires 2-2,bin,true,768841,141,5,5,4,0,0
+1638206829736,67,Large1,Img_Requires 2-3,bin,true,768842,141,5,5,2,0,0
+1638206829884,30,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,16,0,0
+1638206830326,13,Medium1,Img_Requires 2-5,bin,true,334427,142,5,5,2,0,0
+1638206830333,7,Small1,Img_Requires 2-4,bin,true,89020,141,5,5,2,0,0
+1638206830487,17,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,2,0,0
+1638206830490,36,Large1,Img_Requires 2-2,bin,true,768806,141,5,5,9,0,0
+1638206830649,13,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,2,0,0
+1638206831083,10,Small1,Img_Requires 2-4,bin,true,89020,141,5,5,3,0,0
+1638206831076,26,Large1,Img_Requires 2-5,bin,true,768842,141,5,5,1,0,0
+1638206831236,24,Medium1,Img_Requires 2-3,bin,true,334427,142,5,5,1,0,0
+1638206831239,40,Large1,Img_Requires 2-2,bin,true,768843,141,5,5,6,0,3
+1638206831384,12,Medium1,Img_Requires 2-1,bin,true,334427,142,5,5,4,0,0
+1638206831826,7,Small1,Img_Requires 2-5,bin,true,89020,141,5,5,1,0,0
+1638206831833,3,Small1,Img_Requires 2-4,bin,true,89020,141,5,5,0,0,0
+1638206831987,29,Large1,Img_Requires 2-3,bin,true,768842,141,5,5,1,0,0
+1638206831992,42,Large1,Img_Requires 2-2,bin,true,768842,141,5,5,3,0,0
+1638206832133,47,Large1,Img_Requires 2-1,bin,true,768842,141,5,5,16,0,0
+1638206832583,13,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,6,0,0
+1638206832576,69,Large1,Img_Requires 2-5,bin,true,768842,141,6,6,3,0,0
+1638206832578,70,Large1,Img_Requires 2-6,bin,true,768843,141,6,6,3,0,1
+1638206832735,29,Large1,Img_Requires 2-3,bin,true,768842,141,6,6,2,0,0
+1638206832740,54,Large1,Img_Requires 2-2,bin,true,768842,141,6,6,5,0,0
+1638206832884,4,Small1,Img_Requires 2-1,bin,true,89020,141,6,6,2,0,0
+1638206833475,4,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,1,0,0
+1638206833476,13,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,2,0,0
+1638206833483,11,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,8,0,0
+1638206833640,42,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,6,0,0
+1638206833636,53,Large1,Img_Requires 2-3,bin,true,768842,141,6,6,1,0,0
+1638206833785,28,Large1,Img_Requires 2-1,bin,true,768842,141,6,6,1,0,0
+1638206834383,14,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,6,0,0
+1638206834375,27,Medium1,Img_Requires 2-6,bin,true,334427,142,6,6,3,0,0
+1638206834376,36,Large1,Img_Requires 2-5,bin,true,768842,141,6,6,4,0,0
+1638206834540,14,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,5,0,0
+1638206834536,66,Large1,Img_Requires 2-3,bin,true,768842,141,6,6,7,0,0
+1638206834684,20,Large1,Img_Requires 2-1,bin,true,768842,141,6,6,2,0,0
+1638206835274,16,Medium1,Img_Requires 2-6,bin,true,334427,142,6,6,2,0,0
+1638206835276,26,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,1,0,0
+1638206835283,20,Medium1,Img_Requires 2-4,bin,true,334427,142,6,6,8,0,0
+1638206835436,4,Small1,Img_Requires 2-3,bin,true,89020,141,6,6,1,0,0
+1638206835440,25,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,1,0,0
+1638206835583,29,Large1,Img_Requires 2-1,bin,true,768842,141,6,6,4,0,0
+1638206836183,8,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,2,0,0
+1638206836176,20,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,3,0,0
+1638206836175,41,Large1,Img_Requires 2-6,bin,true,768842,141,6,6,2,0,0
+1638206836336,5,Small1,Img_Requires 2-3,bin,true,89020,141,6,6,2,0,0
+1638206836341,37,Large1,Img_Requires 2-2,bin,true,768842,141,6,6,2,0,0
+1638206836484,16,Medium1,Img_Requires 2-1,bin,true,334427,142,6,6,1,0,0
+1638206837074,19,Medium1,Img_Requires 2-6,bin,true,334427,142,6,6,2,0,0
+1638206837076,17,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,3,0,0
+1638206837083,16,Medium1,Img_Requires 2-4,bin,true,334427,142,6,6,8,0,0
+1638206837236,25,Large1,Img_Requires 2-3,bin,true,768842,141,6,6,2,0,0
+1638206837240,25,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,4,0,0
+1638206837384,25,Large1,Img_Requires 2-1,bin,true,768842,141,6,6,2,0,0
+1638206837976,11,Small1,Img_Requires 2-5,bin,true,89020,141,6,6,5,0,0
+1638206837975,34,Large1,Img_Requires 2-6,bin,true,768842,141,6,6,1,0,0
+1638206837982,37,Large1,Img_Requires 2-4,bin,true,768842,141,6,6,3,0,0
+1638206838137,8,Small1,Img_Requires 2-3,bin,true,89020,141,6,6,2,0,0
+1638206838141,41,Large1,Img_Requires 2-2,bin,true,768842,141,6,6,3,0,0
+1638206838284,20,Large1,Img_Requires 2-1,bin,true,768842,141,6,6,1,0,0
+1638206838875,6,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,2,0,0
+1638206838876,17,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,2,0,0
+1638206838883,25,Large1,Img_Requires 2-4,bin,true,768842,141,6,6,2,0,0
+1638206839036,14,Medium1,Img_Requires 2-3,bin,true,334427,142,6,6,2,0,0
+1638206839040,15,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,6,0,0
+1638206839184,15,Small1,Img_Requires 2-1,bin,true,89020,141,6,6,12,0,0
+1638206839776,4,Small1,Img_Requires 2-5,bin,true,89020,141,6,6,1,0,0
+1638206839776,7,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,2,0,0
+1638206839782,21,Large1,Img_Requires 2-4,bin,true,768842,141,6,6,1,0,0
+1638206839936,20,Medium1,Img_Requires 2-3,bin,true,334427,142,6,6,1,0,0
+1638206839940,18,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,5,0,0
+1638206840084,26,Large1,Img_Requires 2-1,bin,true,768841,141,6,6,1,0,0
+1638206840675,4,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,2,0,0
+1638206840682,8,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,3,0,0
+1638206840676,25,Large1,Img_Requires 2-5,bin,true,768842,141,6,6,4,0,0
+1638206840836,11,Medium1,Img_Requires 2-3,bin,true,334427,142,6,6,1,0,0
+1638206840842,24,Large1,Img_Requires 2-2,bin,true,768842,141,6,6,2,0,0
+1638206840984,5,Small1,Img_Requires 2-1,bin,true,89019,141,6,6,1,0,0
+1638206841575,8,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,2,0,0
+1638206841576,13,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,3,0,0
+1638206841583,7,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,3,0,0
+1638206841736,28,Medium1,Img_Requires 2-3,bin,true,334427,142,6,6,4,0,0
+1638206841740,29,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,3,0,0
+1638206841883,55,Medium1,Img_Requires 2-1,bin,true,334426,142,6,6,2,0,0
+1638206842475,13,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,2,0,0
+1638206842483,7,Small1,Img_Requires 2-4,bin,true,89020,141,6,6,2,0,0
+1638206842476,22,Large1,Img_Requires 2-5,bin,true,768842,141,6,6,2,0,0
+1638206842636,15,Small1,Img_Requires 2-3,bin,true,89020,141,6,6,3,0,0
+1638206842639,22,Medium1,Img_Requires 2-2,bin,true,334427,142,6,6,13,0,0
+1638206842784,34,Large1,Img_Requires 2-1,bin,true,768841,141,6,6,1,0,0
+1638206843376,21,Small1,Img_Requires 2-5,bin,true,89020,141,6,6,7,0,0
+1638206843374,38,Medium1,Img_Requires 2-6,bin,true,334427,142,6,6,6,0,0
+1638206843383,48,Large1,Img_Requires 2-4,bin,true,768842,141,6,6,2,0,0
+1638206843543,23,Medium1,Img_Requires 2-3,bin,true,334427,142,6,6,2,0,0
+1638206843543,31,Large1,Img_Requires 2-2,bin,true,768842,141,6,6,2,0,0
+1638206843685,4,Small1,Img_Requires 2-1,bin,true,89019,141,6,6,1,0,0
+1638206844275,4,Small1,Img_Requires 2-6,bin,true,89020,141,6,6,2,0,0
+1638206844276,12,Medium1,Img_Requires 2-5,bin,true,334427,142,6,6,1,0,0
+1638206844283,26,Large1,Img_Requires 2-4,bin,true,768842,141,6,6,3,0,0
+1638206844440,12,Small1,Img_Requires 2-2,bin,true,89020,141,6,6,3,0,0
+1638206844436,17,Medium1,Img_Requires 2-3,bin,true,334427,142,6,6,1,0,0
+1638206844584,20,Small1,Img_Requires 2-1,bin,true,89019,141,7,7,2,0,0
+1638206844569,53,Medium1,Img_Requires 2-7,bin,true,334428,142,7,7,4,0,2
+1638206845176,33,Large1,Img_Requires 2-5,bin,true,768842,141,7,7,4,0,0
+1638206845182,43,Medium1,Img_Requires 2-4,bin,true,334427,142,7,7,22,0,0
+1638206845175,55,Large1,Img_Requires 2-6,bin,true,768842,141,7,7,1,0,0
+1638206845336,4,Small1,Img_Requires 2-3,bin,true,89020,141,7,7,2,0,0
+1638206845341,12,Medium1,Img_Requires 2-2,bin,true,334427,142,7,7,3,0,0
+1638206845619,10,Medium1,Img_Requires 2-7,bin,true,334427,142,7,7,1,0,0
+1638206845634,19,Medium1,Img_Requires 2-1,bin,true,334426,142,7,7,2,0,0
+1638206846233,11,Small1,Img_Requires 2-4,bin,true,89020,141,7,7,3,0,0
+1638206846225,40,Large1,Img_Requires 2-6,bin,true,768842,141,7,7,1,0,0
+1638206846225,41,Large1,Img_Requires 2-5,bin,true,768842,141,7,7,2,0,0
+1638206846387,13,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,2,0,0
+1638206846390,23,Medium1,Img_Requires 2-2,bin,true,334427,142,7,7,3,0,0
+1638206846669,14,Medium1,Img_Requires 2-7,bin,true,334427,142,7,7,3,0,0
+1638206846684,4,Small1,Img_Requires 2-1,bin,true,89019,141,7,7,2,0,0
+1638206847275,13,Medium1,Img_Requires 2-6,bin,true,334427,142,7,7,2,0,0
+1638206847282,14,Small1,Img_Requires 2-4,bin,true,89020,141,7,7,7,0,0
+1638206847276,60,Large1,Img_Requires 2-5,bin,true,768842,141,7,7,4,0,0
+1638206847436,25,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,2,0,0
+1638206847440,21,Small1,Img_Requires 2-2,bin,true,89020,141,7,7,4,0,0
+1638206847720,11,Medium1,Img_Requires 2-7,bin,true,334427,142,7,7,1,0,0
+1638206847734,23,Large1,Img_Requires 2-1,bin,true,768841,141,7,7,2,0,0
+1638206848325,4,Small1,Img_Requires 2-6,bin,true,89020,141,7,7,2,0,0
+1638206848327,26,Medium1,Img_Requires 2-5,bin,true,334427,142,7,7,2,0,0
+1638206848334,65,Large1,Img_Requires 2-4,bin,true,768842,141,7,7,7,0,0
+1638206848487,7,Small1,Img_Requires 2-3,bin,true,89020,141,7,7,1,0,0
+1638206848490,7,Small1,Img_Requires 2-2,bin,true,89020,141,7,7,3,0,0
+1638206848769,16,Medium1,Img_Requires 2-7,bin,true,334427,142,7,7,2,0,0
+1638206848784,32,Large1,Img_Requires 2-1,bin,true,768806,141,7,7,1,0,0
+1638206849376,4,Small1,Img_Requires 2-5,bin,true,89020,141,7,7,2,0,0
+1638206849375,12,Medium1,Img_Requires 2-6,bin,true,334427,142,7,7,2,0,0
+1638206849384,13,Medium1,Img_Requires 2-4,bin,true,334427,142,7,7,3,0,0
+1638206849540,35,Medium1,Img_Requires 2-2,bin,true,334427,142,7,7,8,0,0
+1638206849536,44,Large1,Img_Requires 2-3,bin,true,768842,141,7,7,3,0,0
+1638206849819,20,Large1,Img_Requires 2-7,bin,true,768842,141,7,7,2,0,0
+1638206849834,29,Large1,Img_Requires 2-1,bin,true,768843,141,7,7,6,0,3
+1638206850433,4,Small1,Img_Requires 2-4,bin,true,89020,141,7,7,1,0,0
+1638206850426,13,Small1,Img_Requires 2-5,bin,true,89020,141,7,7,1,0,0
+1638206850425,17,Small1,Img_Requires 2-6,bin,true,89020,141,7,7,1,0,0
+1638206850587,37,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,1,0,0
+1638206850590,52,Large1,Img_Requires 2-2,bin,true,768842,141,7,7,7,0,0
+1638206850868,10,Small1,Img_Requires 2-7,bin,true,89020,141,7,7,2,0,0
+1638206850883,45,Large1,Img_Requires 2-1,bin,true,768842,141,7,7,2,0,0
+1638206851476,4,Small1,Img_Requires 2-5,bin,true,89020,141,7,7,1,0,0
+1638206851475,6,Small1,Img_Requires 2-6,bin,true,89020,141,7,7,2,0,0
+1638206851484,15,Small1,Img_Requires 2-4,bin,true,89020,141,7,7,2,0,0
+1638206851640,56,Large1,Img_Requires 2-2,bin,true,768842,141,7,7,4,0,0
+1638206851636,60,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,4,0,0
+1638206851919,13,Medium1,Img_Requires 2-7,bin,true,334427,142,7,7,3,0,0
+1638206851934,12,Medium1,Img_Requires 2-1,bin,true,334427,142,7,7,1,0,0
+1638206852526,8,Small1,Img_Requires 2-6,bin,true,89020,141,7,7,1,0,0
+1638206852533,10,Small1,Img_Requires 2-4,bin,true,89020,141,7,7,5,0,0
+1638206852527,29,Large1,Img_Requires 2-5,bin,true,768842,141,7,7,1,0,0
+1638206852686,10,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,1,0,0
+1638206852691,16,Medium1,Img_Requires 2-2,bin,true,334427,142,7,7,2,0,0
+1638206852970,6,Small1,Img_Requires 2-7,bin,true,89020,141,7,7,4,0,0
+1638206852984,12,Medium1,Img_Requires 2-1,bin,true,334427,142,7,7,2,0,0
+1638206853577,29,Medium1,Img_Requires 2-5,bin,true,334427,142,7,7,2,0,0
+1638206853575,56,Large1,Img_Requires 2-6,bin,true,768842,141,7,7,1,0,0
+1638206853583,51,Large1,Img_Requires 2-4,bin,true,768842,141,7,7,5,0,0
+1638206853736,18,Small1,Img_Requires 2-3,bin,true,89020,141,7,7,2,0,0
+1638206853740,24,Medium1,Img_Requires 2-2,bin,true,334427,142,7,7,14,0,0
+1638206854020,9,Medium1,Img_Requires 2-7,bin,true,334427,142,7,7,1,0,0
+1638206854033,18,Medium1,Img_Requires 2-1,bin,true,334427,142,7,7,6,0,0
+1638206854633,12,Small1,Img_Requires 2-4,bin,true,89020,141,7,7,5,0,0
+1638206854625,20,Medium1,Img_Requires 2-6,bin,true,334427,142,7,7,1,0,0
+1638206854627,36,Large1,Img_Requires 2-5,bin,true,768842,141,7,7,5,0,0
+1638206854786,16,Small1,Img_Requires 2-3,bin,true,89020,141,7,7,2,0,0
+1638206854790,24,Large1,Img_Requires 2-2,bin,true,768842,141,7,7,2,0,0
+1638206855069,4,Small1,Img_Requires 2-7,bin,true,89020,141,7,7,2,0,0
+1638206855083,8,Medium1,Img_Requires 2-1,bin,true,334427,142,7,7,1,0,0
+1638206855676,16,Medium1,Img_Requires 2-5,bin,true,334427,142,7,7,1,0,0
+1638206855683,31,Medium1,Img_Requires 2-4,bin,true,334427,142,7,7,4,0,0
+1638206855676,46,Large1,Img_Requires 2-6,bin,true,768842,141,7,7,1,0,0
+1638206855836,12,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,1,0,0
+1638206855840,44,Large1,Img_Requires 2-2,bin,true,768842,141,7,7,2,0,0
+1638206856119,5,Small1,Img_Requires 2-7,bin,true,89020,141,7,7,2,0,0
+1638206856134,26,Large1,Img_Requires 2-1,bin,true,768842,141,7,7,2,0,0
+1638206856571,14,Medium1,Img_Requires 2-8,bin,true,334428,142,8,8,5,0,3
+1638206856726,31,Medium1,Img_Requires 2-5,bin,true,334427,142,8,8,9,0,0
+1638206856734,25,Medium1,Img_Requires 2-4,bin,true,334427,142,8,8,3,0,0
+1638206856725,57,Large1,Img_Requires 2-6,bin,true,768842,141,8,8,2,0,0
+1638206856892,9,Small1,Img_Requires 2-3,bin,true,89021,141,8,8,3,0,1
+1638206856892,36,Large1,Img_Requires 2-2,bin,true,768842,141,8,8,4,0,0
+1638206857169,5,Small1,Img_Requires 2-7,bin,true,89020,141,8,8,1,0,0
+1638206857184,27,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,2,0,0
+1638206857768,12,Medium1,Img_Requires 2-8,bin,true,334427,142,8,8,1,0,0
+1638206857926,16,Medium1,Img_Requires 2-5,bin,true,334427,142,8,8,1,0,0
+1638206857934,11,Small1,Img_Requires 2-4,bin,true,89020,141,8,8,9,0,0
+1638206857925,22,Medium1,Img_Requires 2-6,bin,true,334427,142,8,8,1,0,0
+1638206858086,58,Large1,Img_Requires 2-3,bin,true,768842,141,8,8,2,0,0
+1638206858090,65,Large1,Img_Requires 2-2,bin,true,768842,141,8,8,2,0,0
+1638206858369,6,Small1,Img_Requires 2-7,bin,true,89020,141,8,8,2,0,0
+1638206858384,42,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,3,0,0
+1638206858969,31,Large1,Img_Requires 2-8,bin,true,768842,141,8,8,2,0,0
+1638206859126,11,Small1,Img_Requires 2-5,bin,true,89020,141,8,8,2,0,0
+1638206859125,14,Medium1,Img_Requires 2-6,bin,true,334427,142,8,8,1,0,0
+1638206859133,20,Small1,Img_Requires 2-4,bin,true,89020,141,8,8,17,0,0
+1638206859289,11,Small1,Img_Requires 2-2,bin,true,89020,141,8,8,5,0,0
+1638206859286,23,Large1,Img_Requires 2-3,bin,true,768842,141,8,8,1,0,0
+1638206859570,5,Small1,Img_Requires 2-7,bin,true,89020,141,8,8,2,0,0
+1638206859584,26,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,2,0,0
+1638206860168,21,Large1,Img_Requires 2-8,bin,true,768842,141,8,8,1,0,0
+1638206860326,13,Medium1,Img_Requires 2-5,bin,true,334427,142,8,8,2,0,0
+1638206860332,22,Medium1,Img_Requires 2-4,bin,true,334427,142,8,8,5,0,0
+1638206860325,43,Large1,Img_Requires 2-6,bin,true,768842,141,8,8,2,0,0
+1638206860489,36,Small1,Img_Requires 2-2,bin,true,89020,141,8,8,10,0,0
+1638206860486,76,Small1,Img_Requires 2-3,bin,true,89020,141,8,8,7,0,0
+1638206860769,12,Medium1,Img_Requires 2-7,bin,true,334427,142,8,8,4,0,0
+1638206860784,11,Medium1,Img_Requires 2-1,bin,true,334427,142,8,8,1,0,0
+1638206861368,6,Small1,Img_Requires 2-8,bin,true,89020,141,8,8,2,0,0
+1638206861525,10,Medium1,Img_Requires 2-6,bin,true,334427,142,8,8,2,0,0
+1638206861533,22,Medium1,Img_Requires 2-4,bin,true,334427,142,8,8,3,0,0
+1638206861525,36,Large1,Img_Requires 2-5,bin,true,768842,141,8,8,3,0,0
+1638206861690,9,Small1,Img_Requires 2-2,bin,true,89020,141,8,8,2,0,0
+1638206861686,28,Large1,Img_Requires 2-3,bin,true,768842,141,8,8,3,0,0
+1638206861969,6,Small1,Img_Requires 2-7,bin,true,89020,141,8,8,2,0,0
+1638206861984,4,Small1,Img_Requires 2-1,bin,true,89020,141,8,8,2,0,0
+1638206862567,12,Medium1,Img_Requires 2-8,bin,true,334427,142,8,8,2,0,0
+1638206862733,10,Small1,Img_Requires 2-4,bin,true,89020,141,8,8,3,0,0
+1638206862726,37,Large1,Img_Requires 2-5,bin,true,768842,141,8,8,2,0,0
+1638206862725,39,Large1,Img_Requires 2-6,bin,true,768842,141,8,8,1,0,0
+1638206862885,12,Medium1,Img_Requires 2-3,bin,true,334427,142,8,8,1,0,0
+1638206862889,9,Small1,Img_Requires 2-2,bin,true,89020,141,8,8,2,0,0
+1638206863183,12,Small1,Img_Requires 2-1,bin,true,89020,141,8,8,3,0,0
+1638206863169,33,Large1,Img_Requires 2-7,bin,true,768842,141,8,8,2,0,0
+1638206863767,6,Small1,Img_Requires 2-8,bin,true,89020,141,8,8,4,0,0
+1638206863923,4,Small1,Img_Requires 2-6,bin,true,89020,141,8,8,1,0,0
+1638206863924,5,Small1,Img_Requires 2-5,bin,true,89020,141,8,8,2,0,0
+1638206863932,8,Small1,Img_Requires 2-4,bin,true,89020,141,8,8,2,0,0
+1638206864089,7,Small1,Img_Requires 2-2,bin,true,89020,141,8,8,3,0,0
+1638206864085,16,Medium1,Img_Requires 2-3,bin,true,334427,142,8,8,6,0,0
+1638206864368,26,Large1,Img_Requires 2-7,bin,true,768842,141,8,8,2,0,0
+1638206864383,53,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,5,0,0
+1638206864967,7,Small1,Img_Requires 2-8,bin,true,89020,141,8,8,1,0,0
+1638206865124,30,Medium1,Img_Requires 2-6,bin,true,334427,142,8,8,1,0,0
+1638206865132,29,Medium1,Img_Requires 2-4,bin,true,334427,142,8,8,3,0,0
+1638206865125,48,Large1,Img_Requires 2-5,bin,true,768842,141,8,8,2,0,0
+1638206865296,12,Small1,Img_Requires 2-2,bin,true,89020,141,8,8,2,0,0
+1638206865296,27,Medium1,Img_Requires 2-3,bin,true,334427,142,8,8,6,0,0
+1638206865567,6,Small1,Img_Requires 2-7,bin,true,89020,141,8,8,1,0,0
+1638206865582,29,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,6,0,0
+1638206866167,6,Small1,Img_Requires 2-8,bin,true,89020,141,8,8,2,0,0
+1638206866323,4,Small1,Img_Requires 2-6,bin,true,89020,141,8,8,1,0,0
+1638206866325,6,Small1,Img_Requires 2-5,bin,true,89020,141,8,8,3,0,0
+1638206866331,15,Medium1,Img_Requires 2-4,bin,true,334427,142,8,8,6,0,0
+1638206866485,5,Small1,Img_Requires 2-3,bin,true,89020,141,8,8,2,0,0
+1638206866489,12,Medium1,Img_Requires 2-2,bin,true,334427,142,8,8,2,0,0
+1638206866767,14,Medium1,Img_Requires 2-7,bin,true,334427,142,8,8,4,0,0
+1638206866783,29,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,1,0,0
+1638206867367,19,Large1,Img_Requires 2-8,bin,true,768842,141,8,8,1,0,0
+1638206867533,20,Small1,Img_Requires 2-4,bin,true,89020,141,8,8,3,0,0
+1638206867524,46,Large1,Img_Requires 2-6,bin,true,768842,141,8,8,1,0,0
+1638206867525,80,Large1,Img_Requires 2-5,bin,true,768842,141,8,8,5,0,0
+1638206867686,9,Small1,Img_Requires 2-3,bin,true,89020,141,8,8,4,0,0
+1638206867690,41,Large1,Img_Requires 2-2,bin,true,768842,141,8,8,5,0,0
+1638206867970,5,Small1,Img_Requires 2-7,bin,true,89020,141,8,8,2,0,0
+1638206867985,28,Large1,Img_Requires 2-1,bin,true,768842,141,8,8,1,0,0
+1638206868567,47,Large1,Img_Requires 2-8,bin,true,768842,141,9,9,6,0,0
+1638206868572,47,Large1,Img_Requires 2-9,bin,true,768843,141,9,9,7,0,1
+1638206868727,48,Small1,Img_Requires 2-5,bin,true,89020,141,9,9,4,0,0
+1638206868726,50,Small1,Img_Requires 2-6,bin,true,89020,141,9,9,22,0,0
+1638206868733,58,Medium1,Img_Requires 2-4,bin,true,334428,142,9,9,14,0,5
+1638206868886,33,Large1,Img_Requires 2-3,bin,true,768842,141,9,9,2,0,0
+1638206868890,32,Medium1,Img_Requires 2-2,bin,true,334427,142,9,9,4,0,0
+1638206869169,13,Medium1,Img_Requires 2-7,bin,true,334427,142,9,9,2,0,0
+1638206869184,7,Small1,Img_Requires 2-1,bin,true,89020,141,9,9,1,0,0
+1638206869918,7,Small1,Img_Requires 2-8,bin,true,89020,141,9,9,2,0,0
+1638206869919,6,Small1,Img_Requires 2-9,bin,true,89020,141,9,9,1,0,0
+1638206870076,38,Medium1,Img_Requires 2-5,bin,true,334427,142,9,9,6,0,0
+1638206870075,54,Large1,Img_Requires 2-6,bin,true,768842,141,9,9,2,0,0
+1638206870083,61,Large1,Img_Requires 2-4,bin,true,768842,141,9,9,5,0,0
+1638206870240,4,Small1,Img_Requires 2-2,bin,true,89020,141,9,9,2,0,0
+1638206870237,49,Large1,Img_Requires 2-3,bin,true,768842,141,9,9,2,0,0
+1638206870518,24,Large1,Img_Requires 2-7,bin,true,768842,141,9,9,2,0,0
+1638206870534,16,Small1,Img_Requires 2-1,bin,true,89020,141,9,9,2,0,0
+1638206871270,14,Small1,Img_Requires 2-9,bin,true,89020,141,9,9,10,0,0
+1638206871269,22,Medium1,Img_Requires 2-8,bin,true,334427,142,9,9,2,0,0
+1638206871425,5,Small1,Img_Requires 2-6,bin,true,89020,141,9,9,1,0,0
+1638206871433,25,Medium1,Img_Requires 2-4,bin,true,334427,142,9,9,2,0,0
+1638206871426,36,Large1,Img_Requires 2-5,bin,true,768842,141,9,9,2,0,0
+1638206871586,7,Small1,Img_Requires 2-3,bin,true,89020,141,9,9,2,0,0
+1638206871590,28,Large1,Img_Requires 2-2,bin,true,768842,141,9,9,3,0,0
+1638206871870,26,Large1,Img_Requires 2-7,bin,true,768842,141,9,9,2,0,0
+1638206871884,19,Medium1,Img_Requires 2-1,bin,true,334427,142,9,9,3,0,0
+1638206872618,4,Small1,Img_Requires 2-8,bin,true,89020,141,9,9,2,0,0
+1638206872619,7,Small1,Img_Requires 2-9,bin,true,89020,141,9,9,1,0,0
+1638206872775,19,Medium1,Img_Requires 2-6,bin,true,334427,142,9,9,1,0,0
+1638206872777,19,Medium1,Img_Requires 2-5,bin,true,334427,142,9,9,3,0,0
+1638206872783,43,Large1,Img_Requires 2-4,bin,true,768842,141,9,9,15,0,0
+1638206872935,10,Small1,Img_Requires 2-3,bin,true,89020,141,9,9,5,0,0
+1638206872939,54,Large1,Img_Requires 2-2,bin,true,768842,141,9,9,8,0,0
+1638206873219,11,Medium1,Img_Requires 2-7,bin,true,334427,142,9,9,1,0,0
+1638206873233,3,Small1,Img_Requires 2-1,bin,true,89020,141,9,9,1,0,0
+1638206873967,26,Medium1,Img_Requires 2-8,bin,true,334427,142,9,9,2,0,0
+1638206873968,26,Medium1,Img_Requires 2-9,bin,true,334427,142,9,9,2,0,0
+1638206874124,3,Small1,Img_Requires 2-6,bin,true,89020,141,9,9,1,0,0
+1638206874125,27,Large1,Img_Requires 2-5,bin,true,768842,141,9,9,1,0,0
+1638206874131,22,Medium1,Img_Requires 2-4,bin,true,334427,142,9,9,3,0,0
+1638206874294,17,Medium1,Img_Requires 2-2,bin,true,334427,142,9,9,1,0,0
+1638206874294,22,Medium1,Img_Requires 2-3,bin,true,334427,142,9,9,7,0,0
+1638206874569,20,Large1,Img_Requires 2-7,bin,true,768842,141,9,9,1,0,0
+1638206874583,34,Large1,Img_Requires 2-1,bin,true,768842,141,9,9,2,0,0
+1638206875318,17,Medium1,Img_Requires 2-8,bin,true,334427,142,9,9,2,0,0
+1638206875319,25,Large1,Img_Requires 2-9,bin,true,768842,141,9,9,2,0,0
+1638206875474,7,Small1,Img_Requires 2-6,bin,true,89020,141,9,9,1,0,0
+1638206875475,49,Large1,Img_Requires 2-5,bin,true,768842,141,9,9,1,0,0
+1638206875482,45,Large1,Img_Requires 2-4,bin,true,768842,141,9,9,2,0,0
+1638206875634,23,Medium1,Img_Requires 2-3,bin,true,334427,142,9,9,1,0,0
+1638206875638,32,Large1,Img_Requires 2-2,bin,true,768842,141,9,9,3,0,0
+1638206875918,15,Medium1,Img_Requires 2-7,bin,true,334427,142,9,9,2,0,0
+1638206875933,23,Large1,Img_Requires 2-1,bin,true,768842,141,9,9,4,0,0
+1638206876666,12,Small1,Img_Requires 2-8,bin,true,89020,141,9,9,2,0,0
+1638206876668,11,Medium1,Img_Requires 2-9,bin,true,334427,142,9,9,2,0,0
+1638206876825,9,Small1,Img_Requires 2-5,bin,true,89020,141,9,9,2,0,0
+1638206876823,32,Large1,Img_Requires 2-6,bin,true,768842,141,9,9,1,0,0
+1638206876832,56,Large1,Img_Requires 2-4,bin,true,768842,141,9,9,16,0,0
+1638206876989,10,Small1,Img_Requires 2-3,bin,true,89020,141,9,9,5,0,0
+1638206876989,17,Medium1,Img_Requires 2-2,bin,true,334427,142,9,9,3,0,0
+1638206877269,31,Large1,Img_Requires 2-7,bin,true,768842,141,9,9,1,0,0
+1638206877282,19,Medium1,Img_Requires 2-1,bin,true,334427,142,9,9,3,0,0
+1638206878017,9,Small1,Img_Requires 2-8,bin,true,89020,141,9,9,3,0,0
+1638206878017,28,Large1,Img_Requires 2-9,bin,true,768842,141,9,9,5,0,0
+1638206878175,20,Medium1,Img_Requires 2-5,bin,true,334427,142,9,9,2,0,0
+1638206878174,39,Large1,Img_Requires 2-6,bin,true,768842,141,9,9,2,0,0
+1638206878183,38,Medium1,Img_Requires 2-4,bin,true,334427,142,9,9,2,0,0
+1638206878336,14,Small1,Img_Requires 2-3,bin,true,89020,141,9,9,1,0,0
+1638206878351,34,Large1,Img_Requires 2-2,bin,true,768842,141,9,9,2,0,0
+1638206878618,29,Large1,Img_Requires 2-7,bin,true,768842,141,9,9,1,0,0
+1638206878633,15,Small1,Img_Requires 2-1,bin,true,89020,141,9,9,9,0,0
+1638206879368,34,Large1,Img_Requires 2-9,bin,true,768842,141,9,9,2,0,0
+1638206879366,42,Large1,Img_Requires 2-8,bin,true,768842,141,9,9,1,0,0
+1638206879531,22,Small1,Img_Requires 2-4,bin,true,89020,141,9,9,3,0,0
+1638206879523,70,Medium1,Img_Requires 2-6,bin,true,334427,142,9,9,3,0,0
+1638206879525,77,Large1,Img_Requires 2-5,bin,true,768842,141,9,9,6,0,0
+1638206879688,13,Medium1,Img_Requires 2-2,bin,true,334427,142,9,9,2,0,0
+1638206879685,35,Large1,Img_Requires 2-3,bin,true,768842,141,9,9,7,0,0
+1638206879968,4,Small1,Img_Requires 2-7,bin,true,89020,141,9,9,2,0,0
+1638206879983,24,Medium1,Img_Requires 2-1,bin,true,334427,142,9,9,2,0,0
+1638206880568,12,Medium1,Img_Requires 2-10,bin,true,334428,142,10,10,4,0,2
+1638206880718,20,Medium1,Img_Requires 2-9,bin,true,334427,142,10,10,1,0,0
+1638206880717,39,Large1,Img_Requires 2-8,bin,true,768842,141,10,10,1,0,0
+1638206880873,75,Large1,Img_Requires 2-6,bin,true,768842,141,10,10,3,0,0
+1638206880889,62,Medium1,Img_Requires 2-4,bin,true,334427,142,10,10,20,0,0
+1638206880874,93,Large1,Img_Requires 2-5,bin,true,768843,141,10,10,39,0,2
+1638206881038,9,Small1,Img_Requires 2-2,bin,true,89020,141,10,10,4,0,0
+1638206881036,29,Large1,Img_Requires 2-3,bin,true,768842,141,10,10,1,0,0
+1638206881318,12,Medium1,Img_Requires 2-7,bin,true,334427,142,10,10,2,0,0
+1638206881333,11,Small1,Img_Requires 2-1,bin,true,89020,141,10,10,4,0,0
+1638206882067,3,Small1,Img_Requires 2-10,bin,true,89020,141,10,10,1,0,0
+1638206882217,11,Small1,Img_Requires 2-8,bin,true,89020,141,10,10,4,0,0
+1638206882217,13,Medium1,Img_Requires 2-9,bin,true,334427,142,10,10,2,0,0
+1638206882374,23,Medium1,Img_Requires 2-6,bin,true,334427,142,10,10,1,0,0
+1638206882382,28,Medium1,Img_Requires 2-4,bin,true,334427,142,10,10,3,0,0
+1638206882375,44,Large1,Img_Requires 2-5,bin,true,768842,141,10,10,2,0,0
+1638206882538,33,Small1,Img_Requires 2-2,bin,true,89020,141,10,10,24,0,0
+1638206882535,37,Medium1,Img_Requires 2-3,bin,true,334427,142,10,10,3,0,0
+1638206882818,21,Large1,Img_Requires 2-7,bin,true,768842,141,10,10,1,0,0
+1638206882833,35,Large1,Img_Requires 2-1,bin,true,768842,141,10,10,5,0,0
+1638206883568,4,Small1,Img_Requires 2-10,bin,true,89020,141,10,10,1,0,0
+1638206883719,5,Small1,Img_Requires 2-9,bin,true,89020,141,10,10,3,0,0
+1638206883718,28,Large1,Img_Requires 2-8,bin,true,768842,141,10,10,3,0,0
+1638206883875,13,Medium1,Img_Requires 2-6,bin,true,334427,142,10,10,1,0,0
+1638206883884,7,Small1,Img_Requires 2-4,bin,true,89020,141,10,10,2,0,0
+1638206883876,19,Medium1,Img_Requires 2-5,bin,true,334427,142,10,10,3,0,0
+1638206884036,12,Medium1,Img_Requires 2-3,bin,true,334427,142,10,10,1,0,0
+1638206884040,8,Small1,Img_Requires 2-2,bin,true,89020,141,10,10,3,0,0
+1638206884319,25,Large1,Img_Requires 2-7,bin,true,768842,141,10,10,1,0,0
+1638206884334,52,Large1,Img_Requires 2-1,bin,true,768842,141,10,10,5,0,0
+1638206885068,9,Medium1,Img_Requires 2-10,bin,true,334427,142,10,10,2,0,0
+1638206885217,39,Large1,Img_Requires 2-8,bin,true,768842,141,10,10,2,0,0
+1638206885219,37,Medium1,Img_Requires 2-9,bin,true,334427,142,10,10,3,0,0
+1638206885382,12,Small1,Img_Requires 2-5,bin,true,89020,141,10,10,6,0,0
+1638206885383,73,Large1,Img_Requires 2-4,bin,true,768842,141,10,10,3,0,0
+1638206885382,81,Large1,Img_Requires 2-6,bin,true,768842,141,10,10,6,0,0
+1638206885535,28,Large1,Img_Requires 2-3,bin,true,768842,141,10,10,2,0,0
+1638206885539,37,Large1,Img_Requires 2-2,bin,true,768842,141,10,10,11,0,0
+1638206885833,23,Medium1,Img_Requires 2-1,bin,true,334427,142,10,10,1,0,0
+1638206885818,43,Small1,Img_Requires 2-7,bin,true,89020,141,10,10,5,0,0
+1638206886568,15,Medium1,Img_Requires 2-10,bin,true,334427,142,10,10,2,0,0
+1638206886719,17,Medium1,Img_Requires 2-9,bin,true,334427,142,10,10,4,0,0
+1638206886718,34,Large1,Img_Requires 2-8,bin,true,768842,141,10,10,1,0,0
+1638206886875,22,Medium1,Img_Requires 2-6,bin,true,334427,142,10,10,1,0,0
+1638206886876,41,Large1,Img_Requires 2-5,bin,true,768842,141,10,10,2,0,0
+1638206886884,55,Large1,Img_Requires 2-4,bin,true,768842,141,10,10,17,0,0
+1638206887036,33,Large1,Img_Requires 2-3,bin,true,768842,141,10,10,2,0,0
+1638206887040,35,Medium1,Img_Requires 2-2,bin,true,334427,142,10,10,4,0,0
+1638206887319,14,Medium1,Img_Requires 2-7,bin,true,334427,142,10,10,1,0,0
+1638206887334,3,Small1,Img_Requires 2-1,bin,true,89020,141,10,10,1,0,0
+1638206888068,4,Small1,Img_Requires 2-10,bin,true,89020,141,10,10,2,0,0
+1638206888218,14,Medium1,Img_Requires 2-9,bin,true,334427,142,10,10,2,0,0
+1638206888218,14,Small1,Img_Requires 2-8,bin,true,89020,141,10,10,2,0,0
+1638206888375,26,Large1,Img_Requires 2-6,bin,true,768842,141,10,10,1,0,0
+1638206888382,32,Medium1,Img_Requires 2-4,bin,true,334427,142,10,10,4,0,0
+1638206888376,48,Large1,Img_Requires 2-5,bin,true,768842,141,10,10,4,0,0
+1638206888536,7,Small1,Img_Requires 2-3,bin,true,89020,141,10,10,1,0,0
+1638206888540,9,Small1,Img_Requires 2-2,bin,true,89020,141,10,10,4,0,0
+1638206888819,13,Medium1,Img_Requires 2-7,bin,true,334427,142,10,10,2,0,0
+1638206888834,20,Large1,Img_Requires 2-1,bin,true,768842,141,10,10,2,0,0
+1638206889569,18,Medium1,Img_Requires 2-10,bin,true,334427,142,10,10,2,0,0
+1638206889718,9,Small1,Img_Requires 2-9,bin,true,89020,141,10,10,2,0,0
+1638206889717,14,Medium1,Img_Requires 2-8,bin,true,334427,142,10,10,1,0,0
+1638206889875,8,Small1,Img_Requires 2-6,bin,true,89020,141,10,10,2,0,0
+1638206889883,23,Medium1,Img_Requires 2-4,bin,true,334427,142,10,10,2,0,0
+1638206889876,41,Large1,Img_Requires 2-5,bin,true,768842,141,10,10,8,0,0
+1638206890040,44,Large1,Img_Requires 2-2,bin,true,768842,141,10,10,3,0,0
+1638206890039,54,Large1,Img_Requires 2-3,bin,true,768842,141,10,10,4,0,0
+1638206890319,4,Small1,Img_Requires 2-7,bin,true,89020,141,10,10,2,0,0
+1638206890334,23,Large1,Img_Requires 2-1,bin,true,768842,141,10,10,1,0,0
+1638206891068,10,Medium1,Img_Requires 2-10,bin,true,334427,142,10,10,1,0,0
+1638206891218,6,Small1,Img_Requires 2-8,bin,true,89020,141,9,9,1,0,0
+1638206891220,35,Large1,Img_Requires 2-9,bin,true,768842,141,8,8,6,0,0
+1638206891377,9,Small1,Img_Requires 2-5,bin,true,89020,141,8,8,4,0,0
+1638206891382,31,Medium1,Img_Requires 2-4,bin,true,334427,142,7,7,9,0,0
+1638206891375,40,Large1,Img_Requires 2-6,bin,true,768842,141,7,7,1,0,0
+1638206891536,10,Medium1,Img_Requires 2-3,bin,true,334427,142,7,7,1,0,0
+1638206891542,29,Medium1,Img_Requires 2-2,bin,true,334428,142,6,6,7,0,3
+1638206891819,5,Small1,Img_Requires 2-7,bin,true,89020,141,6,6,1,0,0
+1638206891833,10,Small1,Img_Requires 2-1,bin,true,89020,141,5,5,1,0,0
+1638206892419,39,Large1,Img_Requires 2-9,bin,true,768842,141,4,4,1,0,0
+1638206892440,18,Small1,Img_Requires 2-2,bin,true,89020,141,4,4,6,0,0
+1638206892425,74,Large1,Img_Requires 2-6,bin,true,768842,141,2,2,4,0,0
+1638206892433,71,Medium1,Img_Requires 2-4,bin,true,334427,142,1,1,25,0,0
+1638206892537,105,Small2,Audio_Requires 3-1,bin,true,1693698,140,1,1,12,0,10
+1638206892684,52,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206892834,84,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206892984,73,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206893139,106,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,3,0,0
+1638206893284,68,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206893433,63,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206893589,70,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,3,0,0
+1638206893734,101,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206893884,63,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206894035,58,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206894184,75,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206894334,79,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206894484,78,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,4,0,0
+1638206894634,60,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,19,0,0
+1638206894784,75,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206894933,63,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206895084,54,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206895243,56,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,3,0,0
+1638206895386,59,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206895534,120,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,13,0,0
+1638206895683,51,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206895834,79,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206895984,79,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,8,0,0
+1638206896134,49,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206896283,82,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,4,0,0
+1638206896434,60,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,4,0,0
+1638206896585,69,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206896734,75,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,14,0,0
+1638206896883,56,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206897034,89,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206897184,46,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206897334,70,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206897483,64,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206897635,42,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206897785,47,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206897933,55,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206898084,66,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206898234,63,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206898384,42,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206898534,63,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206898684,81,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206898833,45,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206898984,50,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206899134,58,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206899286,79,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206899434,44,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206899584,46,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206899734,67,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206899884,127,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206900034,48,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206900184,89,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206900334,51,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206900484,61,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206900634,48,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,4,0,0
+1638206900785,43,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206900935,62,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901087,68,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901234,41,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901384,48,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901534,44,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901684,77,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901834,77,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206901983,70,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,10,0,0
+1638206902134,51,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206902284,88,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206902434,45,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206902584,79,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206902734,60,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206902894,72,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206903036,60,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206903185,61,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206903335,62,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206903485,63,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206903635,49,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206903786,50,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206903935,177,Small2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206904113,69,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206904263,59,Medium2,Audio_Requires 3-1,bin,true,1693697,140,1,1,1,0,0
+1638206904413,49,Large2,Audio_Requires 3-1,bin,true,1693697,140,1,1,2,0,0
+1638206904562,77,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206904540,120,Large2,Audio_Requires 3-2,bin,true,1693698,140,2,2,7,0,2
+1638206904840,58,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206904863,74,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206905140,133,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206905163,131,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,16,0,0
+1638206905464,224,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,3,0,0
+1638206905439,291,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,6,0,0
+1638206905740,195,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,5,0,0
+1638206905763,202,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,14,0,0
+1638206906040,77,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,1,0,0
+1638206906063,96,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206906340,79,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,1,0,0
+1638206906362,84,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,5,0,0
+1638206906639,112,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,21,0,0
+1638206906663,89,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206906940,56,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206906963,65,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,4,0,0
+1638206907240,85,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,1,0,0
+1638206907264,73,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,3,0,0
+1638206907540,67,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,1,0,0
+1638206907563,84,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,4,0,0
+1638206907839,85,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,12,0,0
+1638206907863,82,Medium2,Audio_Requires 3-1,bin,true,1693696,140,2,2,3,0,0
+1638206908141,146,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206908163,126,Medium2,Audio_Requires 3-1,bin,true,1693696,140,2,2,5,0,0
+1638206908440,143,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206908464,184,Small2,Audio_Requires 3-1,bin,true,1693696,140,2,2,6,0,0
+1638206908763,90,Small2,Audio_Requires 3-1,bin,true,1693696,140,2,2,6,0,0
+1638206908741,449,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206909063,181,Small2,Audio_Requires 3-1,bin,true,1693696,140,2,2,18,0,0
+1638206909190,122,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,3,0,0
+1638206909363,86,Large2,Audio_Requires 3-1,bin,true,1693696,140,2,2,2,0,0
+1638206909489,85,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,5,0,0
+1638206909663,61,Large2,Audio_Requires 3-1,bin,true,1693696,140,2,2,3,0,0
+1638206909790,48,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,3,0,0
+1638206909969,129,Small2,Audio_Requires 3-1,bin,true,1693696,140,2,2,1,0,0
+1638206910090,71,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,3,0,0
+1638206910262,92,Medium2,Audio_Requires 3-1,bin,true,1693696,140,2,2,1,0,0
+1638206910390,87,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,30,0,0
+1638206910563,81,Large2,Audio_Requires 3-1,bin,true,1693661,140,2,2,2,0,0
+1638206910691,57,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,3,0,0
+1638206910864,105,Large2,Audio_Requires 3-1,bin,true,1693698,140,2,2,4,0,2
+1638206910990,135,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,14,0,0
+1638206911162,66,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206911290,58,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206911463,172,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206911591,101,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,5,0,0
+1638206911763,82,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206911890,77,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,4,0,0
+1638206912063,83,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206912190,50,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206912362,58,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,5,0,0
+1638206912490,51,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206912662,109,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,3,0,0
+1638206912789,65,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,4,0,0
+1638206912962,53,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206913089,61,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206913262,55,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206913389,64,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206913562,125,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206913688,68,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,4,0,0
+1638206913862,47,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206913989,73,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,8,0,0
+1638206914161,73,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,13,0,0
+1638206914289,53,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206914462,45,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206914589,62,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206914763,64,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206914888,59,Small2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206915061,57,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206915189,83,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,3,0,0
+1638206915361,62,Large2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206915489,64,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206915662,77,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206915790,64,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,3,0,0
+1638206915962,51,Medium2,Audio_Requires 3-1,bin,true,1693697,140,2,2,2,0,0
+1638206916089,52,Large2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206916262,61,Small2,Audio_Requires 3-1,bin,true,1693697,140,2,2,1,0,0
+1638206916390,52,Medium2,Audio_Requires 3-2,bin,true,1693697,140,2,2,2,0,0
+1638206916540,136,Small2,Audio_Requires 3-3,bin,true,1693698,140,3,3,3,0,2
+1638206916562,129,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206916689,97,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,4,0,0
+1638206916989,63,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206917012,110,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,23,0,0
+1638206917138,52,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206917439,86,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206917462,95,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206917588,63,Medium2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206917912,237,Medium2,Audio_Requires 3-1,bin,true,1693697,140,3,3,27,0,0
+1638206917889,287,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,5,0,0
+1638206918040,140,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,11,0,0
+1638206918340,87,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206918363,112,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206918490,207,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206918790,161,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206918813,174,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206918939,108,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206919240,67,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206919262,76,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206919391,110,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,1,0,0
+1638206919690,68,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,3,0,0
+1638206919714,85,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206919840,55,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206920140,66,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206920163,71,Medium2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206920289,65,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206920590,67,Large2,Audio_Requires 3-3,bin,true,1693697,140,3,3,3,0,0
+1638206920614,97,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,6,0,0
+1638206920740,61,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206921040,56,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206921063,91,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206921190,56,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,1,0,0
+1638206921489,72,Large2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206921513,82,Medium2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206921640,74,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,4,0,0
+1638206921941,92,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,4,0,0
+1638206921963,91,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206922089,51,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206922390,104,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206922413,94,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206922539,57,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206922840,66,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206922861,73,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206922989,158,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,4,0,0
+1638206923289,73,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206923313,77,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206923440,107,Medium2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206923739,54,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206923762,60,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,5,0,0
+1638206923889,124,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,6,0,0
+1638206924189,57,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206924212,70,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206924339,56,Medium2,Audio_Requires 3-2,bin,true,1693697,140,3,3,1,0,0
+1638206924639,63,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206924662,70,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,1,0,0
+1638206924789,97,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206925088,44,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206925112,58,Medium2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206925240,63,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206925539,65,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206925561,72,Small2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206925689,62,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206925989,61,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,2,0,0
+1638206926012,69,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,5,0,0
+1638206926139,56,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206926439,69,Small2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206926462,76,Medium2,Audio_Requires 3-1,bin,true,1693697,140,3,3,2,0,0
+1638206926589,77,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,2,0,0
+1638206926889,113,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206926912,102,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206927038,144,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206927341,62,Medium2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206927362,72,Medium2,Audio_Requires 3-1,bin,true,1693697,140,3,3,4,0,0
+1638206927489,133,Small2,Audio_Requires 3-2,bin,true,1693697,140,3,3,34,0,0
+1638206927811,214,Large2,Audio_Requires 3-1,bin,true,1693697,140,3,3,3,0,0
+1638206927788,267,Large2,Audio_Requires 3-3,bin,true,1693697,140,3,3,4,0,0
+1638206927940,239,Large2,Audio_Requires 3-2,bin,true,1693697,140,3,3,3,0,0
+1638206928240,80,Large2,Audio_Requires 3-3,bin,true,1693697,140,3,3,1,0,0
+1638206928262,374,Large2,Audio_Requires 3-1,bin,true,1693697,140,4,4,3,0,0
+1638206928540,268,Medium2,Audio_Requires 3-4,bin,true,1693698,140,4,4,25,0,24
+1638206928390,491,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,19,0,0
+1638206928690,535,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,25,0,0
+1638206928863,449,Small2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206928990,368,Small2,Audio_Requires 3-2,bin,true,1693697,140,4,4,35,0,0
+1638206929139,446,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,83,0,0
+1638206929289,334,Small2,Audio_Requires 3-3,bin,true,1693697,140,4,4,46,0,0
+1638206929463,210,Large2,Audio_Requires 3-1,bin,true,1693697,140,4,4,74,0,0
+1638206929590,91,Small2,Audio_Requires 3-2,bin,true,1693697,140,4,4,3,0,0
+1638206929739,135,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206929890,53,Large2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206930063,45,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206930190,73,Large2,Audio_Requires 3-2,bin,true,1693697,140,4,4,3,0,0
+1638206930339,53,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206930490,62,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206930664,70,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,13,0,0
+1638206930789,40,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206930939,55,Small2,Audio_Requires 3-4,bin,true,1693697,140,4,4,3,0,0
+1638206931104,67,Large2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206931263,47,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206931390,63,Small2,Audio_Requires 3-2,bin,true,1693697,140,4,4,1,0,0
+1638206931538,83,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206931690,40,Large2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206931863,60,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206931990,125,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206932139,44,Large2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206932291,49,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206932463,76,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206932589,47,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,1,0,0
+1638206932740,57,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206932890,95,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,3,0,0
+1638206933063,57,Small2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206933189,65,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206933339,44,Small2,Audio_Requires 3-4,bin,true,1693697,140,4,4,3,0,0
+1638206933491,46,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206933663,54,Small2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206933789,104,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,3,0,0
+1638206933939,60,Large2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206934090,55,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206934262,63,Small2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206934390,42,Small2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206934539,53,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206934690,91,Large2,Audio_Requires 3-3,bin,true,1693697,140,4,4,3,0,0
+1638206934864,49,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206934990,54,Small2,Audio_Requires 3-2,bin,true,1693697,140,4,4,1,0,0
+1638206935138,81,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,3,0,0
+1638206935290,65,Small2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206935463,44,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206935591,68,Large2,Audio_Requires 3-2,bin,true,1693697,140,4,4,1,0,0
+1638206935739,62,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206935889,45,Large2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206936063,89,Large2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206936190,44,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206936339,46,Small2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206936489,55,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206936662,39,Small2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206936789,48,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206936939,78,Large2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206937090,42,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206937263,53,Small2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206937389,88,Large2,Audio_Requires 3-2,bin,true,1693697,140,4,4,1,0,0
+1638206937539,55,Small2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206937690,53,Large2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206937864,58,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206937989,51,Large2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206938139,53,Large2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206938290,61,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206938463,63,Large2,Audio_Requires 3-1,bin,true,1693697,140,4,4,4,0,0
+1638206938590,51,Large2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206938740,64,Small2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206938891,71,Small2,Audio_Requires 3-3,bin,true,1693697,140,4,4,1,0,0
+1638206939063,54,Large2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206939190,54,Small2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206939339,44,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,2,0,0
+1638206939489,55,Small2,Audio_Requires 3-3,bin,true,1693697,140,4,4,2,0,0
+1638206939663,64,Medium2,Audio_Requires 3-1,bin,true,1693697,140,4,4,2,0,0
+1638206939790,50,Medium2,Audio_Requires 3-2,bin,true,1693697,140,4,4,2,0,0
+1638206939939,58,Medium2,Audio_Requires 3-4,bin,true,1693697,140,4,4,1,0,0
+1638206940090,107,Medium2,Audio_Requires 3-3,bin,true,1693697,140,4,4,5,0,0
+1638206940263,88,Large2,Audio_Requires 3-1,bin,true,1693697,140,4,4,1,0,0
+1638206940390,85,Large2,Audio_Requires 3-2,bin,true,1693697,140,4,4,3,0,0
+1638206940539,161,Medium2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206940546,194,Medium2,Audio_Requires 3-5,bin,true,1693698,140,5,5,20,0,8
+1638206940691,72,Medium2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206940863,144,Small2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206940990,53,Large2,Audio_Requires 3-2,bin,true,1693697,140,5,5,3,0,0
+1638206941288,95,Medium2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206941292,105,Large2,Audio_Requires 3-5,bin,true,1693697,140,5,5,4,0,0
+1638206941440,86,Large2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206941612,61,Medium2,Audio_Requires 3-1,bin,true,1693697,140,5,5,2,0,0
+1638206941740,125,Medium2,Audio_Requires 3-2,bin,true,1693697,140,5,5,3,0,0
+1638206942038,80,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206942043,101,Large2,Audio_Requires 3-5,bin,true,1693697,140,5,5,2,0,0
+1638206942190,134,Small2,Audio_Requires 3-3,bin,true,1693697,140,5,5,1,0,0
+1638206942362,57,Medium2,Audio_Requires 3-1,bin,true,1693697,140,5,5,2,0,0
+1638206942490,94,Small2,Audio_Requires 3-2,bin,true,1693697,140,5,5,2,0,0
+1638206942789,103,Small2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206942793,113,Large2,Audio_Requires 3-5,bin,true,1693697,140,5,5,1,0,0
+1638206942940,64,Small2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206943114,53,Large2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206943240,70,Small2,Audio_Requires 3-2,bin,true,1693697,140,5,5,2,0,0
+1638206943543,87,Large2,Audio_Requires 3-5,bin,true,1693697,140,5,5,11,0,0
+1638206943539,149,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206943690,70,Medium2,Audio_Requires 3-3,bin,true,1693697,140,5,5,1,0,0
+1638206943863,65,Medium2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206943990,50,Small2,Audio_Requires 3-2,bin,true,1693696,140,5,5,1,0,0
+1638206944289,85,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206944293,94,Medium2,Audio_Requires 3-5,bin,true,1693697,140,5,5,3,0,0
+1638206944440,47,Large2,Audio_Requires 3-3,bin,true,1693697,140,5,5,1,0,0
+1638206944613,46,Medium2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206944740,83,Medium2,Audio_Requires 3-2,bin,true,1693696,140,5,5,2,0,0
+1638206945039,73,Small2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206945043,90,Medium2,Audio_Requires 3-5,bin,true,1693697,140,5,5,2,0,0
+1638206945190,55,Medium2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206945363,50,Small2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206945490,123,Medium2,Audio_Requires 3-2,bin,true,1693696,140,5,5,1,0,0
+1638206945788,75,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206945793,83,Large2,Audio_Requires 3-5,bin,true,1693697,140,5,5,1,0,0
+1638206945941,150,Small2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206946113,123,Large2,Audio_Requires 3-1,bin,true,1693697,140,5,5,9,0,0
+1638206946240,123,Small2,Audio_Requires 3-2,bin,true,1693696,140,5,5,5,0,0
+1638206946539,150,Medium2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206946543,149,Small2,Audio_Requires 3-5,bin,true,1693697,140,5,5,8,0,0
+1638206946689,72,Medium2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206946863,48,Small2,Audio_Requires 3-1,bin,true,1693697,140,5,5,2,0,0
+1638206946990,98,Medium2,Audio_Requires 3-2,bin,true,1693696,140,5,5,2,0,0
+1638206947289,76,Medium2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206947293,82,Small2,Audio_Requires 3-5,bin,true,1693697,140,5,5,2,0,0
+1638206947440,89,Medium2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206947613,55,Small2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206947740,67,Medium2,Audio_Requires 3-2,bin,true,1693696,140,5,5,2,0,0
+1638206948043,86,Small2,Audio_Requires 3-5,bin,true,1693697,140,5,5,2,0,0
+1638206948039,96,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206948190,72,Small2,Audio_Requires 3-3,bin,true,1693697,140,5,5,1,0,0
+1638206948363,42,Small2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206948490,94,Medium2,Audio_Requires 3-2,bin,true,1693696,140,5,5,2,0,0
+1638206948789,64,Medium2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206948793,96,Medium2,Audio_Requires 3-5,bin,true,1693697,140,5,5,3,0,0
+1638206948940,53,Large2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206949113,70,Large2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206949240,49,Large2,Audio_Requires 3-2,bin,true,1693696,140,5,5,2,0,0
+1638206949538,92,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206949543,103,Medium2,Audio_Requires 3-5,bin,true,1693697,140,5,5,3,0,0
+1638206949690,53,Large2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206949863,51,Large2,Audio_Requires 3-1,bin,true,1693697,140,5,5,2,0,0
+1638206949989,58,Small2,Audio_Requires 3-2,bin,true,1693696,140,5,5,2,0,0
+1638206950290,86,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,1,0,0
+1638206950292,87,Small2,Audio_Requires 3-5,bin,true,1693697,140,5,5,5,0,0
+1638206950440,106,Large2,Audio_Requires 3-3,bin,true,1693697,140,5,5,3,0,0
+1638206950613,61,Small2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206950740,84,Medium2,Audio_Requires 3-2,bin,true,1693661,140,5,5,3,0,0
+1638206951039,64,Medium2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206951043,74,Medium2,Audio_Requires 3-5,bin,true,1693697,140,5,5,2,0,0
+1638206951190,49,Small2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206951363,50,Large2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206951490,98,Medium2,Audio_Requires 3-2,bin,true,1693698,140,5,5,3,0,2
+1638206951788,105,Large2,Audio_Requires 3-4,bin,true,1693697,140,5,5,2,0,0
+1638206951792,105,Small2,Audio_Requires 3-5,bin,true,1693697,140,5,5,3,0,0
+1638206951939,56,Large2,Audio_Requires 3-3,bin,true,1693697,140,5,5,2,0,0
+1638206952113,53,Medium2,Audio_Requires 3-1,bin,true,1693697,140,5,5,1,0,0
+1638206952240,125,Medium2,Audio_Requires 3-2,bin,true,1693697,140,5,5,2,0,0
+1638206952539,120,Large2,Audio_Requires 3-6,bin,true,1693698,140,6,6,3,0,1
+1638206952539,125,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,1,0,0
+1638206952543,193,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,6,0,0
+1638206952689,106,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,6,0,0
+1638206952863,55,Small2,Audio_Requires 3-1,bin,true,1693697,140,6,6,3,0,0
+1638206952989,92,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,2,0,0
+1638206953437,118,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,2,0,0
+1638206953442,137,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,4,0,0
+1638206953439,185,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,19,0,0
+1638206953590,75,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,4,0,0
+1638206953764,57,Small2,Audio_Requires 3-1,bin,true,1693697,140,6,6,1,0,0
+1638206953889,66,Large2,Audio_Requires 3-2,bin,true,1693697,140,6,6,2,0,0
+1638206954339,73,Large2,Audio_Requires 3-4,bin,true,1693697,140,6,6,2,0,0
+1638206954343,103,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,2,0,0
+1638206954339,129,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,1,0,0
+1638206954490,47,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,1,0,0
+1638206954662,55,Small2,Audio_Requires 3-1,bin,true,1693697,140,6,6,1,0,0
+1638206954799,70,Small2,Audio_Requires 3-2,bin,true,1693697,140,6,6,3,0,0
+1638206955238,405,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,2,0,0
+1638206955239,526,Large2,Audio_Requires 3-4,bin,true,1693697,140,6,6,2,0,0
+1638206955243,532,Large2,Audio_Requires 3-5,bin,true,1693697,140,6,6,40,0,0
+1638206955391,465,Medium2,Audio_Requires 3-3,bin,true,1693697,140,6,6,6,0,0
+1638206955564,297,Medium2,Audio_Requires 3-1,bin,true,1693697,140,6,6,11,0,0
+1638206955690,199,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,34,0,0
+1638206956139,113,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,2,0,0
+1638206956143,121,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,2,0,0
+1638206956140,134,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,4,0,0
+1638206956290,56,Medium2,Audio_Requires 3-3,bin,true,1693697,140,6,6,1,0,0
+1638206956463,64,Small2,Audio_Requires 3-1,bin,true,1693697,140,6,6,2,0,0
+1638206956591,51,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206957038,118,Large2,Audio_Requires 3-6,bin,true,1693697,140,6,6,1,0,0
+1638206957039,120,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,3,0,0
+1638206957043,125,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,2,0,0
+1638206957190,71,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,2,0,0
+1638206957363,62,Large2,Audio_Requires 3-1,bin,true,1693697,140,6,6,2,0,0
+1638206957490,101,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206957938,134,Medium2,Audio_Requires 3-6,bin,true,1693697,140,6,6,1,0,0
+1638206957944,133,Medium2,Audio_Requires 3-5,bin,true,1693697,140,6,6,4,0,0
+1638206957939,142,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,3,0,0
+1638206958090,89,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,2,0,0
+1638206958263,72,Large2,Audio_Requires 3-1,bin,true,1693697,140,6,6,3,0,0
+1638206958390,86,Small2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206958838,120,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,1,0,0
+1638206958839,124,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,4,0,0
+1638206958843,138,Medium2,Audio_Requires 3-5,bin,true,1693697,140,6,6,5,0,0
+1638206958990,85,Medium2,Audio_Requires 3-3,bin,true,1693697,140,6,6,17,0,0
+1638206959163,49,Large2,Audio_Requires 3-1,bin,true,1693697,140,6,6,3,0,0
+1638206959290,60,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206959739,98,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,3,0,0
+1638206959738,123,Large2,Audio_Requires 3-6,bin,true,1693697,140,6,6,2,0,0
+1638206959743,119,Large2,Audio_Requires 3-5,bin,true,1693697,140,6,6,4,0,0
+1638206959890,50,Small2,Audio_Requires 3-3,bin,true,1693697,140,6,6,2,0,0
+1638206960063,46,Small2,Audio_Requires 3-1,bin,true,1693697,140,6,6,1,0,0
+1638206960190,83,Small2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206960639,98,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,4,0,0
+1638206960637,144,Medium2,Audio_Requires 3-6,bin,true,1693697,140,6,6,1,0,0
+1638206960643,231,Medium2,Audio_Requires 3-5,bin,true,1693697,140,6,6,29,0,0
+1638206960791,140,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,2,0,0
+1638206960962,61,Small2,Audio_Requires 3-1,bin,true,1693696,140,6,6,2,0,0
+1638206961093,56,Large2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206961538,216,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,2,0,0
+1638206961540,218,Large2,Audio_Requires 3-4,bin,true,1693697,140,6,6,2,0,0
+1638206961543,225,Medium2,Audio_Requires 3-5,bin,true,1693697,140,6,6,4,0,0
+1638206961690,133,Small2,Audio_Requires 3-3,bin,true,1693697,140,6,6,4,0,0
+1638206961864,66,Medium2,Audio_Requires 3-1,bin,true,1693696,140,6,6,1,0,0
+1638206961991,86,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206962438,219,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,3,0,0
+1638206962443,264,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,3,0,0
+1638206962439,274,Large2,Audio_Requires 3-4,bin,true,1693697,140,6,6,3,0,0
+1638206962590,157,Small2,Audio_Requires 3-3,bin,true,1693697,140,6,6,4,0,0
+1638206962762,71,Medium2,Audio_Requires 3-1,bin,true,1693696,140,6,6,2,0,0
+1638206962889,64,Medium2,Audio_Requires 3-2,bin,true,1693697,140,6,6,1,0,0
+1638206963338,124,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,3,0,0
+1638206963342,126,Large2,Audio_Requires 3-5,bin,true,1693697,140,6,6,3,0,0
+1638206963337,124,Small2,Audio_Requires 3-6,bin,true,1693697,140,6,6,2,0,0
+1638206963489,75,Large2,Audio_Requires 3-3,bin,true,1693697,140,6,6,2,0,0
+1638206963662,85,Large2,Audio_Requires 3-1,bin,true,1693696,140,6,6,1,0,0
+1638206963789,95,Large2,Audio_Requires 3-2,bin,true,1693697,140,6,6,4,0,0
+1638206964242,118,Small2,Audio_Requires 3-5,bin,true,1693697,140,6,6,2,0,0
+1638206964237,125,Medium2,Audio_Requires 3-4,bin,true,1693697,140,6,6,8,0,0
+1638206964238,140,Medium2,Audio_Requires 3-6,bin,true,1693697,140,6,6,6,0,0
+1638206964390,93,Medium2,Audio_Requires 3-3,bin,true,1693697,140,6,6,1,0,0
+1638206964537,158,Small2,Audio_Requires 3-7,bin,true,1693698,140,7,7,4,0,1
+1638206964562,143,Medium2,Audio_Requires 3-1,bin,true,1693696,140,7,7,2,0,0
+1638206964689,98,Small2,Audio_Requires 3-2,bin,true,1693697,140,7,7,7,0,0
+1638206965138,180,Medium2,Audio_Requires 3-4,bin,true,1693697,140,7,7,6,0,0
+1638206965142,266,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,30,0,0
+1638206965137,284,Large2,Audio_Requires 3-6,bin,true,1693697,140,7,7,2,0,0
+1638206965288,164,Small2,Audio_Requires 3-3,bin,true,1693697,140,7,7,15,0,0
+1638206965586,82,Large2,Audio_Requires 3-7,bin,true,1693697,140,7,7,2,0,0
+1638206965612,99,Medium2,Audio_Requires 3-1,bin,true,1693696,140,7,7,7,0,0
+1638206965739,56,Medium2,Audio_Requires 3-2,bin,true,1693697,140,7,7,1,0,0
+1638206966188,104,Medium2,Audio_Requires 3-4,bin,true,1693697,140,7,7,2,0,0
+1638206966193,123,Medium2,Audio_Requires 3-5,bin,true,1693697,140,7,7,4,0,0
+1638206966187,136,Medium2,Audio_Requires 3-6,bin,true,1693697,140,7,7,1,0,0
+1638206966339,136,Medium2,Audio_Requires 3-3,bin,true,1693697,140,7,7,2,0,0
+1638206966636,152,Medium2,Audio_Requires 3-7,bin,true,1693697,140,7,7,14,0,0
+1638206966661,163,Small2,Audio_Requires 3-1,bin,true,1693696,140,7,7,9,0,0
+1638206966789,264,Large2,Audio_Requires 3-2,bin,true,1693697,140,7,7,8,0,0
+1638206967238,224,Large2,Audio_Requires 3-4,bin,true,1693697,140,7,7,1,0,0
+1638206967237,269,Medium2,Audio_Requires 3-6,bin,true,1693697,140,7,7,1,0,0
+1638206967243,269,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,5,0,0
+1638206967390,168,Medium2,Audio_Requires 3-3,bin,true,1693697,140,7,7,3,0,0
+1638206967686,246,Large2,Audio_Requires 3-7,bin,true,1693697,140,7,7,4,0,0
+1638206967712,273,Medium2,Audio_Requires 3-1,bin,true,1693696,140,7,7,4,0,0
+1638206967839,215,Large2,Audio_Requires 3-2,bin,true,1693697,140,7,7,25,0,0
+1638206968289,151,Small2,Audio_Requires 3-6,bin,true,1693697,140,7,7,1,0,0
+1638206968290,160,Medium2,Audio_Requires 3-4,bin,true,1693697,140,7,7,8,0,0
+1638206968293,158,Small2,Audio_Requires 3-5,bin,true,1693697,140,7,7,5,0,0
+1638206968459,71,Small2,Audio_Requires 3-3,bin,true,1693697,140,7,7,8,0,0
+1638206968772,341,Medium2,Audio_Requires 3-7,bin,true,1693697,140,7,7,1,0,0
+1638206968889,257,Large2,Audio_Requires 3-2,bin,true,1693697,140,7,7,80,0,0
+1638206968820,344,Small2,Audio_Requires 3-1,bin,true,1693696,140,7,7,141,0,0
+1638206969353,126,Small2,Audio_Requires 3-4,bin,true,1693697,140,7,7,6,0,0
+1638206969353,140,Small2,Audio_Requires 3-6,bin,true,1693697,140,7,7,10,0,0
+1638206969353,150,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,10,0,0
+1638206969489,97,Large2,Audio_Requires 3-3,bin,true,1693697,140,7,7,3,0,0
+1638206969802,53,Medium2,Audio_Requires 3-7,bin,true,1693697,140,7,7,1,0,0
+1638206969836,57,Medium2,Audio_Requires 3-1,bin,true,1693661,140,7,7,6,0,0
+1638206969939,65,Medium2,Audio_Requires 3-2,bin,true,1693697,140,7,7,1,0,0
+1638206970387,163,Small2,Audio_Requires 3-6,bin,true,1693697,140,7,7,1,0,0
+1638206970388,199,Medium2,Audio_Requires 3-4,bin,true,1693697,140,7,7,2,0,0
+1638206970392,199,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,4,0,0
+1638206970541,171,Small2,Audio_Requires 3-3,bin,true,1693697,140,7,7,8,0,0
+1638206970843,89,Small2,Audio_Requires 3-7,bin,true,1693697,140,7,7,5,0,0
+1638206970861,114,Medium2,Audio_Requires 3-1,bin,true,1693698,140,7,7,37,0,20
+1638206970989,53,Small2,Audio_Requires 3-2,bin,true,1693697,140,7,7,2,0,0
+1638206971440,158,Large2,Audio_Requires 3-4,bin,true,1693697,140,7,7,1,0,0
+1638206971437,188,Medium2,Audio_Requires 3-6,bin,true,1693697,140,7,7,2,0,0
+1638206971443,189,Medium2,Audio_Requires 3-5,bin,true,1693697,140,7,7,4,0,0
+1638206971589,143,Large2,Audio_Requires 3-3,bin,true,1693697,140,7,7,4,0,0
+1638206971886,85,Large2,Audio_Requires 3-7,bin,true,1693697,140,7,7,2,0,0
+1638206971920,105,Large2,Audio_Requires 3-1,bin,true,1693697,140,7,7,3,0,0
+1638206972039,104,Medium2,Audio_Requires 3-2,bin,true,1693697,140,7,7,5,0,0
+1638206972488,153,Small2,Audio_Requires 3-4,bin,true,1693697,140,7,7,1,0,0
+1638206972488,155,Small2,Audio_Requires 3-6,bin,true,1693697,140,7,7,2,0,0
+1638206972493,158,Small2,Audio_Requires 3-5,bin,true,1693697,140,7,7,4,0,0
+1638206972651,63,Medium2,Audio_Requires 3-3,bin,true,1693697,140,7,7,1,0,0
+1638206972936,50,Medium2,Audio_Requires 3-7,bin,true,1693697,140,7,7,1,0,0
+1638206972984,75,Large2,Audio_Requires 3-1,bin,true,1693697,140,7,7,8,0,0
+1638206973089,95,Large2,Audio_Requires 3-2,bin,true,1693697,140,7,7,2,0,0
+1638206973539,146,Large2,Audio_Requires 3-4,bin,true,1693697,140,7,7,1,0,0
+1638206973543,143,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,9,0,0
+1638206973538,151,Large2,Audio_Requires 3-6,bin,true,1693697,140,7,7,1,0,0
+1638206973690,65,Medium2,Audio_Requires 3-3,bin,true,1693697,140,7,7,1,0,0
+1638206973986,76,Large2,Audio_Requires 3-7,bin,true,1693697,140,7,7,2,0,0
+1638206974012,71,Small2,Audio_Requires 3-1,bin,true,1693697,140,7,7,10,0,0
+1638206974139,44,Medium2,Audio_Requires 3-2,bin,true,1693697,140,7,7,2,0,0
+1638206974587,113,Small2,Audio_Requires 3-6,bin,true,1693697,140,7,7,2,0,0
+1638206974591,119,Small2,Audio_Requires 3-4,bin,true,1693697,140,7,7,10,0,0
+1638206974592,124,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,10,0,0
+1638206974739,189,Small2,Audio_Requires 3-3,bin,true,1693697,140,7,7,4,0,0
+1638206975036,48,Large2,Audio_Requires 3-7,bin,true,1693697,140,7,7,3,0,0
+1638206975062,59,Medium2,Audio_Requires 3-1,bin,true,1693697,140,7,7,8,0,0
+1638206975189,40,Small2,Audio_Requires 3-2,bin,true,1693697,140,7,7,1,0,0
+1638206975640,151,Medium2,Audio_Requires 3-6,bin,true,1693697,140,7,7,6,0,0
+1638206975640,168,Medium2,Audio_Requires 3-4,bin,true,1693697,140,7,7,5,0,0
+1638206975647,162,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,5,0,0
+1638206975793,83,Medium2,Audio_Requires 3-3,bin,true,1693697,140,7,7,15,0,0
+1638206976086,65,Small2,Audio_Requires 3-7,bin,true,1693697,140,7,7,1,0,0
+1638206976114,72,Large2,Audio_Requires 3-1,bin,true,1693697,140,7,7,3,0,0
+1638206976240,72,Medium2,Audio_Requires 3-2,bin,true,1693697,140,7,7,1,0,0
+1638206976544,50,Medium2,Audio_Requires 3-8,bin,true,1693698,140,8,8,5,0,2
+1638206976688,113,Small2,Audio_Requires 3-4,bin,true,1693697,140,8,8,1,0,0
+1638206976692,114,Small2,Audio_Requires 3-5,bin,true,1693697,140,8,8,5,0,0
+1638206976687,120,Medium2,Audio_Requires 3-6,bin,true,1693697,140,8,8,1,0,0
+1638206976840,46,Large2,Audio_Requires 3-3,bin,true,1693698,140,8,8,3,0,1
+1638206977136,116,Large2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206977163,141,Large2,Audio_Requires 3-1,bin,true,1693697,140,8,8,20,0,0
+1638206977289,91,Small2,Audio_Requires 3-2,bin,true,1693697,140,8,8,3,0,0
+1638206977742,42,Small2,Audio_Requires 3-8,bin,true,1693697,140,8,8,1,0,0
+1638206977888,118,Medium2,Audio_Requires 3-4,bin,true,1693697,140,8,8,1,0,0
+1638206977892,133,Medium2,Audio_Requires 3-5,bin,true,1693697,140,8,8,3,0,0
+1638206977887,164,Medium2,Audio_Requires 3-6,bin,true,1693697,140,8,8,3,0,0
+1638206978051,67,Small2,Audio_Requires 3-3,bin,true,1693697,140,8,8,2,0,0
+1638206978336,57,Medium2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206978363,58,Small2,Audio_Requires 3-1,bin,true,1693697,140,8,8,1,0,0
+1638206978490,52,Medium2,Audio_Requires 3-2,bin,true,1693697,140,8,8,1,0,0
+1638206978941,48,Large2,Audio_Requires 3-8,bin,true,1693697,140,8,8,2,0,0
+1638206979087,121,Small2,Audio_Requires 3-6,bin,true,1693697,140,8,8,1,0,0
+1638206979093,127,Large2,Audio_Requires 3-5,bin,true,1693697,140,8,8,3,0,0
+1638206979088,133,Medium2,Audio_Requires 3-4,bin,true,1693697,140,8,8,2,0,0
+1638206979240,44,Large2,Audio_Requires 3-3,bin,true,1693697,140,8,8,1,0,0
+1638206979536,93,Small2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206979563,110,Small2,Audio_Requires 3-1,bin,true,1693697,140,8,8,4,0,0
+1638206979722,76,Small2,Audio_Requires 3-2,bin,true,1693697,140,8,8,11,0,0
+1638206980142,54,Medium2,Audio_Requires 3-8,bin,true,1693697,140,8,8,1,0,0
+1638206980286,117,Small2,Audio_Requires 3-6,bin,true,1693697,140,8,8,2,0,0
+1638206980288,136,Large2,Audio_Requires 3-4,bin,true,1693697,140,8,8,1,0,0
+1638206980292,169,Small2,Audio_Requires 3-5,bin,true,1693697,140,8,8,9,0,0
+1638206980441,204,Medium2,Audio_Requires 3-3,bin,true,1693697,140,8,8,13,0,0
+1638206980736,56,Small2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206980763,53,Medium2,Audio_Requires 3-1,bin,true,1693697,140,8,8,5,0,0
+1638206980889,52,Small2,Audio_Requires 3-2,bin,true,1693697,140,8,8,2,0,0
+1638206981342,44,Small2,Audio_Requires 3-8,bin,true,1693697,140,8,8,1,0,0
+1638206981487,116,Small2,Audio_Requires 3-6,bin,true,1693697,140,8,8,2,0,0
+1638206981489,132,Small2,Audio_Requires 3-4,bin,true,1693697,140,8,8,2,0,0
+1638206981492,131,Large2,Audio_Requires 3-5,bin,true,1693697,140,8,8,4,0,0
+1638206981639,45,Medium2,Audio_Requires 3-3,bin,true,1693697,140,8,8,2,0,0
+1638206981936,130,Medium2,Audio_Requires 3-7,bin,true,1693697,140,8,8,2,0,0
+1638206981962,224,Medium2,Audio_Requires 3-1,bin,true,1693697,140,8,8,7,0,0
+1638206982089,156,Medium2,Audio_Requires 3-2,bin,true,1693697,140,8,8,5,0,0
+1638206982543,43,Medium2,Audio_Requires 3-8,bin,true,1693697,140,8,8,2,0,0
+1638206982689,127,Large2,Audio_Requires 3-4,bin,true,1693697,140,8,8,2,0,0
+1638206982692,131,Medium2,Audio_Requires 3-5,bin,true,1693697,140,8,8,8,0,0
+1638206982687,145,Large2,Audio_Requires 3-6,bin,true,1693697,140,8,8,2,0,0
+1638206982841,58,Large2,Audio_Requires 3-3,bin,true,1693697,140,8,8,1,0,0
+1638206983137,62,Large2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206983163,70,Medium2,Audio_Requires 3-1,bin,true,1693697,140,8,8,6,0,0
+1638206983290,54,Small2,Audio_Requires 3-2,bin,true,1693697,140,8,8,4,0,0
+1638206983743,42,Small2,Audio_Requires 3-8,bin,true,1693697,140,8,8,1,0,0
+1638206983889,113,Medium2,Audio_Requires 3-4,bin,true,1693697,140,8,8,3,0,0
+1638206983888,117,Large2,Audio_Requires 3-6,bin,true,1693697,140,8,8,3,0,0
+1638206983893,128,Large2,Audio_Requires 3-5,bin,true,1693697,140,8,8,7,0,0
+1638206984042,52,Large2,Audio_Requires 3-3,bin,true,1693697,140,8,8,1,0,0
+1638206984336,89,Small2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206984364,102,Large2,Audio_Requires 3-1,bin,true,1693697,140,8,8,29,0,0
+1638206984490,65,Large2,Audio_Requires 3-2,bin,true,1693697,140,8,8,1,0,0
+1638206984944,49,Medium2,Audio_Requires 3-8,bin,true,1693697,140,8,8,2,0,0
+1638206985088,119,Medium2,Audio_Requires 3-6,bin,true,1693697,140,8,8,1,0,0
+1638206985090,130,Large2,Audio_Requires 3-4,bin,true,1693697,140,8,8,3,0,0
+1638206985093,142,Small2,Audio_Requires 3-5,bin,true,1693697,140,8,8,4,0,0
+1638206985240,85,Small2,Audio_Requires 3-3,bin,true,1693697,140,8,8,2,0,0
+1638206985536,47,Small2,Audio_Requires 3-7,bin,true,1693697,140,8,8,2,0,0
+1638206985568,52,Small2,Audio_Requires 3-1,bin,true,1693697,140,8,8,7,0,0
+1638206985691,53,Medium2,Audio_Requires 3-2,bin,true,1693697,140,8,8,1,0,0
+1638206986143,48,Small2,Audio_Requires 3-8,bin,true,1693697,140,8,8,1,0,0
+1638206986291,149,Small2,Audio_Requires 3-6,bin,true,1693697,140,8,8,4,0,0
+1638206986289,152,Small2,Audio_Requires 3-4,bin,true,1693697,140,8,8,2,0,0
+1638206986293,154,Medium2,Audio_Requires 3-5,bin,true,1693697,140,8,8,3,0,0
+1638206986445,70,Medium2,Audio_Requires 3-3,bin,true,1693697,140,8,8,5,0,0
+1638206986737,87,Large2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206986763,216,Medium2,Audio_Requires 3-1,bin,true,1693697,140,8,8,2,0,0
+1638206986890,164,Medium2,Audio_Requires 3-2,bin,true,1693697,140,8,8,4,0,0
+1638206987343,51,Small2,Audio_Requires 3-8,bin,true,1693697,140,8,8,1,0,0
+1638206987488,246,Large2,Audio_Requires 3-6,bin,true,1693697,140,8,8,1,0,0
+1638206987489,279,Large2,Audio_Requires 3-4,bin,true,1693697,140,8,8,2,0,0
+1638206987494,283,Medium2,Audio_Requires 3-5,bin,true,1693697,140,8,8,2,0,0
+1638206987641,183,Medium2,Audio_Requires 3-3,bin,true,1693697,140,8,8,59,0,0
+1638206987937,48,Medium2,Audio_Requires 3-7,bin,true,1693697,140,8,8,1,0,0
+1638206987963,81,Large2,Audio_Requires 3-1,bin,true,1693697,140,8,8,2,0,0
+1638206988090,56,Medium2,Audio_Requires 3-2,bin,true,1693697,140,8,8,2,0,0
+1638206988538,83,Medium2,Audio_Requires 3-9,bin,true,1693698,140,9,9,5,0,3
+1638206988543,101,Large2,Audio_Requires 3-8,bin,true,1693697,140,9,9,6,0,0
+1638206988688,144,Small2,Audio_Requires 3-6,bin,true,1693697,140,9,9,1,0,0
+1638206988693,158,Small2,Audio_Requires 3-5,bin,true,1693697,140,9,9,8,0,0
+1638206988689,166,Small2,Audio_Requires 3-4,bin,true,1693698,140,9,9,4,0,3
+1638206988841,63,Medium2,Audio_Requires 3-3,bin,true,1693697,140,9,9,2,0,0
+1638206989137,70,Medium2,Audio_Requires 3-7,bin,true,1693697,140,9,9,2,0,0
+1638206989162,68,Large2,Audio_Requires 3-1,bin,true,1693697,140,9,9,3,0,0
+1638206989290,44,Large2,Audio_Requires 3-2,bin,true,1693697,140,9,9,2,0,0
+1638206989887,75,Small2,Audio_Requires 3-9,bin,true,1693697,140,9,9,2,0,0
+1638206989893,94,Medium2,Audio_Requires 3-8,bin,true,1693697,140,9,9,3,0,0
+1638206990038,186,Medium2,Audio_Requires 3-6,bin,true,1693697,140,9,9,5,0,0
+1638206990043,188,Medium2,Audio_Requires 3-5,bin,true,1693697,140,9,9,1,0,0
+1638206990039,226,Medium2,Audio_Requires 3-4,bin,true,1693697,140,9,9,7,0,0
+1638206990190,97,Small2,Audio_Requires 3-3,bin,true,1693697,140,9,9,26,0,0
+1638206990486,60,Small2,Audio_Requires 3-7,bin,true,1693697,140,9,9,2,0,0
+1638206990513,80,Large2,Audio_Requires 3-1,bin,true,1693697,140,9,9,1,0,0
+1638206990641,108,Small2,Audio_Requires 3-2,bin,true,1693697,140,9,9,2,0,0
+1638206991237,65,Small2,Audio_Requires 3-9,bin,true,1693697,140,9,9,3,0,0
+1638206991244,81,Large2,Audio_Requires 3-8,bin,true,1693697,140,9,9,12,0,0
+1638206991388,140,Small2,Audio_Requires 3-6,bin,true,1693697,140,9,9,2,0,0
+1638206991393,139,Medium2,Audio_Requires 3-5,bin,true,1693697,140,9,9,1,0,0
+1638206991388,148,Large2,Audio_Requires 3-4,bin,true,1693697,140,9,9,3,0,0
+1638206991540,63,Small2,Audio_Requires 3-3,bin,true,1693697,140,9,9,3,0,0
+1638206991837,48,Large2,Audio_Requires 3-7,bin,true,1693697,140,9,9,1,0,0
+1638206991863,55,Large2,Audio_Requires 3-1,bin,true,1693697,140,9,9,3,0,0
+1638206991990,65,Large2,Audio_Requires 3-2,bin,true,1693697,140,9,9,2,0,0
+1638206992586,74,Medium2,Audio_Requires 3-9,bin,true,1693697,140,9,9,1,0,0
+1638206992593,80,Large2,Audio_Requires 3-8,bin,true,1693697,140,9,9,3,0,0
+1638206992739,142,Medium2,Audio_Requires 3-6,bin,true,1693697,140,9,9,0,0,0
+1638206992739,160,Small2,Audio_Requires 3-4,bin,true,1693697,140,9,9,2,0,0
+1638206992744,163,Medium2,Audio_Requires 3-5,bin,true,1693697,140,9,9,4,0,0
+1638206992890,72,Medium2,Audio_Requires 3-3,bin,true,1693697,140,9,9,2,0,0
+1638206993185,55,Large2,Audio_Requires 3-7,bin,true,1693697,140,9,9,2,0,0
+1638206993212,69,Medium2,Audio_Requires 3-1,bin,true,1693697,140,9,9,3,0,0
+1638206993339,51,Large2,Audio_Requires 3-2,bin,true,1693697,140,9,9,1,0,0
+1638206993936,82,Large2,Audio_Requires 3-9,bin,true,1693697,140,9,9,2,0,0
+1638206993942,106,Small2,Audio_Requires 3-8,bin,true,1693697,140,9,9,3,0,0
+1638206994087,177,Small2,Audio_Requires 3-6,bin,true,1693697,140,9,9,5,0,0
+1638206994092,191,Small2,Audio_Requires 3-5,bin,true,1693697,140,9,9,2,0,0
+1638206994088,208,Small2,Audio_Requires 3-4,bin,true,1693697,140,9,9,7,0,0
+1638206994238,83,Small2,Audio_Requires 3-3,bin,true,1693697,140,9,9,6,0,0
+1638206994536,145,Small2,Audio_Requires 3-7,bin,true,1693697,140,9,9,1,0,0
+1638206994562,238,Large2,Audio_Requires 3-1,bin,true,1693697,140,9,9,11,0,0
+1638206994689,139,Large2,Audio_Requires 3-2,bin,true,1693697,140,9,9,10,0,0
+1638206995285,73,Large2,Audio_Requires 3-9,bin,true,1693697,140,9,9,2,0,0
+1638206995292,78,Small2,Audio_Requires 3-8,bin,true,1693697,140,9,9,2,0,0
+1638206995442,90,Large2,Audio_Requires 3-5,bin,true,1693697,140,9,9,2,0,0
+1638206995438,134,Medium2,Audio_Requires 3-6,bin,true,1693697,140,9,9,1,0,0
+1638206995438,192,Medium2,Audio_Requires 3-4,bin,true,1693697,140,9,9,13,0,0
+1638206995588,116,Large2,Audio_Requires 3-3,bin,true,1693697,140,9,9,4,0,0
+1638206995886,54,Small2,Audio_Requires 3-7,bin,true,1693697,140,9,9,2,0,0
+1638206995912,67,Small2,Audio_Requires 3-1,bin,true,1693697,140,9,9,5,0,0
+1638206996038,116,Small2,Audio_Requires 3-2,bin,true,1693697,140,9,9,6,0,0
+1638206996642,115,Small2,Audio_Requires 3-8,bin,true,1693697,140,9,9,6,0,0
+1638206996636,126,Medium2,Audio_Requires 3-9,bin,true,1693697,140,9,9,2,0,0
+1638206996787,157,Large2,Audio_Requires 3-6,bin,true,1693697,140,9,9,1,0,0
+1638206996787,171,Medium2,Audio_Requires 3-4,bin,true,1693697,140,9,9,3,0,0
+1638206996792,175,Small2,Audio_Requires 3-5,bin,true,1693697,140,9,9,3,0,0
+1638206996939,87,Large2,Audio_Requires 3-3,bin,true,1693697,140,9,9,4,0,0
+1638206997236,63,Medium2,Audio_Requires 3-7,bin,true,1693697,140,9,9,1,0,0
+1638206997262,72,Small2,Audio_Requires 3-1,bin,true,1693697,140,9,9,2,0,0
+1638206997389,47,Large2,Audio_Requires 3-2,bin,true,1693697,140,9,9,1,0,0
+1638206997986,72,Large2,Audio_Requires 3-9,bin,true,1693697,140,9,9,2,0,0
+1638206997992,78,Small2,Audio_Requires 3-8,bin,true,1693697,140,9,9,3,0,0
+1638206998138,120,Large2,Audio_Requires 3-4,bin,true,1693697,140,9,9,1,0,0
+1638206998142,141,Large2,Audio_Requires 3-5,bin,true,1693697,140,9,9,2,0,0
+1638206998137,172,Small2,Audio_Requires 3-6,bin,true,1693697,140,9,9,4,0,0
+1638206998289,78,Medium2,Audio_Requires 3-3,bin,true,1693697,140,9,9,6,0,0
+1638206998586,83,Large2,Audio_Requires 3-7,bin,true,1693697,140,9,9,2,0,0
+1638206998612,87,Small2,Audio_Requires 3-1,bin,true,1693697,140,9,9,2,0,0
+1638206998740,56,Small2,Audio_Requires 3-2,bin,true,1693697,140,9,9,1,0,0
+1638206999335,99,Large2,Audio_Requires 3-9,bin,true,1693697,140,9,9,2,0,0
+1638206999342,116,Medium2,Audio_Requires 3-8,bin,true,1693697,140,9,9,3,0,0
+1638206999487,177,Large2,Audio_Requires 3-6,bin,true,1693697,140,9,9,3,0,0
+1638206999489,227,Large2,Audio_Requires 3-4,bin,true,1693697,140,9,9,3,0,0
+1638206999492,231,Large2,Audio_Requires 3-5,bin,true,1693697,140,9,9,2,0,0
+1638206999640,113,Small2,Audio_Requires 3-3,bin,true,1693697,140,9,9,4,0,0
+1638206999936,61,Large2,Audio_Requires 3-7,bin,true,1693697,140,9,9,1,0,0
+1638206999962,202,Small2,Audio_Requires 3-1,bin,true,1693697,140,9,9,3,0,0
+1638207000092,75,Medium2,Audio_Requires 3-2,bin,true,1693697,140,9,9,3,0,0
+1638207000535,44,Large2,Audio_Requires 3-10,bin,true,1693698,140,10,10,5,0,2
+1638207000692,86,Large2,Audio_Requires 3-8,bin,true,1693697,140,10,10,2,0,0
+1638207000686,98,Medium2,Audio_Requires 3-9,bin,true,1693697,140,10,10,1,0,0
+1638207000838,84,Small2,Audio_Requires 3-6,bin,true,1693697,140,10,10,5,0,0
+1638207000842,163,Small2,Audio_Requires 3-5,bin,true,1693698,140,10,10,3,0,1
+1638207000838,180,Medium2,Audio_Requires 3-4,bin,true,1693697,140,10,10,1,0,0
+1638207000989,77,Medium2,Audio_Requires 3-3,bin,true,1693697,140,10,10,7,0,0
+1638207001312,69,Medium2,Audio_Requires 3-1,bin,true,1693697,140,10,10,3,0,0
+1638207001286,121,Small2,Audio_Requires 3-7,bin,true,1693697,140,10,10,1,0,0
+1638207001440,192,Small2,Audio_Requires 3-2,bin,true,1693697,140,10,10,2,0,0
+1638207002035,48,Medium2,Audio_Requires 3-10,bin,true,1693697,140,10,10,1,0,0
+1638207002186,74,Medium2,Audio_Requires 3-9,bin,true,1693697,140,10,10,2,0,0
+1638207002192,88,Medium2,Audio_Requires 3-8,bin,true,1693697,140,10,10,2,0,0
+1638207002337,181,Large2,Audio_Requires 3-6,bin,true,1693697,140,10,10,2,0,0
+1638207002339,210,Medium2,Audio_Requires 3-4,bin,true,1693697,140,10,10,2,0,0
+1638207002342,226,Small2,Audio_Requires 3-5,bin,true,1693697,140,10,10,16,0,0
+1638207002489,99,Medium2,Audio_Requires 3-3,bin,true,1693697,140,10,10,6,0,0
+1638207002785,66,Large2,Audio_Requires 3-7,bin,true,1693697,140,10,10,2,0,0
+1638207002813,81,Large2,Audio_Requires 3-1,bin,true,1693697,140,10,10,2,0,0
+1638207002940,85,Medium2,Audio_Requires 3-2,bin,true,1693697,140,10,10,6,0,0
+1638207003536,45,Medium2,Audio_Requires 3-10,bin,true,1693697,140,10,10,2,0,0
+1638207003686,75,Small2,Audio_Requires 3-9,bin,true,1693697,140,10,10,1,0,0
+1638207003692,90,Medium2,Audio_Requires 3-8,bin,true,1693697,140,10,10,3,0,0
+1638207003837,157,Small2,Audio_Requires 3-6,bin,true,1693697,140,10,10,4,0,0
+1638207003837,173,Medium2,Audio_Requires 3-4,bin,true,1693697,140,10,10,4,0,0
+1638207003842,192,Small2,Audio_Requires 3-5,bin,true,1693697,140,10,10,16,0,0
+1638207003989,80,Medium2,Audio_Requires 3-3,bin,true,1693697,140,10,10,4,0,0
+1638207004287,70,Large2,Audio_Requires 3-7,bin,true,1693697,140,10,10,2,0,0
+1638207004312,83,Medium2,Audio_Requires 3-1,bin,true,1693697,140,10,10,2,0,0
+1638207004439,108,Large2,Audio_Requires 3-2,bin,true,1693697,140,10,10,2,0,0
+1638207005035,69,Small2,Audio_Requires 3-10,bin,true,1693697,140,10,10,2,0,0
+1638207005192,62,Large2,Audio_Requires 3-8,bin,true,1693697,140,10,10,4,0,0
+1638207005186,94,Large2,Audio_Requires 3-9,bin,true,1693697,140,10,10,2,0,0
+1638207005337,166,Medium2,Audio_Requires 3-6,bin,true,1693697,140,10,10,5,0,0
+1638207005343,190,Small2,Audio_Requires 3-5,bin,true,1693697,140,10,10,3,0,0
+1638207005338,208,Small2,Audio_Requires 3-4,bin,true,1693697,140,10,10,13,0,0
+1638207005489,83,Medium2,Audio_Requires 3-3,bin,true,1693697,140,10,10,4,0,0
+1638207005785,96,Large2,Audio_Requires 3-7,bin,true,1693697,140,10,10,2,0,0
+1638207005811,92,Medium2,Audio_Requires 3-1,bin,true,1693697,140,10,10,1,0,0
+1638207005940,64,Large2,Audio_Requires 3-2,bin,true,1693697,140,10,10,3,0,0
+1638207006535,55,Large2,Audio_Requires 3-10,bin,true,1693697,140,10,10,1,0,0
+1638207006686,117,Large2,Audio_Requires 3-9,bin,true,1693697,140,10,10,2,0,0
+1638207006692,137,Large2,Audio_Requires 3-8,bin,true,1693697,140,10,10,2,0,0
+1638207006842,192,Medium2,Audio_Requires 3-5,bin,true,1693697,140,10,10,3,0,0
+1638207006837,216,Medium2,Audio_Requires 3-6,bin,true,1693697,140,10,10,1,0,0
+1638207006837,218,Medium2,Audio_Requires 3-4,bin,true,1693697,140,10,10,4,0,0
+1638207007000,99,Medium2,Audio_Requires 3-3,bin,true,1693697,140,10,10,6,0,0
+1638207007286,62,Medium2,Audio_Requires 3-7,bin,true,1693697,140,10,10,3,0,0
+1638207007312,68,Large2,Audio_Requires 3-1,bin,true,1693697,140,10,10,2,0,0
+1638207007439,54,Large2,Audio_Requires 3-2,bin,true,1693697,140,10,10,3,0,0
+1638207008035,60,Medium2,Audio_Requires 3-10,bin,true,1693697,140,10,10,2,0,0
+1638207008187,93,Medium2,Audio_Requires 3-9,bin,true,1693697,140,10,10,4,0,0
+1638207008193,106,Small2,Audio_Requires 3-8,bin,true,1693697,140,10,10,2,0,0
+1638207008338,152,Medium2,Audio_Requires 3-6,bin,true,1693697,140,10,10,1,0,0
+1638207008339,193,Medium2,Audio_Requires 3-4,bin,true,1693697,140,10,10,2,0,0
+1638207008344,206,Medium2,Audio_Requires 3-5,bin,true,1693697,140,10,10,5,0,0
+1638207008490,89,Small2,Audio_Requires 3-3,bin,true,1693697,140,10,10,2,0,0
+1638207008787,68,Large2,Audio_Requires 3-7,bin,true,1693697,140,10,10,1,0,0
+1638207008813,78,Large2,Audio_Requires 3-1,bin,true,1693697,140,10,10,2,0,0
+1638207008940,61,Large2,Audio_Requires 3-2,bin,true,1693697,140,10,10,1,0,0
+1638207009536,59,Small2,Audio_Requires 3-10,bin,true,1693697,140,10,10,4,0,0
+1638207009687,71,Small2,Audio_Requires 3-9,bin,true,1693697,140,10,10,1,0,0
+1638207009693,83,Medium2,Audio_Requires 3-8,bin,true,1693697,140,10,10,6,0,0
+1638207009837,154,Medium2,Audio_Requires 3-6,bin,true,1693697,140,10,10,1,0,0
+1638207009843,187,Large2,Audio_Requires 3-5,bin,true,1693697,140,10,10,11,0,0
+1638207009838,203,Medium2,Audio_Requires 3-4,bin,true,1693697,140,10,10,4,0,0
+1638207009991,78,Medium2,Audio_Requires 3-3,bin,true,1693697,140,10,10,3,0,0
+1638207010287,87,Large2,Audio_Requires 3-7,bin,true,1693697,140,10,10,1,0,0
+1638207010312,138,Large2,Audio_Requires 3-1,bin,true,1693697,140,10,10,2,0,0
+1638207010440,150,Large2,Audio_Requires 3-2,bin,true,1693697,140,10,10,4,0,0
+1638207011036,49,Large2,Audio_Requires 3-10,bin,true,1693697,140,10,10,3,0,0
+1638207011186,72,Medium2,Audio_Requires 3-9,bin,true,1693697,140,9,9,3,0,0
+1638207011193,82,Small2,Audio_Requires 3-8,bin,true,1693697,140,8,8,3,0,0
+1638207011338,176,Medium2,Audio_Requires 3-6,bin,true,1693697,140,8,8,4,0,0
+1638207011339,233,Medium2,Audio_Requires 3-4,bin,true,1693697,140,7,7,4,0,0
+1638207011343,235,Large2,Audio_Requires 3-5,bin,true,1693697,140,7,7,3,0,0
+1638207011490,114,Large2,Audio_Requires 3-3,bin,true,1693697,140,7,7,3,0,0
+1638207011788,56,Medium2,Audio_Requires 3-7,bin,true,1693697,140,6,6,1,0,0
+1638207011813,70,Medium2,Audio_Requires 3-1,bin,true,1693697,140,5,5,3,0,0
+1638207011941,62,Small2,Audio_Requires 3-2,bin,true,1693698,140,4,4,3,0,2
+1638207012393,117,Large2,Audio_Requires 3-8,bin,true,1693697,140,3,3,13,0,0
+1638207012389,136,Medium2,Audio_Requires 3-4,bin,true,1693697,140,2,2,1,0,0
+1638207012393,141,Medium2,Audio_Requires 3-5,bin,true,1693697,140,1,1,4,0,0
