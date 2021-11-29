@@ -34,14 +34,14 @@ for i = workloads
     resp_times(k) = mean(mean_resp_t);
     
 %     check deviazione_std    
-%     dev_std_1(k) = std(thr);
-%     dev_std_2(k) = std(mean_resp_t);
+%     COV_thr(k) = std(thr)/mean(thr);
+%     COV_resp(k) = std(mean_resp_t)/mean(mean_resp_t);
 %     
-%     if dev_std_1(k) > 0.5     
+%     if COV_thr(k) > 0.5     
 %         througputs(k) = median(thr);
 %     end
 %     
-%     if dev_std_2(k) > 0.5
+%     if COV_resp(k) > 0.5
 %         resp_times(k) = median(mean_resp_t);
 %     end
     k = k+1; 
@@ -71,7 +71,6 @@ scatter(workloads, power);
 xlabel("Load [richieste/min]");
 ylabel("Power [richieste\_soddisfatte/s^2]");
 grid;
-
 
 power_max = max(power);
 KNEE_CAPACITY = througputs(find(power == power_max));
