@@ -1,0 +1,32 @@
+- quando faccio la PCA devo includere anche la label? forse no perchè la sua info è inclusa nel nr di bytes trasferiti.
+- nello script matlab per vedere la devianza persa dopo PCA+CLUSTERING devo avere valori numerici lì dentro.
+
+4 componenti principali, dovrei avere l' 89,233% della devianza
+
+6 cluster: conservo 61,28% della devianza totale
+9 cluster: conservo 71,46% della devianza totale
+12 cluster: conservo 75,69% della varianza totale
+15 cluster: conservo 78,14% della varianza totale
+18 cluster: conservo 80,21% della varianza totale
+
+per ogni cluster devo estrarre una richiesta. 
+scegliere la richiesta rappresentativa del cluster.
+come farlo ? cosa 1 da chiedergli. va bene se li scelgo considerando l'occorrenza (la richiesta) più frequente al suo interno?
+
+in ogni caso ho scelto 12 cluster, quindi il wl sintentico dovrebbe essere lui
+cluster 1	label: LARGE	*grpThreads: 1	bytes: 14125903
+cluster 2	label: LARGE	*grpThreads: 1	bytes: 14125903
+cluster 3	label: SMALL	*grpThreads: 1	bytes: 1815184
+cluster 4	label: SMALL1	*grpThreads: 2 	bytes: 89020
+cluster 5	label: SMALL	*grpThreads: 1	bytes: 1815184
+cluster 6	label: LARGE	*grpThreads: 1	bytes: 14125903
+cluster 7	label: SMALL2	*grpThreads: 3	bytes: 3462951
+cluster 8	label: LARGE2	*grpthreads: 3 	bytes: 24059301
+cluster 9	label: MEDIUM2	*grpthreads: 3 	bytes: 8153646
+cluster 10	label: SMALL1	*grpthreads: 2 	bytes: 89020
+cluster 11	label: MEDIUM1	*grpthreads: 2 	bytes: 1920757
+cluster 12	label: MEDIUM1	*grpthreads: 2 	bytes: 1920757
+
+Vedere meglio il parametro grpThreads
+Chiedergli come sottoporre questo workload al server.
+L'ordine deve essere questo?
