@@ -1,7 +1,0 @@
-IdleTime : costante e pari a zero si può rimuovere.
-Outlaier : relativi a richieste file + grandi.
-Connect : tempo per TCP handshake connessione http. 
-
-Tabella Cluster - Label : tabelle -> riepilogo -> gruppo : Cluster -> sottogruppo : Label.
-
-6 Cluster. Per ogni cluster scelgo come elemento rappresentativo la richiesta con piu occorrenze.
