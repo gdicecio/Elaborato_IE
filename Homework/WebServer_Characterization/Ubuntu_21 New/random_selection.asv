@@ -1,0 +1,28 @@
+function [new_real,new_syn] = random_selection(real,synthetic)
+
+N_cluster = max(real(:,end));
+cluster_data_real = real(:,end);
+cluster_data_syn = synthetic(:,end);
+
+new_real = zeros(N_cluster,8);
+new_syn = zeros(N_cluster,8);
+
+for i = 1:N_cluster
+     index_real = find(cluster_data_real==i); % find the index of cluster i
+     index_syn = find(cluster_data_syn==i); % find the index of cluster i
+     
+     if length(index_real) > 1
+          new_real(i,:) = real(randsample(index_real,1),:); %tutte le colonne associate alla riga random
+         % new_syn(i,:) = synthetic(randsample(index_syn,1),:);
+     else
+         new_real(i,:) = real(index_real,:);
+     end
+     
+     if length(index_syn) > 1
+         new_syn(i,:) = synthetic(randsample(index_syn,1),:);
+     else
+         new_syn(i,:) = synthetic(index_syn,:);
+     end
+end
+end
+

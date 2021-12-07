@@ -1,8 +1,11 @@
 clc, close all, clear all;
 
 %% Data
-real = xlsread('real');
-synthetic = xlsread('syntetic');
+real1 = xlsread('real');
+synthetic1 = xlsread('syn');
+
+real = random_selection(real1);
+synthetic = random_selection(synthetic1);
 
 N = size(real,2); %numero di colonne lo stesso per i due set di dati
 real = real(:, 1:N-1); % rimuovo la colonna associata ai cluster

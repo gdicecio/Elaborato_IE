@@ -2,9 +2,9 @@ clc;
 clear;
 
 %% Read the data
-data = xlsread('high_level_filtrati');
-pca_data = xlsread('pca6');
-cluster_data = xlsread('cluster10_pc6');
+data = xlsread('low_level_syn_filtered');
+pca_data = xlsread('PCA7_syn');
+cluster_data = xlsread('Cluster20_7syn');
 N_cluster = max (cluster_data); %
 
 %% Total Deviance
