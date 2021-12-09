@@ -1,0 +1,2 @@
+1. Tolti i valori di inizio e fine (tramite INT)
+2. Riga 13 OUTLIER (in media con tutti i parametri tranne BO)

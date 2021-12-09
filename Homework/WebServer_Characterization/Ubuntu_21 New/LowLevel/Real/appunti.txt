@@ -1,0 +1,2 @@
+1. Togliere OUTLIER 'b'
+2. Righe di inizio e fine

@@ -1,0 +1,49 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{} Data}
+\PYG{n}{workloads}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{l+m+mi}{500}\PYG{+w}{ }\PYG{l+m+mi}{800}\PYG{+w}{ }\PYG{l+m+mi}{1000}\PYG{+w}{ }\PYG{l+m+mi}{2000}\PYG{+w}{ }\PYG{l+m+mi}{3000}\PYG{+w}{ }\PYG{l+m+mi}{4000}\PYG{+w}{ }\PYG{l+m+mi}{5000}\PYG{+w}{ }\PYG{l+m+mi}{6000}\PYG{+w}{ }\PYG{l+m+mi}{7000}\PYG{+w}{ }\PYG{l+m+mi}{8000}\PYG{+w}{ }\PYG{l+m+mi}{9000}\PYG{p}{];}
+\PYG{n}{througputs}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{workloads}\PYG{p}{));}
+\PYG{n}{resp\PYGZus{}times}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{workloads}\PYG{p}{));}
+\PYG{n}{k}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Indice di riferimento per i due vettori}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{} Elaborazione}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{workloads}
+\PYG{+w}{	}\PYG{n}{mean\PYGZus{}resp\PYGZus{}t}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{thr}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{3}
+\PYG{+w}{		}\PYG{n+nb}{path}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{strcat}\PYG{p}{(}\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}\PYGZpc{}d\PYGZsq{}}\PYG{p}{),}\PYG{l+s}{\PYGZsq{}\PYGZbs{}dati\PYGZsq{}}\PYG{p}{,}\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZpc{}d\PYGZsq{}}\PYG{p}{),}\PYG{l+s}{\PYGZsq{}.csv\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{		}
+\PYG{+w}{		}\PYG{c}{\PYGZpc{}Data from Jmeter output file (csv format)}
+\PYG{+w}{		}\PYG{n}{simple\PYGZus{}data}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{readmatrix}\PYG{p}{(}\PYG{n+nb}{path}\PYG{p}{);}
+\PYG{+w}{		}
+\PYG{+w}{		}\PYG{c}{\PYGZpc{}Calculating the number of requests}
+\PYG{+w}{		}\PYG{p}{[}\PYG{n}{N}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{M}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{size}\PYG{p}{(}\PYG{n}{simple\PYGZus{}data}\PYG{p}{);}
+\PYG{+w}{		}\PYG{n}{num\PYGZus{}req}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Number of requests}
+\PYG{+w}{		}
+\PYG{+w}{		}\PYG{c}{\PYGZpc{}Throughput = number\PYGZus{}of\PYGZus{}requests\PYGZus{}completed / time\PYGZus{}window\PYGZus{}of\PYGZus{}the\PYGZus{}experiment}
+\PYG{+w}{		}\PYG{n}{t\PYGZus{}wind\PYGZus{}mills}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{simple\PYGZus{}data}\PYG{p}{(}\PYG{n}{num\PYGZus{}req}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{simple\PYGZus{}data}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Time window (milliseconds)}
+\PYG{+w}{		}\PYG{n}{t\PYGZus{}wind\PYGZus{}sec}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{t\PYGZus{}wind\PYGZus{}mills}\PYG{o}{/}\PYG{l+m+mi}{1000}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Time window (seconds)}
+\PYG{+w}{		}\PYG{n}{thr}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{num\PYGZus{}req}\PYG{o}{/}\PYG{n}{t\PYGZus{}wind\PYGZus{}sec}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Throughput}
+\PYG{+w}{		}
+\PYG{+w}{		}\PYG{c}{\PYGZpc{}Average response time}
+\PYG{+w}{		}\PYG{n}{elap\PYGZus{}times}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{simple\PYGZus{}data}\PYG{p}{(:,}\PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{+w}{		}\PYG{n}{mean\PYGZus{}resp\PYGZus{}t}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{mean}\PYG{p}{(}\PYG{n}{elap\PYGZus{}times}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{end}
+
+\PYG{+w}{	}\PYG{n}{check}\PYG{+w}{ }\PYG{n}{deviazione\PYGZus{}std}
+\PYG{+w}{	}\PYG{n}{COV\PYGZus{}thr}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{std}\PYG{p}{(}\PYG{n}{thr}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{mean}\PYG{p}{(}\PYG{n}{thr}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{COV\PYGZus{}resp}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{std}\PYG{p}{(}\PYG{n}{mean\PYGZus{}resp\PYGZus{}t}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{mean}\PYG{p}{(}\PYG{n}{mean\PYGZus{}resp\PYGZus{}t}\PYG{p}{);}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{n}{COV\PYGZus{}thr}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mf}{0.5}
+\PYG{+w}{		}\PYG{n}{througputs}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{median}\PYG{p}{(}\PYG{n}{thr}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{end}
+
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{n}{COV\PYGZus{}resp}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mf}{0.5}
+\PYG{+w}{		}\PYG{n}{resp\PYGZus{}times}\PYG{p}{(}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{median}\PYG{p}{(}\PYG{n}{mean\PYGZus{}resp\PYGZus{}t}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{end}
+
+\PYG{k}{end}
+
+\PYG{n}{power}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{througputs}\PYG{o}{./}\PYG{p}{(}\PYG{n}{resp\PYGZus{}times}\PYG{o}{/}\PYG{l+m+mi}{1000}\PYG{p}{);}
+\PYG{n}{power\PYGZus{}max}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{power}\PYG{p}{);}
+\PYG{n}{KNEE\PYGZus{}CAPACITY}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{througputs}\PYG{p}{(}\PYG{n+nb}{find}\PYG{p}{(}\PYG{n}{power}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{power\PYGZus{}max}\PYG{p}{));}
+\end{Verbatim}
