@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{} Dati}
+\PYG{p}{[}\PYG{n}{data}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{txt}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{xlsread}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}label\PYGZhy{}cluster 10\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{data\PYGZus{}filter}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{data}\PYG{p}{(:,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{:}\PYG{k}{end}\PYG{p}{);}
+\PYG{n}{txt\PYGZus{}filter}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{txt}\PYG{p}{(:,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{:}\PYG{k}{end}\PYG{p}{)}\PYG{o}{\PYGZsq{}}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{} Ricerca centroidi}
+\PYG{p}{[}\PYG{n}{r}\PYG{p}{,}\PYG{n}{c}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{size}\PYG{p}{(}\PYG{n}{data\PYGZus{}filter}\PYG{p}{);}
+\PYG{n}{max\PYGZus{}list}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{r}\PYG{p}{);}\PYG{+w}{  }\PYG{c}{\PYGZpc{} Lista dei massimi}
+\PYG{n}{max\PYGZus{}index}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{r}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Lista degli indici dei massimi}
+
+\PYG{c}{\PYGZpc{}Inizializzo vettore degli indici}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{r}
+\PYG{+w}{	}\PYG{n}{max\PYGZus{}index}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{k}{end}
+
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{r}
+\PYG{+w}{	}\PYG{p}{[}\PYG{n}{temp\PYGZus{}v}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}i}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{  }\PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{data\PYGZus{}filter}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,:));}
+\PYG{+w}{	}\PYG{k}{while}\PYG{+w}{ }\PYG{n+nb}{ismember}\PYG{p}{(}\PYG{n}{temp\PYGZus{}i}\PYG{p}{,}\PYG{n}{max\PYGZus{}index}\PYG{p}{)}
+\PYG{+w}{		}\PYG{n}{data\PYGZus{}filter}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n}{temp\PYGZus{}i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{		}\PYG{p}{[}\PYG{n}{temp\PYGZus{}v}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}i}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{  }\PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{data\PYGZus{}filter}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,:));}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{n}{max\PYGZus{}list}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}v}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{max\PYGZus{}index}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}i}\PYG{p}{;}
+\PYG{k}{end}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{} Stampa risultati}
+\PYG{n+nb}{sort}\PYG{p}{(}\PYG{n}{txt\PYGZus{}filter}\PYG{p}{(}\PYG{n}{max\PYGZus{}index}\PYG{p}{))}
+\end{Verbatim}

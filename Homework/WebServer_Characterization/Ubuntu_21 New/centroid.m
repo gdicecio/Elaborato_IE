@@ -3,7 +3,7 @@ clear;
 close all;
 
 %% Dati
-[data, txt] = xlsread('label-cluster 10');
+[data, txt] = xlsread('HighLevel/Real/label-cluster 10');
 data_filter = data(:, 3:end); 
 txt_filter = txt(:, 3:end)';
 

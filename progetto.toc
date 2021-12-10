@@ -28,4 +28,10 @@
 \contentsline {subsubsection}{Parametri di alto livello}{22}{section*.5}%
 \contentsline {subsubsection}{Parametri di basso livello}{23}{section*.6}%
 \contentsline {section}{\numberline {3.2}Synthetic Workload}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Data Validation}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.1}Server}{24}{subsection.3.2.1}%
+\contentsline {subsubsection}{Parametri di basso livello}{25}{section*.7}%
+\contentsline {subsection}{\numberline {3.2.2}Client - JMeter}{25}{subsection.3.2.2}%
+\contentsline {subsubsection}{Parametri di alto livello}{25}{section*.8}%
+\contentsline {subsection}{\numberline {3.2.3}Workload Characterization}{25}{subsection.3.2.3}%
+\contentsline {subsubsection}{Parametri di basso livello}{25}{section*.9}%
+\contentsline {section}{\numberline {3.3}Data Validation}{25}{section.3.3}%

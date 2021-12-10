@@ -78,29 +78,125 @@ I parametri di alto livello vanno incontro alla procedura di filtraggio, PCA e C
 	\includegraphics[width=0.8\textwidth]{img/hw3/alto_livello_esempio.png}
 	\caption{\textit{Parametri di alto livello utili ai fini dell'analisi}}
 \end{figure}
+\hrule
+\vspace{0.3cm}
 La fase di filtraggio non prevede nessuna azione di modifica del dataset.
 \\Sul dataset originale quindi deve essere effettuata la PCA per cercare di ridurne la dimensionalità senza perdere troppa varianza. Bisogna soprattutto considerare che per questi parametri la fase di Clustering è molto importante poiché racchiude le informazioni principali per costruire il workload sintetico.
-\\
-\\
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
 Tramite la PCA sono state scelte tutte le componenti principali, mantenendo una varianza del 100\%.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/hw3/autovalori.png}
 	\caption{\textit{Analisi della varianza tramite autovalori}}
 \end{figure}
-\\
-\\
 Sulla base di queste può essere effettuato il clustering gerarchico.
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
+Il numero di cluster rappresenta il numero di richieste del workload sintetico, poiché in ogni cluster viene scelto un elemento rappresentativo di esso stesso. A tal proposito quindi il numero di cluster non deve essere maggiore del numero di \textit{HTTP Request} totali utilizzate durante la simulazione (in questo caso 30) e non deve essere un numero molto elevato. Al tempo stesso però non si deve perdere molta varianza a causa della clusterizzazione. 
+\\La via più semplice è quella di effettuare delle prove scegliendo un numero di cluster minore della metà (in questo caso minore di 15) e valutare per ogni numero quanta varianza si perde.
+\\Partendo da 6 componenti principali si può scegliere un numero di cluster variabile e calcolare la devianza persa per ogni valore.
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{6 Cluster} & \textbf{8 Cluster} & \textbf{10 Cluster} &\textbf{12 Cluster} \\
+		\hline
+		35\% & 27\%& 21.5\% & 17\% \\
+		\hline
+	\end{tabular}
+\end{center}
+La scelta ricade su 10 cluster in modo da avere un workload sintetico abbastanza ristretto e una perdita di varianza non troppo elevato.
+\\Per scegliere gli elementi rappresentativi di un cluster si può ricorrere a vari metodi:
+\begin{itemize}
+	\item Il punto più centrale possibile
+	\item Il punto in cui un valore categorico si ripete più volte. Applicabile però solo se il dataset ha un parametro categorico in un insieme limitato di valori.
+	\item Casualmente
+	\item Il punto che si avvicina il più possibile alla media del cluster
+	\item Etc.
+\end{itemize}
+
 
 
 \subsubsection{Parametri di basso livello}
 
 
 \section{Synthetic Workload}
-Collezionamento parametri basso livello wl sintetico
-\\
-Caratterizzazione parametri basso livello wl sintetico
-\\
-Random Selection su entrambi per identificare l'elemento rappresentativo di ogni cluster
+A partire dalla clusterizzazione di alto livello, identificati gli elementi rappresentativi di ogni cluster, si deve rifare la simulazione ma con il workload sintetico.
+\\Il dataset in esame è composto da un parametro categorico che rappresenta la richiesta effettuata (risorsa e utente) facendo parte di un insieme molto limitato. La scelta può quindi ricadere sulla seconda possibilità.
+\\A tal proposito si può calcolare una tabella che per ogni cluster indica il numero di ricorrenze del valore del parametro categorico.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw3/cluster_label.png}
+	\caption{\textit{Tabella che associa ad ogni cluster il numero di punti con una determinata \textit{label}}}
+\end{figure}
+La matrice che compone la tabella è una matrice 10x30 e bisogna calcolare il massimo di riga per ogni riga. Inoltre se il massimo di riga è associato ad una \textit{label} già selezionata in precedenza, allora si deve scegliere il secondo massimo nella riga e così via. Si può automatizzare il tutto tramite uno script MATLAB:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+%% Dati
+[data, txt] = xlsread('label-cluster 10');
+data_filter = data(:, 3:end); 
+txt_filter = txt(:, 3:end)';
+
+%% Ricerca centroidi
+[r,c] = size(data_filter);
+max_list = zeros(1,r);  % Lista dei massimi
+max_index = zeros(1,r); % Lista degli indici dei massimi
+
+%Inizializzo vettore degli indici
+for i=1:r
+	max_index(i) = -1;
+end
+
+for i=1:r
+	[temp_v, temp_i] =  max(data_filter(i,:));
+	while ismember(temp_i,max_index)
+		data_filter(i,temp_i) = -1;
+		[temp_v, temp_i] =  max(data_filter(i,:));
+	end
+	max_list(i) = temp_v;
+	max_index(i) = temp_i;
+end
+
+%% Stampa risultati
+sort(txt_filter(max_index))
+\end{minted}
+Il risultato dello script è la lista delle \textit{label} che identificano il workload sintetico.
+\begin{enumerate}
+	\item HTTP Request 1 : TG1 con risorsa \textit{200k.txt}
+	\item HTTP Request 11 : TG2 con risorsa \textit{50k.txt}
+	\item HTTP Request 17 : TG2 con risorsa \textit{350k.txt}
+	\item HTTP Request 21 : TG3 con risorsa \textit{50k.txt}	
+	\item HTTP Request 22 : TG3 con risorsa \textit{100k.txt}		
+	\item HTTP Request 23 : TG3 con risorsa \textit{150k.txt}		
+	\item HTTP Request 25 : TG3 con risorsa \textit{250k.txt}		
+	\item HTTP Request 27 : TG3 con risorsa \textit{350k.txt}
+	\item HTTP Request 28 : TG3 con risorsa \textit{400k.txt}			
+	\item HTTP Request 29 : TG3 con risorsa \textit{450k.txt}		
+\end{enumerate}
+
+\subsection{Server}
+Il server non deve essere assolutamente modificato. Tutte le configurazioni effettuate per il workload reale rimangono invariate
+
+\subsubsection{Parametri di basso livello}
+I parametri di basso livello devono essere collezionati allo stesso modo utilizzato nel workload reale. Essi devono essere confrontati con i parametri di basso livello salvati durante la simulazione del workload reale.
+
+\subsection{Client - JMeter}
+Il client deve, a questo punto, simulare le nuove richieste applicando il workload sintetico ricavato con l'analisi. Anche in questo caso la configurazione di JMeter non deve essere modificata, tranne che per le richieste.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/hw3/jmeter_sintetico.png}
+	\caption{\textit{Configurazione di JMeter per il workload sintetico}}
+\end{figure}
+
+\subsubsection{Parametri di alto livello}
+I parametri di alto livello possono anche non essere collezionati poiché non servono per ulteriori analisi. Per completezza però si possono salvare tramite lo stesso JMeter usato per la simulazione.
+
+
+\subsection{Workload Characterization}
+\subsubsection{Parametri di basso livello}
+
 \section{Data Validation}
-Validazione del wl sintetico confrontando statisticamente i low level parameters ottenuti.
