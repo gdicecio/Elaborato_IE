@@ -35,3 +35,6 @@
 \contentsline {subsection}{\numberline {3.2.3}Workload Characterization}{25}{subsection.3.2.3}%
 \contentsline {subsubsection}{Parametri di basso livello}{25}{section*.9}%
 \contentsline {section}{\numberline {3.3}Data Validation}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Normalit\IeC {\`a}}{26}{subsection.3.3.1}%
+\contentsline {subsubsection}{Test Visivo}{26}{section*.10}%
+\contentsline {subsubsection}{Test analitico}{27}{section*.11}%

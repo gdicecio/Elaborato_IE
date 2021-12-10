@@ -193,10 +193,38 @@ Il client deve, a questo punto, simulare le nuove richieste applicando il worklo
 \end{figure}
 
 \subsubsection{Parametri di alto livello}
-I parametri di alto livello possono anche non essere collezionati poiché non servono per ulteriori analisi. Per completezza però si possono salvare tramite lo stesso JMeter usato per la simulazione.
+I parametri di alto livello possono anche non essere collezionati poiché non servono per ulteriori analisi. Per completezza si possono salvare tramite lo stesso JMeter usato per la simulazione.
 
 
 \subsection{Workload Characterization}
 \subsubsection{Parametri di basso livello}
 
 \section{Data Validation}
+Si hanno tutte le informazioni per confrontare i parametri di basso livello caratterizzati (workload reale e sintetico).
+\\La procedura per la validazione è molto semplice:
+\begin{enumerate}
+	\item Normalità verificata. Se i due dataset provengono da una distribuzione normale allora si possono eseguire test parametrici per la validazione. In particolare si possono usare vari tipi di test statistici anche in base all'omostedasticità.
+	\begin{enumerate}
+		\item Omostedasticità verificata. Se i due dataset sono omostedastici allora si possono utilizzare test sulla base di questa condizione verificata.
+		\item Omostedasticità non verificata. Se i due dataset non rispettano la proprietà di omestedasticità allora bisogna utilizzare test che si basano su tale condizione non verificata.
+	\end{enumerate}
+	\item Nomarlità non verificata. Se i due dataset non provengono da una distribuzione normale allora si devono usare necessariamente test statistici non parametrici per la validazione.
+\end{enumerate}
+
+\subsection{Normalità}
+Per verificare se un campione proviene da una popolazione con distribuzione normale, ci si può affidare a test visivi oppure a test statistici analitici.
+\subsubsection{Test Visivo}
+Visivamente si può capire se un campione proviene da una popolazione con distribuzione normale effettuando un grafico dei quantili del campione rispetto ai quanti di una distribuzione normale.
+\\Ad esempio prendendo una componente principale del workload reale (dopo la caratterizzazione) si può effettuare un grafico dei quantili:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/hw3/test_visivo.png}
+	\caption{\textit{Grafico Quantili-Quantili della prima componente principale del workload reale caratterizzato}}
+\end{figure}
+come si può notare il campione non proviene da una distribuzione normale.
+\subsubsection{Test analitico}
+Un test analitico è il test di Kolmogorov-Smirnov. Esso si basa sull'ipotesi nulla $H_0$:
+\begin{equation*}
+	H_0 : N(0,1) 
+\end{equation*}
+In MATLAB esiste una funzione già definita per eseguire questo tipo di test. Esso fornisce in output il risultato del test (se $H_0$ viene rigettata o meno) con il relativo \textit{P-Value}.
