@@ -330,13 +330,24 @@ Anche qui la scelta più conveniente in termini di devianza persa è stata quell
 \\
 Infine il workload di basso livello così ottenuto, è stato dato in input alla funzione \textit{random\_selection}, già descritta in precedenza, per ricavare i centroidi di ogni cluster.
 \section{Data Validation}
-Si hanno tutte le informazioni per confrontare i parametri di basso livello caratterizzati (workload reale e sintetico).
+I parametri di basso livello relativi a workload reale e sintetico, ottenuti in seguito alla caratterizzazione sono i seguenti:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/hw3/real_wl.png}
+	\caption{\textit{Low-Level Parameters Real WL}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/hw3/syn_wl.png}
+	\caption{\textit{Low-Level Parameters Synthetic WL}}
+\end{figure}
+Sono questi che andranno statisticamente confrontati per validare il Workload Sintetico.
 \\La procedura per la validazione è molto semplice:
 \begin{enumerate}
-	\item Normalità verificata. Se i due dataset provengono da una distribuzione normale allora si possono eseguire test parametrici per la validazione. In particolare si possono usare vari tipi di test statistici anche in base all'omostedasticità.
+	\item Normalità verificata. Se i due dataset provengono da una distribuzione normale allora si possono eseguire test parametrici per la validazione. In particolare si possono usare vari tipi di test statistici anche in base all'omoschedasticità dei campioni.
 	\begin{enumerate}
-		\item Omostedasticità verificata. Se i due dataset sono omostedastici allora si possono utilizzare test sulla base di questa condizione verificata.
-		\item Omostedasticità non verificata. Se i due dataset non rispettano la proprietà di omestedasticità allora bisogna utilizzare test che si basano su tale condizione non verificata.
+		\item Omostedasticità verificata. Se i due dataset sono omoschedastici allora si possono utilizzare test sulla base di questa condizione verificata.
+		\item Omoschedasticità non verificata. Se i due dataset non rispettano la proprietà di omoschedasticità allora bisogna utilizzare test che si basano su tale condizione non verificata.
 	\end{enumerate}
 	\item Nomarlità non verificata. Se i due dataset non provengono da una distribuzione normale allora si devono usare necessariamente test statistici non parametrici per la validazione.
 \end{enumerate}
@@ -344,7 +355,7 @@ Si hanno tutte le informazioni per confrontare i parametri di basso livello cara
 \subsection{Normalità}
 Per verificare se un campione proviene da una popolazione con distribuzione normale, ci si può affidare a test visivi oppure a test statistici analitici.
 \subsubsection{Test Visivo}
-Visivamente si può capire se un campione proviene da una popolazione con distribuzione normale effettuando un grafico dei quantili del campione rispetto ai quanti di una distribuzione normale.
+Visivamente si può capire se un campione proviene da una popolazione con distribuzione normale effettuando un grafico dei quantili del campione rispetto ai quantili di una distribuzione normale. Ciò lo si realizza sfruttando la funzione Matlab \textbf{qqplot}.
 \\Ad esempio prendendo una componente principale del workload reale (dopo la caratterizzazione) si può effettuare un grafico dei quantili:
 \begin{figure}[H]
 	\centering
@@ -353,8 +364,131 @@ Visivamente si può capire se un campione proviene da una popolazione con distri
 \end{figure}
 Come si può notare il campione non proviene da una distribuzione normale.
 \subsubsection{Test analitico}
-Un test analitico è il test di Kolmogorov-Smirnov. Esso si basa sull'ipotesi nulla $H_0$:
+Un test analitico è il test di \textbf{Kolmogorov-Smirnov}. Esso si basa sull'ipotesi nulla $H_0$:
 \begin{equation*}
 	H_0 : N(0,1) 
 \end{equation*}
-In MATLAB esiste una funzione già definita per eseguire questo tipo di test. Esso fornisce in output il risultato del test (se $H_0$ viene rigettata o meno) con il relativo \textit{P-Value}.
+ovvero che i dati in input provengono da una distribuzione normale standard.
+In MATLAB esiste una funzione già definita per eseguire questo tipo di test: \textbf{h = kstest(x)}. Esso fornisce in output il risultato del test (se $H_0$ viene rigettata o meno) con il relativo \textit{P-Value}. In particolare h è 1 se il test rigetta l'ipotesi nulla H0 con un livello di significatività del 5\%, 0 altrimenti.
+\subsubsection{Caso di studio - Implementazione}
+Per la verifica della normalità abbiamo quindi applicato queste funzioni ai nostri dataset (3.13 e 3.14).
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	%% Data
+	real1 = xlsread('real');
+	synthetic1 = xlsread('syn');
+	
+	real = random_selection(real1);
+	synthetic = random_selection(synthetic1);
+	
+	N = size(real,2); %numero di colonne lo stesso per i due set di dati
+	real = real(:, 1:N-1); % rimuovo la colonna associata ai cluster
+	synthetic = synthetic(:, 1:N-1); % lo stesso
+	
+	%verifica Normal Distribution kstest
+	[h_ks_real, p_ks_real] = kstest(real);
+	[h_ks_syn, p_ks_syn] = kstest(synthetic);
+	
+	%verifica Normal Distribution visual test
+	figure();
+	subplot(2,1,1);
+	qqplot(real);
+	subplot(2,1,2);
+	qqplot(synthetic);
+\end{minted}
+L'output della kstest è 1 per entrambi i workload, quindi entrambi non provengono da una distribuzione normale. Per completezza si riportano i grafici del quantile-quantile plot associato ad ogni PC dei dataset, i quali confermano il risultato del test di Kolmogorov-Smirnov.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/hw3/qqplot.png}
+	\caption{\textit{quantile-quantile plot di 3.13 e 3.14}}
+\end{figure}
+Ciò suggerisce l'utilizzo di test non parametrici per la validazione.
+\subsection{Omoschedasticità}
+Anche se nel caso di studio la verifica dell'omoschedasticità non è richiesta, visto che entrambi i set di dati non provengono da una distribuzione normale, per completezza ne riportiamo il procedimento.
+\\
+Tale proprietà è verificata nel momento in cui diversi campioni hanno stessa varianza (non è detto che essa sia nota), anche se provengono da popolazioni (distribuzioni) differenti. Questa è una caratteristica necessaria da verificare prima di applicare i test parametrici, ad esempio. Difatti, eseguire un test senza aver effettuato questo controllo può avere un impatto significativo sui suoi risultati, fino ad invalidarli.
+\subsubsection{Test Visivo}
+Visivamente possiamo capire se le varianze delle due distribuzioni sono simili, tramite il \textbf{boxplot}. All'aumentare della lunghezza del box aumenta la varianza dei dati che "rappresenta".
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/hw3/boxplot.png}
+	\caption{\textit{boxplot I,II e III componente del WL reale}}
+\end{figure}
+\subsubsection{Test analitico}
+Un test analitico per il check sull'uguaglianza delle varianze dei campioni è: 
+\\
+\textbf{h = vartest2(x)}.
+\\
+Esso è applicabile esclusivamente se i due campioni provengono da una distribuzione normale.
+Si basa sull'ipotesi nulla $H_0$:
+\begin{enumerate}
+	\item $H_0$ : i vettori x ed y provengono da distribuzioni normali e con uguale varianza. 
+\end{enumerate}
+Il suo output h è 1 se il test rigetta l'ipotesi nulla $H_0$ con un livello di significatività del 5\%, 0 altrimenti.
+\subsection{Validazione}
+Per completezza è riportato l'intero script, nel quale è stato previsto anche il caso in cui i campioni provengono da distribuzioni normali.
+\\
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	%se almeno una delle due distribuzioni non è normale
+	%applico il test non parametrico
+	if ((h_ks_real | h_ks_syn) == 1)   
+	[p_wilc,h_wilc] = NoParametric(real,synthetic,N);
+	else
+	%distribuzioni normali (risultato di quell if è 0)
+	%check sulle varianze
+	[h_var, p_var] = vartest2(synthetic, real);
+	
+		%se le due distribuzioni hanno stessa varianza
+		if (h_var == 0)
+		%applico il two sample t-test
+		[h_ttest, p_ttest] = ttest2(syntetic, real);
+		else
+		%se le due distribuzioni non hanno stessa varianza
+		[h_ttest_novar, p_ttest_novar] = ttest2(syntetic, real, 'Vartype', 'unequal');
+		end
+	
+	end
+\end{minted}
+Come già detto precedentemente, i nostri campioni soddisfano la condizione del primo \textit{if} quindi viene eseguita la funzione \textit{NoParametric}:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	function [p_wilc,h_wilc] = NoParametric(real,synthetic,N)
+		p_wilc = zeros(1,N-1);
+		h_wilc = zeros(1,N-1);
+		for i = 1:N-1
+			[p_wilc(i),h_wilc(i)] = 
+			ranksum(synthetic(:,i), real(:,i));
+		end
+	end
+\end{minted}
+Essa richiama la funzione MATLAB 
+\\
+\textbf{[p,h] = ranksum(x,y)}
+la quale esegue il test non parametrico di \textbf{Wilcoxon}. Esso si basa sull'ipotesi nulla $H_0$:
+\begin{enumerate}
+	\item $H_0$ : i dati di x ed y provengono da distribuzioni continue con uguale mediana. 
+\end{enumerate}
+Tale funzione opera sulle singole colonne delle matrici x ed y e quindi bisogna iterare il procedimento per il numero di colonne.
+Se l'output h è uguale ad 0, si ha un fallimento nel rigettare l'ipotesi nulla con un livello di significatività del 5 \%, il contrario se è 1.
+\\
+L'output di \textit{NoParametric} sarà dunque costituito da due vettori:
+\begin{enumerate}
+	\item p\_wilc : il vettore degli p-value per ogni componente principale.
+	\item h\_wilc : il risultato della ranksum su ogni componente principale di x ed y. 
+\end{enumerate}
+L' \textbf{h\_wilc} calcolata sui nostri campioni è un vettore di tutti zeri:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/hw3/h_wilc.png}
+	\caption{\textit{output test di Wilcoxon}}
+\end{figure}
+ciò significa che l'ipotesi nulla non è stata rigettata per ogni componente principale e che quindi Workload Reale e Workload Sintetico hanno determinato effetti statisticamente simili sul server.
+\\
+\textbf{Il Workload Sintetico ottenuto è una buona approssimazione di quello Reale}.

@@ -35,6 +35,11 @@
 \contentsline {subsection}{\numberline {3.2.3}Workload Characterization}{29}{subsection.3.2.3}%
 \contentsline {subsubsection}{Parametri di basso livello}{29}{section*.9}%
 \contentsline {section}{\numberline {3.3}Data Validation}{30}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Normalit\IeC {\`a}}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Normalit\IeC {\`a}}{31}{subsection.3.3.1}%
 \contentsline {subsubsection}{Test Visivo}{31}{section*.10}%
-\contentsline {subsubsection}{Test analitico}{31}{section*.11}%
+\contentsline {subsubsection}{Test analitico}{32}{section*.11}%
+\contentsline {subsubsection}{Caso di studio - Implementazione}{32}{section*.12}%
+\contentsline {subsection}{\numberline {3.3.2}Omoschedasticit\IeC {\`a}}{33}{subsection.3.3.2}%
+\contentsline {subsubsection}{Test Visivo}{33}{section*.13}%
+\contentsline {subsubsection}{Test analitico}{34}{section*.14}%
+\contentsline {subsection}{\numberline {3.3.3}Validazione}{34}{subsection.3.3.3}%
