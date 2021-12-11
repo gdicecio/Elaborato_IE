@@ -22,23 +22,40 @@ Il server contiene 10 file di diversa dimensione. I file sono stati scelti tutti
 \\Essi sono stati dimensionati differenziando i file tra loro di 50 KB e partendo da un minimo di 50 KB.
 
 \subsubsection{Parametri di basso livello}
-Il web server è una macchina virtuale linux. Esistono dunque molti tool in grado di collezionare i parametri di caratteristici del sistema. In questo caso è stato utilizzato il tool \textbf{vmstat}. Esso offre inoltre la funzionalità di eseguire un campionamento dei parametri ad una frequenza e durata prefissata, tramite l'apposito comando eseguibile da terminale:
+Il web server è una macchina virtuale linux. Esistono dunque molti tool in grado di collezionare i parametri di caratteristici del sistema. In questo caso è stato utilizzato il tool \textbf{vmstat} (\textbf{Virtual memory statistics reporter}) il quale fornisce informazioni circa le performance del sistema su cui viene eseguito. In particolare esse riguardano:
+\begin{itemize}
+	\item \textbf{Processi}: numero processi in esecuzione o in attesa di essere eseguiti.
+	\item \textbf{Memoria}:
+		\begin{enumerate}
+			\item \textit{free}, quantità di memoria libera.
+		\end{enumerate}
+	\item \textbf{Swap}
+	\item \textbf{Input/Output}: blocchi ricevuti o inviati da/verso un dispositivo a blocchi.
+	\item \textbf{Sistema}: 
+		\begin{enumerate}
+			\item \textit{in}, numero di interruzioni al secondo.
+			\item \textit{cs}, numero di cambi di contesto al secondo.
+		\end{enumerate}
+	\item \textbf{CPU}: 
+		\begin{enumerate}
+			\item \textit{us}, tempo trascorso dalla CPU nell'eseguire codice non-kernel
+			\item \textit{sy}, tempo trascorso dalla CPU nell'eseguire codice kernel
+			\item \textit{id}, tempo trascorso dalla CPU nello stato di idle
+		\end{enumerate}
+\end{itemize}
+Tali informazioni sono tutte utili ai fini dell'esperimento, ma quelle che evidenziano maggiormente gli effetti della nostra analisi sono quelle relative alla CPU e all'I/O.
+\\
+Vmstat offre inoltre la funzionalità di eseguire un campionamento dei parametri ad una frequenza e durata prefissata, tramite l'apposito comando eseguibile da terminale:
 \begin{minted}[framesep = 1mm,
 	fontsize = \footnotesize,
 	breaklines,
 	]{PYTHON}
 	vmstat -n 1 400
 \end{minted}
-Il primo parametro "1" indica il periodo di campionamento in secondi, mentre il secondo parametro "400" indica la durata totale di esecuzione in secondi. L'output poi può essere semplicemente salvato in un file di testo.
-\\Esso permette di monitorare parametri come:
-\begin{itemize}
-	\item \textit{free}, quantità di memoria libera.
-	\item \textit{in}, numero di interruzioni al secondo
-	\item \textit{us}, tempo trascorso dalla CPU nell'eseguire codice non-kernel
-	\item \textit{sy}, tempo trascorso dalla CPU nell'eseguire codice kernel
-	\item \textit{id}, tempo trascorso dalla CPU nello stato di idle
-\end{itemize}
-I quali poi devono essere opportunamente studiati.
+Il primo parametro "1" indica il periodo di campionamento in secondi, mentre il secondo parametro "400" indica la durata totale di esecuzione in secondi. L'output poi può essere semplicemente salvato in un file di testo o csv.
+\\
+Tale comando è stato avviato pochi secondi prima dell'avvio del test su Jmeter, ed ha continuato a campionare per qualche secondo anche dopo la sua fine, dunque nell'analisi dei dati sono attesi parametri il cui andamento evidenzia le varie fasi.
+
 
 \subsection{Client - JMeter}
 La simulazione degli utenti che fanno accesso al server è stata possibile tramite il tool JMeter, già descritto nei capitoli precedenti. 
@@ -117,10 +134,99 @@ La scelta ricade su 10 cluster in modo da avere un workload sintetico abbastanza
 	\item Etc.
 \end{itemize}
 
-
-
 \subsubsection{Parametri di basso livello}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/hw3/porzione_lowlevel.png}
+	\caption{\textit{Porzione dataset - Low Level Parameters}}
+\end{figure}
+I parametri di basso livello costituiscono un dataset formato da 17 colonne e 400 righe. Su di esso sono state dunque effettuate operazioni di \textit{filtraggio}, \textit{PCA} e \textit{clustering}, procedendo in maniera analoga a quanto già si era fatto nel Capitolo 1.
+\\
+\hrule
+\vspace{0.3cm}
+Analizzando le distribuzioni sono state individuate 4 colonne costanti (e quindi da rimuovere): \textbf{swpd}, \textbf{si}, \textbf{so}, \textbf{st}.
+\\
+Dopodichè sono state eliminate tutte le righe associate ai campioni prelevati da vmstat quando il client non stava sottoponendo richieste al server, in quanto non forniscono informazioni utili agli scopi della caratterizzazione.
+\\
+Per fare ciò sono stati analizzati gli andamenti in funzione del tempo dei parametri relativi all'utilizzo della CPU precedentemente descritti.
+\begin{figure}[H]
+	\subfigure{	
+		\includegraphics[width=0.30\textwidth]{img/hw3/us.png}}
+	\subfigure{	
+		\includegraphics[width=0.30\textwidth]{img/hw3/sy.png}}
+	\subfigure{	
+		\includegraphics[width=0.30\textwidth]{img/hw3/id.png}}
+	\caption{\textit{Andamento parametri CPU}}
+\end{figure}
+In particolare, osservando i grafici di \textit{sy} e \textit{id} risultano evidenti queste "fasi" nelle quali il processore trascorre meno tempo ad eseguire codice kernel e più tempo in idle rispetto a quando si sta sottoponendo il workload, visto che non è impegnato nel servire le richieste.
+\\
+Discorso analogo lo si può fare osservando le interruzioni al secondo (\textbf{in}), che incrementano drasticamente nel corso della recezione delle richieste, per poi diminuire in queste fasi.
+\begin{figure}[H]
+	\centering   
+	\subfigure{	\includegraphics[width=0.30\textwidth]{img/hw3/interrupts.png}}
+	\subfigure{
+		\includegraphics[width=0.30\textwidth]{img/hw3/cs1.png}}
+	\caption{\textit{Andamento parametri di Sistema e CPU}}
+\end{figure}
+Contestualmente è stata eliminata anche la prima riga (outlier per quasi tutti i parametri), in quando è stata associata alla fase di avvio dell'esecuzione del comando vmstat e quindi non di particolare interesse per gli scopi dell'esperimento.
+\\
+L'ultima operazione effettuata in questa prima fase di filtraggio è stata la rimozione di un outlaier associato al parametro \textbf{b}, il quale è indice del numero di processi sospesi ed in attesa di risorse per poter essere riattivati.
+Essendo outlaier anche di \textbf{wa} (tempo trascorso dalla CPU in attesa di input/output) è quasi sicuramente indice dello stesso fenomeno, il quale è stato da noi considerato come casuale e quindi trascurabile.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\textwidth]{img/hw3/outlaier_b.png}
+	\caption{\textit{Distribuzione di b}}
+\end{figure}
+La riga ad esso associata è la 122, la quale è stata opportunamente rimossa. A seguito di questa cancellazione, la colonna associata al parametro b è diventata costante ed è dunque stata eliminata.
+\\
+\hrule
+\vspace{0.3cm}
+Il dataset ottenuto è formato da 12 colonne e circa 360 righe. Il numero di righe risultante può essere ulteriormente validato se consideriamo che la durata del test è proprio di 360 secondi.
+\\
+\\
+Su questi dati è stata effettuata la PCA, a seguito della quale sono state prese in considerazione \textit{7 componenti principali}, le quali spiegano il 92,768 \% della devianza totale.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/hw3/PCA7.png}
+	\caption{\textit{PCA Low-Level Filtered}}
+\end{figure}
+\hrule
+\vspace{0.3cm}
+Per non perdere una porzione significativa di devianza, dopo vari test, si è deciso di selezionare \textbf{20 Cluster} conservandone il 78,36\%.
+\\
+Infine è stata implementata in Matlab la seguente funzione per scegliere l'elemento rappresentativo di ogni cluster:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	function [new_workload] = random_selection(workload)
+	%workload = colonne PCA + colonna cluster
+	N_cluster = max(workload(:,end)); %numero cluster
+	[r,c] = size(workload);
+	
+	%isolo la colonna dei cluster
+	cluster_data = workload(:,end);
+	
+	new_workload = zeros(N_cluster,c);
+	
+	%itero per ogni cluster
+	for i = 1:N_cluster
+	%prelevo tutti gli indici di riga associati ad uno stesso cluster i
+		index = find(cluster_data==i); 
+		%se ho più di una riga ne scelgo una random
+		if length(index) > 1
+			new_workload(i,:) = workload(randsample(index,1),:); 
+		else
+			%se ho solo una riga scelgo quella
+			new_workload(i,:) = workload(index,:);
+		end
+	end
+	end
+\end{minted}
+La funzione riceve in input le colonne estratte dalla PCA affiancate alla colonna dei cluster, la quale specifica il cluster di appartenenza di ciascuna riga.
+Come si evince dal codice, i centroidi sono stati selezionati in maniera randomica nel caso in cui nel cluster sia presente più di un elemento.
+\\
+L'output della funzione è un workload costituito da 7 colonne e 20 righe, rappresentativo di quello originario.
 
 \section{Synthetic Workload}
 A partire dalla clusterizzazione di alto livello, identificati gli elementi rappresentativi di ogni cluster, si deve rifare la simulazione ma con il workload sintetico.
@@ -182,7 +288,7 @@ Il risultato dello script è la lista delle \textit{label} che identificano il w
 Il server non deve essere assolutamente modificato. Tutte le configurazioni effettuate per il workload reale rimangono invariate
 
 \subsubsection{Parametri di basso livello}
-I parametri di basso livello devono essere collezionati allo stesso modo utilizzato nel workload reale. Essi devono essere confrontati con i parametri di basso livello salvati durante la simulazione del workload reale.
+I parametri di basso livello devono essere collezionati allo stesso modo utilizzato nel workload reale. Essi devono essere confrontati con i parametri di basso livello salvati durante la simulazione del workload reale. Questa operazione verrà analizzata nel paragrafo \textit{Data Validation}.
 
 \subsection{Client - JMeter}
 Il client deve, a questo punto, simulare le nuove richieste applicando il workload sintetico ricavato con l'analisi. Anche in questo caso la configurazione di JMeter non deve essere modificata, tranne che per le richieste.
@@ -193,12 +299,36 @@ Il client deve, a questo punto, simulare le nuove richieste applicando il worklo
 \end{figure}
 
 \subsubsection{Parametri di alto livello}
-I parametri di alto livello possono anche non essere collezionati poiché non servono per ulteriori analisi. Per completezza si possono salvare tramite lo stesso JMeter usato per la simulazione.
+I parametri di alto livello possono anche non essere collezionati poiché non servono per ulteriori analisi. Per completezza però si possono salvare tramite lo stesso JMeter usato per la simulazione.
 
 
 \subsection{Workload Characterization}
 \subsubsection{Parametri di basso livello}
-
+Anche in questo caso il dataset di basso livello è costituito da 17 colonne e 400 righe. Analogamente a quanto fatto in precedenza per i parametri relativi al Workload reale sono state eseguite le operazioni di filtraggio, PCA e clustering.
+\\
+Sono state eliminate le colonne costanti, che in questo caso sono: \textbf{b}, \textbf{swpd}, \textbf{si}, \textbf{so} e \textbf{st}.
+\\
+Dopodichè, eliminando le righe relative ai campionamenti nelle fasi in cui il sistema non stava servendo alcuna richiesta, il set di dati è stato ulteriormente ridotto. L'analisi degli outlaier non ha portato all'eliminazione di alcuna riga, in quanto tutti i punti oltre i quartili dei box-plot sono stati considerati significativi. 
+\\
+\hrule
+\vspace{0.3cm}
+Come accaduto anche in precedenza, il dataset risultate è composto da 12 colonne e circa 360 righe (coerentemente con il tempo di sottomissione del workload).
+\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/hw3/PCA7_syn.png}
+	\caption{\textit{PCA syn Low-Level Filtered}}
+\end{figure}
+Per la PCA è stato scelto lo stesso numero di componenti selezionate nella caratterizzazione dei parametri di basso livello del workload reale.
+Questa è stata una scelta obbligata dal fatto che le funzioni Matlab utilizzate per la validazione operano su matrici le quali devono necessariamente avere lo stesso numero di colonne.
+\\
+In ogni caso selezionando tali componenti si riesce a mantenere un'ottima percentuale di devianza: il 93,279\%.
+\\
+\hrule
+\vspace{0.3cm}
+Anche qui la scelta più conveniente in termini di devianza persa è stata quella di suddividere il dataset in 20 Cluster, conservandone il 75,51\% della totale. 
+\\
+Infine il workload di basso livello così ottenuto, è stato dato in input alla funzione \textit{random\_selection}, già descritta in precedenza, per ricavare i centroidi di ogni cluster.
 \section{Data Validation}
 Si hanno tutte le informazioni per confrontare i parametri di basso livello caratterizzati (workload reale e sintetico).
 \\La procedura per la validazione è molto semplice:
