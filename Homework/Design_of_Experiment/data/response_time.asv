@@ -1,0 +1,17 @@
+clc, close all, clear all;
+
+%% Read Data
+intensity = [1500]; 
+page_type = ["S", "SM", 'L', 'L'];
+N = 5;
+mean_temp = zeros(1,N);
+resp_time = zeros(length(intensity),length(page_type), N);
+for i=intensity
+    for p=page_type
+        for r=1:N
+            path = strcat(num2str(i, '%d'),'-',p,'-',num2str(r, '%d'),'.csv');
+            data = readtable(path);
+            resp_time(i,p,r) = mean(data(:,2));
+        end
+    end
+end
