@@ -34,7 +34,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">850k.txt</stringProp>
+          <stringProp name="HTTPSampler.path">350k.txt</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -49,7 +49,7 @@
           <intProp name="calcMode">2</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>1500.0</value>
+            <value>4500.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -83,7 +83,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\Giuseppe\Universita\x. Impianti di Elaborazione\Github\WorkloadCaracterization_IE\Homework\Design_of_Experiment\data\1500-L-5.csv</stringProp>
+        <stringProp name="filename">C:\Users\Giuseppe\Universita\x. Impianti di Elaborazione\Github\WorkloadCaracterization_IE\Homework\Design_of_Experiment\data\4500-SM-3.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
