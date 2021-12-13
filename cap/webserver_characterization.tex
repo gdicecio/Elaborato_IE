@@ -13,30 +13,42 @@ Le tre fasi possono essere rappresentate graficamente come nella successiva figu
 	\caption{\textit{Overview WL Characterization}}
 \end{figure}
 
-Per tutte le fasi il server occorre configurarlo allo stesso modo. In particolare si è utilizzato lo stesso Web Server descritto nel \textit{Capitolo 2} ma con una diminuzione di prestazioni solo a scopo didattico.
+Il server deve essere configurato allo stesso in tutte le fasi. In particolare si è utilizzato lo stesso Web Server descritto nel \textit{Capitolo 2} ma con una diminuzione di prestazioni solo a scopo didattico.
 
 \section{Real-field Workload}
-Per simulare quanto il più possibile un workload reale. Inoltre i dati di alto e basso livello devono essere presi contemporaneamente nel client e nel server.
+Il primo step prevede di applicare o simulare un workload reale. I dati di alto e basso livello devono essere presi contemporaneamente nel client e nel server.
 \subsection{Server}
 Il server contiene 10 file di diversa dimensione. I file sono stati scelti tutti dello stesso tipo (file di testo) solo per dimensionarli a piacimento. Nulla vieta però di utilizzare file di tipologie diverse (immagini, documenti, audio, etc.).
-\\Essi sono stati dimensionati differenziando i file tra loro di 50 KB e partendo da un minimo di 50 KB.
+\\Essi sono stati dimensionati differenziando i file tra loro di 50 KB e partendo da un minimo di 50 KB. Quindi:
+\begin{itemize}
+	\item 50k.txt - File di 50 KB
+	\item 100k.txt - File di 100 KB
+	\item 150k.txt - File di 150 KB	
+	\item 200k.txt - File di 200 KB
+	\item 250k.txt - File di 250 KB	
+	\item 300k.txt - File di 300 KB
+	\item 350k.txt - File di 350 KB	
+	\item 400k.txt - File di 400 KB	
+	\item 450k.txt - File di 450 KB	
+	\item 500k.txt - File di 500 KB	
+\end{itemize}
 
 \subsubsection{Parametri di basso livello}
-Il web server è una macchina virtuale linux. Esistono dunque molti tool in grado di collezionare i parametri di caratteristici del sistema. In questo caso è stato utilizzato il tool \textbf{vmstat} (\textbf{Virtual memory statistics reporter}) il quale fornisce informazioni circa le performance del sistema su cui viene eseguito. In particolare esse riguardano:
+Il web server è una macchina virtuale linux. Esistono dunque molti tool in grado di collezionare i parametri caratteristici del sistema. In questo caso è stato utilizzato il tool \textbf{vmstat} (\textbf{Virtual Memory STATistics reporter}) il quale fornisce informazioni circa le performance del sistema su cui viene eseguito. In particolare esse riguardano:
 \begin{itemize}
 	\item \textbf{Processi}: numero processi in esecuzione o in attesa di essere eseguiti.
-	\item \textbf{Memoria}:
+	\item \textbf{Memoria}: memoria libera, swap, buffer etc. Ad esempio
 		\begin{enumerate}
 			\item \textit{free}, quantità di memoria libera.
 		\end{enumerate}
-	\item \textbf{Swap}
+	
 	\item \textbf{Input/Output}: blocchi ricevuti o inviati da/verso un dispositivo a blocchi.
-	\item \textbf{Sistema}: 
+	\item \textbf{Sistema}: parametri di sistema come ad esempio:
 		\begin{enumerate}
 			\item \textit{in}, numero di interruzioni al secondo.
 			\item \textit{cs}, numero di cambi di contesto al secondo.
 		\end{enumerate}
-	\item \textbf{CPU}: 
+	\item \textbf{CPU}: tipologia di istruzioni che esegue la CPU etc. Ad esempio:
 		\begin{enumerate}
 			\item \textit{us}, tempo trascorso dalla CPU nell'eseguire codice non-kernel
 			\item \textit{sy}, tempo trascorso dalla CPU nell'eseguire codice kernel
@@ -54,7 +66,7 @@ Vmstat offre inoltre la funzionalità di eseguire un campionamento dei parametri
 \end{minted}
 Il primo parametro "1" indica il periodo di campionamento in secondi, mentre il secondo parametro "400" indica la durata totale di esecuzione in secondi. L'output poi può essere semplicemente salvato in un file di testo o csv.
 \\
-Tale comando è stato avviato pochi secondi prima dell'avvio del test su Jmeter, ed ha continuato a campionare per qualche secondo anche dopo la sua fine, dunque nell'analisi dei dati sono attesi parametri il cui andamento evidenzia le varie fasi.
+Tale comando è stato avviato pochi secondi prima dell'avvio del test su JMeter, ed ha continuato a campionare per qualche secondo anche dopo la sua fine, dunque nell'analisi dei dati sono attesi parametri il cui andamento evidenzia le varie fasi.
 
 
 \subsection{Client - JMeter}
@@ -124,7 +136,7 @@ Il numero di cluster rappresenta il numero di richieste del workload sintetico, 
 		\hline
 	\end{tabular}
 \end{center}
-La scelta ricade su 10 cluster in modo da avere un workload sintetico abbastanza ristretto e una perdita di varianza non troppo elevato.
+La scelta ricade su 10 cluster in modo da avere un workload sintetico abbastanza ristretto e una perdita di varianza non troppo elevata.
 \\Per scegliere gli elementi rappresentativi di un cluster si può ricorrere a vari metodi:
 \begin{itemize}
 	\item Il punto più centrale possibile
@@ -170,8 +182,8 @@ Discorso analogo lo si può fare osservando le interruzioni al secondo (\textbf{
 \end{figure}
 Contestualmente è stata eliminata anche la prima riga (outlier per quasi tutti i parametri), in quando è stata associata alla fase di avvio dell'esecuzione del comando vmstat e quindi non di particolare interesse per gli scopi dell'esperimento.
 \\
-L'ultima operazione effettuata in questa prima fase di filtraggio è stata la rimozione di un outlaier associato al parametro \textbf{b}, il quale è indice del numero di processi sospesi ed in attesa di risorse per poter essere riattivati.
-Essendo outlaier anche di \textbf{wa} (tempo trascorso dalla CPU in attesa di input/output) è quasi sicuramente indice dello stesso fenomeno, il quale è stato da noi considerato come casuale e quindi trascurabile.
+L'ultima operazione effettuata in questa prima fase di filtraggio è stata la rimozione di un outlier associato al parametro \textbf{b}, il quale è indice del numero di processi sospesi ed in attesa di risorse per poter essere riattivati.
+Essendo outlier anche di \textbf{wa} (tempo trascorso dalla CPU in attesa di input/output) è quasi sicuramente indice dello stesso fenomeno, il quale è stato da noi considerato come casuale e quindi trascurabile.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\textwidth]{img/hw3/outlaier_b.png}
@@ -179,11 +191,10 @@ Essendo outlaier anche di \textbf{wa} (tempo trascorso dalla CPU in attesa di in
 \end{figure}
 La riga ad esso associata è la 122, la quale è stata opportunamente rimossa. A seguito di questa cancellazione, la colonna associata al parametro b è diventata costante ed è dunque stata eliminata.
 \\
+Il dataset ottenuto è formato da 12 colonne e circa 360 righe. Il numero di righe risultante può essere ulteriormente validato se consideriamo che la durata del test è proprio di 360 secondi.
+\vspace{0.3cm}
 \hrule
 \vspace{0.3cm}
-Il dataset ottenuto è formato da 12 colonne e circa 360 righe. Il numero di righe risultante può essere ulteriormente validato se consideriamo che la durata del test è proprio di 360 secondi.
-\\
-\\
 Su questi dati è stata effettuata la PCA, a seguito della quale sono state prese in considerazione \textit{7 componenti principali}, le quali spiegano il 92,768 \% della devianza totale.
 \begin{figure}[H]
 	\centering
@@ -230,14 +241,14 @@ L'output della funzione è un workload costituito da 7 colonne e 20 righe, rappr
 
 \section{Synthetic Workload}
 A partire dalla clusterizzazione di alto livello, identificati gli elementi rappresentativi di ogni cluster, si deve rifare la simulazione ma con il workload sintetico.
-\\Il dataset in esame è composto da un parametro categorico che rappresenta la richiesta effettuata (risorsa e utente) facendo parte di un insieme molto limitato. La scelta può quindi ricadere sulla seconda possibilità.
+\\Il dataset in esame è composto da un parametro categorico che rappresenta la richiesta effettuata (risorsa e utente) facendo parte di un insieme molto limitato. La scelta dell'elemento rappresentativo può ricadere nel scegliere la \textit{label} che si ripete in più punti nello stesso cluster.
 \\A tal proposito si può calcolare una tabella che per ogni cluster indica il numero di ricorrenze del valore del parametro categorico.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{img/hw3/cluster_label.png}
 	\caption{\textit{Tabella che associa ad ogni cluster il numero di punti con una determinata \textit{label}}}
 \end{figure}
-La matrice che compone la tabella è una matrice 10x30 e bisogna calcolare il massimo di riga per ogni riga. Inoltre se il massimo di riga è associato ad una \textit{label} già selezionata in precedenza, allora si deve scegliere il secondo massimo nella riga e così via. Si può automatizzare il tutto tramite uno script MATLAB:
+La matrice che compone la tabella è una matrice 10x30 (10 cluster e 30 richieste possibili) e bisogna calcolare il massimo di riga per ogni riga. Inoltre se il massimo di riga è associato ad una \textit{label} già selezionata in precedenza, allora si deve scegliere il secondo massimo nella riga e così via. Si può automatizzare il tutto tramite uno script MATLAB:
 \begin{minted}[framesep = 1mm,
 	fontsize = \footnotesize,
 	breaklines,
@@ -272,7 +283,7 @@ sort(txt_filter(max_index))
 \end{minted}
 Il risultato dello script è la lista delle \textit{label} che identificano il workload sintetico.
 \begin{enumerate}
-	\item HTTP Request 1 : TG1 con risorsa \textit{200k.txt}
+	\item HTTP Request 1 :  TG1 con risorsa \textit{200k.txt}
 	\item HTTP Request 11 : TG2 con risorsa \textit{50k.txt}
 	\item HTTP Request 17 : TG2 con risorsa \textit{350k.txt}
 	\item HTTP Request 21 : TG3 con risorsa \textit{50k.txt}	
@@ -303,12 +314,13 @@ I parametri di alto livello possono anche non essere collezionati poiché non se
 
 
 \subsection{Workload Characterization}
+La caratterizzazione può essere applicata solo ai parametri di basso livello. Il risultato viene confrontato con la caratterizzazione degli stessi parametri misurati con il workload reale. Deve necessariamente accadere che il numero di colonne di questi parametri sia lo stesso.
 \subsubsection{Parametri di basso livello}
 Anche in questo caso il dataset di basso livello è costituito da 17 colonne e 400 righe. Analogamente a quanto fatto in precedenza per i parametri relativi al Workload reale sono state eseguite le operazioni di filtraggio, PCA e clustering.
 \\
 Sono state eliminate le colonne costanti, che in questo caso sono: \textbf{b}, \textbf{swpd}, \textbf{si}, \textbf{so} e \textbf{st}.
 \\
-Dopodichè, eliminando le righe relative ai campionamenti nelle fasi in cui il sistema non stava servendo alcuna richiesta, il set di dati è stato ulteriormente ridotto. L'analisi degli outlaier non ha portato all'eliminazione di alcuna riga, in quanto tutti i punti oltre i quartili dei box-plot sono stati considerati significativi. 
+Dopodichè, eliminando le righe relative ai campionamenti nelle fasi in cui il sistema non stava servendo alcuna richiesta, il set di dati è stato ulteriormente ridotto. L'analisi degli outlier non ha portato all'eliminazione di alcuna riga, in quanto tutti i punti oltre i quartili dei box-plot sono stati considerati significativi. 
 \\
 \hrule
 \vspace{0.3cm}
@@ -335,18 +347,20 @@ I parametri di basso livello relativi a workload reale e sintetico, ottenuti in 
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/hw3/real_wl.png}
 	\caption{\textit{Low-Level Parameters Real WL}}
+	\label{real}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/hw3/syn_wl.png}
 	\caption{\textit{Low-Level Parameters Synthetic WL}}
+	\label{syn}
 \end{figure}
 Sono questi che andranno statisticamente confrontati per validare il Workload Sintetico.
 \\La procedura per la validazione è molto semplice:
 \begin{enumerate}
 	\item Normalità verificata. Se i due dataset provengono da una distribuzione normale allora si possono eseguire test parametrici per la validazione. In particolare si possono usare vari tipi di test statistici anche in base all'omoschedasticità dei campioni.
 	\begin{enumerate}
-		\item Omostedasticità verificata. Se i due dataset sono omoschedastici allora si possono utilizzare test sulla base di questa condizione verificata.
+		\item Omoschedasticità verificata. Se i due dataset sono omoschedastici allora si possono utilizzare test sulla base di questa condizione verificata.
 		\item Omoschedasticità non verificata. Se i due dataset non rispettano la proprietà di omoschedasticità allora bisogna utilizzare test che si basano su tale condizione non verificata.
 	\end{enumerate}
 	\item Nomarlità non verificata. Se i due dataset non provengono da una distribuzione normale allora si devono usare necessariamente test statistici non parametrici per la validazione.
@@ -369,9 +383,9 @@ Un test analitico è il test di \textbf{Kolmogorov-Smirnov}. Esso si basa sull'i
 	H_0 : N(0,1) 
 \end{equation*}
 ovvero che i dati in input provengono da una distribuzione normale standard.
-In MATLAB esiste una funzione già definita per eseguire questo tipo di test: \textbf{h = kstest(x)}. Esso fornisce in output il risultato del test (se $H_0$ viene rigettata o meno) con il relativo \textit{P-Value}. In particolare h è 1 se il test rigetta l'ipotesi nulla H0 con un livello di significatività del 5\%, 0 altrimenti.
+\\In MATLAB esiste una funzione già definita per eseguire questo tipo di test: \textbf{[h,p] = kstest(x)}. Esso fornisce in output il risultato del test (se $H_0$ viene rigettata o meno) con il relativo \textit{P-Value}. In particolare \textit{h} è 1 se il test rigetta l'ipotesi nulla $H_0$ con un livello di significatività del 5\%, 0 altrimenti.
 \subsubsection{Caso di studio - Implementazione}
-Per la verifica della normalità abbiamo quindi applicato queste funzioni ai nostri dataset (3.13 e 3.14).
+Per la verifica della normalità si sono quindi applicate queste funzioni ai dataset (Fig.\ref{real} e Fig.\ref{syn}).
 \begin{minted}[framesep = 1mm,
 	fontsize = \footnotesize,
 	breaklines,
@@ -402,7 +416,7 @@ L'output della kstest è 1 per entrambi i workload, quindi entrambi non provengo
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/hw3/qqplot.png}
-	\caption{\textit{quantile-quantile plot di 3.13 e 3.14}}
+	\caption{\textit{quantile-quantile plot di Fig.\ref{real} e Fig.\ref{syn}}}
 \end{figure}
 Ciò suggerisce l'utilizzo di test non parametrici per la validazione.
 \subsection{Omoschedasticità}
@@ -419,7 +433,7 @@ Visivamente possiamo capire se le varianze delle due distribuzioni sono simili, 
 \subsubsection{Test analitico}
 Un test analitico per il check sull'uguaglianza delle varianze dei campioni è: 
 \\
-\textbf{h = vartest2(x)}.
+\textbf{h = vartest2(x,y)}.
 \\
 Esso è applicabile esclusivamente se i due campioni provengono da una distribuzione normale.
 Si basa sull'ipotesi nulla $H_0$:
@@ -483,7 +497,7 @@ L'output di \textit{NoParametric} sarà dunque costituito da due vettori:
 	\item p\_wilc : il vettore degli p-value per ogni componente principale.
 	\item h\_wilc : il risultato della ranksum su ogni componente principale di x ed y. 
 \end{enumerate}
-L' \textbf{h\_wilc} calcolata sui nostri campioni è un vettore di tutti zeri:
+L' \textbf{h\_wilc} calcolata sui campioni sotto studio è un vettore di tutti zeri:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/hw3/h_wilc.png}

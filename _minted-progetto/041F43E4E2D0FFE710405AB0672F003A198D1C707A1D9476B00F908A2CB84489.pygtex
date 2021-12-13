@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{k}{function}\PYG{+w}{ }[new\PYGZus{}workload]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{random\PYGZus{}selection}\PYG{p}{(}workload\PYG{p}{)}
+\PYG{+w}{	}\PYG{c}{\PYGZpc{}workload = colonne PCA + colonna cluster}
+\PYG{+w}{	}\PYG{n}{N\PYGZus{}cluster}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{workload}\PYG{p}{(:,}\PYG{k}{end}\PYG{p}{));}\PYG{+w}{ }\PYG{c}{\PYGZpc{}numero cluster}
+\PYG{+w}{	}\PYG{p}{[}\PYG{n}{r}\PYG{p}{,}\PYG{n}{c}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{size}\PYG{p}{(}\PYG{n}{workload}\PYG{p}{);}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c}{\PYGZpc{}isolo la colonna dei cluster}
+\PYG{+w}{	}\PYG{n}{cluster\PYGZus{}data}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{workload}\PYG{p}{(:,}\PYG{k}{end}\PYG{p}{);}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{n}{new\PYGZus{}workload}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{n}{N\PYGZus{}cluster}\PYG{p}{,}\PYG{n}{c}\PYG{p}{);}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c}{\PYGZpc{}itero per ogni cluster}
+\PYG{+w}{	}\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{N\PYGZus{}cluster}
+\PYG{+w}{	}\PYG{c}{\PYGZpc{}prelevo tutti gli indici di riga associati ad uno stesso cluster i}
+\PYG{+w}{		}\PYG{n}{index}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{find}\PYG{p}{(}\PYG{n}{cluster\PYGZus{}data}\PYG{o}{==}\PYG{n+nb}{i}\PYG{p}{);}
+\PYG{+w}{		}\PYG{c}{\PYGZpc{}se ho più di una riga ne scelgo una random}
+\PYG{+w}{		}\PYG{k}{if}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{index}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{1}
+\PYG{+w}{			}\PYG{n}{new\PYGZus{}workload}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,:)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{workload}\PYG{p}{(}\PYG{n}{randsample}\PYG{p}{(}\PYG{n}{index}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{),:);}
+\PYG{+w}{		}\PYG{k}{else}
+\PYG{+w}{			}\PYG{c}{\PYGZpc{}se ho solo una riga scelgo quella}
+\PYG{+w}{			}\PYG{n}{new\PYGZus{}workload}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,:)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{workload}\PYG{p}{(}\PYG{n}{index}\PYG{p}{,:);}
+\PYG{+w}{		}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\end{Verbatim}

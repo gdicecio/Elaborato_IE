@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Workload Characterization}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Filtraggio}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Colonne Identiche}{1}{subsection.1.1.1}%
@@ -24,22 +24,22 @@
 \contentsline {subsubsection}{Parametri di basso livello}{20}{section*.3}%
 \contentsline {subsection}{\numberline {3.1.2}Client - JMeter}{21}{subsection.3.1.2}%
 \contentsline {subsubsection}{Parametri di alto livello}{22}{section*.4}%
-\contentsline {subsection}{\numberline {3.1.3}Workload Characterization}{22}{subsection.3.1.3}%
-\contentsline {subsubsection}{Parametri di alto livello}{22}{section*.5}%
+\contentsline {subsection}{\numberline {3.1.3}Workload Characterization}{23}{subsection.3.1.3}%
+\contentsline {subsubsection}{Parametri di alto livello}{23}{section*.5}%
 \contentsline {subsubsection}{Parametri di basso livello}{24}{section*.6}%
-\contentsline {section}{\numberline {3.2}Synthetic Workload}{26}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Synthetic Workload}{27}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Server}{28}{subsection.3.2.1}%
 \contentsline {subsubsection}{Parametri di basso livello}{28}{section*.7}%
-\contentsline {subsection}{\numberline {3.2.2}Client - JMeter}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Client - JMeter}{29}{subsection.3.2.2}%
 \contentsline {subsubsection}{Parametri di alto livello}{29}{section*.8}%
 \contentsline {subsection}{\numberline {3.2.3}Workload Characterization}{29}{subsection.3.2.3}%
 \contentsline {subsubsection}{Parametri di basso livello}{29}{section*.9}%
 \contentsline {section}{\numberline {3.3}Data Validation}{30}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Normalit\IeC {\`a}}{31}{subsection.3.3.1}%
-\contentsline {subsubsection}{Test Visivo}{31}{section*.10}%
+\contentsline {subsection}{\numberline {3.3.1}Normalit\IeC {\`a}}{32}{subsection.3.3.1}%
+\contentsline {subsubsection}{Test Visivo}{32}{section*.10}%
 \contentsline {subsubsection}{Test analitico}{32}{section*.11}%
-\contentsline {subsubsection}{Caso di studio - Implementazione}{32}{section*.12}%
+\contentsline {subsubsection}{Caso di studio - Implementazione}{33}{section*.12}%
 \contentsline {subsection}{\numberline {3.3.2}Omoschedasticit\IeC {\`a}}{33}{subsection.3.3.2}%
-\contentsline {subsubsection}{Test Visivo}{33}{section*.13}%
+\contentsline {subsubsection}{Test Visivo}{34}{section*.13}%
 \contentsline {subsubsection}{Test analitico}{34}{section*.14}%
 \contentsline {subsection}{\numberline {3.3.3}Validazione}{34}{subsection.3.3.3}%
