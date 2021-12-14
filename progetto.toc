@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Workload Characterization}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Filtraggio}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Colonne Identiche}{1}{subsection.1.1.1}%
@@ -43,3 +43,8 @@
 \contentsline {subsubsection}{Test Visivo}{34}{section*.13}%
 \contentsline {subsubsection}{Test analitico}{34}{section*.14}%
 \contentsline {subsection}{\numberline {3.3.3}Validazione}{34}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Web Server - Design of Experiment}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Analisi}{36}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Importanza - Allocation of Variation}{36}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Significativit\IeC {\`a} - Analysis of Variance}{36}{subsection.4.2.2}%
