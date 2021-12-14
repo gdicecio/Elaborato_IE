@@ -49,3 +49,6 @@
 \contentsline {subsection}{\numberline {4.2.1}Importanza - Allocation of Variation}{37}{subsection.4.2.1}%
 \contentsline {subsubsection}{Caso di Studio}{37}{section*.15}%
 \contentsline {subsection}{\numberline {4.2.2}Significativit\IeC {\`a} - Analysis of Variance}{38}{subsection.4.2.2}%
+\contentsline {subsubsection}{Caso di Studio - Check Normalit\IeC {\`a}}{38}{section*.16}%
+\contentsline {subsubsection}{Caso di Studio - Check Omoschedasticit\IeC {\`a}}{39}{section*.17}%
+\contentsline {subsubsection}{Caso di Studio - Check Significativit\IeC {\`a} fattori}{40}{section*.18}%

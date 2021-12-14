@@ -46,6 +46,7 @@ Vedere se aggiungere :
 \\Computation of Effects
 \\Interactions
 \\Computation of Errors
+\\capire se l' f-value ha senso anche nel caso di test non parametrici
 \subsection{Importanza - Allocation of Variation}
 L' \textit{importanza} di un fattore viene misurata in base alla porzione di \textbf{variazione totale} che esso riesce a spiegare.
 \\Quest'ultima è espressa tramite la Sum of Squares Total o \textit{SST} la quale ci fornisce informazioni circa quanto i dati ottenuti si discostano dal loro valore medio.
@@ -94,3 +95,68 @@ Osservando i risultati ottenuti notiamo che la percentuale maggiore di variazion
 Tuttavia l'importanza non è un concetto statistico, dunque necessitiamo la valutazione di un altro parametro che invece lo è, la significatività.
 Difatti può accadere che un fattore importante non sia significativo.
 \subsection{Significatività - Analysis of Variance}
+La \textit{significatività} di un fattore, come precedentemente specificato, è un concetto statistico il quale esplicita il contributo che spiega quel fattore rispetto a quello relativo all'errore.
+\\Se un fattore è significativo, ripetendo l'esperimento, con elevata probabilità (associata al livello di significatività) esso influenzerà sempre allo stesso modo l'output, dimostrando che quindi quei risultati non sono dettati dal caso.
+\\
+\\Gli ANOVA (Analysis of Variance) tests permettono di verificare la significatività dei fattori di un esperimento. Al pari dei test d'ipotesi discussi nel capitolo precedente, anch'essi si basano su delle assunzioni tra cui:
+\begin{itemize}
+	\item \textbf{normalità dei residui}.
+	\item \textbf{omoschedasticità}.
+\end{itemize}
+In base a se queste due condizioni sono verificate o meno, verrà utilizzato un particolare test. Nella seguente tabella sono sintetizzate tutte le combinazioni tra le varie condizioni con il relativo test da applicare:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/hw4/ANOVATests.png}
+	\caption{\textit{Tabella ANOVA tests}}
+	\label{table}
+\end{figure}
+\subsubsection{Caso di Studio - Check Normalità}
+Per poter decidere quale test utilizzare per studiare la significatività di \textit{Intensity} e \textit{Page-Types} dobbiamo quindi verificare innanzitutto se i residui (risposta osservata - valore previsto) provengono da una distribuzione normale.
+\\JMP permette di ricavare la colonna dei residui automaticamente a partire da livelli - ripetizioni e output. Dopo averla generata ne plottiamo la distribuzione, in particolare il \textit{normal quantile plot}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/hw4/qqplot_res.png}
+	\caption{\textit{Normal quantile plot JMP}}
+\end{figure}
+il quale non è altro che il q-qplot già discusso per la workload characterization.
+\\Assumiamo che la distribuzione considerata non è normale se anche uno solo dei residui esce al di fuori delle bande di confidenza (tratteggiate e in rosso). Nel nostro caso si verifica con evidenza proprio questa situazione, dunque \textbf{la normalità non è verificata}.
+\\Potremmo validare ulteriormente tale assunzione attraverso il test statistico di \textit{Shapiro-Wilk}, tenendo conto del fatto che se dovesse fornire un risultato diverso da quello del test visivo, in ogni caso sarà l'esito di quest'ultimo (del test visivo) ad essere preferito.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/hw4/shapiro_wilch.png}
+	\caption{\textit{Test di Shapiro Wilk}}
+\end{figure}
+Il test ci restituisce un p-value basso, dunque l'ipotesi nulla è stata rigettata ad ulteriore conferma della non normalità della nostra distribuzione.
+\subsubsection{Caso di Studio - Check Omoschedasticità}
+L'uguaglianza delle varianze viene valutata esclusivamente per ogni fattore. Lo si fa prendendo in considerazione uno dei seguenti test:
+\begin{enumerate}
+	\item \textit{Bartlett}
+	\item \textit{Levene}
+	\item \textit{O'Brien}
+	\item \textit{Brown-Forsythe}
+\end{enumerate}
+i cui risultati sono agevolmente forniti da JMP.
+\begin{figure}[H]
+	\subfigure{	
+		\includegraphics[width=0.50\textwidth]{img/hw4/omo_i.png}}
+	\subfigure{	
+		\includegraphics[width=0.50\textwidth]{img/hw4/omo_pt.png}}
+	\caption{\textit{Test omoschedasticità Intensity e Page Type}}
+\end{figure}
+Indipendentemente dal test scelto, per entrambi i fattori \textbf{non vale l'ipotesi di omoschedasticità}. Difatti il p-value basso ci suggerisce che l'ipotesi nulla è stata rigettata.
+\subsubsection{Caso di Studio - Check Significatività fattori}
+Considerando la \ref{table} siamo nel caso 4, con normalità e omoschedasticità non verificate. I test da poter applicare fanno parte degli ANOVA non parametrici eteroschedastici: \textbf{Kruskal-Wallis test o Friedman test}.
+Prendendo in considerazione il primo (sarebbe stato lo stesso anche se avessimo verificato l'omoschedasticità):
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/hw4/KW_i.png}
+	\caption{\textit{Test di Kruskal-Wallis Intensity}}
+\end{figure}
+Il valore alto (in nero) del p-value indica che il fattore Intensity non è risultato significativo ai fini dei tempi di risposta.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/hw4/KW_pt.png}
+	\caption{\textit{Test di Kruskal-Wallis Page-Type}}
+\end{figure}
+Il p-value in questo caso assume un valore abbastanza piccolo (in arancione), dunque il fattore Page-Type oltre ad essere quello più importante risulta anche l'unico fattore significativo per l'output.
+\\Ciò volendo ce lo aspettavamo perchè osservando i dati nella tabella del paragrafo analisi, diciamo che il tempo di risposta per pagine small e small-medium è lo stesso indipendentemente dal carico, non appena la dimensione, e quindi il tipo di pagina, aumenta/varia, i tempi di risposta associati ai due carichi sono completamente diversi. 

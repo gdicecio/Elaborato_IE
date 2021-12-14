@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.17)  14 DEC 2021 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.17)  14 DEC 2021 20:50
 entering extended mode
 **./progetto.tex
 (progetto.tex
@@ -1751,7 +1751,7 @@ Package pdftex.def Info: img/hw3/h_wilc.png  used on input line 504.
  (cap/DoE.tex
 Capitolo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--49
+Underfull \hbox (badness 10000) in paragraph at lines 7--50
 
  []
 
@@ -1761,7 +1761,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--49
 
 
 ]
-Overfull \hbox (2.1328pt too wide) in paragraph at lines 54--60
+Overfull \hbox (2.1328pt too wide) in paragraph at lines 55--61
 \T1/cmr/m/n/10.95 La per-cen-tua-le di va-ria-zio-ne spie-ga-ta dal fat-to-re A
  ad esem-pio è : \T1/cmr/bx/n/10.95 A = (SSA/SST)*100\T1/cmr/m/n/10.95 . 
  []
@@ -1769,20 +1769,68 @@ Overfull \hbox (2.1328pt too wide) in paragraph at lines 54--60
 <img/hw4/AnalisiVarianza.png, id=589, 238.64156pt x 82.80937pt>
 File: img/hw4/AnalisiVarianza.png Graphic file (type png)
 <use img/hw4/AnalisiVarianza.png>
-Package pdftex.def Info: img/hw4/AnalisiVarianza.png  used on input line 67.
+Package pdftex.def Info: img/hw4/AnalisiVarianza.png  used on input line 68.
 (pdftex.def)             Requested size: 208.41644pt x 72.32028pt.
 <img/hw4/TestEffetti.png, id=590, 303.38344pt x 84.315pt>
 File: img/hw4/TestEffetti.png Graphic file (type png)
 <use img/hw4/TestEffetti.png>
-Package pdftex.def Info: img/hw4/TestEffetti.png  used on input line 69.
+Package pdftex.def Info: img/hw4/TestEffetti.png  used on input line 70.
 (pdftex.def)             Requested size: 208.41644pt x 57.92265pt.
 
-Overfull \hbox (9.6827pt too wide) in paragraph at lines 67--70
+Overfull \hbox (9.6827pt too wide) in paragraph at lines 68--71
 [][] [][] 
  []
 
-[37 <./img/hw4/AnalisiVarianza.png> <./img/hw4/TestEffetti.png>]) [38]
-(progetto.aux (cap/workload_caracterization.aux) (cap/capacity_test.aux)
+[37 <./img/hw4/AnalisiVarianza.png> <./img/hw4/TestEffetti.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+
+ []
+
+<img/hw4/ANOVATests.png, id=603, 685.8122pt x 365.86688pt>
+File: img/hw4/ANOVATests.png Graphic file (type png)
+<use img/hw4/ANOVATests.png>
+Package pdftex.def Info: img/hw4/ANOVATests.png  used on input line 109.
+(pdftex.def)             Requested size: 333.46758pt x 177.903pt.
+<img/hw4/qqplot_res.png, id=604, 792.71156pt x 426.09187pt>
+File: img/hw4/qqplot_res.png Graphic file (type png)
+<use img/hw4/qqplot_res.png>
+Package pdftex.def Info: img/hw4/qqplot_res.png  used on input line 118.
+(pdftex.def)             Requested size: 333.46758pt x 179.24342pt.
+[38 <./img/hw4/ANOVATests.png>]
+<img/hw4/shapiro_wilch.png, id=612, 285.31593pt x 87.32625pt>
+File: img/hw4/shapiro_wilch.png Graphic file (type png)
+<use img/hw4/shapiro_wilch.png>
+Package pdftex.def Info: img/hw4/shapiro_wilch.png  used on input line 126.
+(pdftex.def)             Requested size: 208.41644pt x 63.79027pt.
+<img/hw4/omo_i.png, id=613, 251.43938pt x 63.98906pt>
+File: img/hw4/omo_i.png Graphic file (type png)
+<use img/hw4/omo_i.png>
+Package pdftex.def Info: img/hw4/omo_i.png  used on input line 141.
+(pdftex.def)             Requested size: 208.41644pt x 53.03961pt.
+<img/hw4/omo_pt.png, id=614, 251.43938pt x 66.2475pt>
+File: img/hw4/omo_pt.png Graphic file (type png)
+<use img/hw4/omo_pt.png>
+Package pdftex.def Info: img/hw4/omo_pt.png  used on input line 143.
+(pdftex.def)             Requested size: 208.41644pt x 54.9116pt.
+
+Overfull \hbox (9.6827pt too wide) in paragraph at lines 141--144
+[][] [][] 
+ []
+
+[39 <./img/hw4/qqplot_res.png> <./img/hw4/shapiro_wilch.png>]
+<img/hw4/KW_i.png, id=629, 358.33875pt x 209.28188pt>
+File: img/hw4/KW_i.png Graphic file (type png)
+<use img/hw4/KW_i.png>
+Package pdftex.def Info: img/hw4/KW_i.png  used on input line 152.
+(pdftex.def)             Requested size: 250.10226pt x 146.07158pt.
+<img/hw4/KW_pt.png, id=630, 359.84438pt x 188.20313pt>
+File: img/hw4/KW_pt.png Graphic file (type png)
+<use img/hw4/KW_pt.png>
+Package pdftex.def Info: img/hw4/KW_pt.png  used on input line 158.
+(pdftex.def)             Requested size: 250.10226pt x 130.81084pt.
+) [40 <./img/hw4/omo_i.png> <./img/hw4/omo_pt.png> <./img/hw4/KW_i.png> <./img/
+hw4/KW_pt.png>]
+[41] (progetto.aux (cap/workload_caracterization.aux) (cap/capacity_test.aux)
 (cap/webserver_characterization.aux) (cap/DoE.aux))
 Package rerunfilecheck Info: File `progetto.out' has not changed.
 (rerunfilecheck)             Checksum: 75C2D08ED37A6DE5DE229283B4A40198;5274.
@@ -1794,10 +1842,10 @@ runsystem(del progetto.pyg)...executed.
 ### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30587 strings out of 478699
- 590554 string characters out of 2846490
- 998929 words of memory out of 3000000
- 47773 multiletter control sequences out of 15000+600000
+ 30655 strings out of 478699
+ 591853 string characters out of 2846490
+ 998978 words of memory out of 3000000
+ 47816 multiletter control sequences out of 15000+600000
  425367 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,81p,687b,2792s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1831,9 +1879,9 @@ msfonts/cm/cmsy8.pfb><C:/Users/emmam/AppData/Local/Programs/MiKTeX1/fonts/type1
 /urw/courier/ucrb8a.pfb><C:/Users/emmam/AppData/Local/Programs/MiKTeX1/fonts/ty
 pe1/urw/courier/ucrr8a.pfb><C:/Users/emmam/AppData/Local/Programs/MiKTeX1/fonts
 /type1/urw/courier/ucrro8a.pfb>
-Output written on progetto.pdf (41 pages, 1161809 bytes).
+Output written on progetto.pdf (44 pages, 1305624 bytes).
 PDF statistics:
- 1213 PDF objects out of 1440 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
- 573 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1263 PDF objects out of 1440 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
+ 608 words of extra memory for PDF output out of 10000 (max. 10000000)
 
