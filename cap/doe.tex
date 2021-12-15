@@ -1,8 +1,84 @@
 \chapter{Web Server - Design of Experiment}
-Obiettivo: Design an experiment to study the impact of two factors (intensity and page type) on the response time
+L'homework si pone l'obiettivo di valutare le performance del web server utilizzato per i precedenti lavori. In particolare lo studio è centrato sul \textit{response time}. Nel dettaglio bisogna studiare l'incidenza di due fattori sul tempo di risposta ricavando un'analisi ANOVA. I fattori di interesse sono:
+\begin{itemize}
+	\item \textbf{Page Type}, dimensione della risorsa da richiedere al server.
+	\item \textbf{Intensità}, inteso come carico da applicare al sistema. 
+\end{itemize}
+Le performance possono essere valutate utilizzato le tecniche DOE (Design Of Experiment). 
+\\Ogni misura effettuata inoltre deve essere ripetuta almeno 5 volte.
+
 \section{Design}
-Descrizione fattori scelti repliche ecc ...
-collezionamento response time medio
+I fattori utilizzati durante l'analisi, come già descritti, hanno un diverso numero di livelli. In particolare:
+\begin{itemize}
+	\item \textbf{Page Type}
+	\begin{itemize}
+		\item \textit{Small}        (S):  100 KB
+		\item \textit{Small-Medium} (SM): 350 KB
+		\item \textit{Medium-Large} (ML): 600 KB
+		\item \textit{Large}        (L):  800KB
+	\end{itemize}
+	\item \textbf{Intensity}
+	\begin{itemize}
+		\item \textit{LOW}: 1500
+		\item \textit{HIGH}: 4500
+	\end{itemize}
+\end{itemize}
+I livelli del fattore \textit{Intensity} non sono scelti casualmente. Essi rappresentano una frazione della \textit{usable capacity} calcolata nel Capitolo 2. A tal proposito quindi il web server deve essere necessariamente identico a quello utilizzato per il \textit{\textbf{Capacity Test}}.
+\\Un modello che può essere utilizzato per descrivere l'esperimento è il \textit{Two Factor Full Factor Design con Repliche}. poiché si hanno due fattori (con un numero arbitrario di livelli) e 5 ripetizioni per ogni misura. Per misura si intende la \textit{response time}.
+\\Tale Design prevede di effettuare le misure per ogni combinazione tra i livelli dei due fattori; ogni misura deve poi essere ripetuta 5 volte. Posto $FACT_i$ come il numero di livelli del fattore $i$ e $R$ il numero di ripetizioni per ogni combinazione:
+\begin{equation*}
+	N = FACT_1 \times FACT_2 \times R = 2\times 4 \times 5 = 40
+\end{equation*}
+in cui $N$ è il numero di misure da effettuare.
+
+
+\subsection{Client - JMeter}
+Anche in questo caso per simulare le richieste con carico prefissato si utilizza il tool JMeter, ampiamente descritto in precedenza.
+\\Per questo esperimento la configurazione è molto più semplice poiché bisogna porre solo una richiesta e un carico (che variano in relazione alla misura che si sta effettuando).
+\\Ogni misura può durare anche solo 1min e il parametro di misurazione è \textit{elapsed} (ricavato stesso dal tool).
+\\Per ogni misura il numero di richieste varia in relazione al carico, per cui il \textit{Response Time} può essere calcolato come la media tra tutti gli \textit{elapsed} che compaiono nelle misure.  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/hw4/jmeter.png}
+	\caption{\textit{Configurazione di JMeter}}
+\end{figure}
+\vspace{0.5cm}
+A questo punto per permettere di automatizzare il calcolo del \textit{response time}, i file di misurazione devono essere salvati con uno standard. Così facendo si può utilizzare MATLAB per calcolare il \textit{response time} (come media di \textit{elapsed}) in modo iterativo.
+\\Ogni file viene dunque memorizzato nel seguente modo:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/hw4/file.png}
+	\caption{\textit{Memorizzazione delle misure}}
+\end{figure}
+Il primo valore indica il carico (il livello del fattore \textit{intensity}), il secondo valore indica la risorsa (il livello del fattore \textit{page-type}), il terzo valore indica la ripetizione.
+\\Dopo avere collezionato 40 file, con MATLAB si può automatizzare il calcolo:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+intensity = [1500 4500]; 
+page_type = ["S", "SM", "ML", "L"];
+N = 5;
+
+resp_time = zeros(length(intensity),length(page_type), N);
+factor_intensity = 1;
+factor_page = 1;
+
+for i=intensity
+	for p=page_type
+		for r=1:N
+			path = strcat(num2str(i, '%d'),'-',p,'-',num2str(r, '%d'),'.csv');
+			data = readtable(path);
+			resp_time(factor_intensity,factor_page,r) = mean(table2array(data(:,2)));
+		end
+		factor_page = factor_page +1;
+	end
+	factor_intensity = factor_intensity +1;
+	factor_page = 1;
+end
+\end{minted}
+L'output è quindi una matrice tridimensionale che associa ad ogni combinazione di livelli e ad ogni ripetizione il corrispettivo valore del \textit{RT}.
+
 \section{Analisi}
 Il design oggetto di studio è un \textit{Two-factor Full Factorial Design con repliche}.
 I fattori che lo interessano sono categorici, quindi possono assumere solo valori finiti. 
@@ -54,9 +130,13 @@ L' \textit{importanza} di un fattore viene misurata in base alla porzione di \te
 	SST = \sum_{i = 1}^{n}{({y_i} - \overline{y})^2}
 \end{equation*}
 In particolare la variazione totale può essere anche vista come somma delle variazioni spiegate dai fattori, dalle loro interazioni e dall'errore commesso:
-\\\textbf{SST = {SSA + SSB + SSAB + SSE}}.
-\\La percentuale di variazione spiegata dal fattore A ad esempio è : \textbf{A = (SSA/SST)*100}.
-\\
+\begin{equation*}
+	SST = SSA + SSB + SSAB + SSE
+\end{equation*}
+La percentuale di variazione spiegata dal fattore A ad esempio è: 
+\begin{equation*}
+	A = \dfrac{SSA}{SST} \times 100
+\end{equation*}
 Queste informazioni possono essere agevolmente ottenute in \textit{JMP}, operando sulla tabella che caratterizza il design in questione, analizzando le sezioni:
 \begin{enumerate}
 	\item \textit{Analisi della varianza}
@@ -67,7 +147,7 @@ Queste informazioni possono essere agevolmente ottenute in \textit{JMP}, operand
 	\subfigure{	
 		\includegraphics[width=0.50\textwidth]{img/hw4/AnalisiVarianza.png}}
 	\subfigure{	
-		\includegraphics[width=0.50\textwidth]{img/hw4/TestEffetti.png}}
+		\includegraphics[width=0.62\textwidth]{img/hw4/TestEffetti.png}}
 	\caption{\textit{Sum of Squares in JMP}}
 \end{figure}
 \begin{table*}[h]
@@ -90,9 +170,9 @@ Queste informazioni possono essere agevolmente ottenute in \textit{JMP}, operand
 		\end{tabular}
 	\end{center}
 \end{table*}
-Osservando i risultati ottenuti notiamo che la percentuale maggiore di variazione la spiega il fattore \textit{Page Types}, con il 41,36\% della totale, seguito da \textit{Interazioni} e \textit{Intensità del carico} che ne spiegano una percentuale più o meno simile (rispettivamente 28,30\% e 30,20\%). Il restante 0,14\% è attribuita all'errore sperimentale.
+Osservando i risultati ottenuti si nota che la percentuale maggiore di variazione la spiega il fattore \textit{Page Types}, con il 41,36\% della totale, seguito da \textit{Interazioni} e \textit{Intensità del carico} che ne spiegano una percentuale più o meno simile (rispettivamente 28,30\% e 30,20\%). Il restante 0,14\% è attribuita all'errore sperimentale.
 \\
-Tuttavia l'importanza non è un concetto statistico, dunque necessitiamo la valutazione di un altro parametro che invece lo è, la significatività.
+Tuttavia l'importanza non è un concetto statistico, dunque si necessita la valutazione di un altro parametro che invece lo è, la significatività.
 Difatti può accadere che un fattore importante non sia significativo.
 \subsection{Significatività - Analysis of Variance}
 La \textit{significatività} di un fattore, come precedentemente specificato, è un concetto statistico il quale esplicita il contributo che spiega quel fattore rispetto a quello relativo all'errore.
@@ -100,8 +180,8 @@ La \textit{significatività} di un fattore, come precedentemente specificato, è
 \\
 \\Gli ANOVA (Analysis of Variance) tests permettono di verificare la significatività dei fattori di un esperimento. Al pari dei test d'ipotesi discussi nel capitolo precedente, anch'essi si basano su delle assunzioni tra cui:
 \begin{itemize}
-	\item \textbf{normalità dei residui}.
-	\item \textbf{omoschedasticità}.
+	\item \textbf{Normalità dei residui}.
+	\item \textbf{Omoschedasticità}.
 \end{itemize}
 In base a se queste due condizioni sono verificate o meno, verrà utilizzato un particolare test. Nella seguente tabella sono sintetizzate tutte le combinazioni tra le varie condizioni con il relativo test da applicare:
 \begin{figure}[H]
@@ -111,22 +191,22 @@ In base a se queste due condizioni sono verificate o meno, verrà utilizzato un 
 	\label{table}
 \end{figure}
 \subsubsection{Caso di Studio - Check Normalità}
-Per poter decidere quale test utilizzare per studiare la significatività di \textit{Intensity} e \textit{Page-Types} dobbiamo quindi verificare innanzitutto se i residui (risposta osservata - valore previsto) provengono da una distribuzione normale.
-\\JMP permette di ricavare la colonna dei residui automaticamente a partire da livelli - ripetizioni e output. Dopo averla generata ne plottiamo la distribuzione, in particolare il \textit{normal quantile plot}
+Per poter decidere quale test utilizzare per studiare la significatività di \textit{Intensity} e \textit{Page-Types} si deve quindi verificare innanzitutto se i residui (risposta osservata - valore previsto) provengono da una distribuzione normale.
+\\JMP permette di ricavare la colonna dei residui automaticamente a partire da livelli - ripetizioni e output. In seguito alla generazione si può effettuare un plot della distribuzione, in particolare il \textit{normal quantile plot}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{img/hw4/qqplot_res.png}
 	\caption{\textit{Normal quantile plot JMP}}
 \end{figure}
 il quale non è altro che il q-qplot già discusso per la workload characterization.
-\\Assumiamo che la distribuzione considerata non è normale se anche uno solo dei residui esce al di fuori delle bande di confidenza (tratteggiate e in rosso). Nel nostro caso si verifica con evidenza proprio questa situazione, dunque \textbf{la normalità non è verificata}.
-\\Potremmo validare ulteriormente tale assunzione attraverso il test statistico di \textit{Shapiro-Wilk}, tenendo conto del fatto che se dovesse fornire un risultato diverso da quello del test visivo, in ogni caso sarà l'esito di quest'ultimo (del test visivo) ad essere preferito.
+\\Si assume che la distribuzione considerata non è normale se anche uno solo dei residui esce al di fuori delle bande di confidenza (tratteggiate e in rosso). In questo caso si verifica con evidenza proprio questa situazione, dunque \textbf{la normalità non è verificata}.
+\\Si può validare ulteriormente tale assunzione attraverso il test statistico di \textit{Shapiro-Wilk}, tenendo conto del fatto che se dovesse fornire un risultato diverso da quello del test visivo, in ogni caso sarà l'esito di quest'ultimo (del test visivo) ad essere preferito.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/hw4/shapiro_wilch.png}
 	\caption{\textit{Test di Shapiro Wilk}}
 \end{figure}
-Il test ci restituisce un p-value basso, dunque l'ipotesi nulla è stata rigettata ad ulteriore conferma della non normalità della nostra distribuzione.
+Il test restituisce un \textit{P-value} basso, dunque l'ipotesi nulla è stata rigettata ad ulteriore conferma della non normalità della nostra distribuzione.
 \subsubsection{Caso di Studio - Check Omoschedasticità}
 L'uguaglianza delle varianze viene valutata esclusivamente per ogni fattore. Lo si fa prendendo in considerazione uno dei seguenti test:
 \begin{enumerate}
@@ -143,20 +223,20 @@ i cui risultati sono agevolmente forniti da JMP.
 		\includegraphics[width=0.50\textwidth]{img/hw4/omo_pt.png}}
 	\caption{\textit{Test omoschedasticità Intensity e Page Type}}
 \end{figure}
-Indipendentemente dal test scelto, per entrambi i fattori \textbf{non vale l'ipotesi di omoschedasticità}. Difatti il p-value basso ci suggerisce che l'ipotesi nulla è stata rigettata.
+Indipendentemente dal test scelto, per entrambi i fattori \textbf{non vale l'ipotesi di omoschedasticità}. Difatti il \textit{P-value} basso ci suggerisce che l'ipotesi nulla è stata rigettata.
 \subsubsection{Caso di Studio - Check Significatività fattori}
-Considerando la \ref{table} siamo nel caso 4, con normalità e omoschedasticità non verificate. I test da poter applicare fanno parte degli ANOVA non parametrici eteroschedastici: \textbf{Kruskal-Wallis test o Friedman test}.
+Considerando la \ref{table} ci si trova nel caso 4, con normalità e omoschedasticità non verificate. I test da poter applicare fanno parte degli ANOVA non parametrici eteroschedastici: \textbf{Kruskal-Wallis test o Friedman test}.
 Prendendo in considerazione il primo (sarebbe stato lo stesso anche se avessimo verificato l'omoschedasticità):
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/hw4/KW_i.png}
 	\caption{\textit{Test di Kruskal-Wallis Intensity}}
 \end{figure}
-Il valore alto (in nero) del p-value indica che il fattore Intensity non è risultato significativo ai fini dei tempi di risposta.
+Il valore alto (in nero) del P-value indica che il fattore Intensity non è risultato significativo ai fini dei tempi di risposta.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/hw4/KW_pt.png}
 	\caption{\textit{Test di Kruskal-Wallis Page-Type}}
 \end{figure}
-Il p-value in questo caso assume un valore abbastanza piccolo (in arancione), dunque il fattore Page-Type oltre ad essere quello più importante risulta anche l'unico fattore significativo per l'output.
-\\Ciò volendo ce lo aspettavamo perchè osservando i dati nella tabella del paragrafo analisi, diciamo che il tempo di risposta per pagine small e small-medium è lo stesso indipendentemente dal carico, non appena la dimensione, e quindi il tipo di pagina, aumenta/varia, i tempi di risposta associati ai due carichi sono completamente diversi. 
+Il P-value in questo caso assume un valore abbastanza piccolo (in arancione), dunque il fattore Page-Type oltre ad essere quello più importante risulta anche l'unico fattore significativo per l'output.
+\\Ciò si poteva intuire perché, osservando i dati in Tab.\ref*{table}, il tempo di risposta per pagine Small e Small-Medium è molto simile indipendentemente dal carico. Non appena la dimensione varia, e quindi il tipo di pagina, il tempo di risposta aumenta/varia e i tempi di risposta associati ai due carichi sono completamente diversi. 
