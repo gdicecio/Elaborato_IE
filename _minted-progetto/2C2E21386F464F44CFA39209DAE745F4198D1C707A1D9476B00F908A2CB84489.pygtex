@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{a}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{page\PYGZus{}type}\PYG{p}{);}
+\PYG{n}{b}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{intensity}\PYG{p}{);}
+\PYG{n}{r}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{N}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}Parametri del modello}
+\PYG{n}{mu}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{             }\PYG{c}{\PYGZpc{}Media totale}
+\PYG{n+nb}{alpha}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{);}\PYG{c}{\PYGZpc{}Effetto di PAGE TYPE}
+\PYG{n+nb}{beta}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Effetto di INTENSITY}
+\PYG{n+nb}{gamma}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{);}\PYG{c}{\PYGZpc{}Effetto dell\PYGZsq{}interazione}
+\PYG{n}{e}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{r}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}Errore}
+
+\PYG{c}{\PYGZpc{}Calcoli}
+\PYG{n}{mu}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{p}{(}\PYG{n}{a}\PYG{o}{*}\PYG{n}{b}\PYG{o}{*}\PYG{n}{r}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{resp\PYGZus{}time}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}all\PYGZsq{}}\PYG{p}{);}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{a}
+\PYG{+w}{	}\PYG{n+nb}{alpha}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{resp\PYGZus{}time}\PYG{p}{(:,}\PYG{n+nb}{j}\PYG{p}{,:),}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}all\PYGZsq{}}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{n}{r}\PYG{o}{*}\PYG{n}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{mu}\PYG{p}{;}
+\PYG{k}{end}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{b}
+\PYG{+w}{	}\PYG{n+nb}{beta}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{resp\PYGZus{}time}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,:,:),}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}all\PYGZsq{}}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{n}{r}\PYG{o}{*}\PYG{n}{a}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{mu}\PYG{p}{;}
+\PYG{k}{end}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{b}
+\PYG{+w}{	}\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{a}
+\PYG{+w}{		}\PYG{n+nb}{gamma}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{resp\PYGZus{}time}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{,:),}\PYG{l+s}{\PYGZsq{}all\PYGZsq{}}\PYG{p}{)}\PYG{o}{/}\PYG{n}{r}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{mu}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nb}{alpha}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nb}{beta}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{k}{end}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{b}
+\PYG{+w}{	}\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{a}
+\PYG{+w}{		}\PYG{k}{for}\PYG{+w}{ }\PYG{n}{k}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{r}
+\PYG{+w}{			}\PYG{n}{e}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{,}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{resp\PYGZus{}time}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{,}\PYG{n}{k}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{resp\PYGZus{}time}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{,:),}\PYG{l+s}{\PYGZsq{}all\PYGZsq{}}\PYG{p}{)}\PYG{o}{/}\PYG{n}{r}\PYG{p}{;}
+\PYG{+w}{		}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{k}{end}
+\end{Verbatim}

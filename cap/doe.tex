@@ -82,9 +82,9 @@ L'output è quindi una matrice tridimensionale che associa ad ogni combinazione 
 \section{Analisi}
 Il design oggetto di studio è un \textit{Two-factor Full Factorial Design con repliche}.
 I fattori che lo interessano sono categorici, quindi possono assumere solo valori finiti. 
+\\Utilizzando l'output prodotto durante la fase di design e di misurazione, si può costruire una tabella che racchiude tutti i tempi di risposta $y_{ijk}$.
 \\La seguente tabella descrive i tempi medi di risposta ottenuti in funzione delle combinazioni dei fattori e delle repliche:
-\\
-\begin{table*}[h]
+\begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
@@ -114,22 +114,87 @@ I fattori che lo interessano sono categorici, quindi possono assumere solo valor
 			\hline
 		\end{tabular}
 	\end{center}
-\end{table*}
-\\
-\\
-Vedere se aggiungere :
-\\Equazione modello
-\\Computation of Effects
-\\Interactions
-\\Computation of Errors
-\\capire se l' f-value ha senso anche nel caso di test non parametrici
+\label{experimental_data}
+\end{table}
+\subsection{Modello}
+Sulla base della tabella Tab.\ref{experimental_data} si può costruire il modello che rappresenta il design scelto:
+\begin{equation}
+	y_{ijk} = \mu + \alpha_j + \beta_i + \gamma_{ij} + e_{ijk}
+\end{equation}
+in cui:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabularx}{\textwidth}{c|X|X}
+			\textbf{Parametro} & \textbf{Significato} & \textbf{Dimensione}\\
+			\hline
+			$\mu$ & Media di tutte le misure & E' un valore scalare \\
+			\hline
+			$ \alpha_j $ & Effetto del fattore \textit{Page-Type} & Numero di livelli di \textit{Page-Type} \\
+			\hline
+			$ \beta_i $ & Effetto del fattore \textit{Intensisty} & Numero di livelli di \textit{Intensisty} \\
+			\hline
+			$ \gamma_{ij} $ & Effetto dell'interazione dei due fattori & Numero di livelli di \textit{Intensisty} per il Numero di livelli di \textit{Page-Type}  \\
+			\hline
+			$ e_{ijk} $ & Errore di ogni misura & Numero di livelli di \textit{Intensisty} per il Numero di livelli di \textit{Page-Type} per il Numero di Ripetizioni  \\
+			
+		\end{tabularx}
+	\end{center}
+\end{table}
+Grazie alle conoscenze teoriche acquisite durante il corso, i parametri che descrivono il modello possono essere facilmente calcolati tramite uno script MATLAB.
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+a = length(page_type);
+b = length(intensity);
+r = N;
+%Parametri del modello
+mu = 0;             %Media totale
+alpha = zeros(1, a);%Effetto di PAGE TYPE
+beta = zeros(1, b); %Effetto di INTENSITY
+gamma = zeros(b, a);%Effetto dell'interazione
+e = zeros(b, a, r); %Errore
+
+%Calcoli
+mu = 1/(a*b*r) * sum(resp_time,'all');
+for j=1:a
+	alpha(j) = sum(resp_time(:,j,:), 'all')/(r*b) - mu;
+end
+for i=1:b
+	beta(i) = sum(resp_time(i,:,:), 'all')/(r*a) - mu;
+end
+for i=1:b
+	for j=1:a
+		gamma(i,j) = sum(resp_time(i,j,:),'all')/r - mu - alpha(j) - beta(i);
+	end
+end
+for i=1:b
+	for j=1:a
+		for k=1:r
+			e(i,j,k) = resp_time(i,j,k) - sum(resp_time(i,j,:),'all')/r;
+		end
+	end
+end
+\end{minted}
+Esso fornisce come risultato:
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth]{img/hw4/alpha.png}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=0.3\textwidth]{img/hw4/beta.png}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth]{img/hw4/gamma.png}
+\end{figure}
+
 \subsection{Importanza - Allocation of Variation}
 L' \textit{importanza} di un fattore viene misurata in base alla porzione di \textbf{variazione totale} che esso riesce a spiegare.
 \\Quest'ultima è espressa tramite la Sum of Squares Total o \textit{SST} la quale ci fornisce informazioni circa quanto i dati ottenuti si discostano dal loro valore medio.
-\begin{equation*}
-	SST = \sum_{i = 1}^{n}{({y_i} - \overline{y})^2}
-\end{equation*}
-In particolare la variazione totale può essere anche vista come somma delle variazioni spiegate dai fattori, dalle loro interazioni e dall'errore commesso:
+\begin{equation}
+	SST = \sum_{i = 1}^{b}\sum_{j = 1}^{a}\sum_{k = 1}^{r}{({y_{ijk}} - \mu)^2}
+\end{equation}
+con $a$ la dimensione di $\alpha$, $b$ la dimensione di $\beta$ e $r$ numero di ripetizioni.
+\\In particolare la variazione totale può essere anche vista come somma delle variazioni spiegate dai fattori, dalle loro interazioni e dall'errore commesso:
 \begin{equation*}
 	SST = SSA + SSB + SSAB + SSE
 \end{equation*}
@@ -154,24 +219,57 @@ Queste informazioni possono essere agevolmente ottenute in \textit{JMP}, operand
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
 			\hline
-			Component & Sum of Squares & \% Variation\\
-			\hline
+			Component &  Sum of Squares & \% Variation\\
+			 \hline
+			    $y-\overline{y}_{...}$ & 1530028,0		   & 100\\
 			 \rule[-4mm]{0mm}{0.5cm}
-			 y - {$\overline{y}_...$}   	& 1530028,0		   & 100\\
+			 Intensity (CTTs) 		   &433030,15		   & 28,30\\
 			 \rule[-4mm]{0mm}{0.5cm}
-			 Intensity (CTTs) 		  & 433030,15		   & 28,30\\
+			 Page-Types 		   &632817,86		   & 41,36\\
 			 \rule[-4mm]{0mm}{0.5cm}
-			 Page-Types 		  & 632817,86		   & 41,36\\
+			 Interactions		   &462019,35		   & 30,20\\
 			 \rule[-4mm]{0mm}{0.5cm}
-			 Interactions		  & 462019,35		   & 30,20\\
-			 \rule[-4mm]{0mm}{0.5cm}
-			 Errors 		  & 2160,6		   & 0,14\\
+			 Errors 		   &2160,6		   & 0,14\\
 			\hline
 		\end{tabular}
 	\end{center}
 \end{table*}
 Osservando i risultati ottenuti si nota che la percentuale maggiore di variazione la spiega il fattore \textit{Page Types}, con il 41,36\% della totale, seguito da \textit{Interazioni} e \textit{Intensità del carico} che ne spiegano una percentuale più o meno simile (rispettivamente 28,30\% e 30,20\%). Il restante 0,14\% è attribuita all'errore sperimentale.
-\\
+\\Gli stessi risultati possono essere tranquillamente raggiunti anche con uno script MATLAB che sfrutta il modello precedentemente calcolato.
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+SSY = sum(resp_time(:,:,:).^2, 'all');
+SS0 = a*b*r*mu*mu;
+SSA = b*r*sum(alpha.^2);
+SSB = a*r*sum(beta.^2);
+SSAB = r*sum(gamma.^2, 'all');
+SSE = sum(e.^2, 'all');
+SST = SSY - SS0;
+IMPORTANZA_PAGE_TYPE = SSA/SST;
+IMPORTANZA_INTENSITY = SSB/SST;
+IMPORTANZA_INTERACTION = SSAB/SST;
+IMPORTANZA_ERRORE = SSE/SST;
+\end{minted}
+Il tutto può essere racchiuso in un'unica tabella:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|l|c|c|l|}
+			\hline
+		\textbf{Component} & \textbf{Sum of Squares} & \textbf{\% Variation} & \textbf{DF} & \textbf{Mean Square} \\
+		\hline
+		$y$ & $SSY=2236968$ & & $40$ &  \\
+		$\bar{y}$ & $SS0 = 706940$ & & $1$ & \\
+		$y-\overline{y}_{...}$ & $SST = 1530027$ & $100$ & $39$ & \\
+		Page-Type & $SSA = 632817$ & $41,36$ & $3$ & $MSA = 210939$ \\
+		Intensity & $SSB = 433030$ & $28,30$ & $1$ & $MSB = 433030$ \\
+		Interaction & $SSAB = 462019$ & $30,20$ & $3$ & $MSAB = 154006$ \\
+		$e$ & $SSE = 2160$ & $0,14$ & $32$ & $MSE = 67,52$ \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{table}
 Tuttavia l'importanza non è un concetto statistico, dunque si necessita la valutazione di un altro parametro che invece lo è, la significatività.
 Difatti può accadere che un fattore importante non sia significativo.
 \subsection{Significatività - Analysis of Variance}
@@ -239,4 +337,4 @@ Il valore alto (in nero) del P-value indica che il fattore Intensity non è risu
 	\caption{\textit{Test di Kruskal-Wallis Page-Type}}
 \end{figure}
 Il P-value in questo caso assume un valore abbastanza piccolo (in arancione), dunque il fattore Page-Type oltre ad essere quello più importante risulta anche l'unico fattore significativo per l'output.
-\\Ciò si poteva intuire perché, osservando i dati in Tab.\ref*{table}, il tempo di risposta per pagine Small e Small-Medium è molto simile indipendentemente dal carico. Non appena la dimensione varia, e quindi il tipo di pagina, il tempo di risposta aumenta/varia e i tempi di risposta associati ai due carichi sono completamente diversi. 
+\\Ciò si poteva intuire perché, osservando i dati in Tab.\ref{experimental_data}, il tempo di risposta per pagine Small e Small-Medium è molto simile indipendentemente dal carico. Non appena la dimensione varia, e quindi il tipo di pagina, il tempo di risposta aumenta/varia e i tempi di risposta associati ai due carichi sono completamente diversi. 

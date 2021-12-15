@@ -47,9 +47,10 @@
 \contentsline {section}{\numberline {4.1}Design}{36}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Client - JMeter}{37}{subsection.4.1.1}%
 \contentsline {section}{\numberline {4.2}Analisi}{38}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Importanza - Allocation of Variation}{38}{subsection.4.2.1}%
-\contentsline {subsubsection}{Caso di Studio}{39}{section*.15}%
-\contentsline {subsection}{\numberline {4.2.2}Significativit\IeC {\`a} - Analysis of Variance}{40}{subsection.4.2.2}%
-\contentsline {subsubsection}{Caso di Studio - Check Normalit\IeC {\`a}}{41}{section*.16}%
-\contentsline {subsubsection}{Caso di Studio - Check Omoschedasticit\IeC {\`a}}{42}{section*.17}%
-\contentsline {subsubsection}{Caso di Studio - Check Significativit\IeC {\`a} fattori}{42}{section*.18}%
+\contentsline {subsection}{\numberline {4.2.1}Modello}{39}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Importanza - Allocation of Variation}{40}{subsection.4.2.2}%
+\contentsline {subsubsection}{Caso di Studio}{41}{section*.15}%
+\contentsline {subsection}{\numberline {4.2.3}Significativit\IeC {\`a} - Analysis of Variance}{42}{subsection.4.2.3}%
+\contentsline {subsubsection}{Caso di Studio - Check Normalit\IeC {\`a}}{43}{section*.16}%
+\contentsline {subsubsection}{Caso di Studio - Check Omoschedasticit\IeC {\`a}}{43}{section*.17}%
+\contentsline {subsubsection}{Caso di Studio - Check Significativit\IeC {\`a} fattori}{44}{section*.18}%
