@@ -52,5 +52,5 @@
 \contentsline {subsubsection}{Caso di Studio}{41}{section*.15}%
 \contentsline {subsection}{\numberline {4.2.3}Significativit\IeC {\`a} - Analysis of Variance}{42}{subsection.4.2.3}%
 \contentsline {subsubsection}{Caso di Studio - Check Normalit\IeC {\`a}}{43}{section*.16}%
-\contentsline {subsubsection}{Caso di Studio - Check Omoschedasticit\IeC {\`a}}{43}{section*.17}%
+\contentsline {subsubsection}{Caso di Studio - Check Omoschedasticit\IeC {\`a}}{44}{section*.17}%
 \contentsline {subsubsection}{Caso di Studio - Check Significativit\IeC {\`a} fattori}{44}{section*.18}%
