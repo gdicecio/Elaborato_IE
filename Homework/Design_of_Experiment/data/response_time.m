@@ -71,3 +71,20 @@ MSA = SSA/(a-1);
 MSB = SSB/(b-1);
 MSAB = SSAB/((a-1)*(b-1));
 MSE = SSE/(a*b*(r-1));
+
+%% 3D Array to 1D array
+[r c h] = size(resp_time);
+y = zeros(1, r*c*h);
+error = zeros(1, r*c*h);
+index = 1;
+for i=1:r
+    for j=1:c
+        for k=1:h
+          y(index) = resp_time(i,j,k);
+          error(index) = e(i,j,k);
+          index = index+1;
+        end
+    end
+end
+scatter(y, error);
+grid;
