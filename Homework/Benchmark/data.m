@@ -25,7 +25,7 @@ hold on;
 loglog(N,sys2./1000,'LineWidth', 2);
 grid;
 legend('SYS 1', 'SYS 2');
-title('Grafico in scala normale');
+title('Grafico in scala logaritmica');
 xlabel('Dimensione dei dati');
 ylabel('Tempo di esecuzione [ms]');
 
@@ -35,6 +35,6 @@ hold on;
 semilogx(N,sys2,'LineWidth', 2);
 grid;
 legend('SYS 1', 'SYS 2');
-title('Grafico in scala logaritmica');
+title('Grafico in scala normale');
 xlabel('Dimensione dei dati');
 ylabel('Tempo di esecuzione [ms]');
