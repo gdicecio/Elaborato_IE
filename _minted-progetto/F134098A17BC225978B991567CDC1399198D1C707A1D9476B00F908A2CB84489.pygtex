@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{} Read}
+\PYG{n}{N}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{l+m+mi}{500}\PYG{+w}{ }\PYG{l+m+mi}{1000}\PYG{+w}{ }\PYG{l+m+mi}{5000}\PYG{+w}{ }\PYG{l+m+mi}{10000}\PYG{+w}{ }\PYG{l+m+mi}{50000}\PYG{+w}{ }\PYG{l+m+mi}{100000}\PYG{+w}{ }\PYG{l+m+mi}{500000}\PYG{+w}{ }\PYG{l+m+mi}{1000000}\PYG{p}{];}
+\PYG{n}{sys1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{N}\PYG{p}{));}
+\PYG{n}{sys2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{N}\PYG{p}{));}
+\PYG{n}{index}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{n}{N}
+\PYG{+w}{	}\PYG{n}{path1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{strcat}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Emma/data\PYGZsq{}}\PYG{p}{,}\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}\PYGZpc{}d\PYGZsq{}}\PYG{p}{),}\PYG{l+s}{\PYGZsq{}.csv\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{path2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{strcat}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Peppe/data\PYGZsq{}}\PYG{p}{,}\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}\PYGZpc{}d\PYGZsq{}}\PYG{p}{),}\PYG{l+s}{\PYGZsq{}.csv\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{samples}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{readtable}\PYG{p}{(}\PYG{n}{path1}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{samples}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{table2array}\PYG{p}{(}\PYG{n}{samples}\PYG{p}{(:,}\PYG{l+m+mi}{2}\PYG{p}{));}
+\PYG{+w}{	}\PYG{n}{sys1}\PYG{p}{(}\PYG{n}{index}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{mean}\PYG{p}{(}\PYG{n}{samples}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{samples}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{readtable}\PYG{p}{(}\PYG{n}{path2}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{samples}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{table2array}\PYG{p}{(}\PYG{n}{samples}\PYG{p}{(:,}\PYG{l+m+mi}{2}\PYG{p}{));}
+\PYG{+w}{	}\PYG{n}{sys2}\PYG{p}{(}\PYG{n}{index}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{mean}\PYG{p}{(}\PYG{n}{samples}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{index}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{index}\PYG{+w}{ }\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{k}{end}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{} Grafico}
+\PYG{n+nb}{figure}\PYG{p}{;}
+\PYG{n+nb}{loglog}\PYG{p}{(}\PYG{n}{N}\PYG{p}{,}\PYG{n}{sys1}\PYG{o}{./}\PYG{l+m+mi}{1000}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}LineWidth\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+\PYG{n+nb}{loglog}\PYG{p}{(}\PYG{n}{N}\PYG{p}{,}\PYG{n}{sys2}\PYG{o}{./}\PYG{l+m+mi}{1000}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}LineWidth\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{n+nb}{grid}\PYG{p}{;}
+\PYG{n+nb}{legend}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}SYS 1\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}SYS 2\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Grafico in scala logaritmica\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Dimensione dei dati\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Tempo di esecuzione [ms]\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n+nb}{figure}\PYG{p}{;}
+\PYG{n+nb}{semilogx}\PYG{p}{(}\PYG{n}{N}\PYG{p}{,}\PYG{n}{sys1}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}LineWidth\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+\PYG{n+nb}{semilogx}\PYG{p}{(}\PYG{n}{N}\PYG{p}{,}\PYG{n}{sys2}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}LineWidth\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{n+nb}{grid}\PYG{p}{;}
+\PYG{n+nb}{legend}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}SYS 1\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}SYS 2\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Grafico in scala normale\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Dimensione dei dati\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Tempo di esecuzione [ms]\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}
