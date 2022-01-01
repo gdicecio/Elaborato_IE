@@ -63,7 +63,7 @@ Il sistema è composto da 2 paralleli in serie con il blocco B. La reliability t
 		&= (1-e^{-\lambda t})*[e^{-4\lambda t}+4e^{-2\lambda t}-4e^{-3\lambda t}]*e^{-\lambda t} \\
 		&=(1-e^{-\lambda t})*[e^{-5\lambda t}+4e^{-3\lambda t}-4e^{-4\lambda t}] \\
 		&= [e^{-5\lambda t}+4e^{-3\lambda t}-4e^{-4\lambda t}] - [e^{-6\lambda t}+4e^{-4\lambda t}-4e^{-5\lambda t}] \\
-		&= 4e^{-3\lambda t}+5e^{-5\lambda t}-e^{-6\lambda t}
+		&= 4e^{-3\lambda t}-8e^{-4\lambda t}+5e^{-5\lambda t}-e^{-6\lambda t}
 	\end{split}
 \end{equation*}
 \begin{figure}[H]
@@ -110,13 +110,13 @@ Quindi la \textbf{reliability totale} del sistema sarà:
 \begin{equation*}
 	\begin{split}
 		Rsys &= Rsys_1 + Rsys_2 \\
-		&= 4e^{-3\lambda t}+5e^{-5\lambda t}-e^{-6\lambda t} + e^{-3\lambda t} + 3e^{-4\lambda t} -4e^{-5\lambda t} +e^{-6\lambda t} \\
-		&= 5e^{-3\lambda t}+3e^{-4\lambda t}+ e^{-5\lambda t}
+		&= 4e^{-3\lambda t}-8e^{-4\lambda t}+5e^{-5\lambda t}-e^{-6\lambda t} + e^{-3\lambda t} + 3e^{-4\lambda t} -4e^{-5\lambda t} +e^{-6\lambda t} \\
+		&= 5e^{-3\lambda t}-5e^{-4\lambda t}+ e^{-5\lambda t}
 	\end{split}
 \end{equation*}
 Mentre il \textbf{MTTF - Mean Time To Failure} è:
 \begin{equation*}
-	MTTF = \int_{0}^{\infty} Rsys(t)dt = \frac{5}{3\lambda}+\frac{3}{4\lambda}+\frac{1}{5\lambda}
+	MTTF = \int_{0}^{\infty} Rsys(t)dt = \frac{5}{3\lambda}-\frac{5}{4\lambda}+\frac{1}{5\lambda}
 \end{equation*}
 
 
