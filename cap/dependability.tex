@@ -50,32 +50,21 @@ In poche parole, dato il sistema, viene supposto che uno dei suoi componenti $R_
 	\caption{\textit{Diagramma con Blocco E down Es.1}}
 \end{figure}
 Il sistema è composto da 2 paralleli in serie con il blocco B. La reliability totale può essere calcolata agevolmente sfruttando le formule di blocchi in serie e in parallelo.
+
 \begin{equation*}
-	Rsys_2 = (1-R_E)*P(sys\,works|E\,down)=
+	Rsys_2 = (1-R_E)*P(sys\,works|E\,down)
 \end{equation*}
 \begin{equation*}
-	 = (1-R_E)*[[1-(1-R_A)*(1-R_E)]*R_B*[1-(1-R_C)*(1-R_F)]] =
-\end{equation*}
-\begin{equation*}
-	= (1-e^{-\lambda*t})*[1-(1-e^{-\lambda*t})^{2}]^{2}*e^{-\lambda*t}=
-\end{equation*}
-\begin{equation*}
-	= (1-e^{-\lambda*t})*[1-(1+e^{-2\lambda*t}-2e^{-\lambda*t})]^{2}*e^{-\lambda*t}=
-\end{equation*}
-\begin{equation*}
-	= (1-e^{-\lambda*t})*[-e^{-2\lambda*t}+2e^{-\lambda*t}]^{2}*e^{-\lambda*t}=
-\end{equation*}
-\begin{equation*}
-	= (1-e^{-\lambda*t})*[e^{-4\lambda*t}+4e^{-2\lambda*t}-4e^{-3\lambda*t}]*e^{-\lambda*t}=
-\end{equation*}
-\begin{equation*}
-	= (1-e^{-\lambda*t})*[e^{-5\lambda*t}+4e^{-3\lambda*t}-4e^{-4\lambda*t}]=
-\end{equation*}
-\begin{equation*}
-	= [e^{-5\lambda*t}+4e^{-3\lambda*t}-4e^{-4\lambda*t}] - [e^{-6\lambda*t}+4e^{-4\lambda*t}-4e^{-5\lambda*t}]=
-\end{equation*}
-\begin{equation*}
-	= 4e^{-3\lambda*t}+5e^{-5\lambda*t}-e^{-6\lambda*t}
+	\begin{split}
+		Rsys_2 &= (1-R_E)*\{[1-(1-R_A)*(1-R_D)]*R_B*[1-(1-R_C)*(1-R_F)]\} \\
+		&= (1-e^{-\lambda t})*[1-(1-e^{-\lambda t})^{2}]^{2}*e^{-\lambda t} \\
+		&= (1-e^{-\lambda t})*[1-(1+e^{-2\lambda t}-2e^{-\lambda t})]^{2}*e^{-\lambda t} \\
+		&= (1-e^{-\lambda t})*[-e^{-2\lambda t}+2e^{-\lambda t}]^{2}*e^{-\lambda t} \\
+		&= (1-e^{-\lambda t})*[e^{-4\lambda t}+4e^{-2\lambda t}-4e^{-3\lambda t}]*e^{-\lambda t} \\
+		&=(1-e^{-\lambda t})*[e^{-5\lambda t}+4e^{-3\lambda t}-4e^{-4\lambda t}] \\
+		&= [e^{-5\lambda t}+4e^{-3\lambda t}-4e^{-4\lambda t}] - [e^{-6\lambda t}+4e^{-4\lambda t}-4e^{-5\lambda t}] \\
+		&= 4e^{-3\lambda t}+5e^{-5\lambda t}-e^{-6\lambda t}
+	\end{split}
 \end{equation*}
 \begin{figure}[H]
 	\centering
@@ -100,41 +89,136 @@ Tuttavia il sistema così ottenuto deve ancora essere condizionato, visto che no
 \begin{equation*}
 	P(sys\,works|E\,up) = P(sys\,works|B\,down)*P(B\,down)+P(sys\,works|B\,up)*P(B\,up) =
 \end{equation*}
+
 \begin{equation*}
-	= (1-R_B)*R_D*R_F + R_B*[1-(1-R_A)*(1-R_D)]*[1-(1-R_C)*(1-R_F)] =
-\end{equation*}
-\begin{equation*}
-	= (1-e^{-\lambda*t})*e^{-2\lambda*t} + e^{-\lambda*t}*[1-(1-e^{-\lambda*t})^{2}]^{2} =
-\end{equation*}
-\begin{equation*}
-	= e^{-2\lambda*t} - e^{-3\lambda*t} + e^{-\lambda*t}*[e^{-4\lambda*t}+4e^{-2\lambda*t}-4e^{-3\lambda*t}] =
-\end{equation*}
-\begin{equation*}
-	= e^{-2\lambda*t} - e^{-3\lambda*t} + e^{-5\lambda*t}+4e^{-3\lambda*t}-4e^{-4\lambda*t} =
-\end{equation*}
-\begin{equation*}
-	= e^{-2\lambda*t} + 3e^{-3\lambda*t} -4e^{-4\lambda*t} +e^{-5\lambda*t} 
+	\begin{split}
+	P(sys\,works|E\,up) &= (1-R_B)*R_D*R_F + R_B*[1-(1-R_A)*(1-R_D)]*[1-(1-R_C)*(1-R_F)]  \\
+	&= (1-e^{-\lambda t})*e^{-2\lambda t} + e^{-\lambda t}*[1-(1-e^{-\lambda t})^{2}]^{2} \\
+	&= e^{-2\lambda t} - e^{-3\lambda t} + e^{-\lambda t}*[e^{-4\lambda t}+4e^{-2\lambda t}-4e^{-3\lambda t}] \\
+	&= e^{-2\lambda t} - e^{-3\lambda t} + e^{-5\lambda t}+4e^{-3\lambda t}-4e^{-4\lambda t} \\
+	&= e^{-2\lambda t} + 3e^{-3\lambda t} -4e^{-4\lambda t} +e^{-5\lambda t} 
+	\end{split}
 \end{equation*}
 Dunque otteniamo che :
 \begin{equation*}
-	Rsys_1 = e^{-\lambda*t}*[e^{-2\lambda*t} + 3e^{-3\lambda*t} -4e^{-4\lambda*t} +e^{-5\lambda*t}] =
-\end{equation*}
-\begin{equation*}
-	 = e^{-3\lambda*t} + 3e^{-4\lambda*t} -4e^{-5\lambda*t} +e^{-6\lambda*t}
+	\begin{split}
+		Rsys_1 &= e^{-\lambda t}*[e^{-2\lambda t} + 3e^{-3\lambda t} -4e^{-4\lambda t} +e^{-5\lambda t}] \\
+		&=  e^{-3\lambda t} + 3e^{-4\lambda t} -4e^{-5\lambda t} +e^{-6\lambda t}
+	\end{split}
 \end{equation*}
 Quindi la \textbf{reliability totale} del sistema sarà:
 \begin{equation*}
-	Rsys = 4e^{-3\lambda*t}+5e^{-5\lambda*t}-e^{-6\lambda*t} + e^{-3\lambda*t} + 3e^{-4\lambda*t} -4e^{-5\lambda*t} +e^{-6\lambda*t} = 
-\end{equation*}
-\begin{equation*}
-	 = 5e^{-3\lambda*t}+3e^{-4\lambda*t}+ e^{-5\lambda*t}
+	\begin{split}
+		Rsys &= Rsys_1 + Rsys_2 \\
+		&= 4e^{-3\lambda t}+5e^{-5\lambda t}-e^{-6\lambda t} + e^{-3\lambda t} + 3e^{-4\lambda t} -4e^{-5\lambda t} +e^{-6\lambda t} \\
+		&= 5e^{-3\lambda t}+3e^{-4\lambda t}+ e^{-5\lambda t}
+	\end{split}
 \end{equation*}
 Mentre il \textbf{MTTF - Mean Time To Failure} è:
 \begin{equation*}
 	MTTF = \int_{0}^{\infty} Rsys(t)dt = \frac{5}{3\lambda}+\frac{3}{4\lambda}+\frac{1}{5\lambda}
 \end{equation*}
+
+
 \section{Esercizio 2}
-\subsubsection{Svolgimento}
+Confrontare i due schemi diversi di uno stesso sistema che sfrutta la ridondanza. Supponendo che il sistema ha bisogno di \textit{s} componenti identici in serie per le proprie operazioni. Inoltre siano dati $m \times s$ componenti totali. 
+\begin{enumerate}
+	\item Data la reliability di un singolo componente pari a $R$, ricavare l'espressione della reliability delle due configurazioni.
+	\\Per $m=3$ e $s=4$, confrontare le due espressioni in funzione del \textit{mission time} $t$.
+	\item Dati i due schemi nella figura sottostante, quale avrà una reliability maggiore? Modificare lo schema che ha la reliability minore in modo da raggiungere la stessa reliability dell'altro.
+\end{enumerate}
+Sia MTTF del singolo componente pari a \textit{100 ore}.
+\begin{figure}[H]
+	\label{es2}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/hw5/es2.png}
+	\caption{\textit{Reliability Block Diagrams Es.2}}
+\end{figure}
+\subsection{Svolgimento}
+In entrambi i sistemi si possono riconoscere facilmente le parti che hanno componenti in serie e in parallelo. Non c'è bisogno di utilizzare tecniche come \textit{Legge di Bayes} o \textit{Teorema dell'Upperbound} per ricavare la legge della reliability complessiva.
+\subsubsection{Sistema A}
+Per "Sistema A" si intende il sistema in alto che compare in Fig.\ref{es2}.
+\\Per $m=3$ e $s=4$ esso ha 4 componenti in serie, disposti all'interno di 3 blocchi in parallelo. Quindi:
+\begin{equation*}
+	\begin{split}
+			&R_{serie} = \prod_{i=1}^{4} R_i = R^4 \\
+			&R_{parallelo} = 1 - \prod_{j=1}^{3}(1-R_{serie}) = (1-R_{serie})^3 \\
+			&R_A = 1-(1-R^4)^3
+	\end{split}
+\end{equation*}
+\subsubsection{Sistema B}
+Per "Sistema B" si intende il sistema in basso che compare in Fig.\ref{es2}.
+\\Per $m=3$ e $s=4$ esso ha 4 blocchi in serie, ognuno dei quali contine 3 componenti in parallelo. Quindi:
+\begin{equation*}
+	\begin{split}
+		&R_{parallelo} = 1 - \prod_{j=1}^{3}(1-R_{j}) = 1-(1-R)^3 \\
+		&R_{serie} = \prod_{i=1}^{4}R_{parallelo} = R_{parallelo}^4 \\
+		&R_B = [1-(1-R)^3]^4
+	\end{split}
+\end{equation*}
+\vspace{0.5cm}
+\\Dato che le due reliability $R_A$ e $R_B$ sono in funzione del \textit{mission time} $t$, per confrontarle si può valutare un grafico per vari valori del tempo $t$.
+Sapendo che:
+\begin{equation*}
+	MTTF = 100h \quad \Rightarrow \quad \lambda = \dfrac{1}{100h}
+\end{equation*}
+Si ha:
+\begin{equation}
+	\begin{split}
+			&R_A(t) = 1 - (1 - e^{-4\lambda t})^3 \\
+			&R_B(t) = [1-(1-e^{-\lambda t})^3]^4
+	\end{split}
+\end{equation}
+Con un semplice script MATLAB:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+MTTF = 100; % [h]
+lambda = 1/MTTF;
+m = 3; s = 4;
+t = 0:1:200;
+R = exp(-lambda*t);  %PDF
+
+R1 = 1-(1-R.^s).^(m);   % Reilability del Sistema 1
+R2 = (1-(1-R).^m).^s;   % Reilability del Sistema 2
+
+figure;
+plot(t,R1); hold on; plot(t,R2);
+legend("Sistema Serie (A)", "Sistema Parallelo (B)");
+grid;
+\end{minted}
+Fornendo come risultato il seguente grafico.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es2_grafico1.png}
+	\caption{\textit{Confronto tra le reliability}}
+\end{figure}
+Come si può notare il "Sistema B" ha una reliability sempre maggiore rispetto al "Sistema A", per ogni \textit{mission time}. In realtà la stessa considerazione poteva essere fatta anche senza calcolare le due espressioni $R_A$ e $R_B$, poiché il secondo sistema ha un numero di \textit{success path} pari a $m^s$ mentre il primo sistema pari a $m$. Di conseguenza essendoci più percorsi alternativi, l'affidabilità è sicuramente maggiore.
+
+\vspace{0.5cm}
+\\Il "Sistema A" può essere opportunamente modificato per raggiungere la stessa reliability del "Sistema B" a parità di \textit{mission time}. Dato che il parametro $s$ non può essere cambiato (vincolo definito dalla traccia) l'unico parametro che può variare è $m$, ovvero il numero di blocchi in parallelo. 
+\\$R_A$ e $R_B$ non sono la stessa funzione, quindi non esiste nessun valore di $m$ per cui le due funzioni si sovrappongono. Per raggiungere la stessa reliability allora bisogna prima fissare il \textit{mission time} e poi calcolare l'$m$ necessario. \\Per far ciò, in linea generale, posto $k$ come il numero di blocchi-serie da mettere in parallelo deve accadere:
+\begin{equation}
+	\begin{split}
+		&1-(1-R(t)^s)^k = R_B(t) \\
+		&1-R_B(t) = (1-R(t)^s)^k \\
+		&k = \dfrac{ln(1-R_B(t))}{ln(1-R(t)^s)} 
+	\end{split}
+\end{equation}
+Quindi $k$ dipende dal \textit{mission time}. Effettuando un grafico del valore di $k$ per vari istanti di tempo $t$, nel caso in esame con $m=3$ e $s=4$:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es2_grafico2.png}
+	\caption{\textit{Numero di Blocchi-Serie in funzione del Mission Time}}
+\end{figure}
+Se si volesse avere quindi la stessa reliability per i due sistema con $t=100$ (ore) allora $k\approx20$, servendosi di circa $20\times 4 = 80$ componenti.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es2_grafico3.png}
+	\caption{\textit{Confronto tra le reilability dei due sistemi}}
+\end{figure}
+
 \section{Esercizio 3}
 \subsubsection{Svolgimento}
 \section{Esercizio 4}

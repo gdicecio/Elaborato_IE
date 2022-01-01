@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Benchmark}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Sistemi}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Test e Risultati}{2}{section.1.2}%
@@ -65,10 +65,12 @@
 \contentsline {subsubsection}{Conditioning sul blocco E}{52}{section*.21}%
 \contentsline {subsubsection}{Conditioning sul blocco B - E up}{53}{section*.22}%
 \contentsline {section}{\numberline {6.2}Esercizio 2}{54}{section.6.2}%
-\contentsline {subsubsection}{Svolgimento}{54}{section*.23}%
-\contentsline {section}{\numberline {6.3}Esercizio 3}{54}{section.6.3}%
-\contentsline {subsubsection}{Svolgimento}{54}{section*.24}%
-\contentsline {section}{\numberline {6.4}Esercizio 4}{54}{section.6.4}%
-\contentsline {subsubsection}{Svolgimento}{54}{section*.25}%
-\contentsline {section}{\numberline {6.5}Esercizio 5}{54}{section.6.5}%
-\contentsline {subsubsection}{Svolgimento}{54}{section*.26}%
+\contentsline {subsection}{\numberline {6.2.1}Svolgimento}{54}{subsection.6.2.1}%
+\contentsline {subsubsection}{Sistema A}{54}{section*.23}%
+\contentsline {subsubsection}{Sistema B}{55}{section*.24}%
+\contentsline {section}{\numberline {6.3}Esercizio 3}{58}{section.6.3}%
+\contentsline {subsubsection}{Svolgimento}{58}{section*.25}%
+\contentsline {section}{\numberline {6.4}Esercizio 4}{58}{section.6.4}%
+\contentsline {subsubsection}{Svolgimento}{58}{section*.26}%
+\contentsline {section}{\numberline {6.5}Esercizio 5}{58}{section.6.5}%
+\contentsline {subsubsection}{Svolgimento}{58}{section*.27}%
