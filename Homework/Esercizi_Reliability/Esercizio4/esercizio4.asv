@@ -1,0 +1,26 @@
+t = linspace(0,10000);
+
+MTTF_A = 1000;
+MTTF_B = 9000;
+MTTF_C = 2000;
+
+lambdaA = 1/MTTF_A;
+lambdaB = 1/MTTF_B;
+lambdaC = 1/MTTF_C;
+
+R_A = exp(-lambdaA*t);
+R_B = exp(-lambdaB*t);
+R_C = exp(-lambdaC*t);
+
+%% CONFRONTO 1
+R_11 = 1-(1-R_A.*R_B).*(1-R_A.*R_C);
+R_12 = R_A.*(1-(1-R_B).*(1-R_C));
+figure();
+plot(t,R_11);
+hold on;
+plot(t,R_12);
+
+%% CONFRONTO 2
+R_21 = R_A.*(1-(1-R_A).*(1-R_B));
+R_22 = 
+
