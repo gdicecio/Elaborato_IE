@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Benchmark}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Sistemi}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Test e Risultati}{2}{section.1.2}%
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Clients Setup - JMeter}{17}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Esecuzione Capacity Test}{18}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Risultati}{19}{subsection.3.2.1}%
-\contentsline {chapter}{\numberline {4}Web Server - Workload Characterization}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {4}WS - Workload Charact.}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Real-field Workload}{24}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Server}{24}{subsection.4.1.1}%
 \contentsline {subsubsection}{Parametri di basso livello}{24}{section*.3}%
@@ -68,13 +68,13 @@
 \contentsline {subsection}{\numberline {6.2.1}Svolgimento}{54}{subsection.6.2.1}%
 \contentsline {subsubsection}{Sistema A}{54}{section*.23}%
 \contentsline {subsubsection}{Sistema B}{55}{section*.24}%
-\contentsline {section}{\numberline {6.3}Esercizio 3}{58}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Esercizio 3}{57}{section.6.3}%
 \contentsline {subsubsection}{Svolgimento}{58}{section*.25}%
-\contentsline {section}{\numberline {6.4}Esercizio 4}{58}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Svolgimento}{58}{subsection.6.4.1}%
-\contentsline {subsubsection}{Confronto 1}{59}{section*.26}%
-\contentsline {subsubsection}{Confronto 2}{60}{section*.27}%
-\contentsline {subsubsection}{Confronto 3}{60}{section*.28}%
-\contentsline {subsubsection}{Confronto 4}{61}{section*.29}%
-\contentsline {section}{\numberline {6.5}Esercizio 5}{62}{section.6.5}%
-\contentsline {subsubsection}{Svolgimento}{62}{section*.30}%
+\contentsline {section}{\numberline {6.4}Esercizio 4}{60}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Svolgimento}{61}{subsection.6.4.1}%
+\contentsline {subsubsection}{Confronto 1}{61}{section*.26}%
+\contentsline {subsubsection}{Confronto 2}{62}{section*.27}%
+\contentsline {subsubsection}{Confronto 3}{63}{section*.28}%
+\contentsline {subsubsection}{Confronto 4}{64}{section*.29}%
+\contentsline {section}{\numberline {6.5}Esercizio 5}{65}{section.6.5}%
+\contentsline {subsubsection}{Svolgimento}{65}{section*.30}%

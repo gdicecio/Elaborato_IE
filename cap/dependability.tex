@@ -220,7 +220,100 @@ Se si volesse avere quindi la stessa reliability per i due sistema con $t=100$ (
 \end{figure}
 
 \section{Esercizio 3}
+L'architettura di una rete di computer in un sistema bancario e la seguente. L'architettura è chiamata \textbf{Skip-Ring Network} ed è progettata per consentire ai componenti di comunicare anche in presenza di nodi falliti.
+\\Per esempio, se il \textit{Nodo 1} fallisce, il \textit{Nodo 8} può oltrepassare il nodo fallito attraverso un link alternativo, potendo raggiungere il \textit{Nodo 2}. 
+\\Assumendo che tutti i link sono perfetti e ogni nodo ha una reilability $R_m$, ricavare l'espressione della reilability della rete.
+\\Se $R_m$ ha una legge di fallimento esponenziale e il \textit{failure rate} di ogni nodo è di 0.005 fallimenti per ora, determinare la reilability del sistema dopo un periodo di 48 ore.
+\begin{figure}[H]
+	\centering
+\includegraphics[width=0.7\textwidth]{img/hw5/es3_traccia.png}
+\caption{\textit{Traccia}}
+\end{figure}
+
 \subsubsection{Svolgimento}
+Il sistema funziona anche in presenza di nodi guasti, purché non si guastino nodi consecutivi. In tale scenario infatti l'anello viene interrotto e il sistema smette di funzionare. Sulla base di questo si può notare che il sistema continua a funzionare anche se falliscono 4 nodi, purché non siano consecutivi.
+\\Per ricavare la legge della reilability ci si può ispirare alla legge per un sistema generale \textit{M-out-of-N} in cui $M$ sono il numero di nodi che devono funzionare, su $N$ affinché il sistema continua a funzionare.
+\\In questo caso $M=4$ e $N=8$, a causa del fatto che se falliscono più di 4 nodi, automaticamente almeno due nodi falliti saranno consecutivi, interrompendo l'anello.
+\begin{equation*}
+	R_{sys} = \sum_{i=0}^{N-M}g(i)R_m^{N-i}(1-R_m)^i
+\end{equation*}
+in cui $i$ indica il numero di nodi falliti e $g(i)$ indica il numero di permutazioni di quel fallimento.
+\\Nel caso specifico:
+\begin{equation*}
+	R_{sys} = \sum_{i=0}^{4}g(i)R_m^{N-i}(1-R_m)^i
+\end{equation*}
+\begin{itemize}
+	\item i=0. Nessun nodo è guasto.
+	\begin{equation*}
+		g(0) = 1 
+	\end{equation*}
+	Poiché è un evento che non dipende dal numero dei nodi. La reilability al'iterazione 0 vale:
+	\begin{equation*}
+		R_{sys}[0] = R_m^8
+	\end{equation*}
+	\item i=1. Un solo nodo è guasto. Il sistema continua a funzionare normalmente. Al massimo si possono guastare $N$ nodi.
+	\begin{equation*}
+		g(1) = 8
+	\end{equation*}
+	La reilability vale:
+	\begin{equation*}
+	R_{sys}[1] = 8 R_m^7 (1-R_m)
+	\end{equation*}	
+	\item i=2. Due nodi sono guasti. In questo caso bisogna prestare attenzione. Il sistema continua a funzionare se i nodi guasti non sono adiacenti. Il numero di permutazioni vale come tutte le possibili permutazioni dei due nodi, sottratto il numero di combinazioni in cui i due nodi sono adiacenti:
+	\begin{equation*}
+		g(2) = \begin{pmatrix}
+			8 \\ 2
+		\end{pmatrix} - 8 = 20
+	\end{equation*}
+	Quindi:
+	\begin{equation*}
+		R_{sys}[2] = 20 R_m^6 (1-R_m)^2
+	\end{equation*}	
+	\item i=3. Se falliscono 3 nodi, come prima, bisogna stare attenti a considerare solo le combinazioni per cui non ci siano due nodi guasti consecutivi. Al totale delle combinazioni devono essere sottratte:
+	\begin{enumerate}
+		\item Combinazioni in cui 3 nodi sono adiacenti, come nel caso precedente, ovvero 8 combinazioni.
+		\item Combinazioni in cui 2 nodi sono adiacenti e il terzo non è adiacente. Fissati due nodi adiacenti, il terzo non è adiacente solo in 4 casi. \\Ad esempio se il \textit{Nodo 2} e il \textit{Nodo 3} sono guasti, il terzo nodo deve essere tra \textit{Nodo 5}, \textit{Nodo 6}, \textit{Nodo 7}, \textit{Nodo 8}. Dato che può capitare per 8 volte, allora si hanno $8*4=32$ combinazioni.
+	\end{enumerate}
+	\begin{equation*}
+		g(3) = \begin{pmatrix}
+			8 \\ 3
+		\end{pmatrix} - 8 - 32 = 16
+	\end{equation*}
+	\begin{equation*}
+		R_{sys}[3] = 16 R_m^5 (1-R_m)^3
+	\end{equation*}	
+	\item i=4. Quattro nodi guasti. Questo è un caso limite, poiché i quattro nodi guasti devono alternarsi tra loro, altrimenti si avranno necessariamente due nodi guasti adiacenti. Quindi esistono solo due combinazioni:
+	\begin{enumerate}
+		\item Nodi: 1-3-5-7
+		\item Nodi: 2-4-6-8
+	\end{enumerate}
+	\begin{equation*}
+	g(4) = 2
+	\end{equation*}
+	Per cui:
+	\begin{equation*}
+		R_{sys}[4] = 2 R_m^4 (1-R_m)^4
+	\end{equation*}
+\end{itemize}
+Avendo calcolato il vettore $g(i)$ la reilability complessiva vale:
+\begin{equation*}
+	R_{sys} = R_m^8 + 8 R_m^7 (1-R_m) + 20 R_m^6 (1-R_m)^2 + 16 R_m^5 (1-R_m)^3 + 2 R_m^4 (1-R_m)^4
+\end{equation*}
+Dato che si conosce il failure rate, e ogni componente ha una legge di reilability esponenziale:
+\begin{equation*}
+	R_m = e^{-\lambda t} = e^{-0.005 t}
+\end{equation*}
+Per cui il grafico complessivo di $R_{sys}$ è il seguente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es3_grafico.png}
+	\caption{\textit{Reilabilty del sistema}}
+\end{figure}
+Inoltre dopo 48h di lavoro, il sistema ha una reilability pari a:
+\begin{equation*}
+	R_sys(48) \approx 0,7289
+\end{equation*}
+
 \section{Esercizio 4}
 Confrontare la reilability dei seguenti sistemi, assumendo un \textit{Mean Time to Failure} esponenziale, con i seguenti valori:
 \begin{itemize}
@@ -230,7 +323,7 @@ Confrontare la reilability dei seguenti sistemi, assumendo un \textit{Mean Time 
 \end{itemize}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/hw5/es4_traccia.png}
+	\includegraphics[width=0.8\textwidth]{img/hw5/es4_traccia.png}
 	\caption{\textit{Sistemi da confrontare}}
 \end{figure}
 \subsection{Svolgimento}
