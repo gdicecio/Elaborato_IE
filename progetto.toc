@@ -71,6 +71,10 @@
 \contentsline {section}{\numberline {6.3}Esercizio 3}{58}{section.6.3}%
 \contentsline {subsubsection}{Svolgimento}{58}{section*.25}%
 \contentsline {section}{\numberline {6.4}Esercizio 4}{58}{section.6.4}%
-\contentsline {subsubsection}{Svolgimento}{58}{section*.26}%
-\contentsline {section}{\numberline {6.5}Esercizio 5}{58}{section.6.5}%
-\contentsline {subsubsection}{Svolgimento}{58}{section*.27}%
+\contentsline {subsection}{\numberline {6.4.1}Svolgimento}{58}{subsection.6.4.1}%
+\contentsline {subsubsection}{Confronto 1}{59}{section*.26}%
+\contentsline {subsubsection}{Confronto 2}{60}{section*.27}%
+\contentsline {subsubsection}{Confronto 3}{60}{section*.28}%
+\contentsline {subsubsection}{Confronto 4}{61}{section*.29}%
+\contentsline {section}{\numberline {6.5}Esercizio 5}{62}{section.6.5}%
+\contentsline {subsubsection}{Svolgimento}{62}{section*.30}%

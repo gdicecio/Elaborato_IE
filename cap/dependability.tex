@@ -197,7 +197,7 @@ Fornendo come risultato il seguente grafico.
 Come si può notare il "Sistema B" ha una reliability sempre maggiore rispetto al "Sistema A", per ogni \textit{mission time}. In realtà la stessa considerazione poteva essere fatta anche senza calcolare le due espressioni $R_A$ e $R_B$, poiché il secondo sistema ha un numero di \textit{success path} pari a $m^s$ mentre il primo sistema pari a $m$. Di conseguenza essendoci più percorsi alternativi, l'affidabilità è sicuramente maggiore.
 
 \vspace{0.5cm}
-\\Il "Sistema A" può essere opportunamente modificato per raggiungere la stessa reliability del "Sistema B" a parità di \textit{mission time}. Dato che il parametro $s$ non può essere cambiato (vincolo definito dalla traccia) l'unico parametro che può variare è $m$, ovvero il numero di blocchi in parallelo. 
+Il "Sistema A" può essere opportunamente modificato per raggiungere la stessa reliability del "Sistema B" a parità di \textit{mission time}. Dato che il parametro $s$ non può essere cambiato (vincolo definito dalla traccia) l'unico parametro che può variare è $m$, ovvero il numero di blocchi in parallelo. 
 \\$R_A$ e $R_B$ non sono la stessa funzione, quindi non esiste nessun valore di $m$ per cui le due funzioni si sovrappongono. Per raggiungere la stessa reliability allora bisogna prima fissare il \textit{mission time} e poi calcolare l'$m$ necessario. \\Per far ciò, in linea generale, posto $k$ come il numero di blocchi-serie da mettere in parallelo deve accadere:
 \begin{equation}
 	\begin{split}
@@ -222,6 +222,118 @@ Se si volesse avere quindi la stessa reliability per i due sistema con $t=100$ (
 \section{Esercizio 3}
 \subsubsection{Svolgimento}
 \section{Esercizio 4}
-\subsubsection{Svolgimento}
+Confrontare la reilability dei seguenti sistemi, assumendo un \textit{Mean Time to Failure} esponenziale, con i seguenti valori:
+\begin{itemize}
+	\item \textit{$MTTF_A$ = 1000h}
+	\item \textit{$MTTF_B$ = 9000h}
+	\item \textit{$MTTF_C$ = 2000h}
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es4_traccia.png}
+	\caption{\textit{Sistemi da confrontare}}
+\end{figure}
+\subsection{Svolgimento}
+Innanzitutto sono state calcolati tassi di fallimento $\lambda$:
+\begin{equation*}
+	\begin{split}
+		&\lambda_A = \frac{1}{MTTF_A} = \frac{1}{1000h}\\
+		&\lambda_B = \frac{1}{MTTF_B} = \frac{1}{9000h}\\
+		&\lambda_C = \frac{1}{MTTF_C} = \frac{1}{2000h}
+	\end{split}
+\end{equation*}
+e di conseguenza le reliability relative ad ogni singolo componente:
+\begin{equation*}
+	\begin{split}
+		&R_A(t) = e^{-\lambda_A t} = e^{-\frac{1}{1000h} t}\\
+		&R_B(t) = e^{-\lambda_B t} = e^{-\frac{1}{9000h} t}\\
+		&R_C(t) = e^{-\lambda_C t} = e^{-\frac{1}{2000h} t}
+	\end{split}
+\end{equation*}
+\subsubsection{Confronto 1}
+Confrontiamo il parallelo tra le serie (A e B) e (A e C), con la serie tra il blocco A e il parallelo tra i blocco B e C.
+Reliability \textbf{sistema 1}:
+\begin{equation*}
+	\begin{split}
+		&R11(t) = 1-(1-R_A*R_B)*(1-R_A*R_C) = \\
+		&1-(1-e^{-\frac{1}{1000h} t}*e^{-\frac{1}{9000h} t})*(1-e^{-\frac{1}{1000h} t}*e^{-\frac{1}{2000h} t}) = 1 -(1-e^{\frac{1}{900h} t})(1-e^{-\frac{3}{2000h}t}) = \\
+		&e^{-\frac{3}{2000h}t}+e^{-\frac{1}{900h}t}-e^{-\frac{47}{18000h}t}
+	\end{split}
+\end{equation*}
+Reilability \textbf{sistema 2}:
+\begin{equation*}
+	\begin{split}
+		&R12(t) = R_A * [1-(1-R_B)*(1-R_C)] = e^{-\frac{1}{1000h} t}*[1-(1-e^{-\frac{1}{9000h} t})*(1-e^{-\frac{1}{2000h} t})] = \\
+		& e^{-\frac{3}{2000h}t}+e^{-\frac{1}{900h}t}-e^{-\frac{29}{18000h}t}
+	\end{split}
+\end{equation*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es4_1.png}
+	\caption{\textit{Primo confronto}}
+\end{figure}
+La reliability del primo sistema (in blu nel grafico) risulta, con evidenza, maggiore rispetto a quella del secondo, fino a valori di t pari a circa 4000h.
+\subsubsection{Confronto 2}
+Nel secondo punto confrontiamo la reliability del blocco A messo in serie ad un parallelo tra A e B, con quella del singolo blocco A. 
+\\
+Reliability \textbf{sistema 1}:
+\begin{equation*}
+	\begin{split}
+		&R21= R_A*[1-(1-R_A)*(1-R_B)] =e^{-\frac{1}{1000h} t}*[1-(1-e^{-\frac{1}{1000h} t})*(1-e^{-\frac{1}{9000h} t})] = \\
+		&e^{-\frac{1}{900h}t}+e^{-\frac{1}{500h}t}+e^{-\frac{19}{9000h}t}
+	\end{split}
+\end{equation*}
+Reliability \textbf{sistema 2}:
+\begin{equation*}
+	R22 = R_A = e^{-\frac{1}{1000h}}
+\end{equation*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es4_2.png}
+	\caption{\textit{Secondo confronto}}
+\end{figure}
+La reliability del blocco A, per valori di mission time compresi tra 1000h e 5000h circa, risulta essere maggiore di quella del sistema 1.
+\subsubsection{Confronto 3}
+In questo caso viene confrontato un primo sistema composto dai blocchi A e B in serie tra di loro e a sua volta in serie con il loro parallelo, ed un secondo sistema formato dalla semplice serie tra A e B.
+\\
+Reliability \textbf{sistema 1}:
+\begin{equation*}
+	\begin{split}
+		&R31 = R21*R_B = e^{-\frac{1}{1000h} t}*e^{-\frac{1}{9000h} t}*[1-(1-e^{-\frac{1}{1000h} t})*(1-e^{-\frac{1}{9000h} t})] = \\
+		&e^{-\frac{11}{9000h}t}+e^{-\frac{19}{9000h}t}+e^{-\frac{2}{900h}t}
+	\end{split}
+\end{equation*}
+Reliability \textbf{sistema 2}:
+\begin{equation*}
+	\begin{split}
+		&R32 = R_A*R_B = e^{-\frac{1}{1000h} t}*e^{-\frac{1}{9000h} t} = e^{-\frac{1}{900h}t}
+	\end{split}
+\end{equation*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es4_3.png}
+	\caption{\textit{Terzo confronto}}
+\end{figure}
+Nel primo sistema (in blu), la serie con il parallelo implica una riduzione della reilability per mission time compresi tra 1000h e 5000h circa.
+\subsubsection{Confronto 4}
+Infine viene confrontato il parallelo tra il blocco A e la serie tra A e B, con il singolo blocco A.
+\\
+Reliability \textbf{sistema 1}:
+\begin{equation*}
+	\begin{split}
+		&R41 = 1-(1-R_A)*(1-R_A*R_B) = 1-(1-e^{-\frac{1}{1000h} t})*(1-e^{-\frac{1}{1000h} t}*e^{-\frac{1}{9000h} t}) = \\
+		&e^{-\frac{1}{900h}t}+e^{-\frac{1}{1000h}t}-e^{-\frac{19}{9000h}t}
+	\end{split}
+\end{equation*}
+Reliability \textbf{sistema 2}:
+\begin{equation*}
+	R42 = R_A = e^{-\frac{1}{1000h}}
+\end{equation*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es4_4.png}
+	\caption{\textit{Quarto confronto}}
+\end{figure}
+La reliability del primo sistema risulta incrementata rispetto a quella del blocco A, come conseguenza del parallelo tra i blocchi.
 \section{Esercizio 5}
 \subsubsection{Svolgimento}
