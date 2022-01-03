@@ -429,4 +429,31 @@ Reliability \textbf{sistema 2}:
 \end{figure}
 La reliability del primo sistema risulta incrementata rispetto a quella del blocco A, come conseguenza del parallelo tra i blocchi.
 \section{Esercizio 5}
-\subsubsection{Svolgimento}
+Il sistema mostrato nella figura sottostante è un sistema di elaborazione per un elicottero. Esso ha due processori e due terminali ridondanti. Sono utilizzati due bus, anch'essi dual-redundant. La parte interessante del sistema è il "navigation equipment". Il velivolo può essere completamente navigato utilizzando l' \textit{Inertial Navigation System (INS)}. Se l'INS fallisce, il velivolo può essere navigato utilizzando la combinazione del \textit{Doppler} con l' \textit{Altitude Heading and Reference System (AHRS)}. Il sistema contiene 3 unità AHRS, delle quali solo una è necessaria. Questo è un esempio di ridondanza funzionale dove i dati provenienti dall'AHRS e dal Doppler possono essere utilizzati per rimpiazzare l'INS, se esso fallisce. A causa di altri sensori e strumenti, entrambi i bus sono necessari per il funzionamento del sistema a prescindere dalla modalità di navigazione.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/hw5/es5_traccia.png}
+	\caption{\textit{Processing system for a helicopter}}
+\end{figure}
+\subsection{Punto A: Disegnare il Reilability Block Diagram del Sistema}
+Possiamo suddividere il sistema in cinque "macro-blocchi":
+\begin{enumerate}
+	\item \textbf{Bus A}.
+	\item \textbf{Bus B}.
+	\item \textbf{Sistema di navigazione}.
+	\item \textbf{Processing unit}.
+	\item \textbf{Remote terminal}.
+\end{enumerate}
+Se almeno uno di essi fallisce, il sistema intero fallisce. Ogni macro-blocco, (eccetto il sistema di navigazione per il quale è stata pensata una particolare ridondanza funzionale descritta nella traccia), è dual-redundant. Inoltre, ciascuna delle due \textit{Processing Unit} è connessa ad entrambi i bus, in modo da avere dual-redoundance sul singolo bus. 
+\\
+\\
+Partendo da queste informazioni è stato realizzato il \textit{Reliability Block Diagram}:
+\\immagine diagramma
+\subsection{Punto B: Disegnare il Fault Tree del Sistema e analizzare i minimal cutsets}
+Partendo dal Reliability Block Diagram è possibile ricavare il rispettivo Fault Tree, considerando che il sistema fallisce se il \textit{Top Level Event} ha valore logico 1.
+\\In particolare lo serie saranno sostituite con delle porte OR, mentre i paralleli con porte END. 
+\\immagine fault tree
+\\espressione logica del fault tree 
+\\discussione sui minimal cutsets = combinazione di eventi base che portano al fallimento (mi esce un 1 nel TLE)
+\subsection{Punto C}
+\subsection{Punto D}
