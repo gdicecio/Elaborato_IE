@@ -230,7 +230,7 @@ L'architettura di una rete di computer in un sistema bancario e la seguente. L'a
 \caption{\textit{Traccia}}
 \end{figure}
 
-\subsubsection{Svolgimento}
+\subsection{Svolgimento}
 Il sistema funziona anche in presenza di nodi guasti, purché non si guastino nodi consecutivi. In tale scenario infatti l'anello viene interrotto e il sistema smette di funzionare. Sulla base di questo si può notare che il sistema continua a funzionare anche se falliscono 4 nodi, purché non siano consecutivi.
 \\Per ricavare la legge della reilability ci si può ispirare alla legge per un sistema generale \textit{M-out-of-N} in cui $M$ sono il numero di nodi che devono funzionare, su $N$ affinché il sistema continua a funzionare.
 \\In questo caso $M=4$ e $N=8$, a causa del fatto che se falliscono più di 4 nodi, automaticamente almeno due nodi falliti saranno consecutivi, interrompendo l'anello.
@@ -428,6 +428,8 @@ Reliability \textbf{sistema 2}:
 	\caption{\textit{Quarto confronto}}
 \end{figure}
 La reliability del primo sistema risulta incrementata rispetto a quella del blocco A, come conseguenza del parallelo tra i blocchi.
+
+
 \section{Esercizio 5}
 Il sistema mostrato nella figura sottostante è un sistema di elaborazione per un elicottero. Esso ha due processori e due terminali ridondanti. Sono utilizzati due bus, anch'essi dual-redundant. La parte interessante del sistema è il "navigation equipment". Il velivolo può essere completamente navigato utilizzando l' \textit{Inertial Navigation System (INS)}. Se l'INS fallisce, il velivolo può essere navigato utilizzando la combinazione del \textit{Doppler} con l' \textit{Altitude Heading and Reference System (AHRS)}. Il sistema contiene 3 unità AHRS, delle quali solo una è necessaria. Questo è un esempio di ridondanza funzionale dove i dati provenienti dall'AHRS e dal Doppler possono essere utilizzati per rimpiazzare l'INS, se esso fallisce. A causa di altri sensori e strumenti, entrambi i bus sono necessari per il funzionamento del sistema a prescindere dalla modalità di navigazione.
 \begin{figure}[H]
@@ -435,7 +437,29 @@ Il sistema mostrato nella figura sottostante è un sistema di elaborazione per u
 	\includegraphics[width=0.7\textwidth]{img/hw5/es5_traccia.png}
 	\caption{\textit{Processing system for a helicopter}}
 \end{figure}
-\subsection{Punto A: Disegnare il Reilability Block Diagram del Sistema}
+\begin{enumerate}[ A) ]
+	\item Disegnare il Reilability Block Diagram del sistema
+	\item Disegnare il Fault Tree del sistema e analizzare il \textit{minimal cutset}
+	\item Calcolare la reilability per un'ora di volo utilizzando gli MTTF nella tabella seguente. Assumere che la legge di fallimento è esponenziale e che la \textit{fault coverage} è perfetta
+	\item Ripetere il punto precedente, ma questa volta, considerare un fattore per la \textit{fault detection} e la riconfigurazione delle \textit{processing units}. Usando i dati della stessa tabella, determinare il valore approssimato di \textit{fault coverage} che è richiesto per ottenere una reilability (al termine di un'ora) di 0.99999.
+\end{enumerate}
+\begin{table}
+\centering
+\begin{tabular}{|l|l|}
+	\hline
+	Equipment & MTTF (hr) \\
+	\hline
+	\hline
+	Processing Unit & 10000 \\
+	Remote Terminal & 4500 \\
+	AHRS & 2000 \\
+	INS & 2000 \\ 
+	Doppler & 500 \\
+	Bus & 60000 \\
+	\hline
+\end{tabular}
+\end{table}
+\subsection{Punto A}
 Possiamo suddividere il sistema in cinque "macro-blocchi":
 \begin{enumerate}
 	\item \textbf{Bus A}.
@@ -449,12 +473,14 @@ Se almeno uno di essi fallisce, il sistema intero fallisce. Ogni macro-blocco, (
 \\
 Partendo da queste informazioni è stato realizzato il seguente \textit{Reliability Block Diagram}:
 \begin{figure}[H]
+	\label{RBD}
 	\centering
 	\includegraphics[width=\textwidth]{img/hw5/es5_RBD.png}
 	\caption{\textit{Reliability Block Diagram}}
 \end{figure}
 \newpage
-\subsection{Punto B: Disegnare il Fault Tree del Sistema e analizzare i minimal cutsets}
+
+\subsection{Punto B}
 Partendo dal Reliability Block Diagram è possibile ricavare il rispettivo Fault Tree, considerando che il sistema fallisce se il \textit{Top Level Event} ha valore logico 1.
 \\In particolare lo serie saranno sostituite con delle porte OR, mentre i paralleli con porte END. 
 \begin{figure}[H]
@@ -466,8 +492,8 @@ Espressione logica del \textit{Fault Tree}:
 \begin{equation*}
 	\begin{split}
 		&\textbf{TLE} = (A1*A2)+(B1*B2)+{INS_A*[DOP_A+(AHRS_A*AHRS_B*AHRS_B)]}+ \\
-		&(P_AB*P_AB)+(T_A*T_B) = \\
-		&(A1*A2)+(B1*B2)+(INS_A*DOP_A)+(INS_A*AHRS_A*AHRS_B*AHRS_B)+ \\
+		&(P_AB*P_AB)+(T_A*T_B) \\
+		&=(A1*A2)+(B1*B2)+(INS_A*DOP_A)+(INS_A*AHRS_A*AHRS_B*AHRS_B)+ \\
 		&(P_AB*P_AB)+(T_A*T_B)
 	\end{split}
 \end{equation*}
@@ -475,13 +501,109 @@ I \textit{minimal cutsets} sono per definizione il minimo set di eventi di base 
 \\
 Dunque il sistema fallisce, se falliscono congiuntamente:
 \begin{itemize}
-	\item \textit{le due repliche del bus A(A1 e A2)},
-	\item \textit{le due repliche del bus B(B1 e B2)},
-	\item \textit{l'INS e il Doppler}, in quanto non sarebbe possibile replicare il sistema di navigazione,
-	\item \textit{l'INS e i tre AHRS}, per lo stesso motivo di prima,
-	\item \textit{le due repliche della Processing Unit},
-	\item \textit{le due repliche del Remote Terminal}.
+	\item \textit{Le due repliche del bus A (A1 e A2)},
+	\item \textit{Le due repliche del bus B (B1 e B2)},
+	\item \textit{L'INS e il Doppler}, in quanto non sarebbe possibile replicare il sistema di navigazione,
+	\item \textit{L'INS e i tre AHRS}, per lo stesso motivo di prima,
+	\item \textit{Le due repliche della Processing Unit},
+	\item \textit{Le due repliche del Remote Terminal}.
 \end{itemize}
 Ovviamente queste sono solo le minime combinazioni di eventi che portano al fallimento del sistema, ma non le uniche.
+
 \subsection{Punto C}
+Per ogni blocco la legge descrive la reilability è di tipo esponenziale e vale:
+\begin{equation*}
+	R_c = e^{-\lambda_c t} \quad con \quad \lambda_c=\dfrac{1}{MTTF_c}
+\end{equation*}
+in cui $MTTF_c$ rappressenta il Mean Time To Failure del singolo componente $c$, descritto nella tabella.
+\\A partire dalla Fig.\ref{RBD} si notano immediatamente componenti in serie e in parallelo. In particolare ci sono 5 blocchi in serie, per ognuno dei quali si può calcolare la reilability.
+\subsubsection{Bus A}
+Il primo blocco ha in parallelo le due componenti replicate del bus.
+\begin{equation*}
+	\begin{split}
+		R_{BusA} &= 1-(1-R_A)^2 \\
+		&= 1-(1-e^{-\frac{t}{60000}})^2 \\
+		&= 2e^{-\frac{t}{60000}} - e^{-2\frac{t}{60000}}
+	\end{split}
+\end{equation*}
+\subsubsection{Bus B}
+Analogamente avviene per il bus B.
+\begin{equation*}
+	\begin{split}
+		R_{BusB} &= 1-(1-R_B)^2 \\
+		&= 2e^{-\frac{t}{60000}} - e^{-2\frac{t}{60000}}
+	\end{split}
+\end{equation*}
+\subsubsection{Sistema di Navigazione}
+Il ramo superiore del parallelo rappresenta l'alternativa quando il componente INS si guasta. La sua reilability vale:
+\begin{equation*}
+	\begin{split}
+			R_{secondario} &= R_{DOP} * [1-(1-R_{AHRS})^3] \\
+			&=e^{-\frac{t}{500}}[1-(1-e^{-\frac{t}{2000}})^3] \\
+			&=e^{-\frac{t}{500}}[1-(1 - 3e^{-\frac{t}{2000}} + 3e^{-2\frac{t}{2000}} - e^{-3\frac{t}{2000}})] \\
+			&=e^{-\frac{t}{500}}[3e^{-\frac{t}{2000}} - 3e^{-2\frac{t}{2000}} + e^{-3\frac{t}{2000}})] \\
+			&= 3e^{-\frac{t}{400}} - 3e^{-3\frac{t}{1000}} + e^{-7\frac{t}{2000}}
+	\end{split}
+\end{equation*}
+Il ramo inferiore rappresenta il componente principale del sistema di navigazione.
+\begin{equation*}
+	R_{principale} = R_{INS} = e^{-\frac{t}{2000}}
+\end{equation*}
+In definitiva:
+\begin{equation*}
+	\begin{split}
+	 R_{NAV} &= 1-(1-R_{secondario})(1-R_{principale}) \\
+	 &= 1 - \{1-R_{DOP}[1-(1-R_{AHRS})^3]\}\{1- R_{INS}\} \\
+	 &= 1 - (1-3e^{-\frac{t}{400}} + 3e^{-3\frac{t}{1000}} - e^{-7\frac{t}{2000}})(1-e^{-\frac{t}{2000}})
+	\end{split}
+\end{equation*}
+
+\subsubsection{Processing Unit}
+L'unità di calcolo ha una struttura duale al bus, per cui:
+\begin{equation*}
+		\begin{split}
+			R_{CPU} &= 1-(1-R_{pu})^2 \\
+			&= 2e^{-\frac{t}{10000}} - e^{-2\frac{t}{10000}}
+		\end{split}
+\end{equation*}
+
+\subsubsection{Remote Terminal}
+Analogo discorso vale per il sistema dei terminali.
+\begin{equation*}
+		\begin{split}
+			R_{TERM} &= 1-(1-R_term)^2 \\
+			&= 2e^{-\frac{t}{4500}} - e^{-2\frac{t}{4500}}
+		\end{split}
+\end{equation*}
+\vspace{0.5cm}
+\\La reilability complessiva vale come il prodotto delle reilability dei singoli blocchi, essendo tutti collegati in serie.
+\begin{equation}
+	\label{reilability_totale}
+	R_{sys} = R_{BusA} * R_{BusB} * R_{NAV} * R_{CPU} * R_{TERM} 
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es5_reilability.png}
+	\caption{\textit{Reilability del sistema con un intervallo di 8h}}
+\end{figure}
+In un'ora di volo la reilability vale:
+\begin{equation*}
+	R_{sys}(1) \approx 0.9999989413 
+\end{equation*}
+
+
 \subsection{Punto D}
+Fin ora si è supposto che tutti i fallimenti di tutti i componenti possono essere rilevati con probabilità del 100\%, ma ciò non accade nella realtà. Ad esempio dal blocco della CPU si evince che se fallisce una CPU, si può utilizzare tranquillamente l'altra. Questo nell'ipotesi che il fallimento viene rilevato. Se il fallimento non viene rilevato allora si continua ad utilizzare una CPU guasta, portando ad un fallimento totale del sistema. 
+\\Per ovviare a questo problema (nel caso della CPU) si aggiunge un fattore di \textit{fault coverage} $\textbf{c}$ che indica la probabilità che venga rilevato un fallimento.
+\begin{equation}
+	\label{reilability_CPU}
+	R_{CPU} = 1-(1-R_{pu})^2 \quad\Rightarrow\quad R_{CPU} = R_{pu} + c(1-R_{pu})R_{pu}
+\end{equation}
+Essa rappresenta la reilability del parallelo tra le CPU con l'aggiunta della \textit{fault coverage}. Sostituendo la (\ref{reilability_CPU}) nella (\ref{reilability_totale}) si ottiene:
+\begin{equation*}
+	R_{sys} = R_{BusA} * R_{BusB} * R_{NAV} * [R_{pu} + c(1-R_{pu})R_{pu} ]* R_{TERM} 
+\end{equation*}
+Il valore della \textit{fault coverage} deve essere ricavato considerando che la reilability (in un'ora) vale 0.99999.
+\begin{equation}
+	c \geq \dfrac{\dfrac{R_{sys}}{R_{BusA}R_{BusB}R_{NAV}R_{TERM}} - R_{pu}}{R_{pu}(1-R_{pu})} = 0.91057
+\end{equation}
