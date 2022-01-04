@@ -78,6 +78,6 @@
 \contentsline {subsubsection}{Confronto 4}{64}{section*.29}%
 \contentsline {section}{\numberline {6.5}Esercizio 5}{65}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Punto A: Disegnare il Reilability Block Diagram del Sistema}{66}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Punto B: Disegnare il Fault Tree del Sistema e analizzare i minimal cutsets}{66}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}Punto C}{66}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}Punto D}{66}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.5.2}Punto B: Disegnare il Fault Tree del Sistema e analizzare i minimal cutsets}{67}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Punto C}{68}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Punto D}{68}{subsection.6.5.4}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.17)  3 JAN 2022 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.17)  4 JAN 2022 12:39
 entering extended mode
 **./progetto.tex
 (progetto.tex
@@ -1186,7 +1186,7 @@ LaTeX Info: Redefining \nameref on input line 66.
 (C:\Users\emmam\AppData\Local\Programs\MiKTeX1\tex/latex/ucs\uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<img/logo.png, id=210, 225.84375pt x 219.82124pt>
+<img/logo.png, id=218, 225.84375pt x 219.82124pt>
 File: img/logo.png Graphic file (type png)
 <use img/logo.png>
 Package pdftex.def Info: img/logo.png  used on input line 30.
@@ -1281,14 +1281,14 @@ LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 9
 (C:\Users\emmam\AppData\Local\Programs\MiKTeX1\tex/latex/psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ))
-<img/hw0/grafico_naturale.png, id=297, 421.575pt x 316.18124pt>
+<img/hw0/grafico_naturale.png, id=307, 421.575pt x 316.18124pt>
 File: img/hw0/grafico_naturale.png Graphic file (type png)
 <use img/hw0/grafico_naturale.png>
 Package pdftex.def Info: img/hw0/grafico_naturale.png  used on input line 114.
 (pdftex.def)             Requested size: 333.46758pt x 250.10368pt.
 
 [2]
-<img/hw0/grafico_log.png, id=307, 421.575pt x 316.18124pt>
+<img/hw0/grafico_log.png, id=317, 421.575pt x 316.18124pt>
 File: img/hw0/grafico_log.png Graphic file (type png)
 <use img/hw0/grafico_log.png>
 Package pdftex.def Info: img/hw0/grafico_log.png  used on input line 119.
@@ -1299,7 +1299,7 @@ G copy)>] [4]
 
  (cap/workload_caracterization.tex
 Capitolo 2.
-<img/hw1/correlazione_mem_writeback.png, id=319, 146.04562pt x 36.135pt>
+<img/hw1/correlazione_mem_writeback.png, id=329, 146.04562pt x 36.135pt>
 File: img/hw1/correlazione_mem_writeback.png Graphic file (type png)
 <use img/hw1/correlazione_mem_writeback.png>
 Package pdftex.def Info: img/hw1/correlazione_mem_writeback.png  used on input 
@@ -1311,23 +1311,23 @@ line 19.
 
 
  <./img/hw1/correlazione_mem_writeback.png>]
-<img/hw1/outlier_vm.png, id=327, 784.43062pt x 240.9pt>
+<img/hw1/outlier_vm.png, id=337, 784.43062pt x 240.9pt>
 File: img/hw1/outlier_vm.png Graphic file (type png)
 <use img/hw1/outlier_vm.png>
 Package pdftex.def Info: img/hw1/outlier_vm.png  used on input line 41.
 (pdftex.def)             Requested size: 416.83289pt x 128.01088pt.
-<img/hw1/outlier_slab1.png, id=328, 193.47281pt x 243.15843pt>
+<img/hw1/outlier_slab1.png, id=338, 193.47281pt x 243.15843pt>
 File: img/hw1/outlier_slab1.png Graphic file (type png)
 <use img/hw1/outlier_slab1.png>
 Package pdftex.def Info: img/hw1/outlier_slab1.png  used on input line 52.
 (pdftex.def)             Requested size: 166.7306pt x 209.54999pt.
  [6 <./img/hw1/outlier_vm.png>]
-<img/hw1/outlier_slab2.png, id=338, 192.72pt x 238.64156pt>
+<img/hw1/outlier_slab2.png, id=348, 192.72pt x 238.64156pt>
 File: img/hw1/outlier_slab2.png Graphic file (type png)
 <use img/hw1/outlier_slab2.png>
 Package pdftex.def Info: img/hw1/outlier_slab2.png  used on input line 62.
 (pdftex.def)             Requested size: 166.7306pt x 206.45851pt.
-<img/hw1/mapped.png, id=339, 981.6675pt x 520.19344pt>
+<img/hw1/mapped.png, id=349, 981.6675pt x 520.19344pt>
 File: img/hw1/mapped.png Graphic file (type png)
 <use img/hw1/mapped.png>
 Package pdftex.def Info: img/hw1/mapped.png  used on input line 68.
@@ -1337,7 +1337,7 @@ Overfull \hbox (3.63054pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
-<img/hw1/pagetables.png, id=340, 981.6675pt x 520.19344pt>
+<img/hw1/pagetables.png, id=350, 981.6675pt x 520.19344pt>
 File: img/hw1/pagetables.png Graphic file (type png)
 <use img/hw1/pagetables.png>
 Package pdftex.def Info: img/hw1/pagetables.png  used on input line 70.
@@ -1349,14 +1349,14 @@ Overfull \hbox (3.63054pt too wide) in paragraph at lines 70--71
 
 [7 <./img/hw1/outlier_slab1.png> <./img/hw1/outlier_slab2.png>] [8 <./img/hw1/m
 apped.png (PNG copy)> <./img/hw1/pagetables.png (PNG copy)>] [9]
-<img/hw1/pca.png, id=361, 299.61937pt x 271.76532pt>
+<img/hw1/pca.png, id=371, 299.61937pt x 271.76532pt>
 File: img/hw1/pca.png Graphic file (type png)
 <use img/hw1/pca.png>
 Package pdftex.def Info: img/hw1/pca.png  used on input line 84.
 (pdftex.def)             Requested size: 299.61864pt x 271.76465pt.
  [10 <./img/hw1/pca.png>] [11]
 <Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/6_Cluste
-r/Screen_Dati/Riepilogo.png, id=375, 346.896pt x 130.68825pt>
+r/Screen_Dati/Riepilogo.png, id=385, 346.896pt x 130.68825pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/6_C
 luster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/6_Cl
@@ -1365,7 +1365,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/4_
 Comp/Clustering/6_Cluster/Screen_Dati/Riepilogo.png  used on input line 131.
 (pdftex.def)             Requested size: 125.05113pt x 47.11153pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/8_Cluste
-r/Screen_Dati/Riepilogo.png, id=376, 341.47575pt x 155.3805pt>
+r/Screen_Dati/Riepilogo.png, id=386, 341.47575pt x 155.3805pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/8_C
 luster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/8_Cl
@@ -1374,7 +1374,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/4_
 Comp/Clustering/8_Cluster/Screen_Dati/Riepilogo.png  used on input line 132.
 (pdftex.def)             Requested size: 125.05113pt x 56.90189pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/10_Clust
-er/Screen_Dati/Riepilogo.png, id=377, 347.49825pt x 180.675pt>
+er/Screen_Dati/Riepilogo.png, id=387, 347.49825pt x 180.675pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/10_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/10_C
@@ -1383,7 +1383,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/4_
 Comp/Clustering/10_Cluster/Screen_Dati/Riepilogo.png  used on input line 133.
 (pdftex.def)             Requested size: 125.05113pt x 65.01813pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/12_Clust
-er/Screen_Dati/Riepilogo.png, id=378, 346.896pt x 204.765pt>
+er/Screen_Dati/Riepilogo.png, id=388, 346.896pt x 204.765pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/12_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/12_C
@@ -1392,7 +1392,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/4_
 Comp/Clustering/12_Cluster/Screen_Dati/Riepilogo.png  used on input line 134.
 (pdftex.def)             Requested size: 125.05113pt x 73.8153pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/14_Clust
-er/Screen_Dati/Riepilogo.png, id=379, 340.8735pt x 231.264pt>
+er/Screen_Dati/Riepilogo.png, id=389, 340.8735pt x 231.264pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/14_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/14_C
@@ -1401,7 +1401,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/4_
 Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.png  used on input line 135.
 (pdftex.def)             Requested size: 125.05113pt x 84.8394pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/16_Clust
-er/Screen_Dati/Riepilogo.png, id=380, 342.68025pt x 256.5585pt>
+er/Screen_Dati/Riepilogo.png, id=390, 342.68025pt x 256.5585pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/16_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/4_Comp/Clustering/16_C
@@ -1410,7 +1410,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/4_
 Comp/Clustering/16_Cluster/Screen_Dati/Riepilogo.png  used on input line 136.
 (pdftex.def)             Requested size: 125.05113pt x 93.62546pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/6_Cluste
-r/Screen_Dati/Riepilogo.png, id=381, 408.77719pt x 114.4275pt>
+r/Screen_Dati/Riepilogo.png, id=391, 408.77719pt x 114.4275pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/6_C
 luster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/6_Cl
@@ -1419,7 +1419,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/5_
 Comp/Clustering/6_Cluster/Screen_Dati/Riepilogo.png  used on input line 154.
 (pdftex.def)             Requested size: 125.05113pt x 35.00421pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/8_Cluste
-r/Screen_Dati/Riepilogo.png, id=382, 411.03563pt x 137.01187pt>
+r/Screen_Dati/Riepilogo.png, id=392, 411.03563pt x 137.01187pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/8_C
 luster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/8_Cl
@@ -1428,7 +1428,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/5_
 Comp/Clustering/8_Cluster/Screen_Dati/Riepilogo.png  used on input line 155.
 (pdftex.def)             Requested size: 125.05113pt x 41.68297pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/10_Clust
-er/Screen_Dati/Riepilogo.png, id=383, 405.76593pt x 161.85469pt>
+er/Screen_Dati/Riepilogo.png, id=393, 405.76593pt x 161.85469pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/10_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/10_C
@@ -1437,7 +1437,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/5_
 Comp/Clustering/10_Cluster/Screen_Dati/Riepilogo.png  used on input line 156.
 (pdftex.def)             Requested size: 125.05113pt x 49.88052pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/12_Clust
-er/Screen_Dati/Riepilogo.png, id=384, 405.01312pt x 186.6975pt>
+er/Screen_Dati/Riepilogo.png, id=394, 405.01312pt x 186.6975pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/12_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/12_C
@@ -1446,7 +1446,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/5_
 Comp/Clustering/12_Cluster/Screen_Dati/Riepilogo.png  used on input line 157.
 (pdftex.def)             Requested size: 125.05113pt x 57.64487pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/14_Clust
-er/Screen_Dati/Riepilogo.png, id=385, 412.54124pt x 213.79875pt>
+er/Screen_Dati/Riepilogo.png, id=395, 412.54124pt x 213.79875pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/14_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/14_C
@@ -1455,7 +1455,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/5_
 Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.png  used on input line 158.
 (pdftex.def)             Requested size: 125.05113pt x 64.80562pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/16_Clust
-er/Screen_Dati/Riepilogo.png, id=386, 392.96812pt x 237.13594pt>
+er/Screen_Dati/Riepilogo.png, id=396, 392.96812pt x 237.13594pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/16_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/5_Comp/Clustering/16_C
@@ -1464,7 +1464,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/5_
 Comp/Clustering/16_Cluster/Screen_Dati/Riepilogo.png  used on input line 159.
 (pdftex.def)             Requested size: 125.05113pt x 75.46169pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/6_Cluste
-r/Screen_Dati/Riepilogo.png, id=387, 441.90094pt x 131.74219pt>
+r/Screen_Dati/Riepilogo.png, id=397, 441.90094pt x 131.74219pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/6_C
 luster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/6_Cl
@@ -1473,7 +1473,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/6_
 Comp/Clustering/6_Cluster/Screen_Dati/Riepilogo.png  used on input line 177.
 (pdftex.def)             Requested size: 125.05113pt x 37.27954pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/8_Cluste
-r/Screen_Dati/Riepilogo.png, id=388, 443.40656pt x 155.83218pt>
+r/Screen_Dati/Riepilogo.png, id=398, 443.40656pt x 155.83218pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/8_C
 luster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/8_Cl
@@ -1482,7 +1482,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/6_
 Comp/Clustering/8_Cluster/Screen_Dati/Riepilogo.png  used on input line 178.
 (pdftex.def)             Requested size: 125.05113pt x 43.94896pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/10_Clust
-er/Screen_Dati/Riepilogo.png, id=389, 444.91219pt x 182.93344pt>
+er/Screen_Dati/Riepilogo.png, id=399, 444.91219pt x 182.93344pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/10_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/10_C
@@ -1491,7 +1491,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/6_
 Comp/Clustering/10_Cluster/Screen_Dati/Riepilogo.png  used on input line 179.
 (pdftex.def)             Requested size: 125.05113pt x 51.4164pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/12_Clust
-er/Screen_Dati/Riepilogo.png, id=390, 449.42906pt x 211.54031pt>
+er/Screen_Dati/Riepilogo.png, id=400, 449.42906pt x 211.54031pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/12_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/12_C
@@ -1500,7 +1500,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/6_
 Comp/Clustering/12_Cluster/Screen_Dati/Riepilogo.png  used on input line 180.
 (pdftex.def)             Requested size: 125.05113pt x 58.85966pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/14_Clust
-er/Screen_Dati/Riepilogo.png, id=391, 444.15938pt x 231.86626pt>
+er/Screen_Dati/Riepilogo.png, id=401, 444.15938pt x 231.86626pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/14_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/14_C
@@ -1509,7 +1509,7 @@ Package pdftex.def Info: Homework/Workload_Characterization/PCA_&_Clustering/6_
 Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.png  used on input line 181.
 (pdftex.def)             Requested size: 125.05113pt x 65.27943pt.
 <Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/16_Clust
-er/Screen_Dati/Riepilogo.png, id=392, 449.42906pt x 256.70906pt>
+er/Screen_Dati/Riepilogo.png, id=402, 449.42906pt x 256.70906pt>
 File: Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/16_
 Cluster/Screen_Dati/Riepilogo.png Graphic file (type png)
 <use Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/16_C
@@ -1547,7 +1547,7 @@ p/Clustering/12_Cluster/Screen_Dati/Riepilogo.png> <./Homework/Workload_Charact
 erization/PCA_&_Clustering/6_Comp/Clustering/14_Cluster/Screen_Dati/Riepilogo.p
 ng> <./Homework/Workload_Characterization/PCA_&_Clustering/6_Comp/Clustering/16
 _Cluster/Screen_Dati/Riepilogo.png>]
-<img/hw1/workload_sintetico.png, id=442, 837.1275pt x 174.6525pt>
+<img/hw1/workload_sintetico.png, id=452, 837.1275pt x 174.6525pt>
 File: img/hw1/workload_sintetico.png Graphic file (type png)
 <use img/hw1/workload_sintetico.png>
 Package pdftex.def Info: img/hw1/workload_sintetico.png  used on input line 227
@@ -1559,7 +1559,7 @@ Package pdftex.def Info: img/hw1/workload_sintetico.png  used on input line 227
 
 (cap/capacity_test.tex
 Capitolo 3.
-<img/hw2/Thr_resp.png, id=449, 419.31656pt x 327.47343pt>
+<img/hw2/Thr_resp.png, id=459, 419.31656pt x 327.47343pt>
 File: img/hw2/Thr_resp.png Graphic file (type png)
 <use img/hw2/Thr_resp.png>
 Package pdftex.def Info: img/hw2/Thr_resp.png  used on input line 14.
@@ -1574,7 +1574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-<img/hw2/Power.png, id=458, 285.31593pt x 121.95563pt>
+<img/hw2/Power.png, id=468, 285.31593pt x 121.95563pt>
 File: img/hw2/Power.png Graphic file (type png)
 <use img/hw2/Power.png>
 Package pdftex.def Info: img/hw2/Power.png  used on input line 30.
@@ -1585,7 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--42
  []
 
 [16 <./img/hw2/Power.png>]
-<img/hw2/jmeter.png, id=467, 197.23688pt x 184.43906pt>
+<img/hw2/jmeter.png, id=477, 197.23688pt x 184.43906pt>
 File: img/hw2/jmeter.png Graphic file (type png)
 <use img/hw2/jmeter.png>
 Package pdftex.def Info: img/hw2/jmeter.png  used on input line 68.
@@ -1605,18 +1605,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--102
 
 (_minted-progetto/C9B4040F68031DBF6F97CADEF8847C9C198D1C707A1D9476B00F908A2CB84
 489.pygtex [18 <./img/hw2/jmeter.png>])
-<img/hw2/Throughput.png, id=479, 392.21532pt x 314.67563pt>
+<img/hw2/Throughput.png, id=489, 392.21532pt x 314.67563pt>
 File: img/hw2/Throughput.png Graphic file (type png)
 <use img/hw2/Throughput.png>
 Package pdftex.def Info: img/hw2/Throughput.png  used on input line 160.
 (pdftex.def)             Requested size: 333.46758pt x 267.55716pt.
  [19]
-<img/hw2/ResponseTime.png, id=486, 398.23781pt x 309.40594pt>
+<img/hw2/ResponseTime.png, id=496, 398.23781pt x 309.40594pt>
 File: img/hw2/ResponseTime.png Graphic file (type png)
 <use img/hw2/ResponseTime.png>
 Package pdftex.def Info: img/hw2/ResponseTime.png  used on input line 166.
 (pdftex.def)             Requested size: 333.46758pt x 259.09189pt.
-<img/hw2/Potenza.png, id=487, 396.7322pt x 308.65312pt>
+<img/hw2/Potenza.png, id=497, 396.7322pt x 308.65312pt>
 File: img/hw2/Potenza.png Graphic file (type png)
 <use img/hw2/Potenza.png>
 Package pdftex.def Info: img/hw2/Potenza.png  used on input line 172.
@@ -1632,7 +1632,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  (cap/webserver_characterization.tex
 Capitolo 4.
-<img/hw3/Overview.png, id=509, 618.05907pt x 354.57469pt>
+<img/hw3/Overview.png, id=519, 618.05907pt x 354.57469pt>
 File: img/hw3/Overview.png Graphic file (type png)
 <use img/hw3/Overview.png>
 Package pdftex.def Info: img/hw3/Overview.png  used on input line 13.
@@ -1648,25 +1648,25 @@ Package pdftex.def Info: img/hw3/Overview.png  used on input line 13.
 
 (_minted-progetto/4385D231CA4C67D99E912430AED81C65964C35B54C20D781C36EBFC085BB4
 FDF.pygtex)
-<img/hw3/jmeter_reale.png, id=526, 200.24812pt x 339.51843pt>
+<img/hw3/jmeter_reale.png, id=536, 200.24812pt x 339.51843pt>
 File: img/hw3/jmeter_reale.png Graphic file (type png)
 <use img/hw3/jmeter_reale.png>
 Package pdftex.def Info: img/hw3/jmeter_reale.png  used on input line 78.
 (pdftex.def)             Requested size: 166.7306pt x 282.70683pt.
  [25] [26 <./img/hw3/jmeter_reale.png>]
-<img/hw3/alto_livello_esempio.png, id=542, 363.60844pt x 124.21407pt>
+<img/hw3/alto_livello_esempio.png, id=552, 363.60844pt x 124.21407pt>
 File: img/hw3/alto_livello_esempio.png Graphic file (type png)
 <use img/hw3/alto_livello_esempio.png>
 Package pdftex.def Info: img/hw3/alto_livello_esempio.png  used on input line 1
 08.
 (pdftex.def)             Requested size: 333.46758pt x 113.92009pt.
-<img/hw3/autovalori.png, id=543, 309.40594pt x 127.97812pt>
+<img/hw3/autovalori.png, id=553, 309.40594pt x 127.97812pt>
 File: img/hw3/autovalori.png Graphic file (type png)
 <use img/hw3/autovalori.png>
 Package pdftex.def Info: img/hw3/autovalori.png  used on input line 121.
 (pdftex.def)             Requested size: 250.10226pt x 103.45274pt.
  [27 <./img/hw3/alto_livello_esempio.png> <./img/hw3/autovalori.png>]
-<img/hw3/porzione_lowlevel.png, id=553, 657.2053pt x 459.96844pt>
+<img/hw3/porzione_lowlevel.png, id=563, 657.2053pt x 459.96844pt>
 File: img/hw3/porzione_lowlevel.png Graphic file (type png)
 <use img/hw3/porzione_lowlevel.png>
 Package pdftex.def Info: img/hw3/porzione_lowlevel.png  used on input line 153.
@@ -1678,39 +1678,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--158
  []
 
 [28 <./img/hw3/porzione_lowlevel.png>]
-<img/hw3/us.png, id=562, 316.93407pt x 185.94469pt>
+<img/hw3/us.png, id=572, 316.93407pt x 185.94469pt>
 File: img/hw3/us.png Graphic file (type png)
 <use img/hw3/us.png>
 Package pdftex.def Info: img/hw3/us.png  used on input line 167.
 (pdftex.def)             Requested size: 125.05113pt x 73.36647pt.
-<img/hw3/sy.png, id=563, 322.95656pt x 188.20313pt>
+<img/hw3/sy.png, id=573, 322.95656pt x 188.20313pt>
 File: img/hw3/sy.png Graphic file (type png)
 <use img/hw3/sy.png>
 Package pdftex.def Info: img/hw3/sy.png  used on input line 169.
 (pdftex.def)             Requested size: 125.05113pt x 72.87338pt.
-<img/hw3/id.png, id=564, 327.47343pt x 188.20313pt>
+<img/hw3/id.png, id=574, 327.47343pt x 188.20313pt>
 File: img/hw3/id.png Graphic file (type png)
 <use img/hw3/id.png>
 Package pdftex.def Info: img/hw3/id.png  used on input line 171.
 (pdftex.def)             Requested size: 125.05113pt x 71.86827pt.
-<img/hw3/interrupts.png, id=565, 328.22626pt x 187.45032pt>
+<img/hw3/interrupts.png, id=575, 328.22626pt x 187.45032pt>
 File: img/hw3/interrupts.png Graphic file (type png)
 <use img/hw3/interrupts.png>
 Package pdftex.def Info: img/hw3/interrupts.png  used on input line 179.
 (pdftex.def)             Requested size: 125.05113pt x 71.41777pt.
-<img/hw3/cs1.png, id=566, 330.48468pt x 184.43906pt>
+<img/hw3/cs1.png, id=576, 330.48468pt x 184.43906pt>
 File: img/hw3/cs1.png Graphic file (type png)
 <use img/hw3/cs1.png>
 Package pdftex.def Info: img/hw3/cs1.png  used on input line 181.
 (pdftex.def)             Requested size: 125.05113pt x 69.78925pt.
-<img/hw3/outlaier_b.png, id=567, 175.40532pt x 235.63031pt>
+<img/hw3/outlaier_b.png, id=577, 175.40532pt x 235.63031pt>
 File: img/hw3/outlaier_b.png Graphic file (type png)
 <use img/hw3/outlaier_b.png>
 Package pdftex.def Info: img/hw3/outlaier_b.png  used on input line 190.
 (pdftex.def)             Requested size: 125.05113pt x 167.9926pt.
  [29 <./img/hw3/us.png> <./img/hw3/sy.png> <./img/hw3/id.png> <./img/hw3/interr
 upts.png> <./img/hw3/cs1.png>]
-<img/hw3/PCA7.png, id=584, 304.13625pt x 180.675pt>
+<img/hw3/PCA7.png, id=594, 304.13625pt x 180.675pt>
 File: img/hw3/PCA7.png Graphic file (type png)
 <use img/hw3/PCA7.png>
 Package pdftex.def Info: img/hw3/PCA7.png  used on input line 202.
@@ -1720,7 +1720,7 @@ Package pdftex.def Info: img/hw3/PCA7.png  used on input line 202.
 
 (_minted-progetto/041F43E4E2D0FFE710405AB0672F003A198D1C707A1D9476B00F908A2CB84
 489.pygtex [30 <./img/hw3/outlaier_b.png> <./img/hw3/PCA7.png>])
-<img/hw3/cluster_label.png, id=593, 708.39656pt x 169.38281pt>
+<img/hw3/cluster_label.png, id=603, 708.39656pt x 169.38281pt>
 File: img/hw3/cluster_label.png Graphic file (type png)
 <use img/hw3/cluster_label.png>
 Package pdftex.def Info: img/hw3/cluster_label.png  used on input line 249.
@@ -1730,7 +1730,7 @@ Package pdftex.def Info: img/hw3/cluster_label.png  used on input line 249.
 
 (_minted-progetto/9D8CC0FF806F7EFFC171144698281D3F198D1C707A1D9476B00F908A2CB84
 489.pygtex [31 <./img/hw3/cluster_label.png>])
-<img/hw3/jmeter_sintetico.png, id=600, 194.97844pt x 348.55219pt>
+<img/hw3/jmeter_sintetico.png, id=610, 194.97844pt x 348.55219pt>
 File: img/hw3/jmeter_sintetico.png Graphic file (type png)
 <use img/hw3/jmeter_sintetico.png>
 Package pdftex.def Info: img/hw3/jmeter_sintetico.png  used on input line 309.
@@ -1741,7 +1741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--326
  []
 
 [33 <./img/hw3/jmeter_sintetico.png>]
-<img/hw3/PCA7_syn.png, id=624, 297.36093pt x 179.16937pt>
+<img/hw3/PCA7_syn.png, id=634, 297.36093pt x 179.16937pt>
 File: img/hw3/PCA7_syn.png Graphic file (type png)
 <use img/hw3/PCA7_syn.png>
 Package pdftex.def Info: img/hw3/PCA7_syn.png  used on input line 332.
@@ -1756,19 +1756,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--340
 
  []
 
-<img/hw3/real_wl.png, id=625, 459.21562pt x 301.8778pt>
+<img/hw3/real_wl.png, id=635, 459.21562pt x 301.8778pt>
 File: img/hw3/real_wl.png Graphic file (type png)
 <use img/hw3/real_wl.png>
 Package pdftex.def Info: img/hw3/real_wl.png  used on input line 349.
 (pdftex.def)             Requested size: 250.10226pt x 164.41188pt.
-<img/hw3/syn_wl.png, id=626, 455.45157pt x 300.3722pt>
+<img/hw3/syn_wl.png, id=636, 455.45157pt x 300.3722pt>
 File: img/hw3/syn_wl.png Graphic file (type png)
 <use img/hw3/syn_wl.png>
 Package pdftex.def Info: img/hw3/syn_wl.png  used on input line 355.
 (pdftex.def)             Requested size: 250.10226pt x 164.94395pt.
 [34 <./img/hw3/PCA7_syn.png>] [35 <./img/hw3/real_wl.png> <./img/hw3/syn_wl.png
 >]
-<img/hw3/test_visivo.png, id=646, 421.575pt x 316.18124pt>
+<img/hw3/test_visivo.png, id=656, 421.575pt x 316.18124pt>
 File: img/hw3/test_visivo.png Graphic file (type png)
 <use img/hw3/test_visivo.png>
 Package pdftex.def Info: img/hw3/test_visivo.png  used on input line 377.
@@ -1778,13 +1778,13 @@ Package pdftex.def Info: img/hw3/test_visivo.png  used on input line 377.
 
 (_minted-progetto/8B5EA68892C819CF93D93CBB13691B51198D1C707A1D9476B00F908A2CB84
 489.pygtex [36 <./img/hw3/test_visivo.png (PNG copy)>])
-<img/hw3/qqplot.png, id=656, 532.99126pt x 431.36156pt>
+<img/hw3/qqplot.png, id=666, 532.99126pt x 431.36156pt>
 File: img/hw3/qqplot.png Graphic file (type png)
 <use img/hw3/qqplot.png>
 Package pdftex.def Info: img/hw3/qqplot.png  used on input line 419.
 (pdftex.def)             Requested size: 208.41644pt x 168.67133pt.
  [37 <./img/hw3/qqplot.png>]
-<img/hw3/boxplot.png, id=666, 318.43968pt x 186.6975pt>
+<img/hw3/boxplot.png, id=676, 318.43968pt x 186.6975pt>
 File: img/hw3/boxplot.png Graphic file (type png)
 <use img/hw3/boxplot.png>
 Package pdftex.def Info: img/hw3/boxplot.png  used on input line 431.
@@ -1804,7 +1804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--1
 
 (_minted-progetto/622011C06364E646EB269D1CBADD4D33198D1C707A1D9476B00F908A2CB84
 489.pygtex)
-<img/hw3/h_wilc.png, id=676, 269.50688pt x 54.9553pt>
+<img/hw3/h_wilc.png, id=686, 269.50688pt x 54.9553pt>
 File: img/hw3/h_wilc.png Graphic file (type png)
 <use img/hw3/h_wilc.png>
 Package pdftex.def Info: img/hw3/h_wilc.png  used on input line 504.
@@ -1820,12 +1820,12 @@ Capitolo 5.
 
 
 ]
-<img/hw4/jmeter.png, id=692, 186.6975pt x 88.07906pt>
+<img/hw4/jmeter.png, id=702, 186.6975pt x 88.07906pt>
 File: img/hw4/jmeter.png Graphic file (type png)
 <use img/hw4/jmeter.png>
 Package pdftex.def Info: img/hw4/jmeter.png  used on input line 42.
 (pdftex.def)             Requested size: 166.7306pt x 78.66292pt.
-<img/hw4/file.png, id=693, 529.22719pt x 350.05782pt>
+<img/hw4/file.png, id=703, 529.22719pt x 350.05782pt>
 File: img/hw4/file.png Graphic file (type png)
 <use img/hw4/file.png>
 Package pdftex.def Info: img/hw4/file.png  used on input line 50.
@@ -1847,28 +1847,28 @@ Underfull \hbox (badness 2150) in paragraph at lines 140--140
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
 (Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 9.
  [43])
-<img/hw4/alpha.png, id=712, 249.18094pt x 50.43843pt>
+<img/hw4/alpha.png, id=722, 249.18094pt x 50.43843pt>
 File: img/hw4/alpha.png Graphic file (type png)
 <use img/hw4/alpha.png>
 Package pdftex.def Info: img/hw4/alpha.png  used on input line 181.
 (pdftex.def)             Requested size: 208.41644pt x 42.18788pt.
-<img/hw4/beta.png, id=713, 136.25906pt x 52.69687pt>
+<img/hw4/beta.png, id=723, 136.25906pt x 52.69687pt>
 File: img/hw4/beta.png Graphic file (type png)
 <use img/hw4/beta.png>
 Package pdftex.def Info: img/hw4/beta.png  used on input line 184.
 (pdftex.def)             Requested size: 125.05113pt x 48.36188pt.
-<img/hw4/gamma.png, id=714, 252.19218pt x 59.47218pt>
+<img/hw4/gamma.png, id=724, 252.19218pt x 59.47218pt>
 File: img/hw4/gamma.png Graphic file (type png)
 <use img/hw4/gamma.png>
 Package pdftex.def Info: img/hw4/gamma.png  used on input line 187.
 (pdftex.def)             Requested size: 208.41644pt x 49.14954pt.
  [44 <./img/hw4/alpha.png> <./img/hw4/beta.png> <./img/hw4/gamma.png>]
-<img/hw4/AnalisiVarianza.png, id=723, 238.64156pt x 82.80937pt>
+<img/hw4/AnalisiVarianza.png, id=733, 238.64156pt x 82.80937pt>
 File: img/hw4/AnalisiVarianza.png Graphic file (type png)
 <use img/hw4/AnalisiVarianza.png>
 Package pdftex.def Info: img/hw4/AnalisiVarianza.png  used on input line 213.
 (pdftex.def)             Requested size: 208.41644pt x 72.32028pt.
-<img/hw4/TestEffetti.png, id=724, 303.38344pt x 84.315pt>
+<img/hw4/TestEffetti.png, id=734, 303.38344pt x 84.315pt>
 File: img/hw4/TestEffetti.png Graphic file (type png)
 <use img/hw4/TestEffetti.png>
 Package pdftex.def Info: img/hw4/TestEffetti.png  used on input line 215.
@@ -1887,29 +1887,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--280
 
  []
 
-<img/hw4/ANOVATests.png, id=737, 685.8122pt x 365.86688pt>
+<img/hw4/ANOVATests.png, id=747, 685.8122pt x 365.86688pt>
 File: img/hw4/ANOVATests.png Graphic file (type png)
 <use img/hw4/ANOVATests.png>
 Package pdftex.def Info: img/hw4/ANOVATests.png  used on input line 287.
 (pdftex.def)             Requested size: 333.46758pt x 177.903pt.
 [46]
-<img/hw4/qqplot_res.png, id=743, 792.71156pt x 426.09187pt>
+<img/hw4/qqplot_res.png, id=753, 792.71156pt x 426.09187pt>
 File: img/hw4/qqplot_res.png Graphic file (type png)
 <use img/hw4/qqplot_res.png>
 Package pdftex.def Info: img/hw4/qqplot_res.png  used on input line 296.
 (pdftex.def)             Requested size: 333.46758pt x 179.24342pt.
-<img/hw4/shapiro_wilch.png, id=744, 285.31593pt x 87.32625pt>
+<img/hw4/shapiro_wilch.png, id=754, 285.31593pt x 87.32625pt>
 File: img/hw4/shapiro_wilch.png Graphic file (type png)
 <use img/hw4/shapiro_wilch.png>
 Package pdftex.def Info: img/hw4/shapiro_wilch.png  used on input line 304.
 (pdftex.def)             Requested size: 208.41644pt x 63.79027pt.
  [47 <./img/hw4/ANOVATests.png> <./img/hw4/qqplot_res.png>]
-<img/hw4/omo_i.png, id=754, 251.43938pt x 63.98906pt>
+<img/hw4/omo_i.png, id=764, 251.43938pt x 63.98906pt>
 File: img/hw4/omo_i.png Graphic file (type png)
 <use img/hw4/omo_i.png>
 Package pdftex.def Info: img/hw4/omo_i.png  used on input line 319.
 (pdftex.def)             Requested size: 208.41644pt x 53.03961pt.
-<img/hw4/omo_pt.png, id=755, 251.43938pt x 66.2475pt>
+<img/hw4/omo_pt.png, id=765, 251.43938pt x 66.2475pt>
 File: img/hw4/omo_pt.png Graphic file (type png)
 <use img/hw4/omo_pt.png>
 Package pdftex.def Info: img/hw4/omo_pt.png  used on input line 321.
@@ -1919,13 +1919,13 @@ Overfull \hbox (9.6827pt too wide) in paragraph at lines 319--322
 [][] [][] 
  []
 
-<img/hw4/KW_i.png, id=757, 358.33875pt x 209.28188pt>
+<img/hw4/KW_i.png, id=767, 358.33875pt x 209.28188pt>
 File: img/hw4/KW_i.png Graphic file (type png)
 <use img/hw4/KW_i.png>
 Package pdftex.def Info: img/hw4/KW_i.png  used on input line 330.
 (pdftex.def)             Requested size: 250.10226pt x 146.07158pt.
 [48 <./img/hw4/shapiro_wilch.png> <./img/hw4/omo_i.png> <./img/hw4/omo_pt.png>]
-<img/hw4/KW_pt.png, id=775, 359.84438pt x 188.20313pt>
+<img/hw4/KW_pt.png, id=785, 359.84438pt x 188.20313pt>
 File: img/hw4/KW_pt.png Graphic file (type png)
 <use img/hw4/KW_pt.png>
 Package pdftex.def Info: img/hw4/KW_pt.png  used on input line 336.
@@ -1935,12 +1935,12 @@ Package pdftex.def Info: img/hw4/KW_pt.png  used on input line 336.
 
  (cap/dependability.tex
 Capitolo 6.
-<img/hw5/es1.png, id=785, 360.59718pt x 143.03438pt>
+<img/hw5/es1.png, id=795, 360.59718pt x 143.03438pt>
 File: img/hw5/es1.png Graphic file (type png)
 <use img/hw5/es1.png>
 Package pdftex.def Info: img/hw5/es1.png  used on input line 6.
 (pdftex.def)             Requested size: 416.83289pt x 165.3416pt.
-<img/hw5/success_diag.png, id=786, 362.70506pt x 243.91125pt>
+<img/hw5/success_diag.png, id=796, 362.70506pt x 243.91125pt>
 File: img/hw5/success_diag.png Graphic file (type png)
 <use img/hw5/success_diag.png>
 Package pdftex.def Info: img/hw5/success_diag.png  used on input line 18.
@@ -1968,23 +1968,23 @@ cmm/m/it/10.95 R[] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 R[] \OMS/cmsy/m/n/
 10.95  \OML/cmm/m/it/10.95 R[]\OT1/cmr/m/n/10.95 )]
  []
 
-<img/hw5/e_down.png, id=794, 347.79938pt x 117.43875pt>
+<img/hw5/e_down.png, id=804, 347.79938pt x 117.43875pt>
 File: img/hw5/e_down.png Graphic file (type png)
 <use img/hw5/e_down.png>
 Package pdftex.def Info: img/hw5/e_down.png  used on input line 49.
 (pdftex.def)             Requested size: 291.78174pt x 98.5278pt.
 [51 <./img/hw5/success_diag.png>]
-<img/hw5/e_up.png, id=803, 383.93437pt x 117.43875pt>
+<img/hw5/e_up.png, id=813, 383.93437pt x 117.43875pt>
 File: img/hw5/e_up.png Graphic file (type png)
 <use img/hw5/e_up.png>
 Package pdftex.def Info: img/hw5/e_up.png  used on input line 71.
 (pdftex.def)             Requested size: 291.78174pt x 89.25615pt.
-<img/hw5/b_down.png, id=804, 252.49332pt x 63.23625pt>
+<img/hw5/b_down.png, id=814, 252.49332pt x 63.23625pt>
 File: img/hw5/b_down.png Graphic file (type png)
 <use img/hw5/b_down.png>
 Package pdftex.def Info: img/hw5/b_down.png  used on input line 81.
 (pdftex.def)             Requested size: 291.78174pt x 73.08199pt.
-<img/hw5/b_up.png, id=805, 307.1475pt x 108.405pt>
+<img/hw5/b_up.png, id=815, 307.1475pt x 108.405pt>
 File: img/hw5/b_up.png Graphic file (type png)
 <use img/hw5/b_up.png>
 Package pdftex.def Info: img/hw5/b_up.png  used on input line 86.
@@ -2008,7 +2008,7 @@ Overfull \hbox (74.754pt too wide) detected at line 101
  []
 
 [53 <./img/hw5/b_down.png> <./img/hw5/b_up.png>]
-<img/hw5/es2.png, id=821, 432.11438pt x 277.78781pt>
+<img/hw5/es2.png, id=831, 432.11438pt x 277.78781pt>
 File: img/hw5/es2.png Graphic file (type png)
 <use img/hw5/es2.png>
 Package pdftex.def Info: img/hw5/es2.png  used on input line 134.
@@ -2019,36 +2019,36 @@ Package pdftex.def Info: img/hw5/es2.png  used on input line 134.
 
 (_minted-progetto/F1B72CAD54A7E3251963DAFA5C523E60198D1C707A1D9476B00F908A2CB84
 489.pygtex)
-<img/hw5/es2_grafico1.png, id=833, 981.6675pt x 520.19344pt>
+<img/hw5/es2_grafico1.png, id=843, 981.6675pt x 520.19344pt>
 File: img/hw5/es2_grafico1.png Graphic file (type png)
 <use img/hw5/es2_grafico1.png>
 Package pdftex.def Info: img/hw5/es2_grafico1.png  used on input line 194.
 (pdftex.def)             Requested size: 416.83289pt x 220.88481pt.
  [55]
-<img/hw5/es2_grafico2.png, id=840, 981.6675pt x 520.19344pt>
+<img/hw5/es2_grafico2.png, id=850, 981.6675pt x 520.19344pt>
 File: img/hw5/es2_grafico2.png Graphic file (type png)
 <use img/hw5/es2_grafico2.png>
 Package pdftex.def Info: img/hw5/es2_grafico2.png  used on input line 212.
 (pdftex.def)             Requested size: 416.83289pt x 220.88481pt.
  [56 <./img/hw5/es2_grafico1.png (PNG copy)>]
-<img/hw5/es2_grafico3.png, id=847, 981.6675pt x 520.19344pt>
+<img/hw5/es2_grafico3.png, id=857, 981.6675pt x 520.19344pt>
 File: img/hw5/es2_grafico3.png Graphic file (type png)
 <use img/hw5/es2_grafico3.png>
 Package pdftex.def Info: img/hw5/es2_grafico3.png  used on input line 218.
 (pdftex.def)             Requested size: 416.83289pt x 220.88481pt.
-<img/hw5/es3_traccia.png, id=848, 301.8778pt x 220.57407pt>
+<img/hw5/es3_traccia.png, id=858, 301.8778pt x 220.57407pt>
 File: img/hw5/es3_traccia.png Graphic file (type png)
 <use img/hw5/es3_traccia.png>
 Package pdftex.def Info: img/hw5/es3_traccia.png  used on input line 229.
 (pdftex.def)             Requested size: 291.78174pt x 213.19592pt.
  [57 <./img/hw5/es2_grafico2.png (PNG copy)> <./img/hw5/es2_grafico3.png (PNG c
 opy)>] [58 <./img/hw5/es3_traccia.png>] [59]
-<img/hw5/es3_grafico.png, id=871, 981.6675pt x 520.19344pt>
+<img/hw5/es3_grafico.png, id=881, 981.6675pt x 520.19344pt>
 File: img/hw5/es3_grafico.png Graphic file (type png)
 <use img/hw5/es3_grafico.png>
 Package pdftex.def Info: img/hw5/es3_grafico.png  used on input line 309.
 (pdftex.def)             Requested size: 416.83289pt x 220.88481pt.
-<img/hw5/es4_traccia.png, id=872, 462.22687pt x 295.85532pt>
+<img/hw5/es4_traccia.png, id=882, 462.22687pt x 295.85532pt>
 File: img/hw5/es4_traccia.png Graphic file (type png)
 <use img/hw5/es4_traccia.png>
 Package pdftex.def Info: img/hw5/es4_traccia.png  used on input line 326.
@@ -2058,7 +2058,7 @@ Overfull \hbox (12.83249pt too wide) detected at line 362
 []
  []
 
-<img/hw5/es4_1.png, id=878, 1028.1612pt x 489.9906pt>
+<img/hw5/es4_1.png, id=888, 1028.1612pt x 489.9906pt>
 File: img/hw5/es4_1.png Graphic file (type png)
 <use img/hw5/es4_1.png>
 Package pdftex.def Info: img/hw5/es4_1.png  used on input line 365.
@@ -2068,46 +2068,52 @@ Overfull \hbox (0.10497pt too wide) detected at line 378
 []
  []
 
-<img/hw5/es4_2.png, id=887, 1028.1612pt x 489.9906pt>
+<img/hw5/es4_2.png, id=897, 1028.1612pt x 489.9906pt>
 File: img/hw5/es4_2.png Graphic file (type png)
 <use img/hw5/es4_2.png>
 Package pdftex.def Info: img/hw5/es4_2.png  used on input line 385.
 (pdftex.def)             Requested size: 416.83289pt x 198.64697pt.
 [62 <./img/hw5/es4_1.png (PNG copy)>]
-<img/hw5/es4_3.png, id=894, 1028.1612pt x 489.9906pt>
+<img/hw5/es4_3.png, id=904, 1028.1612pt x 489.9906pt>
 File: img/hw5/es4_3.png Graphic file (type png)
 <use img/hw5/es4_3.png>
 Package pdftex.def Info: img/hw5/es4_3.png  used on input line 407.
 (pdftex.def)             Requested size: 416.83289pt x 198.64697pt.
  [63 <./img/hw5/es4_2.png (PNG copy)>]
-<img/hw5/es4_4.png, id=901, 1028.1612pt x 489.9906pt>
+<img/hw5/es4_4.png, id=911, 1028.1612pt x 489.9906pt>
 File: img/hw5/es4_4.png Graphic file (type png)
 <use img/hw5/es4_4.png>
 Package pdftex.def Info: img/hw5/es4_4.png  used on input line 427.
 (pdftex.def)             Requested size: 416.83289pt x 198.64697pt.
 
 [64 <./img/hw5/es4_3.png (PNG copy)>]
-<img/hw5/es5_traccia.png, id=909, 493.845pt x 278.54062pt>
+<img/hw5/es5_traccia.png, id=919, 493.845pt x 278.54062pt>
 File: img/hw5/es5_traccia.png Graphic file (type png)
 <use img/hw5/es5_traccia.png>
 Package pdftex.def Info: img/hw5/es5_traccia.png  used on input line 435.
 (pdftex.def)             Requested size: 291.78174pt x 164.57129pt.
  [65 <./img/hw5/es4_4.png (PNG copy)> <./img/hw5/es5_traccia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 447--452
+<img/hw5/es5_RBD.png, id=927, 850.07588pt x 234.42581pt>
+File: img/hw5/es5_RBD.png Graphic file (type png)
+<use img/hw5/es5_RBD.png>
+Package pdftex.def Info: img/hw5/es5_RBD.png  used on input line 453.
+(pdftex.def)             Requested size: 416.83289pt x 114.94833pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--455
 
  []
 
-) [66] (progetto.aux (cap/benchmark.aux) (cap/workload_caracterization.aux)
-(cap/capacity_test.aux) (cap/webserver_characterization.aux) (cap/doe.aux)
-(cap/dependability.aux))
-
-Package rerunfilecheck Warning: File `progetto.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `progetto.out':
-(rerunfilecheck)             Before: 81DC381AEF36D87B6564CE4931BDEE34;7620
-(rerunfilecheck)             After:  0DBC36E96EAAEC5845BEC0CD64B5251C;7820.
+[66 <./img/hw5/es5_RBD.png>]
+<img/hw5/es5_FT.png, id=938, 403.5075pt x 350.81062pt>
+File: img/hw5/es5_FT.png Graphic file (type png)
+<use img/hw5/es5_FT.png>
+Package pdftex.def Info: img/hw5/es5_FT.png  used on input line 462.
+(pdftex.def)             Requested size: 416.83289pt x 362.39885pt.
+ [67 <./img/hw5/es5_FT.png>]) [68] (progetto.aux
+(cap/benchmark.aux) (cap/workload_caracterization.aux) (cap/capacity_test.aux)
+(cap/webserver_characterization.aux) (cap/doe.aux) (cap/dependability.aux))
+Package rerunfilecheck Info: File `progetto.out' has not changed.
+(rerunfilecheck)             Checksum: 0DBC36E96EAAEC5845BEC0CD64B5251C;7820.
 runsystem(del progetto.pyg)...executed.
 
  )
@@ -2116,13 +2122,13 @@ runsystem(del progetto.pyg)...executed.
 ### semi simple group (level 1) entered at line 38 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31162 strings out of 478699
- 605252 string characters out of 2846490
+ 31188 strings out of 478699
+ 605691 string characters out of 2846490
  1004382 words of memory out of 3000000
- 48169 multiletter control sequences out of 15000+600000
- 426380 words of font info for 77 fonts, out of 8000000 for 9000
+ 48186 multiletter control sequences out of 15000+600000
+ 428701 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,81p,975b,2828s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,17n,81p,975b,2828s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\emmam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
 ec/dpi600\ecbi1095.pk> <C:\Users\emmam\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
 appen/ec/dpi600\ecbx1200.pk>{C:/Users/emmam/AppData/Local/Programs/MiKTeX1/font
@@ -2155,9 +2161,9 @@ type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/emmam/AppData/Local/Programs/MiKTe
 X1/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/emmam/AppData/Local/Programs/Mi
 KTeX1/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/emmam/AppData/Local/Programs
 /MiKTeX1/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on progetto.pdf (69 pages, 2034385 bytes).
+Output written on progetto.pdf (71 pages, 2062366 bytes).
 PDF statistics:
- 1602 PDF objects out of 1728 (max. 8388607)
- 303 named destinations out of 1000 (max. 500000)
- 861 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1624 PDF objects out of 1728 (max. 8388607)
+ 307 named destinations out of 1000 (max. 500000)
+ 887 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -444,16 +444,44 @@ Possiamo suddividere il sistema in cinque "macro-blocchi":
 	\item \textbf{Processing unit}.
 	\item \textbf{Remote terminal}.
 \end{enumerate}
-Se almeno uno di essi fallisce, il sistema intero fallisce. Ogni macro-blocco, (eccetto il sistema di navigazione per il quale è stata pensata una particolare ridondanza funzionale descritta nella traccia), è dual-redundant. Inoltre, ciascuna delle due \textit{Processing Unit} è connessa ad entrambi i bus, in modo da avere dual-redoundance sul singolo bus. 
+Se almeno uno di essi fallisce, il sistema intero fallisce. Ogni macro-blocco, (eccetto il sistema di navigazione per il quale è stata pensata una particolare ridondanza funzionale già descritta nella traccia), è dual-redundant. Inoltre, ciascuna delle due \textit{Processing Unit} è connessa ad entrambi i bus, in modo da avere dual-redoundance sul singolo bus. 
 \\
 \\
-Partendo da queste informazioni è stato realizzato il \textit{Reliability Block Diagram}:
-\\immagine diagramma
+Partendo da queste informazioni è stato realizzato il seguente \textit{Reliability Block Diagram}:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es5_RBD.png}
+	\caption{\textit{Reliability Block Diagram}}
+\end{figure}
+\newpage
 \subsection{Punto B: Disegnare il Fault Tree del Sistema e analizzare i minimal cutsets}
 Partendo dal Reliability Block Diagram è possibile ricavare il rispettivo Fault Tree, considerando che il sistema fallisce se il \textit{Top Level Event} ha valore logico 1.
 \\In particolare lo serie saranno sostituite con delle porte OR, mentre i paralleli con porte END. 
-\\immagine fault tree
-\\espressione logica del fault tree 
-\\discussione sui minimal cutsets = combinazione di eventi base che portano al fallimento (mi esce un 1 nel TLE)
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw5/es5_FT.png}
+	\caption{\textit{Fault Tree}}
+\end{figure}
+Espressione logica del \textit{Fault Tree}:
+\begin{equation*}
+	\begin{split}
+		&\textbf{TLE} = (A1*A2)+(B1*B2)+{INS_A*[DOP_A+(AHRS_A*AHRS_B*AHRS_B)]}+ \\
+		&(P_AB*P_AB)+(T_A*T_B) = \\
+		&(A1*A2)+(B1*B2)+(INS_A*DOP_A)+(INS_A*AHRS_A*AHRS_B*AHRS_B)+ \\
+		&(P_AB*P_AB)+(T_A*T_B)
+	\end{split}
+\end{equation*}
+I \textit{minimal cutsets} sono per definizione il minimo set di eventi di base che portano al fallimento del sistema (TLE = 1). In questo caso sono stati ricavati dall'espressione logica del Fault Tree, la quale è stata espressa mediante somme di prodotti. Tali prodotti rappresentano proprio i minimal cutsets.
+\\
+Dunque il sistema fallisce, se falliscono congiuntamente:
+\begin{itemize}
+	\item \textit{le due repliche del bus A(A1 e A2)},
+	\item \textit{le due repliche del bus B(B1 e B2)},
+	\item \textit{l'INS e il Doppler}, in quanto non sarebbe possibile replicare il sistema di navigazione,
+	\item \textit{l'INS e i tre AHRS}, per lo stesso motivo di prima,
+	\item \textit{le due repliche della Processing Unit},
+	\item \textit{le due repliche del Remote Terminal}.
+\end{itemize}
+Ovviamente queste sono solo le minime combinazioni di eventi che portano al fallimento del sistema, ma non le uniche.
 \subsection{Punto C}
 \subsection{Punto D}
