@@ -1,0 +1,132 @@
+1171418606 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418606 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418606 tg-c401 DEV +Platform Specific Error Info Section
+1171418606 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418606 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418606 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418606 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418606 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418642 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418642 tg-c401 DEV +Platform Specific Error Info Section
+1171418642 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418642 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418642 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418642 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418642 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418642 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418667 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418667 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418667 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418667 tg-c401 DEV +Platform Specific Error Info Section
+1171418667 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418667 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418667 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418667 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418667 tg-c401 DEV + Platform Specific Error Detail:
+1171418667 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418667 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418688 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418689 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418689 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418689 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418689 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418689 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418689 tg-c401 DEV + Platform Specific Error Detail:
+1171418689 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418689 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418700 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418700 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418700 tg-c401 DEV +Platform Specific Error Info Section
+1171418700 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418700 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418700 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418700 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418700 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418700 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418737 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418737 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418737 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418737 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418738 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418738 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418738 tg-c401 DEV +Platform Specific Error Info Section
+1171418738 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418738 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418738 tg-c401 DEV + Platform Specific Error Detail:
+1171418738 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418738 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418758 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418758 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418758 tg-c401 DEV +Platform Specific Error Info Section
+1171418758 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418758 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418758 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418758 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418758 tg-c401 DEV + Platform Specific Error Detail:
+1171418758 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418758 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418811 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418811 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418811 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418811 tg-c401 DEV +Platform Specific Error Info Section
+1171418811 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418811 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418811 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418811 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418811 tg-c401 DEV + Platform Specific Error Detail:
+1171418811 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418811 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418826 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418826 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418826 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418826 tg-c401 DEV +Platform Specific Error Info Section
+1171418826 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418826 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418826 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418826 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418826 tg-c401 DEV + Platform Specific Error Detail:
+1171418826 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418826 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418852 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418852 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418852 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418852 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418852 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418852 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418853 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418853 tg-c401 DEV +Platform Specific Error Info Section
+1171418853 tg-c401 DEV + Platform Specific Error Detail:
+1171418853 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418853 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418883 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418883 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418883 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418883 tg-c401 DEV +Platform Specific Error Info Section
+1171418883 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418883 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418883 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418883 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418883 tg-c401 DEV + Platform Specific Error Detail:
+1171418883 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418883 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418884 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418884 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418884 tg-c401 DEV +Platform Specific Error Info Section
+1171418884 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418884 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418884 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418884 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418884 tg-c401 DEV + Platform Specific Error Detail:
+1171418884 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418884 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418956 tg-c401 DEV +BEGIN HARDWARE ERROR STATE AT CPE
+1171418956 tg-c401 DEV +Platform PCI Component Error Info Section
+1171418956 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418956 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418956 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418957 tg-c401 DEV +END HARDWARE ERROR STATE AT CPE
+1171418957 tg-c401 DEV +Platform Specific Error Info Section
+1171418957 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x
+1171418957 tg-c401 DEV + Platform Specific Error Detail:
+1171418957 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
+1171418957 tg-c401 MEM Physical Address x, Address Mask: x, Node: x, Card: x, Module: x, Bank: x, Device: x, Row: x, Column: x,
