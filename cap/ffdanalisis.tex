@@ -1,0 +1,34 @@
+\chapter{FFDA}
+Log-based FFDA di sistemi complessi a larga scala. I dati sono stati collezionati dai supercalcolatori Mercury e Blue-Gene. 
+\\Breve descrizione dell'architettura dei due sistemi
+\section{Analisi dei log}
+Formato entries per entrambi.
+\\RICORDA!! I dati sono stati già filtrati, ma comunque sono presenti ridondanze. Quindi necessitano una manipolazione.
+\section{Manipolazione}
+Fatta tramite tecniche di coalescenza, le quali consentono di raggruppare entries ricercando correlazioni sui dati. 
+\\Coalescenza spaziale: raggruppiamo entries provenienti da + nodi diversi cercando di capire se si sono verificate nello stesso intervallo temporale specificato dalla finestra temporale W seleizonata.
+\subsection{Scelta W}
+Si prova per vari valori di W, contando per ogni valore quante tuple vengono generate -> grafico -> prendiamo la W associata al suo knee.
+\\
+Generico:
+\\
+\\Mercury: DimWindow = 150
+\\BlueGene: DimWindow = 150
+\subsection{Analisi Truncation}
+Per qualche tupla d'esempio individuare se sono presenti troncamenti.
+\subsection{Analisi Collisions}
+Per qualche tupla d'esempio individuare collissioni.
+\subsection{Domanda 1}
+La stessa finestra di coalescenza può essere usata per diversi nodi (fare sia per Mercury che BG) e categorie d'errore (solo Mercury)?
+\section{Reliability Modeling}
+CDF e pdf (unreliability e reliability) degli interrarrivi (tempi a fallimento dei sistemi). Da fare prima sull'intero sistema (sia mercury che bg).
+\subsection{Fitting di EmpRel}
+\subsection{Domanda 2}
+Relazione tra Rel dell'intero sistema e dei Nodi (magari usiamo gli stessi nodi della domanda 1).
+\subsection{Domanda 3}
+Esistono colli di bottiglia ? Nodi che contribuiscono maggiormente al numero totale di fallimenti. = Grafico nodi-nr fallimenti per nodo (vedere se fare tramite script matlab)
+\subsection{Domanda 4}
+Stessi nodi funzionali (es due nodi di login in mercury) esibiscono parametri di reliability simili?
+\subsection{Domanda 5}
+Esiste una relazione tra tipo di errore e nodo(mercury)?
+

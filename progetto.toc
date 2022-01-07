@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Benchmark}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Sistemi}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Test e Risultati}{2}{section.1.2}%
@@ -86,3 +86,16 @@
 \contentsline {subsubsection}{Processing Unit}{69}{section*.32}%
 \contentsline {subsubsection}{Remote Terminal}{69}{section*.33}%
 \contentsline {subsection}{\numberline {6.5.4}Punto D}{70}{subsection.6.5.4}%
+\contentsline {chapter}{\numberline {7}FFDA}{71}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Analisi dei log}{71}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Manipolazione}{71}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Scelta W}{71}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Analisi Truncation}{71}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Analisi Collisions}{71}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Domanda 1}{72}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Reliability Modeling}{72}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Fitting di EmpRel}{72}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Domanda 2}{72}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Domanda 3}{72}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Domanda 4}{72}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Domanda 5}{72}{subsection.7.3.5}%

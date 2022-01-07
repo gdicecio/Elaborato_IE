@@ -1,0 +1,19 @@
+\chapter{FFDA}
+Log-based FFDA di sistemi complessi a larga scala. I dati sono stati collezionati dai supercalcolatori Mercury e Blue-Gene. 
+\\Breve descrizione dell'architettura dei due sistemi
+\section{Analisi dei log}
+Formato entries per entrambi.
+\\RICORDA!! I dati sono stati già filtrati, ma comunque sono presenti ridondanze. Quindi necessitano una manipolazione.
+\section{Manipolazione}
+Fatta tramite tecniche di coalescenza, le quali consentono di raggruppare entries ricercando correlazioni sui dati. 
+\\Coalescenza spaziale: raggruppiamo entries provenienti da + nodi diversi cercando di capire se si sono verificate nello stesso intervallo temporale specificato dalla finestra temporale W seleizonata.
+\subsection{Scelta W}
+Si prova per vari valori di W, contando per ogni valore quante tuple vengono generate -> grafico -> prendiamo la W associata al suo knee.
+\\
+Generico:
+\\
+\\Mercury: DimWindow = 150
+\\BlueGene: DimWindow = 150
+\section{Data Analysis}
+Analisi statistica dei dati ottenuti.
+
