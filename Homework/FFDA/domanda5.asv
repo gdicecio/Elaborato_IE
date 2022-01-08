@@ -1,0 +1,5 @@
+clc; clear all; close all;
+%% Esiste una relazione tra tipologia di errore e Nodo (solo per mercury)
+device_list_tgc894 = search("FilterMercury-Node/tg-c894-MercuryErrorLog.txt");
+device_list_tgc401 = 
+
