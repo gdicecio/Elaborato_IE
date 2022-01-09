@@ -1,7 +1,7 @@
 clc; clear all; close all;
 
 %% 
-SensitivityTuple('FilterBG-Node/R63-M0-N0-BGLErrorLog.txt','tentative-Cwin.txt') %i valori di cwin li possiamo anche cambiare
+SensitivityTuple('tg-s044-MercuryErrorLog.txt','tentative-Cwin.txt') %i valori di cwin li possiamo anche cambiare
 
 %% Blue-Gene Nodes
 subplot(3,3,1);

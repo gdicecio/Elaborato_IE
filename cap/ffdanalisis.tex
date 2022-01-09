@@ -21,10 +21,96 @@ Per qualche tupla d'esempio individuare collissioni.
 \subsection{Domanda 1}
 La stessa finestra di coalescenza può essere usata per diversi nodi (fare sia per Mercury che BG) e categorie d'errore (solo Mercury)?
 \section{Reliability Modeling}
-CDF e pdf (unreliability e reliability) degli interrarrivi (tempi a fallimento dei sistemi). Da fare prima sull'intero sistema (sia mercury che bg).
+Una volta ottenuti i dati manipolati è necessario procedere ad una loro analisi. In particolare, si parte dagli \textit{interarrivi} (file interarrivals.txt, ottenuto alla creazione delle tuple), i quali rappresentano la "distanza temporale" tra due tuple consecutive, ovvero il TTF - Time To Failure del sistema complessivo. 
+\\L'obiettivo è valutare le distribuzioni empiriche di:
+\begin{itemize}
+	\item \textit{Tempi di Fallimento - Unreliability},
+	\item \textit{Reliability}
+\end{itemize}
+Con il seguente script MATLAB è stata calcolata la CDF del TTF, e a partire da essa la Reliability empirica del sistema:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	load interarrivals.txt;         
+	[y,t] = cdfcalc(interarrivals); %ne calcolo la CDF = unreliability
+	empTTF = y(2:size(y,1));        %scarto la prima riga (?)
+	empRel = 1 - empTTF;            %Reliability
+	plot(t,empTTF,'-*b');
+	hold on;
+	plot(t,empRel,'-+r');
+	xlabel('time[s]');
+	ylabel('p');
+	legend('empTTF','empRel');
+\end{minted}
+\subsubsection{EmpTTF e EmpRel - Mercury}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/TTF_Mercury.png}
+	\caption{\textit{Distribuzioni Empiriche Mercury}}
+\end{figure}
+\subsubsection{EmpTTF e EmpRel - BlueGene}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/TTF_BG.png}
+	\caption{\textit{Distribuzioni Empiriche Blue-Gene}}
+\end{figure}
 \subsection{Fitting di EmpRel}
-\subsection{Domanda 2}
-Relazione tra Rel dell'intero sistema e dei Nodi (magari usiamo gli stessi nodi della domanda 1).
+Di tali distribuzioni opportunamente ottenute, bisogna effettuarne un \textit{Curve Fitting} in modo da ricavarne un modello statistico (così facendo ho informazioni anche sul probabile andamento futuro della curva). Tale operazione risulta essere fondamentale, in quanto una data distribuzione può essere sintomatica di un particolare guasto.
+\\A tale scopo è stato utilizzato il tool MATLAB \textit{Curve Fitting}.
+\subsubsection{Fitting EmpRel - Mercury}
+Il fitting è stato eseguito con una distribuzione Esponenziale a 2 termini, descritta dalla seguente equazione:
+\begin{equation*}
+	f(x) = a*e^{bx}+c*e^{dx}
+\end{equation*}
+i cui coefficienti sono stati determinati tramite algoritmi interni del tool.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/FittingM.png}
+	\caption{\textit{Fitting empRel Mercury con distribuzione Esponenziale}}
+\end{figure}
+Tale analisi ha prodotto i seguenti risultati:
+\begin{equation*}
+	\begin{split}
+		&SSE = 0,4685\\
+		&Rsquare = 0,9872
+	\end{split}
+\end{equation*}
+L' \textit{Rsquare} è un valore abbastanza elevato, a dimostrazione del fatto che la distribuzione esponenziale selezionata spiega gran parte della variazione di quella oggetto del fitting.
+\\Come ulteriore dimostrazione della \textit{GOF - Goodness of Fit} è stato eseguito il già precedentemente citato \textit{Kolmogorov-Sminrov test}, il quale ha prodotto come risultato h = 0, verificando l'ipotesi nulla.
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	h = kstest2(empRel,fittedmodel(t));
+\end{minted}
+\subsubsection{Fitting EmpRel - BlueGene}
+Lo stesso procedimento descritto in precedenza è stato iterato per il supercalcolatore Blue-Gene. Anche in questo caso è stata selezionata una distribuzione Esponenziale a 2 termini, come modello che meglio approssima la Reliability empirica del sistema.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/FittingBG.png}
+	\caption{\textit{Fitting empRel Blue-Gene con distribuzione Esponenziale}}
+\end{figure}
+I risultati prodotti dall'analisi sono i seguenti:
+\begin{equation*}
+	\begin{split}
+		&SSE = 0,08606\\
+		&Rsquare = 0,9974
+	\end{split}
+\end{equation*}
+Anche in questo caso il kstest ha fornito output h=0, confermando la bontà del fitting eseguito.
+\\
+La distribuzione esponenziale è associata a fenomeni degenerativi di tipo hardware (boh vedi meglio ste conclusioni - non sono convita che mercury sia esponenziale SSE non piccolo).
+\subsection{Analisi Reliability per Sottocomponenti}
+Sono stati eseguiti dei confronti tra Reliability dell'intero sistema e quella relativa ad alcuni dei suoi sottocomponenti, suddivisi per tipologia di nodo. 
+\subsubsection{Mercury}
+Per ogni categoria di nodo (master, login, computation e storage), sono stati selezionati quelli che in cui, in base al report, è stato riscontrato il numero più elevato di fallimenti:
+\begin{itemize}
+	\item \textbf{tg-master},
+	\item \textbf{tg-login3},
+	\item \textbf{tg-c401},
+	\item \textbf{tg-s044}
+\end{itemize}
 \subsection{Domanda 3}
 Esistono colli di bottiglia ? Nodi che contribuiscono maggiormente al numero totale di fallimenti. = Grafico nodi-nr fallimenti per nodo (vedere se fare tramite script matlab)
 \subsection{Domanda 4}

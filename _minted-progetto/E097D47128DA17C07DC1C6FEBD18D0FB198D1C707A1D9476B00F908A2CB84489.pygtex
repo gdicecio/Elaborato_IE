@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{n}{load}\PYG{+w}{ }\PYG{l+s}{interarrivals.txt}\PYG{p}{;}
+\PYG{+w}{	}\PYG{p}{[}\PYG{n}{y}\PYG{p}{,}\PYG{n}{t}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{cdfcalc}\PYG{p}{(}\PYG{n}{interarrivals}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}ne calcolo la CDF = unreliability}
+\PYG{+w}{	}\PYG{n}{empTTF}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{:}\PYG{n+nb}{size}\PYG{p}{(}\PYG{n}{y}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{));}\PYG{+w}{        }\PYG{c}{\PYGZpc{}scarto la prima riga (?)}
+\PYG{+w}{	}\PYG{n}{empRel}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{empTTF}\PYG{p}{;}\PYG{+w}{            }\PYG{c}{\PYGZpc{}Reliability}
+\PYG{+w}{	}\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,}\PYG{n}{empTTF}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZhy{}*b\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,}\PYG{n}{empRel}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZhy{}+r\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}time[s]\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}p\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n+nb}{legend}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}empTTF\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}empRel\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

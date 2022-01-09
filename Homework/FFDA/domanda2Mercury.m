@@ -41,5 +41,18 @@ plot(t_M3,empRel_M3,'-*r');
 xlabel('time[s]');
 ylabel('empRel_tg-master');
 
+%% Mercury Sistema Totale confronto con nodo tg-s044
+load FilterMercury-Node/tupling_tg-s044-MercuryErrorLog-180/interarrivals_tgs044.txt;
+[empTTF_M4,empRel_M4,t_M4] = Reliability(interarrivals_tgs044);
+figure;
+subplot(1,2,1);
+plot(t_M,empRel_M,'-*b');
+xlabel('time[s]');
+ylabel('empRel');
+subplot(1,2,2);
+plot(t_M4,empRel_M4,'-*r');
+xlabel('time[s]');
+ylabel('empRel_tg-s042');
+
 
 
