@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{limit}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{150}\PYG{p}{;}
+\PYG{n}{interarrivi\PYGZus{}mercury}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{load}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}tupling\PYGZus{}MercuryErrorLog\PYGZhy{}150/interarrivals.txt\PYGZdq{}}\PYG{p}{);}
+\PYG{n}{interarrivi\PYGZus{}bgl}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{load}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}tupling\PYGZus{}BGLErrorLog\PYGZhy{}150/interarrivals.txt\PYGZdq{}}\PYG{p}{);}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{} Mercury}
+\PYG{n+nb}{j}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{interarrivi\PYGZus{}mercury}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k}{if}\PYG{p}{(}\PYG{n}{interarrivi\PYGZus{}mercury}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{limit}\PYG{p}{)}
+\PYG{+w}{		}\PYG{n}{tronc\PYGZus{}mercury}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{;}
+\PYG{+w}{		}\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}\PYGZhy{}*b\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{		}\PYG{n+nb}{j}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{k}{end}
+\PYG{n+nb}{grid}\PYG{p}{;}
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZsh{} di tuple\PYGZdq{}}\PYG{p}{);}
+\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Numero di troncamenti\PYGZdq{}}\PYG{p}{);}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{} BGL}
+\PYG{n+nb}{figure}\PYG{p}{;}
+\PYG{n+nb}{j}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{interarrivi\PYGZus{}bgl}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k}{if}\PYG{p}{(}\PYG{n}{interarrivi\PYGZus{}bgl}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{limit}\PYG{p}{)}
+\PYG{+w}{		}\PYG{n}{tronc\PYGZus{}bgl}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{;}
+\PYG{+w}{		}\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}\PYGZhy{}*b\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{		}\PYG{n+nb}{j}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{k}{end}
+\PYG{n+nb}{grid}\PYG{p}{;}
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZsh{} di tuple\PYGZdq{}}\PYG{p}{);}
+\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Numero di troncamenti\PYGZdq{}}\PYG{p}{);}
+\end{Verbatim}

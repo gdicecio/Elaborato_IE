@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Benchmark}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Sistemi}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Test e Risultati}{2}{section.1.2}%
@@ -87,19 +87,18 @@
 \contentsline {subsubsection}{Remote Terminal}{69}{section*.33}%
 \contentsline {subsection}{\numberline {6.5.4}Punto D}{70}{subsection.6.5.4}%
 \contentsline {chapter}{\numberline {7}FFDA}{71}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Analisi dei log}{71}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Manipolazione}{71}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Scelta W}{71}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Analisi Truncation}{71}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Analisi Collisions}{71}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Domanda 1}{72}{subsection.7.2.4}%
-\contentsline {section}{\numberline {7.3}Reliability Modeling}{72}{section.7.3}%
-\contentsline {subsubsection}{EmpTTF e EmpRel - Mercury}{72}{section*.34}%
-\contentsline {subsubsection}{EmpTTF e EmpRel - BlueGene}{73}{section*.35}%
-\contentsline {subsection}{\numberline {7.3.1}Fitting di EmpRel}{73}{subsection.7.3.1}%
-\contentsline {subsubsection}{Fitting EmpRel - Mercury}{73}{section*.36}%
-\contentsline {subsubsection}{Fitting EmpRel - BlueGene}{74}{section*.37}%
-\contentsline {subsection}{\numberline {7.3.2}Analisi Reliability per Sottocomponenti}{75}{subsection.7.3.2}%
-\contentsline {subsubsection}{Mercury}{75}{section*.38}%
-\contentsline {subsubsection}{Blue-Gene}{79}{section*.39}%
-\contentsline {subsection}{\numberline {7.3.3}Domanda 5}{80}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.1}Manipolazione}{71}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Finestra Temporale}{71}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Analisi del Troncamento}{72}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Analisi delle Collisioni}{75}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Domanda 1}{77}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Reliability Modeling}{79}{section.7.2}%
+\contentsline {subsubsection}{EmpTTF e EmpRel - Mercury}{79}{section*.34}%
+\contentsline {subsubsection}{EmpTTF e EmpRel - BlueGene}{80}{section*.35}%
+\contentsline {subsection}{\numberline {7.2.1}Fitting di EmpRel}{80}{subsection.7.2.1}%
+\contentsline {subsubsection}{Fitting EmpRel - Mercury}{80}{section*.36}%
+\contentsline {subsubsection}{Fitting EmpRel - BlueGene}{81}{section*.37}%
+\contentsline {subsection}{\numberline {7.2.2}Analisi Reliability per Sottocomponenti}{82}{subsection.7.2.2}%
+\contentsline {subsubsection}{Mercury}{82}{section*.38}%
+\contentsline {subsubsection}{Blue-Gene}{86}{section*.39}%
+\contentsline {subsection}{\numberline {7.2.3}Domanda 5}{87}{subsection.7.2.3}%
