@@ -101,6 +101,5 @@
 \contentsline {subsubsection}{Fitting EmpRel - BlueGene}{74}{section*.37}%
 \contentsline {subsection}{\numberline {7.3.2}Analisi Reliability per Sottocomponenti}{75}{subsection.7.3.2}%
 \contentsline {subsubsection}{Mercury}{75}{section*.38}%
-\contentsline {subsection}{\numberline {7.3.3}Domanda 3}{75}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Domanda 4}{76}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Domanda 5}{76}{subsection.7.3.5}%
+\contentsline {subsubsection}{Blue-Gene}{79}{section*.39}%
+\contentsline {subsection}{\numberline {7.3.3}Domanda 5}{80}{subsection.7.3.3}%

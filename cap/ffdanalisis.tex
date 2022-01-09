@@ -104,17 +104,90 @@ La distribuzione esponenziale è associata a fenomeni degenerativi di tipo hardw
 \subsection{Analisi Reliability per Sottocomponenti}
 Sono stati eseguiti dei confronti tra Reliability dell'intero sistema e quella relativa ad alcuni dei suoi sottocomponenti, suddivisi per tipologia di nodo. 
 \subsubsection{Mercury}
-Per ogni categoria di nodo (master, login, computation e storage), sono stati selezionati quelli che in cui, in base al report, è stato riscontrato il numero più elevato di fallimenti:
+Per ogni categoria di nodo (master, login, computation e storage), sono stati selezionati quelli in cui, in base al report, è stato riscontrato il numero più elevato di fallimenti, effettuando quindi dei confronti "al limite":
 \begin{itemize}
 	\item \textbf{tg-master},
 	\item \textbf{tg-login3},
 	\item \textbf{tg-c401},
 	\item \textbf{tg-s044}
 \end{itemize}
-\subsection{Domanda 3}
-Esistono colli di bottiglia ? Nodi che contribuiscono maggiormente al numero totale di fallimenti. = Grafico nodi-nr fallimenti per nodo (vedere se fare tramite script matlab)
-\subsection{Domanda 4}
-Stessi nodi funzionali (es due nodi di login in mercury) esibiscono parametri di reliability simili?
+Le entries associate a ciascuno di questi nodi sono state isolate in log specifici, i quali sono stati manipolati con le tecniche già descritte per i log principali. Per tutti i nodi è stata selezionata una finestra temporale di 150. Dopodichè, dagli interarrivi relativi ai singoli nodi sono state calcolate le Reliability Empiriche.
+\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_Tgmaster.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability tg-master}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_Tglogin.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability tg-login3}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_Tgc.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability tg-c401}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_Tgs.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability tg-s044}}
+\end{figure}
+Quindi tutti i nodi eccetto il tg-c401, hanno una reliability migliore rispetto a quella totale del sistema. 
+\\Il nodo di computation \textbf{tg-c401} per tempi brevi in confronto ai totali, risulta essere il meno reliable, addirittura anche rispetto al sistema. Ciò significa che esso potrebbe essere un probabile collo di bottiglia per il supercalcolatore Mercury. Quest'ultima affermazione è molto probabile in quanto tale nodo è quello caratterizzato dal maggior numero di fallimenti.
+\\In seguito è stato riportato un grafico che confronta tra di loro le reliability dei diversi nodi selezionati:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/confrontoMercury.png}
+	\caption{\textit{Confronto Reliability Nodi Mercury}}
+\end{figure}
+Altre considerazioni su quest'ultima immagine pensaci dopo.
+\\
+\\
+Un altro confronto è stato effettuato sulla reliability di nodi funzionalmente simili tra di loro.
+\\Per tale analisi sono stati selezionati tre nodi computation:
+\begin{itemize}
+	\item \textbf{tg-c401}, il nodo con il numero maggiore di fallimenti,
+	\item \textbf{tg-c238},
+	\item \textbf{tg-c242}.
+\end{itemize}
+Gli ultimi due presentano un numero di fallimenti molto simile tra di loro.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/RelCompMercury.png}
+	\caption{\textit{Confronto Reliability Nodi Computation Mercury}}
+\end{figure}
+La reliability del nodo 401 risulta essere sempre peggiore delle altre, anche se nonostante ciò gli andamenti risultano essere tutti molto simili tra di loro (rispettivamente 1273 e 1067). Tutti i nodi computation analizzati hanno dunque una reliability molto bassa.
+\subsubsection{Blue-Gene}
+L'analisi è stata ripetuta anche per i primi 3 nodi con più entries di fallimenti di Blue-Gene. Essi, ordinati per numero di entries, sono:
+\begin{itemize}
+	\item \textbf{R71-M0-N4},
+	\item \textbf{R12-M0-N0},
+	\item \textbf{R63-M0-N2}
+\end{itemize} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_R71.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability R71-M0-N4}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_R12.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability R12-M0-N0}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/Rel_Tot_R63.png}
+	\caption{\textit{Confronto Reliability Totale - Reliability R63-M0-N2}}
+\end{figure}
+In tal caso non risultano esserci evidenti colli di bottiglia, e la reliability del singolo nodo risulta essere sempre maggiore di quella totale del sistema.
+\\Anche per Blue-Gene si riporta un grafico in cui vengono messe a confronto le reliability dei 3 differenti nodi:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/confrontoBG.png}
+	\caption{\textit{Confronto Reliability Nodi Blue-Gene}}
+\end{figure}
+In tal caso i nodi confrontati sono tutti funzionalmente simili. Come si evince dal grafico la reliability del nodo \textbf{R71-M0-N4} e \textbf{R63-M0-N2} risulta avere un andamento molto simile, a differenza del terzo nodo il quale è più reliable dei precedenti.
 \subsection{Domanda 5}
 Esiste una relazione tra tipo di errore e nodo(mercury)?
 
