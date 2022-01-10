@@ -1,6 +1,6 @@
 \chapter{FFDA}
-Log-based FFDA di sistemi complessi a larga scala. I dati sono stati collezionati dai supercalcolatori Mercury e Blue-Gene. 
-\\Breve descrizione dell'architettura dei due sistemi
+L'obiettivo dell'homework è quello di realizzare una log-based FFDA (Field Failure Data Analysis) di sistemi complessi a larga scala. Questo tipo di analisi si realizza su dati di errori e fallimenti, collezionati monitorando il sistema durande la sua normale esecuzione.
+\\I dati, in questo caso, sono stati collezionati dai supercalcolatori \textbf{Mercury} e \textbf{Blue-Gene}. 
 
 La FFDA prevede quattro fasi di sviluppo:
 \begin{enumerate}
@@ -10,6 +10,71 @@ La FFDA prevede quattro fasi di sviluppo:
 	\item Data Analisys. Consiste in analisi statistiche sulle informazioni a disposizione con il fine di valutare misure quantitative.
 \end{enumerate}
 Come già descritto la \textit{fase 1} e la \textit{fase 2} sono già state effettuate.
+\section{Architetture}
+\subsection{Mercury cluster}
+L'architettura del sistema Mercury è realizzata su tre livelli:
+\begin{itemize}
+	\item \textbf{"login" nodes: tg-loginx},
+	\item \textbf{"computation" nodes: tg-cX},
+	\item \textbf{"storage" nodes: tg-sX}
+\end{itemize}
+Il tutto è gestito da un nodo d'interfaccia: il nodo \textbf{tg-master}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/mercury_a.png}
+	\caption{\textit{Architettura Mercury Cluster}}
+\end{figure}
+\subsubsection{Mercury Event Log}
+Gli eventi sono stati collezionati attraverso il \textit{syslog daemon}.
+Il log fornitoci \textit{MercuryErrorLog.txt}, è già filtrato ed è costituito da 80.854 entries. Sono stati memorizzati esclusivamente i "fatal error".
+\\Ogni entry presenta il seguente formato:
+\begin{itemize}
+	\item \textbf{1171436995 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x},
+	\item \textbf{1168094507 tg-login3 I-O x unknown partition table}
+\end{itemize}
+che può essere generalizzato come segue:
+\\
+\begin{itemize}
+	\item \textbf{timestamp},
+	\item \textbf{nodo-origine},
+	\item \textbf{categoria-sottosistema},
+	\item \textbf{breve descrizione dell'errore}
+\end{itemize}
+Le possibili categorie d'errore sono 5:
+\begin{itemize}
+	\item \textbf{DEV},
+	\item \textbf{MEM},
+	\item \textbf{NET},
+	\item \textbf{I-O},
+	\item \textbf{PRO}
+\end{itemize}
+
+\newpage
+
+\subsection{Blue-Gene Sample Diagram}
+La struttura del sistema è rappresentata dalla seguente immagine:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/BG.png}
+	\caption{\textit{Architettura Blue-Gene}}
+\end{figure}
+Esso è dunque formato da dei blocchi numerati, i \textit{Rack}, i quali a sua volta sono suddivisi in \textit{Midplane}, formati da più \textit{nodi}. Su ciascun nodo sono presenti 16 \textit{compute card} realizzate tramite dei chip.
+\subsubsection{Blue-Gene Event Log}
+Anche in tal caso il log fornitoci \textit{BGLErrorLog.txt} è stato già precedentemente filtrato e contiene esclusivamente gli errori fatali.
+\\
+Esso è composto da 125.624 entries, aventi il seguente formato:
+\begin{itemize}
+	\item \textbf{1133835036 R52-M1-NA J03-U01  memory manager / command manager address parity..0},
+	\item \textbf{1133847441 R12-M0-N0 J12-U01  round toward -infinity...................0}
+\end{itemize}
+Generalizzando avremo:
+\begin{itemize}
+	\item \textbf{timestamp},
+	\item \textbf{nodo origine},
+	\item \textbf{card origine},
+	\item \textbf{breve descrizione dell'errore}
+\end{itemize}
+
 
 \section{Manipolazione}
 La manipolazione deve essere effettuata per entrambi i supercalcolatori, per cui si ha a disposizione \textit{MercuryErrorLog.txt} (file dei log filtrato di \textit{Mercury}) e \textit{BGLErrorLog.txt} (file dei log filtrato di \textit{BG/L}).
@@ -394,7 +459,7 @@ In tal caso non risultano esserci evidenti colli di bottiglia, e la reliability 
 	\caption{\textit{Confronto Reliability Nodi Blue-Gene}}
 \end{figure}
 In tal caso i nodi confrontati sono tutti funzionalmente simili. Come si evince dal grafico la reliability del nodo \textbf{R71-M0-N4} e \textbf{R63-M0-N2} risulta avere un andamento molto simile, a differenza del terzo nodo il quale è più reliable dei precedenti.
-\subsection{Analisi relazione tipologia errore-nodo (Mercury)}
+\section{Analisi relazione tipologia errore-nodo (Mercury)}
 Infine, esclusivamente per il supercalcolatore Mercury, si è voluta dimostrare la relazione tra tipologia d'errore e nodo. Si è subito notato che su nodi funzionalmente simili si presentavano principalmente le stesse categorie d'errore.
 In particolare, per dimostrare ciò, sono stati considerati 4 nodi \textit{computation}:
 \begin{itemize}
@@ -474,7 +539,7 @@ Il tutto è stato graficato tramite degli istogrammi, i quali mostrano per ogni 
 	\includegraphics[width=\textwidth]{img/hw6/domanda5_1.png}
 	\caption{\textit{Categorie d'errore per nodi computation}}
 \end{figure}
-Come si può notare nei nodi computation, la categoria d'errore più frequente è quella relativa ai device fisici, seguita da quelli sulla memoria.
+Come si può notare nei nodi computation, la categoria d'errore più frequente è quella relativa ai device, seguita da quelli sulla memoria.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{img/hw6/domanda5_2.png}
