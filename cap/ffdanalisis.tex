@@ -347,7 +347,7 @@ Quindi tutti i nodi eccetto il tg-c401, hanno una reliability migliore rispetto 
 	\includegraphics[width=\textwidth]{img/hw6/confrontoMercury.png}
 	\caption{\textit{Confronto Reliability Nodi Mercury}}
 \end{figure}
-Altre considerazioni su quest'ultima immagine pensaci dopo.
+Da come si può notare, i nodi con maggiore reliability sono quelli di storage e login. La reliablity del nodo master, per tempi brevi rispetto ai totali, risulta superare quella del nodo di computation, anche se a lungo andare tende più velocemente a zero se confrontata con quella di quest'ultimo.
 \\
 \\
 Un altro confronto è stato effettuato sulla reliability di nodi funzionalmente simili tra di loro.
@@ -394,6 +394,90 @@ In tal caso non risultano esserci evidenti colli di bottiglia, e la reliability 
 	\caption{\textit{Confronto Reliability Nodi Blue-Gene}}
 \end{figure}
 In tal caso i nodi confrontati sono tutti funzionalmente simili. Come si evince dal grafico la reliability del nodo \textbf{R71-M0-N4} e \textbf{R63-M0-N2} risulta avere un andamento molto simile, a differenza del terzo nodo il quale è più reliable dei precedenti.
-\subsection{Domanda 5}
-Esiste una relazione tra tipo di errore e nodo(mercury)?
-
+\subsection{Analisi relazione tipologia errore-nodo (Mercury)}
+Infine, esclusivamente per il supercalcolatore Mercury, si è voluta dimostrare la relazione tra tipologia d'errore e nodo. Si è subito notato che su nodi funzionalmente simili si presentavano principalmente le stesse categorie d'errore.
+In particolare, per dimostrare ciò, sono stati considerati 4 nodi \textit{computation}:
+\begin{itemize}
+	\item \textbf{tg-c894},
+	\item \textbf{tg-c401},
+	\item \textbf{tg-c117},
+	\item \textbf{tg-c572}
+\end{itemize}
+e 4 nodi \textit{login}:
+\begin{itemize}
+	\item \textbf{tg-login1},
+	\item \textbf{tg-login2},
+	\item \textbf{tg-login3},
+	\item \textbf{tg-login4}
+\end{itemize}
+Dopo aver filtrato le entries associate a ciascuno di questi nodi, su di esse è stato applicata la seguente funzione MATLAB:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	function [device_list] = search(file)
+	fid = fopen(file,'r');
+	device_list = [""];
+	device_mercury = [""];
+	j=1;
+	k=1;
+	o=1;
+	if (fid==-1)
+	disp('Unable to open the file')
+	else
+	i=1;
+	while feof(fid)==0
+	%Read one line into a string file
+	linea=fgetl(fid);
+	aline=split(linea);
+	device(i)=convertCharsToStrings(cell2mat(aline(3)));
+	if contains(device_list, device(i))==0
+	device_list(j) = device(i);
+	j = j+1;
+	end
+	if contains(device_mercury, device(i))==0
+	device_mercury(o) = device(i);
+	o = o+1;
+	end
+	i=i+1;
+	end
+	closeresult=fclose(fid);
+	if closeresult~=0
+	disp('Unable to close the file')
+	end
+	end
+	end
+\end{minted}
+il cui obiettivo è quello di isolare il vettore \textit{device(i)}, in cui sono memorizzate le differenti tipologie di errore relative a ciascuna entry del particolare nodo selezionato. Per ogni categoria d'errore riscontrata, ne è stata, in seguito, memorizzata la frequenza d'occorrenza:
+\begin{minted}[framesep = 1mm,
+	fontsize = \footnotesize,
+	breaklines,
+	]{MATLAB}
+	function [] = istogramma(device_list,device)
+	[d1,d2] = size(device);
+	[d3,d4] = size(device_list);
+	num = zeros(1,d4);
+	
+	for i = 1:d2
+	for j = 1:d4
+	if device(i) == device_list(j)
+	num(j) = num(j) + 1;
+	end
+	end
+	end
+	histogram('Categories',device_list,'BinCounts',num);
+	end
+\end{minted}
+Il tutto è stato graficato tramite degli istogrammi, i quali mostrano per ogni categoria d'errore riscontrata, la frequenza con cui esso si verifica.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/domanda5_1.png}
+	\caption{\textit{Categorie d'errore per nodi computation}}
+\end{figure}
+Come si può notare nei nodi computation, la categoria d'errore più frequente è quella relativa ai device fisici, seguita da quelli sulla memoria.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/domanda5_2.png}
+	\caption{\textit{Categorie d'errore per nodi login}}
+\end{figure}
+Le categorie d'errori più frequenti nei nodi di login, come atteso, sono quelle sull' Input/Output (connessioni dall'esterno - fisiche) e quelle network (connection down). Gli errori di I/O sono di gran lunga più frequenti rispetto a quelli di rete.

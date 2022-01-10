@@ -1,5 +1,6 @@
-function [device_list] = search(file)
+function [device_list,device] = search(file)
 fid = fopen(file,'r');
+device = [""];
 device_list = [""];
 device_mercury = [""];
 j=1;

@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{k}{function}\PYG{+w}{ }[device\PYGZus{}list]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{search}\PYG{p}{(}file\PYG{p}{)}
+\PYG{+w}{	}\PYG{n}{fid}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{fopen}\PYG{p}{(}\PYG{n}{file}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{device\PYGZus{}list}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{];}
+\PYG{+w}{	}\PYG{n}{device\PYGZus{}mercury}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{];}
+\PYG{+w}{	}\PYG{n+nb}{j}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{k}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{o}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{fid}\PYG{o}{==\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{+w}{	}\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Unable to open the file\PYGZsq{}}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k}{else}
+\PYG{+w}{	}\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{while}\PYG{+w}{ }\PYG{n+nb}{feof}\PYG{p}{(}\PYG{n}{fid}\PYG{p}{)}\PYG{o}{==}\PYG{l+m+mi}{0}
+\PYG{+w}{	}\PYG{c}{\PYGZpc{}Read one line into a string file}
+\PYG{+w}{	}\PYG{n}{linea}\PYG{p}{=}\PYG{n+nb}{fgetl}\PYG{p}{(}\PYG{n}{fid}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{aline}\PYG{p}{=}\PYG{n+nb}{split}\PYG{p}{(}\PYG{n}{linea}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{device}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)=}\PYG{n+nb}{convertCharsToStrings}\PYG{p}{(}\PYG{n+nb}{cell2mat}\PYG{p}{(}\PYG{n}{aline}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)));}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{n+nb}{contains}\PYG{p}{(}\PYG{n}{device\PYGZus{}list}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{device}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{))}\PYG{o}{==}\PYG{l+m+mi}{0}
+\PYG{+w}{	}\PYG{n}{device\PYGZus{}list}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{device}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n+nb}{j}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{n+nb}{contains}\PYG{p}{(}\PYG{n}{device\PYGZus{}mercury}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{device}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{))}\PYG{o}{==}\PYG{l+m+mi}{0}
+\PYG{+w}{	}\PYG{n}{device\PYGZus{}mercury}\PYG{p}{(}\PYG{n}{o}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{device}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{o}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{o}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{n+nb}{i}\PYG{p}{=}\PYG{n+nb}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{n}{closeresult}\PYG{p}{=}\PYG{n+nb}{fclose}\PYG{p}{(}\PYG{n}{fid}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{n}{closeresult}\PYG{o}{\PYGZti{}=}\PYG{l+m+mi}{0}
+\PYG{+w}{	}\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Unable to close the file\PYGZsq{}}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\end{Verbatim}

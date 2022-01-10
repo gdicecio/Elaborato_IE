@@ -1,5 +1,5 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Benchmark}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Sistemi}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Test e Risultati}{2}{section.1.2}%
@@ -101,4 +101,4 @@
 \contentsline {subsection}{\numberline {7.2.2}Analisi Reliability per Sottocomponenti}{82}{subsection.7.2.2}%
 \contentsline {subsubsection}{Mercury}{82}{section*.38}%
 \contentsline {subsubsection}{Blue-Gene}{86}{section*.39}%
-\contentsline {subsection}{\numberline {7.2.3}Domanda 5}{87}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.3}Analisi relazione tipologia errore-nodo (Mercury)}{87}{subsection.7.2.3}%

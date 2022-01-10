@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{	}\PYG{k}{function}\PYG{+w}{ }[]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{istogramma}\PYG{p}{(}device\PYGZus{}list,device\PYG{p}{)}
+\PYG{+w}{	}\PYG{p}{[}\PYG{n}{d1}\PYG{p}{,}\PYG{n}{d2}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{size}\PYG{p}{(}\PYG{n}{device}\PYG{p}{);}
+\PYG{+w}{	}\PYG{p}{[}\PYG{n}{d3}\PYG{p}{,}\PYG{n}{d4}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{size}\PYG{p}{(}\PYG{n}{device\PYGZus{}list}\PYG{p}{);}
+\PYG{+w}{	}\PYG{n}{num}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{d4}\PYG{p}{);}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{d2}
+\PYG{+w}{	}\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{d4}
+\PYG{+w}{	}\PYG{k}{if}\PYG{+w}{ }\PYG{n}{device}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{device\PYGZus{}list}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}
+\PYG{+w}{	}\PYG{n}{num}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{num}\PYG{p}{(}\PYG{n+nb}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{k}{end}
+\PYG{+w}{	}\PYG{n+nb}{histogram}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Categories\PYGZsq{}}\PYG{p}{,}\PYG{n}{device\PYGZus{}list}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}BinCounts\PYGZsq{}}\PYG{p}{,}\PYG{n}{num}\PYG{p}{);}
+\PYG{+w}{	}\PYG{k}{end}
+\end{Verbatim}
