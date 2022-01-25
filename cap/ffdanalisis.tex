@@ -12,9 +12,9 @@ La FFDA prevede quattro fasi di sviluppo:
 Come già descritto la \textit{fase 1} e la \textit{fase 2} sono già state effettuate.
 \section{Architetture}
 \subsection{Mercury cluster}
-L'architettura del sistema Mercury è realizzata su tre livelli:
+L'architettura del sistema Mercury è realizzata da nodi che si distribuiscono su tre livelli:
 \begin{itemize}
-	\item \textbf{"login" nodes: tg-loginx},
+	\item \textbf{"login" nodes: tg-loginX},
 	\item \textbf{"computation" nodes: tg-cX},
 	\item \textbf{"storage" nodes: tg-sX}
 \end{itemize}
@@ -26,7 +26,7 @@ Il tutto è gestito da un nodo d'interfaccia: il nodo \textbf{tg-master}.
 \end{figure}
 \subsubsection{Mercury Event Log}
 Gli eventi sono stati collezionati attraverso il \textit{syslog daemon}.
-Il log fornitoci \textit{MercuryErrorLog.txt}, è già filtrato ed è costituito da 80.854 entries. Sono stati memorizzati esclusivamente i "fatal error".
+Il log fornitoci \textit{MercuryErrorLog.txt}, è già filtrato ed è costituito da 80.854 entries relative esclusivamente ai "fatal error".
 \\Ogni entry presenta il seguente formato:
 \begin{itemize}
 	\item \textbf{1171436995 tg-c401 DEV Component Info: Vendor Id =x x, Device Id =x x, Class Code =x x, Seg Bus Dev Func =x x x x x},
@@ -40,12 +40,12 @@ che può essere generalizzato come segue:
 	\item \textbf{categoria-sottosistema},
 	\item \textbf{breve descrizione dell'errore}
 \end{itemize}
-Le possibili categorie d'errore sono 5:
+Tra le possibili categorie d'errore abbiamo:
 \begin{itemize}
-	\item \textbf{DEV},
-	\item \textbf{MEM},
-	\item \textbf{NET},
-	\item \textbf{I-O},
+	\item \textbf{DEV}: relativa al fallimento di componenti fisici.
+	\item \textbf{MEM}: indice di errori di allocazione di risorse.
+	\item \textbf{NET}: connection down.
+	\item \textbf{I-O}
 	\item \textbf{PRO}
 \end{itemize}
 
@@ -58,7 +58,7 @@ La struttura del sistema è rappresentata dalla seguente immagine:
 	\includegraphics[width=\textwidth]{img/hw6/BG.png}
 	\caption{\textit{Architettura Blue-Gene}}
 \end{figure}
-Esso è dunque formato da dei blocchi numerati, i \textit{Rack}, i quali a sua volta sono suddivisi in \textit{Midplane}, formati da più \textit{nodi}. Su ciascun nodo sono presenti 16 \textit{compute card} realizzate tramite dei chip.
+Esso è dunque formato da dei blocchi numerati, i \textit{Rack}, i quali a sua volta sono suddivisi in \textit{Midplane}, formati da più \textit{nodi}. Su ciascun nodo sono presenti 16 \textit{compute cards} realizzate tramite dei chip.
 \subsubsection{Blue-Gene Event Log}
 Anche in tal caso il log fornitoci \textit{BGLErrorLog.txt} è stato già precedentemente filtrato e contiene esclusivamente gli errori fatali.
 \\
@@ -102,10 +102,10 @@ Dai grafici si nota che il ginocchio si trova, per entrambi, in corrispondenza d
 	\item \textbf{Collisione}. Analogamente in una stessa tupla potrebbero comparire eventi che in realtà corrispondono a fault differenti.
 \end{itemize} 
 
-\subsection{Analisi del Troncamento}
+\subsection{Analisi dei Troncamenti}
 Un modo semplice per individuare la presenza di possibili troncamenti, è quello di calcolare l'intervallo temporale tra l'ultimo elemento di una tupla e il primo della tupla successiva. Se infatti il tempo di distacco è relativamente basso allora si può pensare che c'è stato un troncamento.
 \\Tale informazione temporale viene memorizzata all'interno di un file \textit{interarrivals.txt}, generato dopo la creazione delle tuple con lo stesso script usato precedentemente.
-\\Un modo per visualizzare graficamente i possibili troncamenti è quello di porre sull'asse delle x le tuple che si vanno a considerare, e sull'asse delle y il numero di troncamenti conteggiati fino a quella tupla. Per conteggiare un troncamento si può porre un limite di differenza temporale tra una tupla e un altra.
+\\Un modo per visualizzare graficamente i possibili troncamenti è quello di porre sull'asse delle x le tuple che si vanno a considerare, e sull'asse delle y il numero di troncamenti conteggiati fino a quella tupla. Per conteggiare un troncamento dunque, si può porre un limite di differenza temporale tra una tupla e un altra.
 \\Il tutto è meglio descritto con il seguente script MATLAB:
 \begin{minted}[framesep = 1mm,
 	fontsize = \footnotesize,
@@ -144,7 +144,7 @@ grid;
 xlabel("# di tuple");
 ylabel("Numero di troncamenti");
 \end{minted}
-In cui il limite è posto pari al doppio della finestra temporale calcolata. Quindi si suppone che se una tupla si distacca dalla successiva di un valore inferiore a questo limite, allora è possibile che c'è stato un troncamento.
+in cui il limite è posto pari al doppio della finestra temporale calcolata. Quindi si suppone che se una tupla si distacca dalla successiva di un valore inferiore a questo limite, allora è possibile che c'è stato un troncamento.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{img/hw6/troncamento_mercury.png}
@@ -240,14 +240,29 @@ Il cui risultato è il seguente.
 	\includegraphics[width=\textwidth]{img/hw6/collisione_mercury.png}
 	\caption{\textit{Nodo per timestamp nella tupla 21}}
 \end{figure}
-Per la tupla in esame, leggendo il grafico, i nodi non si sovrappongono durante la scrittura del log. Questo potrebbe far pensare che non c'è stato un fault che si è propagato tra i nodi.
-\\Per BG/L si può effettuare la stessa tecnica.
+Per la tupla in esame, leggendo il grafico, i nodi non si sovrappongono durante la scrittura del log. Questo potrebbe far pensare che non c'è stato un fault che si è propagato tra i nodi e che quindi le entries potrebbero riferirsi a fault differenti.
+\\In particolare, sempre osservando il grafico, è possibile notare un netto distacco (in termini di timestamp) tra l'ultima entry relativa al primo nodo, e la prima del secondo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/tupla21.png}
+	\caption{\textit{Dettaglio entries tupla 21}}
+\end{figure}
+Tale distacco è ulteriormente confermato da un'analisi più dettagliata del file associato alla tupla considerata, nella quale si evidenzia anche la diversa tipologia di errore. Il tutto suggerisce, con elevata possibilità, una probabile collisione.
+\\
+\\
+Per BG/L si può effettuare la stessa tecnica.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{img/hw6/collisione_bgl.png}
 	\caption{\textit{Nodo per timestamp nella tupla 373}}
 \end{figure}
 Per BG/L si ha un comportamento totalmente diverso. Diversi nodi hanno elaborato un log in un arco di tempo molto breve, andandosi a sovrapporsi tra loro. Inoltre si vede proprio che temporalmente i log sono in successione, portando a pensare che uno stesso fault abbia causato errori nei nodi rappresentati.
+\\Una tupla con possibili collisioni potrebbe essere la 350:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{img/hw6/tupla_350.png}
+	\caption{\textit{Nodo per timestamp nella tupla 350}}
+\end{figure}
 
 \subsection{Domanda 1}
 \begin{center}
@@ -371,7 +386,7 @@ I risultati prodotti dall'analisi sono i seguenti:
 \end{equation*}
 Anche in questo caso il kstest ha fornito output h=0, confermando la bontà del fitting eseguito.
 \\
-La distribuzione esponenziale è associata a fenomeni degenerativi di tipo hardware (boh vedi meglio ste conclusioni - non sono convita che mercury sia esponenziale SSE non piccolo).
+La distribuzione esponenziale è associata a fenomeni degenerativi di tipo hardware.
 \subsection{Analisi Reliability per Sottocomponenti}
 Sono stati eseguiti dei confronti tra Reliability dell'intero sistema e quella relativa ad alcuni dei suoi sottocomponenti, suddivisi per tipologia di nodo. 
 \subsubsection{Mercury}
@@ -481,36 +496,36 @@ Dopo aver filtrato le entries associate a ciascuno di questi nodi, su di esse è
 	breaklines,
 	]{MATLAB}
 	function [device_list] = search(file)
-	fid = fopen(file,'r');
-	device_list = [""];
-	device_mercury = [""];
-	j=1;
-	k=1;
-	o=1;
-	if (fid==-1)
-	disp('Unable to open the file')
-	else
-	i=1;
-	while feof(fid)==0
-	%Read one line into a string file
-	linea=fgetl(fid);
-	aline=split(linea);
-	device(i)=convertCharsToStrings(cell2mat(aline(3)));
-	if contains(device_list, device(i))==0
-	device_list(j) = device(i);
-	j = j+1;
-	end
-	if contains(device_mercury, device(i))==0
-	device_mercury(o) = device(i);
-	o = o+1;
-	end
-	i=i+1;
-	end
-	closeresult=fclose(fid);
-	if closeresult~=0
-	disp('Unable to close the file')
-	end
-	end
+		fid = fopen(file,'r');
+		device_list = [""];
+		device_mercury = [""];
+		j=1;
+		k=1;
+		o=1;
+		if (fid==-1)
+			disp('Unable to open the file')
+		else
+			i=1;
+			while feof(fid)==0
+				%Read one line into a string file
+				linea=fgetl(fid);
+				aline=split(linea);
+				device(i)=convertCharsToStrings(cell2mat(aline(3)));
+				if contains(device_list, device(i))==0
+					device_list(j) = device(i);
+					j = j+1;
+				end
+				if contains(device_mercury, device(i))==0
+					device_mercury(o) = device(i);
+					o = o+1;
+				end
+				i=i+1;
+			end
+			closeresult=fclose(fid);
+			if closeresult~=0
+				disp('Unable to close the file')
+			end
+		end
 	end
 \end{minted}
 il cui obiettivo è quello di isolare il vettore \textit{device(i)}, in cui sono memorizzate le differenti tipologie di errore relative a ciascuna entry del particolare nodo selezionato. Per ogni categoria d'errore riscontrata, ne è stata, in seguito, memorizzata la frequenza d'occorrenza:

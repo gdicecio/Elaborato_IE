@@ -94,16 +94,16 @@
 \contentsline {subsubsection}{Blue-Gene Event Log}{73}{section*.35}%
 \contentsline {section}{\numberline {7.2}Manipolazione}{74}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Finestra Temporale}{74}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Analisi del Troncamento}{75}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}Analisi dei Troncamenti}{75}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3}Analisi delle Collisioni}{77}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Domanda 1}{79}{subsection.7.2.4}%
-\contentsline {section}{\numberline {7.3}Reliability Modeling}{81}{section.7.3}%
-\contentsline {subsubsection}{EmpTTF e EmpRel - Mercury}{81}{section*.36}%
-\contentsline {subsubsection}{EmpTTF e EmpRel - BlueGene}{82}{section*.37}%
-\contentsline {subsection}{\numberline {7.3.1}Fitting di EmpRel}{82}{subsection.7.3.1}%
-\contentsline {subsubsection}{Fitting EmpRel - Mercury}{82}{section*.38}%
-\contentsline {subsubsection}{Fitting EmpRel - BlueGene}{83}{section*.39}%
-\contentsline {subsection}{\numberline {7.3.2}Analisi Reliability per Sottocomponenti}{84}{subsection.7.3.2}%
-\contentsline {subsubsection}{Mercury}{84}{section*.40}%
-\contentsline {subsubsection}{Blue-Gene}{88}{section*.41}%
-\contentsline {section}{\numberline {7.4}Analisi relazione tipologia errore-nodo (Mercury)}{89}{section.7.4}%
+\contentsline {subsection}{\numberline {7.2.4}Domanda 1}{80}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Reliability Modeling}{82}{section.7.3}%
+\contentsline {subsubsection}{EmpTTF e EmpRel - Mercury}{83}{section*.36}%
+\contentsline {subsubsection}{EmpTTF e EmpRel - BlueGene}{83}{section*.37}%
+\contentsline {subsection}{\numberline {7.3.1}Fitting di EmpRel}{83}{subsection.7.3.1}%
+\contentsline {subsubsection}{Fitting EmpRel - Mercury}{84}{section*.38}%
+\contentsline {subsubsection}{Fitting EmpRel - BlueGene}{84}{section*.39}%
+\contentsline {subsection}{\numberline {7.3.2}Analisi Reliability per Sottocomponenti}{85}{subsection.7.3.2}%
+\contentsline {subsubsection}{Mercury}{85}{section*.40}%
+\contentsline {subsubsection}{Blue-Gene}{89}{section*.41}%
+\contentsline {section}{\numberline {7.4}Analisi relazione tipologia errore-nodo (Mercury)}{90}{section.7.4}%
