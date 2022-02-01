@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{load}\PYG{+w}{ }\PYG{n}{precampione5000}\PYG{p}{.}\PYG{n}{txt}\PYG{p}{;}
+\PYG{n}{load}\PYG{+w}{ }\PYG{l+s}{precampione10000.txt}\PYG{p}{;}
+\PYG{n}{load}\PYG{+w}{ }\PYG{l+s}{precampione50000.txt}\PYG{p}{;}
+\PYG{n}{load}\PYG{+w}{ }\PYG{l+s}{precampione75000.txt}\PYG{p}{;}
+\PYG{n}{load}\PYG{+w}{ }\PYG{l+s}{precampione100000.txt}\PYG{p}{;}
+
+\PYG{n}{N}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{;}
+\PYG{n}{vet\PYGZus{}prc}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{precampione5000}\PYG{p}{,}\PYG{n}{precampione10000}\PYG{p}{,}\PYG{n}{precampione50000}\PYG{p}{,}\PYG{n}{precampione75000}\PYG{p}{,}\PYG{n}{precampione100000}\PYG{p}{];}
+\PYG{c}{\PYGZpc{}\PYGZpc{}}
+\PYG{n}{vet\PYGZus{}media}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{N}\PYG{p}{);}
+\PYG{n}{vet\PYGZus{}sigma}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{N}\PYG{p}{);}
+\PYG{n}{err}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{N}\PYG{p}{);}
+\PYG{n}{vet\PYGZus{}n}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{N}\PYG{p}{);}
+
+\PYG{n}{t}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{tinv}\PYG{p}{(}\PYG{l+m+mf}{0.025}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{));}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{N}
+\PYG{+w}{	}\PYG{n}{vet\PYGZus{}media}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{mean}\PYG{p}{(}\PYG{n}{vet\PYGZus{}prc}\PYG{p}{(:,}\PYG{n+nb}{i}\PYG{p}{));}
+\PYG{+w}{	}\PYG{n}{vet\PYGZus{}sigma}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{std}\PYG{p}{(}\PYG{n}{vet\PYGZus{}prc}\PYG{p}{(:,}\PYG{n+nb}{i}\PYG{p}{));}
+\PYG{+w}{	}\PYG{n}{err}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{vet\PYGZus{}media}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{o}{*}\PYG{l+m+mf}{0.025}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{vet\PYGZus{}n}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{t}\PYG{o}{*}\PYG{n}{vet\PYGZus{}sigma}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)}\PYG{o}{/}\PYG{n}{err}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{))}\PYGZca{}\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{k}{end}
+\end{Verbatim}
